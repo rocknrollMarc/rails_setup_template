@@ -1,0 +1,13 @@
+= (master)
+
+* Initial version.
+* Fixed a bug where the Blueprint stylesheets were not being loaded properly in the layout.
+* Fixed a bug where the REST JavaScript libraries and default path were not loaded properly.
+* Fixed an issue where the default CSS for Rails error messages was missing.
+* Cleaned up the routes file and made it easier to read.
+* Added the {Acts as State Machine (AASM)}[http://github.com/rubyist/aasm] gem requirement.
+* Added the {RSpec}[http://github.com/dchelimsky/rspec] gem requirement (just in case you don't get it with the RSpec for Rails gem).
+* Added CSS styling for pagination.
+* Added CSS styling for site label, description, and account info. The OmniGraffle layout diagram was updated as well.
+* Added {jQuery Block UI 2.26}[http://github.com/malsup/blockui].
+* Added AJAX processing screen locking and messaging.

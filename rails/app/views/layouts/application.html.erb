@@ -1,0 +1,64 @@
+<!DOCTYPE html">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<title><%= yield(:title) || SYSTEM_LABEL %></title>
+    
+    <!-- Bookmark Icon -->	
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" />
+    
+    <!-- Apple WebClip Icon -->
+		<%= tag :link, :rel => "apple-touch-icon", :href => "#{THEME_ROOT}/images/main/apple-webclip.png" %>
+    
+    <!-- Stylesheets -->
+		<%= stylesheet_link_tag "#{THEME_ROOT}/screen", :media => "screen, projection" %>
+		<%= stylesheet_link_tag "#{THEME_ROOT}/style", :media => "screen, projection" %>
+		<%= stylesheet_link_tag "#{THEME_ROOT}/jquery-ui", :media => "screen, projection" %>
+		<%= stylesheet_link_tag "#{THEME_ROOT}/print", :media => "print" %>
+		<%= yield :stylesheet %>
+    <!--[if lt IE 8]>
+      <link rel="stylesheet" href="/themes/default/ie.css" type="text/css" media="screen, projection">
+    <![endif]-->
+
+    <!-- JavaScripts -->
+    <%= javascript_include_tag "jquery" %>
+    <%= javascript_include_tag "jquery-ui" %>
+    <%= javascript_include_tag "jquery.rest" %>
+    <%= javascript_include_tag "jquery.validate" %>
+    <%= javascript_include_tag "jquery.tablesorter" %>
+    <%= javascript_include_tag "jquery.blockUI" %>
+    <%= javascript_include_tag "jquery.jgrowl" %>
+    <%= javascript_include_tag "ujs" %>
+		<%= javascript_include_tag "application" %>
+		<%= yield :javascript %>
+  </head>
+  <body>
+    <div id="page" class="container">
+			<div id="header">
+				<div id="label"><%= SYSTEM_LABEL %></div>
+				<div id="description"><%= SYSTEM_DESCRIPTION %></div>
+				<div id="account">Login | Register</div>
+				<div id="navigation">
+					<%= render :partial => "shared/menus/" + current_role %>
+				</div>
+			</div>
+      <div id="body">
+				<%= render_flash_messages %>
+				<%= yield :breadcrumbs %>
+        <%= yield %>
+      </div>
+      <div id="footer">
+        <p class="center">
+					<em>
+						&copy; <%= SYSTEM_LABEL %>, <%= render_system_version %><br/>
+						Developed by <%= link_to DEVELOPER_LABEL, DEVELOPER_URL %>
+					</em>
+				</p>
+      </div>
+    </div>
+		<div id="ajax">
+			<%= image_tag "#{THEME_ROOT}/images/main/spinner.gif", :alt => "spinner" %>
+			<p>Please wait...</p>
+		</div>
+  </body>
+</html>

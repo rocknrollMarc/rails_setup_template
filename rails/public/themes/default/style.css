@@ -1,0 +1,49 @@
+/* General */
+a { outline: none; }
+.center { text-align: center; }
+.hidden { display: none; }
+
+/* Structure */
+#label { text-align: center; font-size: 3em; }
+#description { text-align: center; margin: 0 0 1em 0; }
+#account { position: absolute; margin: -4em 0 0 75em; }
+#navigation { border-top: 1px solid #313131; border-bottom: 1px solid #313131; padding: 1em 0; }
+
+/* Menu - Level 1 */
+ul.menu { list-style: none; }
+ul.menu li { color: #FFF; background: #354D8F; font-weight: bold; float: left; margin: 0 0.5em; padding: 0 0.5em; -moz-border-radius: 0.5em; -webkit-border-radius: 0.5em; }
+ul.menu a { color: #FFF; text-decoration: none; }
+ul.menu li a { display: block; padding: 4px 8px; }
+ul.menu li.hover, ul.menu li:hover, ul.menu li.active { background: #778ABF; color:#000; position: relative; }
+ul.menu li.hover a { color: #000; }
+
+/* Menu - Level 2 */
+ul.menu ul { width: 20em; display: none; position: absolute; top: 100%; left: 0; list-style: none; }
+ul.menu ul li { padding: 0; margin: 0; font-weight: normal; color: #000; background: #354D8F; border-bottom: 1px solid #FFF; float: none; }
+
+/* Menu - Level 3+ */
+ul.menu ul ul { position: absolute; left: 18.5em; top: 0; border-left: 5px solid #000; }
+ul.menu li:hover > ul { display: block; }
+
+/* Block UI - AJAX Processing */
+#ajax { display: none; }
+#ajax img { float: left; }
+#ajax p { float: left; padding: 0.5em 0 0.5em 1em; }
+
+/* Block UI - Growl */
+.growlUI { background: url() no-repeat 10px 10px; }
+.growlUI h1, div.growlUI h2 { color: white; padding: 5px 5px 5px 75px; text-align: left; }
+
+/* Rails Error Handling */
+.errorExplanation { color: #FFF; border: 0.2em solid #C90000; background-color: #FE2525; padding: 0.5em; margin-bottom: 0.5em; }
+.errorExplanation h2 { color: #FFF; }
+.errorExplanation p { display: none; }
+.field_error { color: #CC0033; }
+.field_error input, .field_error select, .field_error textarea { border-color: #CC0033; }
+
+/* Pagination */
+div.pagination { float: right; margin: 0.5em 0; }
+.pagination a, .pagination span { margin: 0 0.1em; padding: 0.1em 0.3em; display: block; float: left; }
+.pagination span.current { border: 0.1em solid black; font-weight: bold; }
+.pagination a { text-decoration: none; border-width: 0.1em; border-style: solid; }
+.pagination a:hover { color: #FFF; background: #1D70A5; }
