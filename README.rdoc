@@ -62,7 +62,7 @@ See the CHANGELOG file for more info.
 
 = Usage
 
-  rails myapp -m http://github.com/aeonscope/rails_setup_template/raw/master/template.rb
+  rails demo -m http://github.com/aeonscope/rails_setup_template/raw/master/template.rb
 
 = Notes
 
