@@ -62,7 +62,15 @@ See the CHANGELOG file for more info.
 
 = Usage
 
+Open a terminal window and execute one the following command lines depending on your version preference:
+
+Current Version (stable)
+
   rails demo -m http://github.com/aeonscope/rails_setup_template/raw/v1.0.0/template.rb
+
+Master Version (possible unstable, use at your own risk)
+
+  rails demo -m http://github.com/aeonscope/rails_setup_template/raw/master/template.rb
 
 = Notes
 
