@@ -1,4 +1,4 @@
-GITHUB_ROOT = "http://github.com/aeonscope/rails_setup_template/raw/master"
+GITHUB_ROOT = "http://github.com/aeonscope/rails_setup_template/raw/v1.0.0"
 
 # Doc
 run "rm README"
