@@ -31,7 +31,7 @@ ul.menu li:hover > ul { display: block; }
 #ajax p { float: left; padding: 0.5em 0 0.5em 1em; }
 
 /* Block UI - Growl */
-.growlUI { background: url() no-repeat 10px 10px; }
+.growlUI { background: url(images/jgrowl/default.png) no-repeat 16px 16px; }
 .growlUI h1, div.growlUI h2 { color: white; padding: 5px 5px 5px 75px; text-align: left; }
 
 /* Rails Error Handling */

@@ -67,6 +67,7 @@ file "public/themes/default/images/main/spinner.gif", open("#{GITHUB_ROOT}/rails
 file "public/themes/default/images/icons/feed.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/icons/feed.png").read
 file "public/themes/default/images/icons/feed-comments.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/icons/feed-comments.png").read
 file "public/themes/default/images/icons/unknown.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/icons/unknown.png").read
+file "public/themes/default/images/jgrowl/default.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/jgrowl/default.png").read
 file "public/themes/default/images/ui-bg_flat_55_999999_40x100.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-bg_flat_55_999999_40x100.png").read
 file "public/themes/default/images/ui-bg_flat_75_aaaaaa_40x100.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-bg_flat_75_aaaaaa_40x100.png").read
 file "public/themes/default/images/ui-bg_glass_45_0078ae_1x400.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-bg_glass_45_0078ae_1x400.png").read
