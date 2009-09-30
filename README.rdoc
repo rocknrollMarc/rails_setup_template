@@ -57,8 +57,7 @@ See the CHANGELOG file for more info.
 
 * MacOS/UNIX (might work on Windows but haven't tested).
 * Ruby Gems 1.3.x or higher.
-* Ruby on Rails 2.3.x or higher.
-* Ensure all gems listed above are installed on your system prior to executing this template.
+* Applied the {Ruby Gem Setup}[http://github.com/aeonscope/ruby_gem_setup] script or have at least installed all gems listed above.
 
 = Usage
 
