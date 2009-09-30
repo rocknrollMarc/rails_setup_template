@@ -1,6 +1,6 @@
 # System-wide settings.
 SYSTEM_LABEL = "Demo"
-SYSTEM_DESCRIPTION = "For demonstration purposes."
+SYSTEM_DESCRIPTION = "A demo application."
 SYSTEM_VERSION = "0.1.0"
 SYSTEM_EMAIL = "noreply@noreply.com"
 
