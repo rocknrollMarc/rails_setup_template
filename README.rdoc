@@ -92,7 +92,9 @@ To generate Railroad diagrams, view the related Rake tasks via the following com
 
   rake -T | grep diagram
 
-<b>NOTE:</b> For Rails 2.3.x, generating controller diagrams will fail due to a Railroad ApplicationController bug.
+= Issues
+
+* Railroad - For Rails 2.3.x, generating controller diagrams will fail due to a Railroad ApplicationController bug.
 		
 = Contact/Feedback/Issues
 
