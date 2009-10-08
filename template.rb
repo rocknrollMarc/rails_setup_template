@@ -1,4 +1,4 @@
-GITHUB_ROOT = "http://github.com/aeonscope/rails_setup_template/raw/v1.0.0"
+GITHUB_ROOT = "http://github.com/aeonscope/rails_setup_template/raw/master"
 
 # Doc
 run "rm README"
@@ -48,16 +48,19 @@ gem "RedCloth"
 gem "mislav-will_paginate", :lib => "will_paginate", :source => "http://gems.github.com"
 gem "andand"
 gem "rubyist-aasm", :lib => "aasm", :source => "http://gems.github.com"
-gem "aeonscope-acts_as_list", :lib => "acts_as_list", :source => "http://gems.github.com" 
+gem "aeonscope-acts_as_list", :lib => "acts_as_list", :source => "http://gems.github.com"
+gem "less"
+gem "haml"
 gem "aeonscope-rest", :lib => "rest", :source => "http://gems.github.com"
-run "script/generate rest_setup"
-run "script/generate rspec"
-run "script/generate cucumber"
+generate :rest_setup
+generate :rspec
+generate :cucumber
 
 # Plugins
+plugin "More", :git => "git://github.com/cloudhead/more.git"
 plugin "Custom Error Message", :git => "git://github.com/gumayunov/custom-err-msg.git"
 plugin "Blue Ridge", :git => "git://github.com/relevance/blue-ridge.git"
-run "script/generate blue_ridge"
+generate :blue_ridge
 
 # Images
 run "rm -rf public/images"
@@ -86,7 +89,6 @@ file "public/themes/default/images/ui-icons_f7a50d_256x240.png", open("#{GITHUB_
 file "public/themes/default/images/ui-icons_fcd113_256x240.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-icons_fcd113_256x240.png").read
 
 # Stylesheets
-run "rm -rf public/stylesheets"
 file "public/themes/default/screen.css", open("#{GITHUB_ROOT}/rails/public/themes/default/screen.css").read
 file "public/themes/default/print.css", open("#{GITHUB_ROOT}/rails/public/themes/default/print.css").read
 file "public/themes/default/ie.css", open("#{GITHUB_ROOT}/rails/public/themes/default/ie.css").read
@@ -110,3 +112,13 @@ file "public/javascripts/application.js", open("#{GITHUB_ROOT}/rails/public/java
 
 # Tests
 run "rm -rf test"
+
+# Git
+git :init
+file ".gitignore", <<-END
+log/*.log
+tmp/**/*
+db/*.sqlite3
+public/stylesheets/**/*
+END
+git :add => '.'

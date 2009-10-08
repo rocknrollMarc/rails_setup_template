@@ -8,21 +8,21 @@ template to a fresh setup since some original files are overwritten and/or delet
 
 The following highlights the changes that will be made to your Ruby on Rails app:
 
+* Installs {jQuery 1.3.2}[http://jquery.com].
+* Installs {jQuery UI 1.7.2}[http://jqueryui.com].
+* Installs {jQuery Validation 1.5.2}[http://bassistance.de/jquery-plugins/jquery-plugin-validation].
+* Installs {jQuery Table Sorter 2.0.3}[http://tablesorter.com].
+* Installs {jQuery Block UI 2.26}[http://github.com/malsup/blockui].
+* Installs {jQuery jGrowl 1.1.2}[http://stanlemon.net/projects/jgrowl.html].
 * Removes the default Prototype/Scriptaculous libraries.
-* Adds {jQuery 1.3.2}[http://jquery.com].
-* Adds {jQuery UI 1.7.2}[http://jqueryui.com].
-* Adds {jQuery Validation 1.5.2}[http://bassistance.de/jquery-plugins/jquery-plugin-validation].
-* Adds {jQuery Table Sorter 2.0.3}[http://tablesorter.com].
-* Adds {jQuery Block UI 2.26}[http://github.com/malsup/blockui].
-* Adds {jQuery jGrowl 1.1.2}[http://stanlemon.net/projects/jgrowl.html].
-* Adds a default application.html.erb file with a basic but structured site layout.
-* Adds {Blueprint CSS}[http://github.com/joshuaclayton/blueprint-css] support.
-* Adds a default Blueprint theme.
-* Adds a jQueryUI theme to compliment the Blueprint theme.
-* Adds default application graphics.
+* Installs a default application.html.erb file with a basic but structured site layout.
+* Installs a default {Blueprint CSS}[http://github.com/joshuaclayton/blueprint-css] theme.
+* Installs a jQueryUI theme to compliment the Blueprint CSS theme.
+* Installs default application graphics.
 * Adds the REST[http://github.com/aeonscope/rest] gem requirement.
+* Adds the HAML[http://haml-lang.com] gem requirement.
+* Adds the LESS[http://lesscss.org] gem requirement.
 * Adds the {Acts as State Machine (AASM)}[http://github.com/rubyist/aasm] gem requirement.
-* Adds the {Custom Error Message}[http://github.com/gumayunov/custom-err-msg] plugin.
 * Adds the {Acts as List}[http://github.com/aeonscope/acts_as_list] gem requirement.
 * Adds the AndAnd[http://andand.rubyforge.org] gem requirement.
 * Adds the {Will Paginate}[http://github.com/mislav/will_paginate] gem requirement.
@@ -32,17 +32,19 @@ The following highlights the changes that will be made to your Ruby on Rails app
 * Adds the {RSpec for Rails}[http://github.com/dchelimsky/rspec-rails/tree/master] gem requirement.
 * Adds the Cucumber[http://github.com/aslakhellesoy/cucumber/tree/master] gem requirement.
 * Adds the Webrat[http://gitrdoc.com/brynary/webrat/tree/master] gem requirement.
-* Adds the {Blue Ridge}[http://github.com/relevance/blue-ridge] plugin.
 * Adds the {Metric Fu}[http://metric-fu.rubyforge.org] gem requirement.
 * Adds the Railroad[http://railroad.rubyforge.org] gem requirement.
-* Adds default configuration initializers.
-* Adds a rake script for building Railroad diagrams.
-* Adds a rake script for default seeding/reseeding of database data.
-* Adds a namespaced public controller.
-* Adds default view helpers.
-* Adds OmniGraffle documentation for site layout and structure.
-* Adds site navigation with dynamic controller detection and menu selection.
-* Adds nested drop down menu support as inspired by {Simple jQuery Dropdowns}[http://css-tricks.com/simple-jquery-dropdowns].
+* Installs the More[http://github.com/cloudhead/more] plugin.
+* Installs the {Custom Error Message}[http://github.com/gumayunov/custom-err-msg] plugin.
+* Installs the {Blue Ridge}[http://github.com/relevance/blue-ridge] plugin.
+* Installs default configuration initializers.
+* Installs a rake script for building Railroad diagrams.
+* Installs a rake script that enhances seeding/reseeding of database data.
+* Installs a namespaced public controller.
+* Installs default view helpers.
+* Installs OmniGraffle documentation for site layout and structure.
+* Provides site navigation with dynamic controller detection and menu selection.
+* Provides nested drop down menu support as inspired by {Simple jQuery Dropdowns}[http://css-tricks.com/simple-jquery-dropdowns].
 
 = License
 
