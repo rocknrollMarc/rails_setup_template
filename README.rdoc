@@ -20,7 +20,6 @@ The following highlights the changes that will be made to your Ruby on Rails app
 * Installs a jQueryUI theme to compliment the Blueprint CSS theme.
 * Installs default application graphics.
 * Adds the REST[http://github.com/aeonscope/rest] gem requirement.
-* Adds the HAML[http://haml-lang.com] gem requirement.
 * Adds the LESS[http://lesscss.org] gem requirement.
 * Adds the {Acts as State Machine (AASM)}[http://github.com/rubyist/aasm] gem requirement.
 * Adds the {Acts as List}[http://github.com/aeonscope/acts_as_list] gem requirement.

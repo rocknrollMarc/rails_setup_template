@@ -1,6 +1,5 @@
 = v1.x.x (master)
 
-* Added the HAML[http://haml-lang.com] gem requirement.
 * Added the LESS[http://lesscss.org] gem requirement.
 * Added the More[http://github.com/cloudhead/more] plugin.
 * Added Git setup and initialization.

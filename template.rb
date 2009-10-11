@@ -50,7 +50,6 @@ gem "andand"
 gem "rubyist-aasm", :lib => "aasm", :source => "http://gems.github.com"
 gem "aeonscope-acts_as_list", :lib => "acts_as_list", :source => "http://gems.github.com"
 gem "less"
-gem "haml"
 gem "aeonscope-rest", :lib => "rest", :source => "http://gems.github.com"
 generate :rest_setup
 generate :rspec
