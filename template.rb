@@ -56,6 +56,16 @@ gem "aeonscope-rest", :lib => "rest", :source => "http://gems.github.com"
 generate :rest_setup
 generate :rspec
 generate :cucumber
+run "echo   >> config/environments/development.rb"
+run "echo config.after_initialize do >> config/environments/development.rb"
+run "echo   Bullet.enable = true >> config/environments/development.rb"
+run "echo   Bullet.alert = true >> config/environments/development.rb"
+run "echo   Bullet.bullet_logger = true >> config/environments/development.rb"
+run "echo   Bullet.console = true >> config/environments/development.rb"
+run "echo   Bullet.growl = true >> config/environments/development.rb"
+run "echo   Bullet.rails_logger = true >> config/environments/development.rb"
+run "echo   Bullet.disable_browser_cache = true >> config/environments/development.rb"
+run "echo end >> config/environments/development.rb"
 
 # Plugins
 plugin "More", :git => "git://github.com/cloudhead/more.git"
