@@ -37,6 +37,7 @@ file "config/initializers/system.rb", open("#{GITHUB_ROOT}/rails/config/initiali
 file "config/initializers/validation.rb", open("#{GITHUB_ROOT}/rails/config/initializers/validation.rb").read
 
 # Gems
+gem "bullet", :source => 'http://gemcutter.org'
 gem "railroad", :lib => false
 gem "jscruggs-metric_fu", :lib => "metric_fu", :source => "http://gems.github.com"
 gem "webrat", :lib => false, :source => "http://gems.github.com"
@@ -48,6 +49,7 @@ gem "RedCloth"
 gem "mislav-will_paginate", :lib => "will_paginate", :source => "http://gems.github.com"
 gem "andand"
 gem "rubyist-aasm", :lib => "aasm", :source => "http://gems.github.com"
+gem "collectiveidea-awesome_nested_set", :lib => "awesome_nested_set", :source => "http://gems.github.com"
 gem "aeonscope-acts_as_list", :lib => "acts_as_list", :source => "http://gems.github.com"
 gem "less"
 gem "aeonscope-rest", :lib => "rest", :source => "http://gems.github.com"
@@ -114,10 +116,10 @@ run "rm -rf test"
 
 # Git
 git :init
-file ".gitignore", <<-END
+file ".gitignore", <<-SETTINGS
 log/*.log
 tmp/**/*
 db/*.sqlite3
 public/stylesheets/**/*
-END
+SETTINGS
 git :add => '.'

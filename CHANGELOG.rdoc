@@ -2,6 +2,8 @@
 
 * Added the LESS[http://lesscss.org] gem requirement.
 * Added the More[http://github.com/cloudhead/more] plugin.
+* Added the {Awesome Nested Set}[http://github.com/collectiveidea/awesome_nested_set] gem.
+* Added the Bullet[http://github.com/flyerhzm/bullet] gem.
 * Added Git setup and initialization.
 
 = v1.0.0

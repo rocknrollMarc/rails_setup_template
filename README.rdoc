@@ -23,6 +23,7 @@ The following highlights the changes that will be made to your Ruby on Rails app
 * Adds the LESS[http://lesscss.org] gem requirement.
 * Adds the {Acts as State Machine (AASM)}[http://github.com/rubyist/aasm] gem requirement.
 * Adds the {Acts as List}[http://github.com/aeonscope/acts_as_list] gem requirement.
+* Adds the {Awesome Nested Set}[http://github.com/collectiveidea/awesome_nested_set] gem requirement.
 * Adds the AndAnd[http://andand.rubyforge.org] gem requirement.
 * Adds the {Will Paginate}[http://github.com/mislav/will_paginate] gem requirement.
 * Adds the RedCloth[http://redcloth.org] gem requirement.
@@ -33,6 +34,7 @@ The following highlights the changes that will be made to your Ruby on Rails app
 * Adds the Webrat[http://gitrdoc.com/brynary/webrat/tree/master] gem requirement.
 * Adds the {Metric Fu}[http://metric-fu.rubyforge.org] gem requirement.
 * Adds the Railroad[http://railroad.rubyforge.org] gem requirement.
+* Adds the Bullet[http://github.com/flyerhzm/bullet] gem requirement.
 * Installs the More[http://github.com/cloudhead/more] plugin.
 * Installs the {Custom Error Message}[http://github.com/gumayunov/custom-err-msg] plugin.
 * Installs the {Blue Ridge}[http://github.com/relevance/blue-ridge] plugin.
