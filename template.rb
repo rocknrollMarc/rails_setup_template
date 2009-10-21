@@ -1,8 +1,7 @@
 GITHUB_ROOT = "http://github.com/aeonscope/rails_setup_template/raw/master"
 
 # Doc
-run "rm README"
-run "rm doc/README_FOR_APP"
+file "doc/README_FOR_APP", "TODO - Describe the details of this application."
 file "doc/design/site_layout.graffle", open("#{GITHUB_ROOT}/rails/doc/design/site_layout.graffle").read
 
 # Controllers
@@ -35,6 +34,9 @@ file "config/initializers/active_record.rb", open("#{GITHUB_ROOT}/rails/config/i
 file "config/initializers/date_time.rb", open("#{GITHUB_ROOT}/rails/config/initializers/date_time.rb").read
 file "config/initializers/system.rb", open("#{GITHUB_ROOT}/rails/config/initializers/system.rb").read
 file "config/initializers/validation.rb", open("#{GITHUB_ROOT}/rails/config/initializers/validation.rb").read
+open("config/environments/development.rb", 'a') do |file|
+  file << open("#{GITHUB_ROOT}/rails/config/environments/development.rb").read
+end
 
 # Gems
 gem "bullet", :source => 'http://gemcutter.org'
@@ -51,21 +53,11 @@ gem "andand"
 gem "rubyist-aasm", :lib => "aasm", :source => "http://gems.github.com"
 gem "collectiveidea-awesome_nested_set", :lib => "awesome_nested_set", :source => "http://gems.github.com"
 gem "aeonscope-acts_as_list", :lib => "acts_as_list", :source => "http://gems.github.com"
-gem "less"
+gem "cloudhead-less", :lib => "less", :source => "http://gems.github.com"
 gem "aeonscope-rest", :lib => "rest", :source => "http://gems.github.com"
 generate :rest_setup
 generate :rspec
 generate :cucumber
-run "echo   >> config/environments/development.rb"
-run "echo config.after_initialize do >> config/environments/development.rb"
-run "echo   Bullet.enable = true >> config/environments/development.rb"
-run "echo   Bullet.alert = true >> config/environments/development.rb"
-run "echo   Bullet.bullet_logger = true >> config/environments/development.rb"
-run "echo   Bullet.console = true >> config/environments/development.rb"
-run "echo   Bullet.growl = true >> config/environments/development.rb"
-run "echo   Bullet.rails_logger = true >> config/environments/development.rb"
-run "echo   Bullet.disable_browser_cache = true >> config/environments/development.rb"
-run "echo end >> config/environments/development.rb"
 
 # Plugins
 plugin "More", :git => "git://github.com/cloudhead/more.git"
@@ -126,10 +118,5 @@ run "rm -rf test"
 
 # Git
 git :init
-file ".gitignore", <<-SETTINGS
-log/*.log
-tmp/**/*
-db/*.sqlite3
-public/stylesheets/**/*
-SETTINGS
+file ".gitignore", open("#{GITHUB_ROOT}/rails/gitignore.txt").read
 git :add => '.'

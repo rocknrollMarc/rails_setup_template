@@ -4,7 +4,7 @@ module FlashHelper
     unless flash.empty?
       content_tag :div, :class => "flash-block" do
         flash.map do |type, message|
-          show_flash type, message
+          render_flash type, message
         end
       end
     end

@@ -60,7 +60,7 @@ See the CHANGELOG file for more info.
 
 * MacOS/UNIX (might work on Windows but haven't tested).
 * Ruby Gems 1.3.x or higher.
-* Applied the {Ruby Gem Setup}[http://github.com/aeonscope/ruby_gem_setup] script or have at least installed all gems listed above.
+* Applied the {Ruby Gem Setup}[http://github.com/aeonscope/ruby_gem_setup] script or have manually installed all gems listed above.
 
 = Usage
 
@@ -85,13 +85,10 @@ file after running the template:
 * webrat
 * metric_fu
 
-...and move the following gem requirement from the config/environment.rb to the config/environments/development.rb:
+...and move the following gem requirements from the config/environment.rb to the config/environments/development.rb:
 
 * railroad
-
-To generate Railroad diagrams, view the related Rake tasks via the following command:
-
-  rake -T | grep diagram
+* bullet
 
 = Issues
 
