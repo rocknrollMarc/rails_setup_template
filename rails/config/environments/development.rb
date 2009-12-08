@@ -1,4 +1,3 @@
-
 # Bullet Settings
 config.after_initialize do
   Bullet.enable = true

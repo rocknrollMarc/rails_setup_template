@@ -1,4 +1,4 @@
-class Visitor::AboutController < Public::PublicController
+class Visitor::AboutController < Visitor::VisitorController
   def show
   end
 end
