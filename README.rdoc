@@ -41,7 +41,7 @@ The following highlights the changes that will be made to your Ruby on Rails app
 * Installs default configuration initializers.
 * Installs a rake script for building Railroad diagrams.
 * Installs a rake script that enhances seeding/reseeding of database data.
-* Installs a namespaced public controller.
+* Installs a namespaced visitor controller for default, non-secure public viewing.
 * Installs default view helpers.
 * Installs OmniGraffle documentation for site layout and structure.
 * Provides site navigation with dynamic controller detection and menu selection.
@@ -96,6 +96,4 @@ file after running the template:
 		
 = Contact/Feedback/Issues
 
-* {Berserk Technologies}[http://www.berserktech.com] - Company web site.
-* Aeonscope[http://www.aeonscope.net] - Personal web site.
-* Twitter[http://www.twitter.com/Aeonscope] - Short bursts of insight and/or noise.
+* {Brooke Kuhlmannn}[http://www.google.com/profiles/114291115422773881390]

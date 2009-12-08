@@ -1,13 +1,13 @@
 module NavigationHelper
 	# Answers the role based on the namespace of the current controller. If no namespace is found
-	# then "public" is used as the role. This is handy for situations where you have a role-based
+	# then "visitor" is used as the role. This is handy for situations where you have a role-based
 	# menu structure. For example:
 	# * shared/menus/_admin.html.erb
 	# * shared/menus/_member.html.erb
-	# * shared/menus/_public.html.erb
+	# * shared/menus/_visitor.html.erb
 	def current_role
 		namespace = controller.class.name
-		namespace.include?("::") ? namespace[0, namespace.rindex("::")].downcase : "public"
+		namespace.include?("::") ? namespace[0, namespace.rindex("::")].downcase : "visitor"
 	end
 		
   # Shows a menu bar (unordered list) for page navigation based on an array

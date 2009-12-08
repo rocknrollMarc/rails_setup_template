@@ -5,8 +5,8 @@ file "doc/README_FOR_APP", "TODO - Describe the details of this application."
 file "doc/design/site_layout.graffle", open("#{GITHUB_ROOT}/rails/doc/design/site_layout.graffle").read
 
 # Controllers
-file "app/controllers/public/public_controller.rb", open("#{GITHUB_ROOT}/rails/app/controllers/public/public_controller.rb").read
-file "app/controllers/public/about_controller.rb", open("#{GITHUB_ROOT}/rails/app/controllers/public/about_controller.rb").read
+file "app/controllers/visitor/visitor_controller.rb", open("#{GITHUB_ROOT}/rails/app/controllers/visitor/visitor_controller.rb").read
+file "app/controllers/visitor/about_controller.rb", open("#{GITHUB_ROOT}/rails/app/controllers/visitor/about_controller.rb").read
 
 # Helpers
 file "app/helpers/renderers/menu_item.rb", open("#{GITHUB_ROOT}/rails/app/helpers/renderers/menu_item.rb").read 
@@ -20,9 +20,9 @@ file "app/helpers/text_helper.rb", open("#{GITHUB_ROOT}/rails/app/helpers/text_h
 # Views
 run "rm public/index.html"
 file "app/views/layouts/application.html.erb", open("#{GITHUB_ROOT}/rails/app/views/layouts/application.html.erb").read
-file "app/views/public/public/index.html.erb", open("#{GITHUB_ROOT}/rails/app/views/public/public/index.html.erb").read
-file "app/views/public/about/show.html.erb", open("#{GITHUB_ROOT}/rails/app/views/public/about/show.html.erb").read
-file "app/views/shared/menus/_public.html.erb", open("#{GITHUB_ROOT}/rails/app/views/shared/menus/_public.html.erb").read
+file "app/views/visitor/visitor/index.html.erb", open("#{GITHUB_ROOT}/rails/app/views/visitor/visitor/index.html.erb").read
+file "app/views/visitor/about/show.html.erb", open("#{GITHUB_ROOT}/rails/app/views/visitor/about/show.html.erb").read
+file "app/views/shared/menus/_visitor.html.erb", open("#{GITHUB_ROOT}/rails/app/views/shared/menus/_visitor.html.erb").read
 
 # Lib
 file "lib/tasks/seed.rake", open("#{GITHUB_ROOT}/rails/lib/tasks/seed.rake").read

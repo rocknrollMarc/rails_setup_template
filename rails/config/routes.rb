@@ -1,8 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
 	# REST
-  map.root :controller => "public/public"
-  map.namespace :public do |public|
-		public.resource :about, :controller => "about"
+  map.root :controller => "visitor/visitor"
+  map.namespace :visitor do |visitor|
+		visitor.resource :about, :controller => "about"
 	end
 
 	# Defaults

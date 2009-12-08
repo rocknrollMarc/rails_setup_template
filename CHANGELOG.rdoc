@@ -5,6 +5,7 @@
 * Added the {Awesome Nested Set}[http://github.com/collectiveidea/awesome_nested_set] gem.
 * Added the Bullet[http://github.com/flyerhzm/bullet] gem.
 * Added Git setup and initialization.
+* Re-factored the public namespace to visitor instead.
 
 = v1.0.0
 
