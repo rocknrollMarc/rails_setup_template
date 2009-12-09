@@ -4,6 +4,7 @@ a { outline: none; }
 .hidden { display: none; }
 
 /* Structure */
+#page { background: #FFF; }
 #label { text-align: center; font-size: 3em; }
 #description { text-align: center; margin: 0 0 1em 0; }
 #account { position: absolute; margin: -4em 0 0 75em; }
