@@ -49,10 +49,10 @@ gem "rspec", :lib => false, :source => "http://gems.github.com"
 gem "thoughtbot-paperclip", :lib => "paperclip", :source => "http://gems.github.com"
 gem "RedCloth"
 gem "mislav-will_paginate", :lib => "will_paginate", :source => "http://gems.github.com"
-gem "andand"
 gem "rubyist-aasm", :lib => "aasm", :source => "http://gems.github.com"
-gem "collectiveidea-awesome_nested_set", :lib => "awesome_nested_set", :source => "http://gems.github.com"
+gem "ancestry", :source => "http://gemcutter.org"
 gem "aeonscope-acts_as_list", :lib => "acts_as_list", :source => "http://gems.github.com"
+gem "formtastic", :source => "http://gemcutter.org"
 gem "cloudhead-less", :lib => "less", :source => "http://gems.github.com"
 gem "aeonscope-rest", :lib => "rest", :source => "http://gems.github.com"
 generate :rest_setup
@@ -63,6 +63,7 @@ generate :cucumber
 plugin "More", :git => "git://github.com/cloudhead/more.git"
 plugin "Custom Error Message", :git => "git://github.com/gumayunov/custom-err-msg.git"
 plugin "Blue Ridge", :git => "git://github.com/relevance/blue-ridge.git"
+plugin "Rails Indexes", :git => "git://github.com/eladmeidar/rails_indexes.git"
 generate :blue_ridge
 
 # Images
@@ -112,6 +113,7 @@ file "public/javascripts/jquery.validate.js", open("#{GITHUB_ROOT}/rails/public/
 file "public/javascripts/jquery.tablesorter.js", open("http://tablesorter.com/jquery.tablesorter.js").read
 file "public/javascripts/jquery.blockUI.js", open("http://github.com/malsup/blockui/raw/master/jquery.blockUI.js").read
 file "public/javascripts/jquery.jgrowl.js", open("#{GITHUB_ROOT}/rails/public/javascripts/jquery.jgrowl.js").read
+file "public/javascripts/underscore.js", open("http://github.com/documentcloud/underscore/raw/master/underscore.js").read
 file "public/javascripts/application.js", open("#{GITHUB_ROOT}/rails/public/javascripts/application.js").read
 
 # Tests
