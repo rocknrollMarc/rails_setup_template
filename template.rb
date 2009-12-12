@@ -69,7 +69,7 @@ generate :blue_ridge
 # Images
 run "rm -rf public/images"
 file "public/favicon.ico", open("#{GITHUB_ROOT}/rails/public/favicon.ico").read
-file "public/themes/default/images/main/background.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/main/background.png").read
+file "public/themes/default/images/main/background.jpg", open("#{GITHUB_ROOT}/rails/public/themes/default/images/main/background.jpg").read
 file "public/themes/default/images/main/apple-webclip.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/main/apple-webclip.png").read
 file "public/themes/default/images/main/spinner.gif", open("#{GITHUB_ROOT}/rails/public/themes/default/images/main/spinner.gif").read
 file "public/themes/default/images/icons/feed.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/icons/feed.png").read
