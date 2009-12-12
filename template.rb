@@ -39,7 +39,7 @@ open("config/environments/development.rb", 'a') do |file|
 end
 
 # Gems
-gem "bullet", :source => 'http://gemcutter.org'
+gem "bullet", :source => "http://gemcutter.org"
 gem "railroad", :lib => false
 gem "jscruggs-metric_fu", :lib => "metric_fu", :source => "http://gems.github.com"
 gem "webrat", :lib => false, :source => "http://gems.github.com"
@@ -51,7 +51,7 @@ gem "RedCloth"
 gem "mislav-will_paginate", :lib => "will_paginate", :source => "http://gems.github.com"
 gem "rubyist-aasm", :lib => "aasm", :source => "http://gems.github.com"
 gem "ancestry", :source => "http://gemcutter.org"
-gem "aeonscope-acts_as_list", :lib => "acts_as_list", :source => "http://gems.github.com"
+gem "acts_as_list", :source => "http://gemcutter.org"
 gem "formtastic", :source => "http://gemcutter.org"
 gem "cloudhead-less", :lib => "less", :source => "http://gems.github.com"
 gem "aeonscope-rest", :lib => "rest", :source => "http://gems.github.com"

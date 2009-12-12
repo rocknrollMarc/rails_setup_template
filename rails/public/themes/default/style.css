@@ -9,6 +9,7 @@ a { outline: none; }
 #description { text-align: center; margin: 0 0 1em 0; }
 #account { position: absolute; margin: -4em 0 0 75em; }
 #navigation { border-top: 1px solid #313131; border-bottom: 1px solid #313131; padding: 1em 0; }
+.section { padding: 0 0 0 10px; }
 
 /* Menu - Level 1 */
 ul.menu { list-style: none; }
