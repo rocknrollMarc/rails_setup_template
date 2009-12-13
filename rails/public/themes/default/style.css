@@ -2,6 +2,7 @@
 a { outline: none; }
 .center { text-align: center; }
 .hidden { display: none; }
+body { background: #000000 url(images/main/background.jpg) repeat-x center top; }
 
 /* Structure */
 #page { background: #FFF; }
@@ -10,6 +11,13 @@ a { outline: none; }
 #account { position: absolute; margin: -4em 0 0 75em; }
 #navigation { border-top: 1px solid #313131; border-bottom: 1px solid #313131; padding: 1em 0; }
 .section { padding: 0 0 0 10px; }
+
+/* Authorization */
+#authorization { position: fixed; top: 10%; left: 38%; width: 30em; }
+#authorization .header, #authorization .body, #authorization .footer { background: #FFF; }
+#authorization .header, #authorization .footer { height: 1.5em; }
+#authorization .fields { margin: 1.5em; }
+#authorization .error { margin: 1em 0; }
 
 /* Menu - Level 1 */
 ul.menu { list-style: none; }

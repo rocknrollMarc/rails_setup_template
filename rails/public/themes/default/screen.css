@@ -268,9 +268,10 @@ hr.space {background:#fff;color:#fff;}
 .clear {clear:both;}
 
 /* semantic class names */
+#page {margin-top:1.5em;}
 #content {float:left;margin-right:10px;width:750px;}
 #navigation {float:left;margin-right:10px;width:1030px;margin:0;}
 #header, #body, #footer {margin-right:0;padding-right:0;float:left;margin-right:10px;margin-right:0;width:1030px;margin:0;}
 .menu {width:1030px;margin:0;}
 #sidebar {margin-right:0;padding-right:0;float:left;margin-right:10px;margin-right:0;width:230px;padding:1.5em;margin-bottom:1.5em;background:#E5ECF9;}
-#header {margin-top:1.5em;margin-bottom:1.5em;}
+#header {margin-bottom:1.5em;}
