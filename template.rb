@@ -107,7 +107,7 @@ run "rm public/javascripts/controls.js"
 run "rm public/javascripts/dragdrop.js"
 run "rm public/javascripts/effects.js"
 run "rm public/javascripts/prototype.js"
-file "public/javascripts/jquery.js", open("http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js").read
+file "public/javascripts/jquery.js", open("http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.js").read
 file "public/javascripts/jquery-ui.js", open("http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.js").read
 file "public/javascripts/jquery.validate.js", open("#{GITHUB_ROOT}/rails/public/javascripts/jquery.validate.js").read
 file "public/javascripts/jquery.tablesorter.js", open("http://tablesorter.com/jquery.tablesorter.js").read
