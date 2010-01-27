@@ -8,7 +8,7 @@ template to a fresh setup since some original files are overwritten and/or delet
 
 The following highlights the changes that will be made to your Ruby on Rails app:
 
-* Installs the {jQuery 1.4.0}[http://jquery.com] JavaScript library.
+* Installs the {jQuery 1.4.1}[http://jquery.com] JavaScript library.
 * Installs the {jQuery UI 1.7.2}[http://jqueryui.com] JavaScript library.
 * Installs the {jQuery Validation 1.5.2}[http://bassistance.de/jquery-plugins/jquery-plugin-validation] JavaScript library.
 * Installs the {jQuery Table Sorter 2.0.3}[http://tablesorter.com] JavaScript library.
