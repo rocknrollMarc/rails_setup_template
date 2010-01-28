@@ -11,6 +11,7 @@
 * Re-factored the public namespace to visitor instead.
 * Added the Underscore[http://github.com/documentcloud/underscore] JavaScript library.
 * Upgraded to {jQuery 1.4.1}[http://jquery.com].
+* Updated the db:reseed rake task so that it also rebuilds the models diagrams.
 
 = v1.0.0
 
