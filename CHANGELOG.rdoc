@@ -3,7 +3,6 @@
 * Added the LESS[http://lesscss.org] gem requirement.
 * Added the More[http://github.com/cloudhead/more] plugin.
 * Added the {Rails Indexes}[http://github.com/eladmeidar/rails_indexes] plugin.
-* Added the Ancestry[http://github.com/stefankroes/ancestry] gem requirement.
 * Added the Formtastic[http://github.com/justinfrench/formtastic] gem requirement.
 * Added the Bullet[http://github.com/flyerhzm/bullet] gem requirement.
 * Removed the AndAnd[http://andand.rubyforge.org] gem requirement.

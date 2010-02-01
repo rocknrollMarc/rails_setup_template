@@ -25,7 +25,7 @@ The following highlights the changes that will be made to your Ruby on Rails app
 * Adds the Formtastic[http://github.com/justinfrench/formtastic] gem requirement.
 * Adds the {Acts as State Machine (AASM)}[http://github.com/rubyist/aasm] gem requirement.
 * Adds the {Acts as List}[http://github.com/ryanb/acts-as-list] gem requirement.
-* Adds the Ancestry[http://github.com/stefankroes/ancestry] gem requirement.
+* Adds the {Awesome Nested Set}[http://github.com/collectiveidea/awesome_nested_set] gem requirement.
 * Adds the {Will Paginate}[http://github.com/mislav/will_paginate] gem requirement.
 * Adds the RedCloth[http://redcloth.org] gem requirement.
 * Adds the Paperclip[http://www.thoughtbot.com/projects/paperclip] gem requirement.
