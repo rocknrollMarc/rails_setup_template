@@ -41,19 +41,19 @@ end
 # Gems
 gem "bullet", :source => "http://gemcutter.org"
 gem "railroad", :lib => false
-gem "jscruggs-metric_fu", :lib => "metric_fu", :source => "http://gems.github.com"
+gem "metric_fu", :lib => "metric_fu", :source => "http://gemcutter.org"
 gem "webrat", :lib => false, :source => "http://gems.github.com"
 gem "cucumber", :lib => false, :source => "http://gems.github.com"
 gem "rspec-rails", :lib => false, :source => "http://gems.github.com"
 gem "rspec", :lib => false, :source => "http://gems.github.com"
-gem "thoughtbot-paperclip", :lib => "paperclip", :source => "http://gems.github.com"
+gem "paperclip", :lib => "paperclip", :source => "http://gemcutter.org"
 gem "RedCloth"
-gem "mislav-will_paginate", :lib => "will_paginate", :source => "http://gems.github.com"
-gem "rubyist-aasm", :lib => "aasm", :source => "http://gems.github.com"
+gem "will_paginate", :lib => "will_paginate", :source => "http://gemcutter.org"
+gem "aasm", :lib => "aasm", :source => "http://gemcutter.org"
 gem "acts_as_list", :source => "http://gemcutter.org"
 gem "awesome_nested_set", :source => "http://gemcutter.org"
 gem "formtastic", :source => "http://gemcutter.org"
-gem "cloudhead-less", :lib => "less", :source => "http://gems.github.com"
+gem "less", :lib => "less", :source => "http://gemcutter.org"
 gem "aeonscope-rest", :lib => "rest", :source => "http://gems.github.com"
 generate :rest_setup
 generate :rspec
@@ -85,8 +85,8 @@ file "public/themes/default/images/ui-bg_gloss-wave_45_e14f1c_500x100.png", open
 file "public/themes/default/images/ui-bg_gloss-wave_50_6eac2c_500x100.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-bg_gloss-wave_50_6eac2c_500x100.png").read
 file "public/themes/default/images/ui-bg_gloss-wave_75_2191c0_500x100.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-bg_gloss-wave_75_2191c0_500x100.png").read
 file "public/themes/default/images/ui-bg_inset-hard_100_fcfdfd_1x100.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-bg_inset-hard_100_fcfdfd_1x100.png").read
-file "public/themes/default/images/ui-icons_0078ae_256x240.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-icons_0078ae_256x240.png").read
 file "public/themes/default/images/ui-icons_056b93_256x240.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-icons_056b93_256x240.png").read
+file "public/themes/default/images/ui-icons_0078ae_256x240.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-icons_0078ae_256x240.png").read
 file "public/themes/default/images/ui-icons_d8e7f3_256x240.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-icons_d8e7f3_256x240.png").read
 file "public/themes/default/images/ui-icons_e0fdff_256x240.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-icons_e0fdff_256x240.png").read
 file "public/themes/default/images/ui-icons_f5e175_256x240.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-icons_f5e175_256x240.png").read
@@ -108,10 +108,10 @@ run "rm public/javascripts/dragdrop.js"
 run "rm public/javascripts/effects.js"
 run "rm public/javascripts/prototype.js"
 file "public/javascripts/jquery.js", open("http://code.jquery.com/jquery-1.4.2.js").read
-file "public/javascripts/jquery-ui.js", open("http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.js").read
+file "public/javascripts/jquery-ui.js", open("http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.js").read
+file "public/javascripts/jquery.blockUI.js", open("http://github.com/malsup/blockui/raw/master/jquery.blockUI.js").read
 file "public/javascripts/jquery.validate.js", open("#{GITHUB_ROOT}/rails/public/javascripts/jquery.validate.js").read
 file "public/javascripts/jquery.tablesorter.js", open("http://tablesorter.com/jquery.tablesorter.js").read
-file "public/javascripts/jquery.blockUI.js", open("http://github.com/malsup/blockui/raw/master/jquery.blockUI.js").read
 file "public/javascripts/jquery.jgrowl.js", open("#{GITHUB_ROOT}/rails/public/javascripts/jquery.jgrowl.js").read
 file "public/javascripts/underscore.js", open("http://github.com/documentcloud/underscore/raw/master/underscore.js").read
 file "public/javascripts/application.js", open("#{GITHUB_ROOT}/rails/public/javascripts/application.js").read
