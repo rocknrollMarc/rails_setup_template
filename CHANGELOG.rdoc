@@ -14,6 +14,7 @@
 * Updated the db:reseed rake task so that it also rebuilds the models diagrams.
 * Added a rake task for printing database and database table sizes.
 * Added a rake task for Heroku deployments.
+* Upgraded to {Blueprint 0.9.1}[http://github.com/joshuaclayton/blueprint-css].
 
 = v1.0.0
 
