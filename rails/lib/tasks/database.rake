@@ -1,12 +1,14 @@
-# Run rake db:size to get a print of your database size in bytes.
-# Run rake db:tables:size to get the sizes for individual tables
 # Works for MySQL and PostgreSQL. Not tested elsewhere.
 # Original code located here: http://gist.github.com/296719
+
+require File.dirname(__FILE__) + '/../../config/environment'
  
 namespace :db do
-  desc 'Print data size for entire database'
+	desc "Drops, migrates, and seeds the database including the rebuilding of model diagrams."
+	task :reseed => [:drop, :create, :migrate, :seed, "doc:diagram:models"]
+  
+  desc "Print data size for entire database."
   task :size => :environment do
- 
     database_name = ActiveRecord::Base.connection.instance_variable_get("@config")[:database]
     adapter = ActiveRecord::Base.connection.adapter_name.downcase
     case adapter
@@ -25,9 +27,8 @@ namespace :db do
   end
  
   namespace :tables do
-    desc 'Print data size for all tables'
+    desc "Print data size for all tables."
     task :size => :environment do
- 
       database_name = ActiveRecord::Base.connection.instance_variable_get("@config")[:database]
       adapter = ActiveRecord::Base.connection.adapter_name.downcase
       case adapter

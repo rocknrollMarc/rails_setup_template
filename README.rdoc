@@ -41,13 +41,13 @@ The following highlights the changes that will be made to your Ruby on Rails app
 * Installs the {Blue Ridge}[http://github.com/relevance/blue-ridge] plugin.
 * Installs the {Rails Indexes}[http://github.com/eladmeidar/rails_indexes] plugin.
 * Installs default configuration initializers.
-* Installs a rake script for building Railroad diagrams.
-* Installs a rake script for checking database size as well as table size.
-* Installs a rake script for easy deployment to Heroku[http://heroku.com] servers.
-* Installs a rake script that enhances seeding/reseeding of database data.
+* Installs a rake script with additional database support such as seeds and sizes.
+* Installs a rake script with Heroku[http://heroku.com] support.
+* Installs a rake script with {Phusion Passenger}[http://www.modrails.com/] support.
+* Installs a rake script with Railroad diagram support.
 * Installs a namespaced visitor controller for default, non-secure public viewing.
 * Installs default view helpers.
-* Installs OmniGraffle documentation for site layout and structure.
+* Installs OmniGraffle[http://www.omnigroup.com/products/OmniGraffle/] documentation for site layout and structure.
 * Provides site navigation with dynamic controller detection and menu selection.
 * Provides nested drop down menu support as inspired by {Simple jQuery Dropdowns}[http://css-tricks.com/simple-jquery-dropdowns].
 

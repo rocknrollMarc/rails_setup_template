@@ -15,6 +15,7 @@
 * Added a rake task for printing database and database table sizes.
 * Added a rake task for Heroku deployments.
 * Upgraded to {Blueprint 0.9.1}[http://github.com/joshuaclayton/blueprint-css].
+* Added Phusion Passenger debug support (see passenger.rake).
 
 = v1.0.0
 

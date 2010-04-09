@@ -25,7 +25,9 @@ file "app/views/visitor/about/show.html.erb", open("#{GITHUB_ROOT}/rails/app/vie
 file "app/views/shared/menus/_visitor.html.erb", open("#{GITHUB_ROOT}/rails/app/views/shared/menus/_visitor.html.erb").read
 
 # Lib
-file "lib/tasks/seed.rake", open("#{GITHUB_ROOT}/rails/lib/tasks/seed.rake").read
+file "lib/tasks/database.rake", open("#{GITHUB_ROOT}/rails/lib/tasks/database.rake").read
+file "lib/tasks/heroku.rake", open("#{GITHUB_ROOT}/rails/lib/tasks/heroku.rake").read
+file "lib/tasks/passenger.rake", open("#{GITHUB_ROOT}/rails/lib/tasks/passenger.rake").read
 file "lib/tasks/railroad.rake", open("#{GITHUB_ROOT}/rails/lib/tasks/railroad.rake").read
 
 # Configurations
