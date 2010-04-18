@@ -1,4 +1,4 @@
 log/*.log
-tmp/**/*
+tmp/*.log
 db/*.sqlite3
 public/stylesheets/**/*
