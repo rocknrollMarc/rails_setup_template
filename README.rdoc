@@ -20,7 +20,7 @@ The following highlights the changes that will be made to your Ruby on Rails app
 * Installs a default {Blueprint CSS}[http://github.com/joshuaclayton/blueprint-css] theme.
 * Installs a jQueryUI theme to compliment the Blueprint CSS theme.
 * Installs default application graphics.
-* Adds the REST[http://github.com/aeonscope/rest] gem requirement.
+* Adds the Resourcer[http://github.com/aeonscope/resourcer] gem requirement.
 * Adds the LESS[http://lesscss.org] gem requirement.
 * Adds the Formtastic[http://github.com/justinfrench/formtastic] gem requirement.
 * Adds the {Acts as State Machine (AASM)}[http://github.com/rubyist/aasm] gem requirement.
@@ -53,7 +53,7 @@ The following highlights the changes that will be made to your Ruby on Rails app
 
 = License
 
-Copyright (c) 2009 Brooke Kuhlmann of {Berserk Technologies}[http://www.berserktech.com].
+Copyright (c) 2009-2010 {Brooke Kuhlmann}[http://www.aeonscope.net].
 See the included LICENSE for more info.
 
 = History
