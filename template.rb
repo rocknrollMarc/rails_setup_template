@@ -41,22 +41,22 @@ open("config/environments/development.rb", 'a') do |file|
 end
 
 # Gems
-gem "bullet", :source => "http://gemcutter.org"
+gem "bullet"
 gem "railroad", :lib => false
-gem "metric_fu", :lib => "metric_fu", :source => "http://gemcutter.org"
-gem "webrat", :lib => false, :source => "http://gems.github.com"
-gem "cucumber", :lib => false, :source => "http://gems.github.com"
-gem "rspec-rails", :lib => false, :source => "http://gems.github.com"
-gem "rspec", :lib => false, :source => "http://gems.github.com"
-gem "paperclip", :lib => "paperclip", :source => "http://gemcutter.org"
+gem "metric_fu"
+gem "webrat", :lib => false
+gem "cucumber", :lib => false
+gem "rspec-rails", :lib => false
+gem "rspec", :lib => false
+gem "paperclip"
 gem "RedCloth"
-gem "will_paginate", :lib => "will_paginate", :source => "http://gemcutter.org"
-gem "aasm", :lib => "aasm", :source => "http://gemcutter.org"
-gem "acts_as_list", :source => "http://gemcutter.org"
-gem "awesome_nested_set", :source => "http://gemcutter.org"
-gem "formtastic", :source => "http://gemcutter.org"
-gem "less", :lib => "less", :source => "http://gemcutter.org"
-gem "aeonscope-rest", :lib => "rest", :source => "http://gems.github.com"
+gem "will_paginate"
+gem "aasm"
+gem "acts_as_list"
+gem "awesome_nested_set"
+gem "formtastic"
+gem "less"
+gem "resourcer"
 generate :rest_setup
 generate :rspec
 generate :cucumber
