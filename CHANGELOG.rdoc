@@ -16,6 +16,7 @@
 * Added a rake task for Heroku deployments.
 * Upgraded to {Blueprint 0.9.1}[http://github.com/joshuaclayton/blueprint-css].
 * Added Phusion Passenger debug support (see passenger.rake).
+* Updated all gem definitions due to rubygems.org changes.
 
 = v1.0.0
 
