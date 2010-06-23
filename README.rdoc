@@ -36,6 +36,7 @@ The following highlights the changes that will be made to your Ruby on Rails app
 * Adds the {Metric Fu}[http://metric-fu.rubyforge.org] gem requirement.
 * Adds the Railroad[http://railroad.rubyforge.org] gem requirement.
 * Adds the Bullet[http://github.com/flyerhzm/bullet] gem requirement.
+* Adds the Deadweight[http://github.com/aanand/deadweight] gem requirement.
 * Installs the More[http://github.com/cloudhead/more] plugin.
 * Installs the {Custom Error Message}[http://github.com/gumayunov/custom-err-msg] plugin.
 * Installs the {Blue Ridge}[http://github.com/relevance/blue-ridge] plugin.

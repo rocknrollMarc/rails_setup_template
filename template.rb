@@ -29,6 +29,7 @@ file "lib/tasks/database.rake", open("#{GITHUB_ROOT}/rails/lib/tasks/database.ra
 file "lib/tasks/heroku.rake", open("#{GITHUB_ROOT}/rails/lib/tasks/heroku.rake").read
 file "lib/tasks/passenger.rake", open("#{GITHUB_ROOT}/rails/lib/tasks/passenger.rake").read
 file "lib/tasks/railroad.rake", open("#{GITHUB_ROOT}/rails/lib/tasks/railroad.rake").read
+file "lib/tasks/deadweight.rake", open("#{GITHUB_ROOT}/rails/lib/tasks/deadweight.rake").read
 
 # Configurations
 file "config/routes.rb", open("#{GITHUB_ROOT}/rails/config/routes.rb").read
@@ -41,6 +42,7 @@ open("config/environments/development.rb", 'a') do |file|
 end
 
 # Gems
+gem "deadweight"
 gem "bullet"
 gem "railroad", :lib => false
 gem "metric_fu"

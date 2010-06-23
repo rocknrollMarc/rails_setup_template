@@ -16,9 +16,7 @@
 		<%= stylesheet_link_tag "#{THEME_ROOT}/style", :media => "screen, projection" %>
 		<%= stylesheet_link_tag "#{THEME_ROOT}/print", :media => "print" %>
 		<%= yield :stylesheet %>
-    <!--[if lt IE 8]>
-      <link rel="stylesheet" href="/themes/default/ie.css" type="text/css" media="screen, projection">
-    <![endif]-->
+    <!--[if lt IE 8]><%= stylesheet_link_tag "#{THEME_ROOT}/ie.css", :media => "screen, projection" %><![endif]-->
 
     <!-- JavaScripts -->
     <%= javascript_include_tag "jquery" %>
