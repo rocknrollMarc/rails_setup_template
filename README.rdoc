@@ -1,8 +1,8 @@
 = Overview
 
 This template bootstraps a Ruby on Rails project beyond what you get with default project generation (i.e. rails <project name>). 
-This template can be applied to a fresh or existing Ruby on Rails application. That said, it might be best if you apply this
-template to a fresh setup since some original files are overwritten and/or deleted.
+This template can be applied to a fresh or existing Ruby on Rails application. That said, it is best if you apply this template
+to a fresh setup as original files can be overwritten and/or deleted.
 
 = Features
 
