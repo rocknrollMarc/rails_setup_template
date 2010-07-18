@@ -59,7 +59,7 @@ gem "awesome_nested_set"
 gem "formtastic"
 gem "less"
 gem "resourcer"
-generate :rest_setup
+generate :resourcer_setup
 generate :rspec
 generate :cucumber
 
