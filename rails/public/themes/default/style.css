@@ -1,59 +1,75 @@
-/* General */
-a { outline: none; }
-.center { text-align: center; }
-.hidden { display: none; }
-body { background: #000000 url(images/main/background.jpg) repeat-x center top; }
+/* @group General */
+body {background: #000000 url(images/main/background.jpg) repeat-x center top;}
+a {outline: none;}
+.center {text-align: center;}
+.hidden {display: none;}
+/* @end */
 
-/* Structure */
-#page { background: #FFF; }
-#label { text-align: center; font-size: 3em; }
-#description { text-align: center; margin: 0 0 1em 0; }
-#account { position: absolute; margin: -4em 0 0 75em; }
-#navigation { border-top: 1px solid #313131; border-bottom: 1px solid #313131; padding: 1em 0; }
-.section { padding: 0 0 0 10px; }
+/* @group Structure */
+#page {margin-top: 0.5em;}
+#header {color: #FFF;}
+#label {text-align: center; font-size: 3em;}
+#description {text-align: center;}
+#account {position: absolute; margin: -4em 0 0 75em;}
+#navigation {padding: 1em 0;}
+#content {background: #FFF; min-height: 20em; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; border-radius: 0.5em;}
+.section {padding: 1em;}
+#sidebar {min-height: 17em; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; border-radius: 0.5em;}
+#footer {color: #FFF;}
+#footer a {color: #f02b47;}
+/* @end */
 
-/* Authorization */
-#authorization { position: fixed; top: 10%; left: 38%; width: 30em; }
-#authorization .header, #authorization .body, #authorization .footer { background: #FFF; }
-#authorization .header, #authorization .footer { height: 1.5em; }
-#authorization .fields { margin: 1.5em; }
-#authorization .error { margin: 1em 0; }
+/* @group Menu - Main Level */
+.menu {margin: 0; padding: 0.5em 0; line-height: 100%; background: #FFF; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.10, rgb(214,214,214)), color-stop(0.88, rgb(255,255,255))); background-image: -moz-linear-gradient(center bottom, rgb(214,214,214) 10%, rgb(255,255,255) 88%); -webkit-border-radius: 2em; -moz-border-radius: 2em; border-radius: 2em; -webkit-box-shadow: 0 1px 3px rgba(0,0,0, .4); -moz-box-shadow: 0 1px 3px rgba(0,0,0, .4);}
+.menu li {margin: 0 5px; padding: 0.2em 0; float: left; position: relative; list-style: none;}
+.menu a {font-weight: bold; color: #444; text-decoration: none; display: block; padding: 8px 20px; margin: 0; -webkit-border-radius: 1em; -moz-border-radius: 1em; border-radius: 1em;}
+.menu a:hover {background: #000; color: #fff;}
+.menu .active a, .menu li:hover > a {background-color: #000; color: #FFF; border-top: solid 1px #f8f8f8;}
+/* @end */
 
-/* Menu - Level 1 */
-ul.menu { list-style: none; }
-ul.menu li { color: #FFF; background: #354D8F; font-weight: bold; float: left; margin: 0 0.5em; padding: 0 0.5em; -moz-border-radius: 0.5em; -webkit-border-radius: 0.5em; }
-ul.menu a { color: #FFF; text-decoration: none; }
-ul.menu li a { display: block; padding: 4px 8px; }
-ul.menu li.hover, ul.menu li:hover, ul.menu li.active { background: #778ABF; color:#000; position: relative; }
-ul.menu li.hover a { color: #000; }
+/* @group Menu - Sub Levels */
+.menu ul li:hover a, .menu li:hover li a {background: none; border: none; color: #000; -webkit-box-shadow: none; -moz-box-shadow: none;}
+.menu ul a:hover {background: #000 !important; color: #FFF !important; -webkit-border-radius: 0; -moz-border-radius: 0; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);}
+/* @end */
 
-/* Menu - Level 2 */
-ul.menu ul { width: 20em; display: none; position: absolute; top: 100%; left: 0; list-style: none; }
-ul.menu ul li { padding: 0; margin: 0; font-weight: normal; color: #000; background: #354D8F; border-bottom: 1px solid #FFF; float: none; }
+/* @group Menu - Dropdown */
+.menu li:hover > ul {display: block;}
+/* @end */
 
-/* Menu - Level 3+ */
-ul.menu ul ul { position: absolute; left: 18.5em; top: 0; border-left: 5px solid #000; }
-ul.menu li:hover > ul { display: block; }
+/* @group Menu - Level 2 */
+.menu ul {display: none; margin: 0; padding: 0; width: 185px; position: absolute; top: 35px; left: 0; background: #ddd; border: solid 1px #b4b4b4; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; -webkit-box-shadow: 0 1px 3px rgba(0,0,0, .3); -moz-box-shadow: 0 1px 3px rgba(0,0,0, .3); box-shadow: 0 1px 3px rgba(0,0,0, .3); z-index: 1;}
+.menu ul li {float: none; margin: 0; padding: 0;}
+.menu ul a {font-weight: normal; text-shadow: 0 1px 0 #fff;}
+/* @end */
 
-/* Block UI - AJAX Processing */
-#ajax { display: none; }
-#ajax img { float: left; }
-#ajax p { float: left; padding: 0.5em 0 0.5em 1em; }
+/* @group Menu - Level 3+ */
+.menu ul ul {left: 181px; top: -3px;}
+/* @end */
 
-/* Block UI - Growl */
-.growlUI { background: url(images/jgrowl/default.png) no-repeat 16px 16px; }
-.growlUI h1, div.growlUI h2 { color: white; padding: 5px 5px 5px 75px; text-align: left; }
+/* @group Menu - Rounded Corners */
+.menu ul li:first-child > a {-webkit-border-top-left-radius: 9px; -moz-border-radius-topleft: 9px; -webkit-border-top-right-radius: 9px; -moz-border-radius-topright: 9px;}
+.menu ul li:last-child > a {-webkit-border-bottom-left-radius: 9px; -moz-border-radius-bottomleft: 9px; -webkit-border-bottom-right-radius: 9px; -moz-border-radius-bottomright: 9px;}
+/* @end */
 
-/* Rails Error Handling */
-.errorExplanation { color: #FFF; border: 0.2em solid #C90000; background-color: #FE2525; padding: 0.5em; margin-bottom: 0.5em; }
-.errorExplanation h2 { color: #FFF; }
-.errorExplanation p { display: none; }
-.field_error { color: #CC0033; }
-.field_error input, .field_error select, .field_error textarea { border-color: #CC0033; }
+/* @group Menu - Clearfix */
+.menu:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+/* @end */
 
-/* Pagination */
-div.pagination { float: right; margin: 0.5em 0; }
-.pagination a, .pagination span { margin: 0 0.1em; padding: 0.1em 0.3em; display: block; float: left; }
-.pagination span.current { border: 0.1em solid black; font-weight: bold; }
-.pagination a { text-decoration: none; border-width: 0.1em; border-style: solid; }
-.pagination a:hover { color: #FFF; background: #1D70A5; }
+/* @group Block UI - AJAX Processing */
+#ajax {display: none;}
+#ajax img {float: left;}
+#ajax p {float: left; padding: 0.5em 0 0.5em 1em;}
+/* @end */
+
+/* @group Block UI - Growl */
+.growlUI {background: url(images/jgrowl/default.png) no-repeat 16px 16px;}
+.growlUI h1, div.growlUI h2 {color: white; padding: 5px 5px 5px 75px; text-align: left;}
+/* @end */
+
+/* @group  Rails Error Handling */
+.errorExplanation {color: #FFF; border: 0.2em solid #C90000; background-color: #FE2525; padding: 0.5em; margin-bottom: 0.5em;}
+.errorExplanation h2 {color: #FFF;}
+.errorExplanation p {display: none;}
+.field_error {color: #CC0033;}
+.field_error input, .field_error select, .field_error textarea {border-color: #CC0033;}
+/* @end */
