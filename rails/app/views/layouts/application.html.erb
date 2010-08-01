@@ -1,14 +1,18 @@
 <!DOCTYPE html">
   <head>
 		<title><%= yield(:title) || SYSTEM_LABEL %></title>
+		
+		<!-- Identity -->
+	  <meta name="keywords" content="Demo Ruby Ruby on Rails">
+	  <meta name="description" content="A generated Ruby on Rails app with default theming and utility support.">
 
 		<!-- Security -->
 		<%= csrf_meta_tag %>
-    
+
     <!-- Bookmark Icon -->	
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="icon" href="/favicon.ico" />
-    
+
     <!-- Apple WebClip Icon -->
 		<%= tag :link, :rel => "apple-touch-icon", :href => "#{THEME_ROOT}/images/main/apple-webclip.png" %>
     
@@ -18,14 +22,13 @@
 		<%= stylesheet_link_tag "#{THEME_ROOT}/style", :media => "screen, projection" %>
 		<%= stylesheet_link_tag "#{THEME_ROOT}/print", :media => "print" %>
 		<%= yield :stylesheet %>
-    <!--[if lt IE 8]><%= stylesheet_link_tag "#{THEME_ROOT}/ie.css", :media => "screen, projection" %><![endif]-->
+    <!--[if lt IE 9]><link rel="stylesheet" href="/themes/default/ie.css" type="text/css" media="screen, projection"><![endif]-->
 
     <!-- JavaScripts -->
     <%= javascript_include_tag "jquery" %>
     <%= javascript_include_tag "jquery-ui" %>
     <%= javascript_include_tag "jquery.rest" %>
     <%= javascript_include_tag "jquery.validate" %>
-    <%= javascript_include_tag "jquery.tablesorter" %>
     <%= javascript_include_tag "jquery.blockUI" %>
     <%= javascript_include_tag "jquery.jgrowl" %>
     <%= javascript_include_tag "underscore" %>

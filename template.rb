@@ -1,12 +1,12 @@
 GITHUB_ROOT = "http://github.com/aeonscope/rails_setup_template/raw/master"
 
 # Doc
-file "doc/README_FOR_APP", "TODO - Describe the details of this application."
+file "doc/README_FOR_APP", "TODO - You should document the application here."
 file "doc/design/site_layout.graffle", open("#{GITHUB_ROOT}/rails/doc/design/site_layout.graffle").read
 
 # Controllers
-file "app/controllers/visitor/visitor_controller.rb", open("#{GITHUB_ROOT}/rails/app/controllers/visitor/visitor_controller.rb").read
-file "app/controllers/visitor/about_controller.rb", open("#{GITHUB_ROOT}/rails/app/controllers/visitor/about_controller.rb").read
+file "app/controllers/home_controller.rb", open("#{GITHUB_ROOT}/rails/app/controllers/home_controller.rb").read
+file "app/controllers/about_controller.rb", open("#{GITHUB_ROOT}/rails/app/controllers/about_controller.rb").read
 
 # Helpers
 file "app/helpers/renderers/menu_item.rb", open("#{GITHUB_ROOT}/rails/app/helpers/renderers/menu_item.rb").read 
@@ -20,8 +20,8 @@ file "app/helpers/text_helper.rb", open("#{GITHUB_ROOT}/rails/app/helpers/text_h
 # Views
 run "rm public/index.html"
 file "app/views/layouts/application.html.erb", open("#{GITHUB_ROOT}/rails/app/views/layouts/application.html.erb").read
-file "app/views/visitor/visitor/index.html.erb", open("#{GITHUB_ROOT}/rails/app/views/visitor/visitor/index.html.erb").read
-file "app/views/visitor/about/show.html.erb", open("#{GITHUB_ROOT}/rails/app/views/visitor/about/show.html.erb").read
+file "app/views/home/show.html.erb", open("#{GITHUB_ROOT}/rails/app/views/home/show.html.erb").read
+file "app/views/about/show.html.erb", open("#{GITHUB_ROOT}/rails/app/views/about/show.html.erb").read
 file "app/views/shared/menus/_visitor.html.erb", open("#{GITHUB_ROOT}/rails/app/views/shared/menus/_visitor.html.erb").read
 
 # Lib
@@ -80,22 +80,20 @@ file "public/themes/default/images/icons/feed.png", open("#{GITHUB_ROOT}/rails/p
 file "public/themes/default/images/icons/feed-comments.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/icons/feed-comments.png").read
 file "public/themes/default/images/icons/unknown.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/icons/unknown.png").read
 file "public/themes/default/images/jgrowl/default.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/jgrowl/default.png").read
-file "public/themes/default/images/ui-bg_flat_55_999999_40x100.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-bg_flat_55_999999_40x100.png").read
-file "public/themes/default/images/ui-bg_flat_75_aaaaaa_40x100.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-bg_flat_75_aaaaaa_40x100.png").read
-file "public/themes/default/images/ui-bg_glass_45_0078ae_1x400.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-bg_glass_45_0078ae_1x400.png").read
-file "public/themes/default/images/ui-bg_glass_55_f8da4e_1x400.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-bg_glass_55_f8da4e_1x400.png").read
-file "public/themes/default/images/ui-bg_glass_75_79c9ec_1x400.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-bg_glass_75_79c9ec_1x400.png").read
-file "public/themes/default/images/ui-bg_gloss-wave_45_e14f1c_500x100.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-bg_gloss-wave_45_e14f1c_500x100.png").read
-file "public/themes/default/images/ui-bg_gloss-wave_50_6eac2c_500x100.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-bg_gloss-wave_50_6eac2c_500x100.png").read
-file "public/themes/default/images/ui-bg_gloss-wave_75_2191c0_500x100.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-bg_gloss-wave_75_2191c0_500x100.png").read
-file "public/themes/default/images/ui-bg_inset-hard_100_fcfdfd_1x100.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-bg_inset-hard_100_fcfdfd_1x100.png").read
-file "public/themes/default/images/ui-icons_056b93_256x240.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-icons_056b93_256x240.png").read
-file "public/themes/default/images/ui-icons_0078ae_256x240.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-icons_0078ae_256x240.png").read
-file "public/themes/default/images/ui-icons_d8e7f3_256x240.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-icons_d8e7f3_256x240.png").read
-file "public/themes/default/images/ui-icons_e0fdff_256x240.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-icons_e0fdff_256x240.png").read
-file "public/themes/default/images/ui-icons_f5e175_256x240.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-icons_f5e175_256x240.png").read
-file "public/themes/default/images/ui-icons_f7a50d_256x240.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-icons_f7a50d_256x240.png").read
-file "public/themes/default/images/ui-icons_fcd113_256x240.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-icons_fcd113_256x240.png").read
+file "public/themes/default/images/ui-anim_basic_16x16.gif", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-anim_basic_16x16.gif").read
+file "public/themes/default/images/ui-bg_flat_0_aaaaaa_40x100.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-bg_flat_0_aaaaaa_40x100.png").read
+file "public/themes/default/images/ui-bg_flat_75_ffffff_40x100.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-bg_flat_75_ffffff_40x100.png").read
+file "public/themes/default/images/ui-bg_glass_55_fbf9ee_1x400.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-bg_glass_55_fbf9ee_1x400.png").read
+file "public/themes/default/images/ui-bg_glass_65_ffffff_1x400.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-bg_glass_65_ffffff_1x400.png").read
+file "public/themes/default/images/ui-bg_glass_75_dadada_1x400.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-bg_glass_75_dadada_1x400.png").read
+file "public/themes/default/images/ui-bg_glass_75_e6e6e6_1x400.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-bg_glass_75_e6e6e6_1x400.png").read
+file "public/themes/default/images/ui-bg_glass_95_fef1ec_1x400.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-bg_glass_95_fef1ec_1x400.png").read
+file "public/themes/default/images/ui-bg_highlight-soft_75_cccccc_1x100.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-bg_highlight-soft_75_cccccc_1x100.png").read
+file "public/themes/default/images/ui-icons_222222_256x240.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-icons_222222_256x240.png").read
+file "public/themes/default/images/ui-icons_2e83ff_256x240.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-icons_2e83ff_256x240.png").read
+file "public/themes/default/images/ui-icons_454545_256x240.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-icons_454545_256x240.png").read
+file "public/themes/default/images/ui-icons_888888_256x240.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-icons_888888_256x240.png").read
+file "public/themes/default/images/ui-icons_cd0a0a_256x240.png", open("#{GITHUB_ROOT}/rails/public/themes/default/images/ui-icons_cd0a0a_256x240.png").read
 
 # Stylesheets
 file "public/themes/default/screen.css", open("#{GITHUB_ROOT}/rails/public/themes/default/screen.css").read
@@ -112,10 +110,9 @@ run "rm public/javascripts/dragdrop.js"
 run "rm public/javascripts/effects.js"
 run "rm public/javascripts/prototype.js"
 file "public/javascripts/jquery.js", open("http://code.jquery.com/jquery-1.4.2.js").read
-file "public/javascripts/jquery-ui.js", open("http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.js").read
+file "public/javascripts/jquery-ui.js", open("http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.js").read
 file "public/javascripts/jquery.blockUI.js", open("http://github.com/malsup/blockui/raw/master/jquery.blockUI.js").read
 file "public/javascripts/jquery.validate.js", open("#{GITHUB_ROOT}/rails/public/javascripts/jquery.validate.js").read
-file "public/javascripts/jquery.tablesorter.js", open("http://tablesorter.com/jquery.tablesorter.js").read
 file "public/javascripts/jquery.jgrowl.js", open("#{GITHUB_ROOT}/rails/public/javascripts/jquery.jgrowl.js").read
 file "public/javascripts/underscore.js", open("http://github.com/documentcloud/underscore/raw/master/underscore.js").read
 file "public/javascripts/application.js", open("#{GITHUB_ROOT}/rails/public/javascripts/application.js").read

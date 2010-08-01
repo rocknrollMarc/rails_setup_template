@@ -11,7 +11,7 @@
 * Re-factored the public namespace to visitor instead.
 * Added the Underscore[http://github.com/documentcloud/underscore] JavaScript library.
 * Upgraded to {jQuery 1.4.2}[http://jquery.com].
-* Upgraded to {jQuery UI 1.8.0}[http://jqueryui.com].
+* Upgraded to {jQuery UI 1.8.2}[http://jqueryui.com].
 * Updated the db:reseed rake task so that it also rebuilds the models diagrams.
 * Added a rake task for printing database and database table sizes.
 * Added a rake task for Heroku deployments.

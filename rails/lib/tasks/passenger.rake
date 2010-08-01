@@ -9,8 +9,3 @@ desc "Restarts the app with debug support enabled when running via Phusion Passe
 task :debug => [:restart] do
   system "touch tmp/debug.txt"
 end
-
-desc "Tails the development log (handy for Phusion Passenger instances but does eat up unnecessary memory)."
-task :tail do
-  system "tail -f log/development.log"
-end

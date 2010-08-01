@@ -19,6 +19,13 @@ namespace :doc do
 			FileUtils.rm_f controllers
 			sh "railroad -i -l -o #{controllers} -C"
 		end
+
+		desc "Creates/updates the Acts as State Machine (AASM) diagram."
+		task :aasm => [:setup] do
+			aasm = File.join RAILS_ROOT, 'doc', 'design', 'aasm.dot'
+			FileUtils.rm_f aasm
+			sh "railroad -l -o #{aasm} -A"
+		end
 	end
 
 	desc "Creates/updates both the model and controller diagrams."
