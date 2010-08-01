@@ -1,6 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
 	# REST
-  map.root :controller => "home"
+  map.root :controller => "home", :action => "show"
   map.resource :home, :controller => "home"
 	map.resource :about, :controller => "about"
 

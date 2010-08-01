@@ -1,4 +1,4 @@
-= v1.x.x (master)
+= v1.1.0
 
 * Added the LESS[http://lesscss.org] gem requirement.
 * Added the More[http://github.com/cloudhead/more] plugin.
