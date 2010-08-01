@@ -1,3 +1,3 @@
-<% items = [{:li_id => "visitor_visitor", :a_label => "Home", :a_url_options => root_path}] %>
-<% items << {:li_id => "visitor_about", :a_label => "About", :a_url_options => visitor_about_path} %>
+<% items = [{:li_id => "home", :a_label => "Home", :a_url_options => root_path}] %>
+<% items << {:li_id => "about", :a_label => "About", :a_url_options => about_path} %>
 <%= render_menu items, {:ul_class => "menu"} %>
