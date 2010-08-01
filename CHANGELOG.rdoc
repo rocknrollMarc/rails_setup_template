@@ -8,7 +8,7 @@
 * Added the Deadweight[http://github.com/aanand/deadweight] gem requirement.
 * Removed the AndAnd[http://andand.rubyforge.org] gem requirement.
 * Added Git setup and initialization.
-* Re-factored the public namespace to visitor instead.
+* Removed the visitor namespace.
 * Added the Underscore[http://github.com/documentcloud/underscore] JavaScript library.
 * Upgraded to {jQuery 1.4.2}[http://jquery.com].
 * Upgraded to {jQuery UI 1.8.2}[http://jqueryui.com].
