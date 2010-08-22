@@ -1,3 +1,7 @@
+= v1.x.x (master)
+
+* Fixed an issue where the opening HTML tag was missing from the application.html.erb layout.
+
 = v1.1.0
 
 * Added the LESS[http://lesscss.org] gem requirement.
