@@ -5,7 +5,7 @@ task :restart do
   system "touch tmp/restart.txt"
 end
 
-desc "Restarts the app with debug support enabled when running via Phusion Passenger. Use 'rdebug -c' from a terminal to attach to the debugger."
+desc "Restarts the app with debug support enabled when running via Phusion Passenger. Use 'rdebug -c' from a terminal to connect to the debugger."
 task :debug => [:restart] do
   system "touch tmp/debug.txt"
 end
