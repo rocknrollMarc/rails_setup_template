@@ -1,6 +1,7 @@
 = v1.x.x (master)
 
 * Fixed an issue where the opening HTML tag was missing from the application.html.erb layout.
+* Fixed issue with template inheritance (i.e. when other templates inherit this template).
 
 = v1.1.0
 
