@@ -1,7 +1,8 @@
 
+
 # Gems
-gem "rspec", :lib => false
-gem "rspec-rails", :lib => false
-gem "cucumber", :lib => false
-gem "webrat", :lib => false
-gem "metric_fu"
+config.gem "rspec", :lib => false
+config.gem "rspec-rails", :lib => false
+config.gem "cucumber", :lib => false
+config.gem "webrat", :lib => false
+config.gem "metric_fu"
