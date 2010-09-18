@@ -81,20 +81,6 @@ Master Version (possibly unstable, use at your own risk)
 
 = Notes
 
-It is recommended that you move the following gem requirements from the config/environment.rb to the config/environments/test.rb
-file after running the template:
-
-* rspec
-* rspec-rails
-* cucumber
-* webrat
-* metric_fu
-
-...and move the following gem requirements from the config/environment.rb to the config/environments/development.rb:
-
-* railroad
-* bullet
-
 Since the original Railroad gem hasn't been updated for ages, it is HIGHLY recommended that you use the fork:
 
   http://github.com/unixmonkey/RailRoad

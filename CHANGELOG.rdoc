@@ -2,6 +2,8 @@
 
 * Fixed an issue where the opening HTML tag was missing from the application.html.erb layout.
 * Fixed issue with template inheritance (i.e. when other templates inherit this template).
+* Moved the bullet, deadweight, and railroad gem definitions to the development.rb environment.
+* Moved the rspec, rspec-rails, cucumber, webrat, metric_fu gems definitions to the test.rb environment.
 
 = v1.1.0
 

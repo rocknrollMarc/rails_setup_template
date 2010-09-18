@@ -1,4 +1,9 @@
 
+# Gems
+gem "bullet"
+gem "deadweight"
+gem "railroad", :lib => false
+
 # Phusion Passenger Debug Support
 if File.exists? File.join(RAILS_ROOT, "tmp", "debug.txt")
   require "ruby-debug"

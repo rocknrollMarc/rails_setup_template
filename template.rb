@@ -37,19 +37,10 @@ file "config/initializers/active_record.rb", open("#{GITHUB_T1_ROOT}/rails/confi
 file "config/initializers/date_time.rb", open("#{GITHUB_T1_ROOT}/rails/config/initializers/date_time.rb").read
 file "config/initializers/system.rb", open("#{GITHUB_T1_ROOT}/rails/config/initializers/system.rb").read
 file "config/initializers/validation.rb", open("#{GITHUB_T1_ROOT}/rails/config/initializers/validation.rb").read
-open("config/environments/development.rb", 'a') do |file|
-  file << open("#{GITHUB_T1_ROOT}/rails/config/environments/development.rb").read
-end
+open("config/environments/development.rb", 'a') {|file| file << open("#{GITHUB_T1_ROOT}/rails/config/environments/development.rb").read}
+open("config/environments/test.rb", 'a') {|file| file << open("#{GITHUB_T1_ROOT}/rails/config/environments/test.rb").read}
 
 # Gems
-gem "deadweight"
-gem "bullet"
-gem "railroad", :lib => false
-gem "metric_fu"
-gem "webrat", :lib => false
-gem "cucumber", :lib => false
-gem "rspec-rails", :lib => false
-gem "rspec", :lib => false
 gem "paperclip"
 gem "RedCloth"
 gem "will_paginate"
