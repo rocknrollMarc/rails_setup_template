@@ -2,8 +2,10 @@
 
 * Fixed an issue where the opening HTML tag was missing from the application.html.erb layout.
 * Fixed issue with template inheritance (i.e. when other templates inherit this template).
+* Fixed issue with unnecessary loading of the Rails environment in the database.rake file.
 * Moved the bullet, deadweight, and railroad gem definitions to the development.rb environment.
 * Moved the rspec, rspec-rails, cucumber, webrat, metric_fu gems definitions to the test.rb environment.
+* Added enhancements (module) to the default Acts as List behavior (see lib/acts_as_list_enhancements.rb).
 
 = v1.1.0
 
