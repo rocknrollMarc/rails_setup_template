@@ -124,3 +124,4 @@ run "rm -rf test"
 git :init
 file ".gitignore", open("#{GITHUB_ROOT}/rails/gitignore.txt").read
 git :add => '.'
+git :commit => "-a -m \"Applied Rails Setup Template.\""
