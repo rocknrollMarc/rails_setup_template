@@ -81,6 +81,8 @@ Master Version (possibly unstable, use at your own risk)
 
 = Notes
 
+Make sure to replace the Growl password for the Bullet configuration in the config/environments/development.rb file.
+
 Since the original Railroad gem hasn't been updated for ages, it is HIGHLY recommended that you use the fork:
 
   http://github.com/unixmonkey/RailRoad

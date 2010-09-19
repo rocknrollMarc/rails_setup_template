@@ -16,7 +16,6 @@ end
 # Bullet Settings
 config.after_initialize do
   Bullet.enable = true
-  Bullet.alert = true
   Bullet.console = true
   Bullet.bullet_logger = true
   Bullet.rails_logger = true
