@@ -20,6 +20,7 @@
     <!-- Stylesheets -->
 		<%= stylesheet_link_tag "#{THEME_ROOT}/screen", :media => "screen, projection" %>
 		<%= stylesheet_link_tag "#{THEME_ROOT}/jquery-ui", :media => "screen, projection" %>
+		<%= stylesheet_link_tag "#{THEME_ROOT}/common", :media => "screen, projection" %>
 		<%= stylesheet_link_tag "#{THEME_ROOT}/style", :media => "screen, projection" %>
 		<%= stylesheet_link_tag "#{THEME_ROOT}/print", :media => "print" %>
 		<%= yield :stylesheet %>
@@ -32,7 +33,11 @@
     <%= javascript_include_tag "jquery.validate" %>
     <%= javascript_include_tag "jquery.blockUI" %>
     <%= javascript_include_tag "jquery.jgrowl" %>
+    <%= javascript_include_tag "jquery.markitup" %>
+    <%= javascript_include_tag "jquery.markitup.textile" %>
+    <%= javascript_include_tag "jquery.tools" %>
     <%= javascript_include_tag "underscore" %>
+    <%= javascript_include_tag "modernizr" %>
 		<%= javascript_include_tag "application" %>
 		<%= yield :javascript %>
   </head>
@@ -41,9 +46,9 @@
 			<div id="header">
 				<div id="label"><%= SYSTEM_LABEL %></div>
 				<div id="description"><%= SYSTEM_DESCRIPTION %></div>
-				<div id="account">Login | Register</div>
+				<div id="account"><%= render_account_header_info %></div>
 				<div id="navigation">
-					<%= render :partial => "shared/menus/" + current_role %>
+					<%= render :partial => "shared/menus/" + current_route %>
 				</div>
 			</div>
       <div id="body">
@@ -66,3 +71,4 @@
 		</div>
   </body>
 </html>
+

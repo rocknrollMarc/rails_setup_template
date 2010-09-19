@@ -5,7 +5,11 @@
 * Fixed issue with unnecessary loading of the Rails environment in the database.rake file.
 * Moved the bullet, deadweight, and railroad gem definitions to the development.rb environment.
 * Moved the rspec, rspec-rails, cucumber, webrat, metric_fu gems definitions to the test.rb environment.
-* Added enhancements (module) to the default Acts as List behavior (see lib/acts_as_list_enhancements.rb).
+* Added enhancements to the default Acts as List behavior (see lib/acts_as_list_enhancements.rb).
+* Added the {jQuery Mark It Up 1.1.8}[http://markitup.jaysalvat.com] JavaScript library.
+* Added the {jQuery Tools 1.2.4}[http://flowplayer.org/tools/index.html] JavaScript library.
+* Added the Modernizr[http://www.modernizr.com] JavaScript library.
+* Added improved menu navigation.
 
 = v1.1.0
 

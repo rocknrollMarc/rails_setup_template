@@ -1,41 +1,48 @@
 module NavigationHelper
-	# Answers the role based on the namespace of the current controller. If no namespace is found
-	# then "visitor" is used as the role. This is handy for situations where you have a role-based
-	# menu structure. For example:
+	# Answer the current route for account navigation within the site. This is based on the type and role of the current
+	# user. Routing is broken down into three sections which loads the correct controller and navigation menu. For example:
 	# * shared/menus/_admin.html.erb
 	# * shared/menus/_member.html.erb
 	# * shared/menus/_visitor.html.erb
-	def current_role
-		namespace = controller.class.name
-		namespace.include?("::") ? namespace[0, namespace.rindex("::")].downcase : "visitor"
+	def current_route
+	  if current_user
+  	  case current_user.type
+      when "Employee" then "admin"
+      when "Customer" then "member"
+      else "visitor"
+      end
+    else
+      "visitor"
+    end
 	end
-		
-  # Shows a menu bar (unordered list) for page navigation based on an array
-  # of menu item hashes.  The menu bar accepts the following options:
-  # * *items* - The array of menu items.  See /helpers/renderer/menu_item.rb for more details.
-  # * *ul_id* - The ul element CSS ID.
-  # * *ul_class* - The ul element CSS class.
-  def render_menu items, options = {}
-    content_tag :ul, :id => options[:ul_id], :class => options[:ul_class] do
-      items.map {|item| Renderers::MenuItem.new(item, controller, self).render}
+	
+	# Render a breadcrumb.
+  def breadcrumb text, url = nil
+    content_tag :li do
+      url ? link_to(text, url) : content_tag(:span, text)
     end
   end
-  
-  # Renders breadcrumb navigaion for nested pages.
-  # * *crumbs* - The array of links, text, etc. to be displayed.
+
+  # Render breadcrumb navigation.
+  # * +crumbs+ - The breadcrumb array.
   def breadcrumbs *crumbs
-    content_for :breadcrumbs, content_tag(:div, :id => "breadcrumbs") {crumbs.compact.join " &raquo; "}
+    content_for :breadcrumbs, content_tag(:ul, :id => "breadcrumbs") {raw crumbs.compact}
   end
 
-  # Renders submit and cancel links for a form.  Accepts an options hash with the
-  # following keys:
-  # * *submit_label* = The submit label, defaults to "Save".
-  # * *submit_options* = The same hash as used with the submit_tag helper, defaults to {}.
-  # * *cancel_label* = The cancel label, defaults to "Cancel".
-  # * *cancel_options* = The same hash as used with the link_to helper, defaults to {}.
-  # * *cancel_html_options* = The same hash as used with the link_to helper, defaults to {}.
+  # Renders submit and cancel links for a form.
+  # ==== Options
+  # * *submit_label* = Optional. The submit label. Defaults to "Save".
+  # * *submit_options* = Optional. The same hash as used with the submit_tag helper. Defaults to {:class => :button}.
+  # * *delimiter* = Optional. The text between the save and cancel links. Default to ' '.
+  # * *cancel_label* = Optional. The cancel label. Defaults to "Cancel".
+  # * *cancel_options* = Optional. The same hash as used with the link_to helper. Defaults to {}.
+  # * *cancel_html_options* = Optional. The same hash as used with the link_to helper. Defaults to {:class => "button ui-button-cancel"}.
   def render_submit_and_cancel options = {}
-    options.reverse_merge! :submit_label => "Save", :submit_options => {}, :cancel_label => "Cancel", :cancel_options => :back, :cancel_html_options => {}
-    "#{submit_tag options[:submit_label], options[:submit_options]} or #{link_to options[:cancel_label], options[:cancel_options], options[:cancel_html_options]}"
+    options.reverse_merge! :submit_label => "Save", :submit_options => {:class => :button}, :delimiter => ' ', :cancel_label => "Cancel", :cancel_options => :back, :cancel_html_options => {:class => "button ui-button-cancel"}
+    html = ''
+    html << submit_tag(options[:submit_label], options[:submit_options])
+    html << options[:delimiter]
+    html << link_to(options[:cancel_label], options[:cancel_options], options[:cancel_html_options])
+    raw html
   end
 end

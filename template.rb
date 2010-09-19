@@ -9,13 +9,17 @@ file "app/controllers/home_controller.rb", open("#{GITHUB_T1_ROOT}/rails/app/con
 file "app/controllers/about_controller.rb", open("#{GITHUB_T1_ROOT}/rails/app/controllers/about_controller.rb").read
 
 # Helpers
-file "app/helpers/renderers/menu_item.rb", open("#{GITHUB_T1_ROOT}/rails/app/helpers/renderers/menu_item.rb").read 
-file "app/helpers/system_helper.rb", open("#{GITHUB_T1_ROOT}/rails/app/helpers/system_helper.rb").read
+file "app/helpers/navigation/menu.rb", open("#{GITHUB_T1_ROOT}/rails/app/helpers/navigation/menu.rb").read
+file "app/helpers/navigation/item.rb", open("#{GITHUB_T1_ROOT}/rails/app/helpers/navigation/item.rb").read
 file "app/helpers/date_time_helper.rb", open("#{GITHUB_T1_ROOT}/rails/app/helpers/date_time_helper.rb").read
+file "app/helpers/flash_helper.rb", open("#{GITHUB_T1_ROOT}/rails/app/helpers/flash_helper.rb").read
+file "app/helpers/image_helper.rb", open("#{GITHUB_T1_ROOT}/rails/app/helpers/image_helper.rb").read
 file "app/helpers/layout_helper.rb", open("#{GITHUB_T1_ROOT}/rails/app/helpers/layout_helper.rb").read
 file "app/helpers/navigation_helper.rb", open("#{GITHUB_T1_ROOT}/rails/app/helpers/navigation_helper.rb").read
-file "app/helpers/flash_helper.rb", open("#{GITHUB_T1_ROOT}/rails/app/helpers/flash_helper.rb").read
+file "app/helpers/position_helper.rb", open("#{GITHUB_T1_ROOT}/rails/app/helpers/position_helper.rb").read
+file "app/helpers/system_helper.rb", open("#{GITHUB_T1_ROOT}/rails/app/helpers/system_helper.rb").read
 file "app/helpers/text_helper.rb", open("#{GITHUB_T1_ROOT}/rails/app/helpers/text_helper.rb").read
+file "app/helpers/visitor_helper.rb", open("#{GITHUB_T1_ROOT}/rails/app/helpers/visitor_helper.rb").read
 
 # Views
 run "rm public/index.html"
@@ -106,7 +110,11 @@ file "public/javascripts/jquery-ui.js", open("http://ajax.googleapis.com/ajax/li
 file "public/javascripts/jquery.blockUI.js", open("http://github.com/malsup/blockui/raw/master/jquery.blockUI.js").read
 file "public/javascripts/jquery.validate.js", open("#{GITHUB_T1_ROOT}/rails/public/javascripts/jquery.validate.js").read
 file "public/javascripts/jquery.jgrowl.js", open("#{GITHUB_T1_ROOT}/rails/public/javascripts/jquery.jgrowl.js").read
+file "public/javascripts/jquery.markitup.js", open("http://cachedcommons.org/cache/markitup/1.1.8/javascripts/markitup.js").read
+file "public/javascripts/jquery.markitup.textile.js", open("#{GITHUB_T1_ROOT}/rails/public/javascripts/jquery.markitup.textile.js").read
+file "public/javascripts/jquery.tools.js", open("#{GITHUB_T1_ROOT}/rails/public/javascripts/jquery.tools.js").read
 file "public/javascripts/underscore.js", open("http://github.com/documentcloud/underscore/raw/master/underscore.js").read
+file "public/javascripts/modernizr.js", open("http://cachedcommons.org/cache/modernizr/1.5.0/javascripts/modernizr.js").read
 file "public/javascripts/application.js", open("#{GITHUB_T1_ROOT}/rails/public/javascripts/application.js").read
 
 # Tests

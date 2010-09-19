@@ -1,8 +1,7 @@
 = Overview
 
-This template bootstraps a Ruby on Rails project beyond what you get with default project generation (i.e. rails <project name>). 
-This template can be applied to a fresh or existing Ruby on Rails application. That said, it is best if you apply this template
-to a fresh setup as original files can be overwritten and/or deleted.
+This template bootstraps a Ruby on Rails project beyond what you get with default project generation (i.e. rails <project name>)
+and is best applied when building a new Ruby on Rails application.
 
 = Features
 
@@ -10,10 +9,13 @@ The following highlights the changes that will be made to your Ruby on Rails app
 
 * Installs the {jQuery 1.4.2}[http://jquery.com] JavaScript library.
 * Installs the {jQuery UI 1.8.2}[http://jqueryui.com] JavaScript library.
-* Installs the {jQuery Validation 1.5.2}[http://bassistance.de/jquery-plugins/jquery-plugin-validation] JavaScript library.
 * Installs the {jQuery Block UI 2.26}[http://github.com/malsup/blockui] JavaScript library.
+* Installs the {jQuery Validation 1.5.2}[http://bassistance.de/jquery-plugins/jquery-plugin-validation] JavaScript library.
 * Installs the {jQuery jGrowl 1.1.2}[http://stanlemon.net/projects/jgrowl.html] JavaScript library.
+* Installs the {jQuery Mark It Up 1.1.8}[http://markitup.jaysalvat.com] JavaScript library.
+* Installs the {jQuery Tools 1.2.4}[http://flowplayer.org/tools/index.html] JavaScript library.
 * Installs the Underscore[http://github.com/documentcloud/underscore] JavaScript library.
+* Installs the Modernizr[http://www.modernizr.com] JavaScript library.
 * Removes the default Prototype/Scriptaculous libraries.
 * Installs a default application.html.erb file with a basic but structured site layout.
 * Installs a default {Blueprint CSS}[http://github.com/joshuaclayton/blueprint-css] theme.
