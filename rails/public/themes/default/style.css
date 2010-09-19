@@ -1,12 +1,5 @@
-/* @group General */
-body {background: #000000 url(images/main/background.jpg) repeat-x center top;}
-a {outline: none;}
-.center {text-align: center;}
-.hidden {display: none;}
-/* @end */
-
 /* @group Structure */
-#page {margin-top: 0.5em;}
+#page {margin: 0.5em auto;}
 #header {color: #FFF;}
 #label {text-align: center; font-size: 3em;}
 #description {text-align: center;}
@@ -17,59 +10,4 @@ a {outline: none;}
 #sidebar {min-height: 17em; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; border-radius: 0.5em;}
 #footer {color: #FFF;}
 #footer a {color: #f02b47;}
-/* @end */
-
-/* @group Menu - Main Level */
-.menu {margin: 0; padding: 0.5em 0; line-height: 100%; background: #FFF; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.10, rgb(214,214,214)), color-stop(0.88, rgb(255,255,255))); background-image: -moz-linear-gradient(center bottom, rgb(214,214,214) 10%, rgb(255,255,255) 88%); -webkit-border-radius: 2em; -moz-border-radius: 2em; border-radius: 2em; -webkit-box-shadow: 0 1px 3px rgba(0,0,0, .4); -moz-box-shadow: 0 1px 3px rgba(0,0,0, .4);}
-.menu li {margin: 0 5px; padding: 0.2em 0; float: left; position: relative; list-style: none;}
-.menu a {font-weight: bold; color: #444; text-decoration: none; display: block; padding: 8px 20px; margin: 0; -webkit-border-radius: 1em; -moz-border-radius: 1em; border-radius: 1em;}
-.menu a:hover {background: #000; color: #fff;}
-.menu .active a, .menu li:hover > a {background-color: #000; color: #FFF; border-top: solid 1px #f8f8f8;}
-/* @end */
-
-/* @group Menu - Sub Levels */
-.menu ul li:hover a, .menu li:hover li a {background: none; border: none; color: #000; -webkit-box-shadow: none; -moz-box-shadow: none;}
-.menu ul a:hover {background: #000 !important; color: #FFF !important; -webkit-border-radius: 0; -moz-border-radius: 0; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);}
-/* @end */
-
-/* @group Menu - Dropdown */
-.menu li:hover > ul {display: block;}
-/* @end */
-
-/* @group Menu - Level 2 */
-.menu ul {display: none; margin: 0; padding: 0; width: 185px; position: absolute; top: 35px; left: 0; background: #ddd; border: solid 1px #b4b4b4; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; -webkit-box-shadow: 0 1px 3px rgba(0,0,0, .3); -moz-box-shadow: 0 1px 3px rgba(0,0,0, .3); box-shadow: 0 1px 3px rgba(0,0,0, .3); z-index: 1;}
-.menu ul li {float: none; margin: 0; padding: 0;}
-.menu ul a {font-weight: normal; text-shadow: 0 1px 0 #fff;}
-/* @end */
-
-/* @group Menu - Level 3+ */
-.menu ul ul {left: 181px; top: -3px;}
-/* @end */
-
-/* @group Menu - Rounded Corners */
-.menu ul li:first-child > a {-webkit-border-top-left-radius: 9px; -moz-border-radius-topleft: 9px; -webkit-border-top-right-radius: 9px; -moz-border-radius-topright: 9px;}
-.menu ul li:last-child > a {-webkit-border-bottom-left-radius: 9px; -moz-border-radius-bottomleft: 9px; -webkit-border-bottom-right-radius: 9px; -moz-border-radius-bottomright: 9px;}
-/* @end */
-
-/* @group Menu - Clearfix */
-.menu:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
-/* @end */
-
-/* @group Block UI - AJAX Processing */
-#ajax {display: none;}
-#ajax img {float: left;}
-#ajax p {float: left; padding: 0.5em 0 0.5em 1em;}
-/* @end */
-
-/* @group Block UI - Growl */
-.growlUI {background: url(images/jgrowl/default.png) no-repeat 16px 16px;}
-.growlUI h1, div.growlUI h2 {color: white; padding: 5px 5px 5px 75px; text-align: left;}
-/* @end */
-
-/* @group  Rails Error Handling */
-.errorExplanation {color: #FFF; border: 0.2em solid #C90000; background-color: #FE2525; padding: 0.5em; margin-bottom: 0.5em;}
-.errorExplanation h2 {color: #FFF;}
-.errorExplanation p {display: none;}
-.field_error {color: #CC0033;}
-.field_error input, .field_error select, .field_error textarea {border-color: #CC0033;}
 /* @end */

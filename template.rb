@@ -69,37 +69,63 @@ generate :blue_ridge
 
 # Images
 run "rm -rf public/images"
+
 file "public/favicon.ico", open("#{GITHUB_T1_ROOT}/rails/public/favicon.ico").read
-file "public/themes/default/images/main/background.jpg", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/main/background.jpg").read
-file "public/themes/default/images/main/apple-webclip.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/main/apple-webclip.png").read
-file "public/themes/default/images/main/spinner.gif", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/main/spinner.gif").read
-file "public/themes/default/images/icons/feed.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/icons/feed.png").read
+file "public/themes/default/images/icons/email.gif", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/icons/email.gif").read
 file "public/themes/default/images/icons/feed-comments.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/icons/feed-comments.png").read
+file "public/themes/default/images/icons/feed.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/icons/feed.png").read
 file "public/themes/default/images/icons/unknown.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/icons/unknown.png").read
 file "public/themes/default/images/jgrowl/default.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/jgrowl/default.png").read
-file "public/themes/default/images/ui-anim_basic_16x16.gif", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-anim_basic_16x16.gif").read
-file "public/themes/default/images/ui-bg_flat_0_aaaaaa_40x100.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-bg_flat_0_aaaaaa_40x100.png").read
-file "public/themes/default/images/ui-bg_flat_75_ffffff_40x100.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-bg_flat_75_ffffff_40x100.png").read
-file "public/themes/default/images/ui-bg_glass_55_fbf9ee_1x400.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-bg_glass_55_fbf9ee_1x400.png").read
-file "public/themes/default/images/ui-bg_glass_65_ffffff_1x400.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-bg_glass_65_ffffff_1x400.png").read
-file "public/themes/default/images/ui-bg_glass_75_dadada_1x400.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-bg_glass_75_dadada_1x400.png").read
-file "public/themes/default/images/ui-bg_glass_75_e6e6e6_1x400.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-bg_glass_75_e6e6e6_1x400.png").read
-file "public/themes/default/images/ui-bg_glass_95_fef1ec_1x400.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-bg_glass_95_fef1ec_1x400.png").read
-file "public/themes/default/images/ui-bg_highlight-soft_75_cccccc_1x100.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-bg_highlight-soft_75_cccccc_1x100.png").read
+file "public/themes/default/images/main/apple-webclip.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/main/apple-webclip.png").read
+file "public/themes/default/images/main/background.jpg", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/main/background.jpg").read
+file "public/themes/default/images/main/spinner.gif", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/main/spinner.gif").read
+file "public/themes/default/images/markitup/bold.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/markitup/bold.png").read
+file "public/themes/default/images/markitup/code.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/markitup/code.png").read
+file "public/themes/default/images/markitup/h1.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/markitup/h1.png").read
+file "public/themes/default/images/markitup/h2.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/markitup/h2.png").read
+file "public/themes/default/images/markitup/h3.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/markitup/h3.png").read
+file "public/themes/default/images/markitup/h4.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/markitup/h4.png").read
+file "public/themes/default/images/markitup/h5.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/markitup/h5.png").read
+file "public/themes/default/images/markitup/h6.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/markitup/h6.png").read
+file "public/themes/default/images/markitup/handle.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/markitup/handle.png").read
+file "public/themes/default/images/markitup/italic.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/markitup/italic.png").read
+file "public/themes/default/images/markitup/link.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/markitup/link.png").read
+file "public/themes/default/images/markitup/list-bullet.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/markitup/list-bullet.png").read
+file "public/themes/default/images/markitup/list-numeric.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/markitup/list-numeric.png").read
+file "public/themes/default/images/markitup/paragraph.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/markitup/paragraph.png").read
+file "public/themes/default/images/markitup/picture.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/markitup/picture.png").read
+file "public/themes/default/images/markitup/preview.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/markitup/preview.png").read
+file "public/themes/default/images/markitup/quotes.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/markitup/quotes.png").read
+file "public/themes/default/images/markitup/stroke.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/markitup/stroke.png").read
+file "public/themes/default/images/tooltip/large.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/tooltip/large.png").read
+file "public/themes/default/images/tooltip/tiny.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/tooltip/tiny.png").read
+file "public/themes/default/images/ui-bg_diagonals-thick_8_333333_40x40.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-bg_diagonals-thick_8_333333_40x40.png").read
+file "public/themes/default/images/ui-bg_flat_65_ffffff_40x100.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-bg_flat_65_ffffff_40x100.png").read
+file "public/themes/default/images/ui-bg_glass_40_111111_1x400.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-bg_glass_40_111111_1x400.png").read
+file "public/themes/default/images/ui-bg_glass_55_1c1c1c_1x400.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-bg_glass_55_1c1c1c_1x400.png").read
+file "public/themes/default/images/ui-bg_highlight-hard_100_f9f9f9_1x100.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-bg_highlight-hard_100_f9f9f9_1x100.png").read
+file "public/themes/default/images/ui-bg_highlight-hard_40_aaaaaa_1x100.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-bg_highlight-hard_40_aaaaaa_1x100.png").read
+file "public/themes/default/images/ui-bg_highlight-soft_50_aaaaaa_1x100.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-bg_highlight-soft_50_aaaaaa_1x100.png").read
+file "public/themes/default/images/ui-bg_inset-hard_45_cd0a0a_1x100.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-bg_inset-hard_45_cd0a0a_1x100.png").read
+file "public/themes/default/images/ui-bg_inset-hard_55_ffeb80_1x100.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-bg_inset-hard_55_ffeb80_1x100.png").read
 file "public/themes/default/images/ui-icons_222222_256x240.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-icons_222222_256x240.png").read
-file "public/themes/default/images/ui-icons_2e83ff_256x240.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-icons_2e83ff_256x240.png").read
-file "public/themes/default/images/ui-icons_454545_256x240.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-icons_454545_256x240.png").read
-file "public/themes/default/images/ui-icons_888888_256x240.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-icons_888888_256x240.png").read
-file "public/themes/default/images/ui-icons_cd0a0a_256x240.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-icons_cd0a0a_256x240.png").read
+file "public/themes/default/images/ui-icons_4ca300_256x240.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-icons_4ca300_256x240.png").read
+file "public/themes/default/images/ui-icons_bbbbbb_256x240.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-icons_bbbbbb_256x240.png").read
+file "public/themes/default/images/ui-icons_ededed_256x240.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-icons_ededed_256x240.png").read
+file "public/themes/default/images/ui-icons_ffcf29_256x240.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-icons_ffcf29_256x240.png").read
+file "public/themes/default/images/ui-icons_ffffff_256x240.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-icons_ffffff_256x240.png").read
 
 # Stylesheets
-file "public/themes/default/screen.css", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/screen.css").read
-file "public/themes/default/print.css", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/print.css").read
+file "public/themes/default/admin/ie.css", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/admin/ie.css").read
+file "public/themes/default/admin/screen.css", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/admin/screen.css").read
+file "public/themes/default/admin/style.css", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/admin/style.css").read
+file "public/themes/default/authorization.css", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/authorization.css").read
+file "public/themes/default/common.css", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/common.css").read
 file "public/themes/default/ie.css", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/ie.css").read
-
-# Themes
-file "public/themes/default/style.css", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/style.css").read
 file "public/themes/default/jquery-ui.css", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/jquery-ui.css").read
+file "public/themes/default/print.css", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/print.css").read
+file "public/themes/default/screen.css", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/screen.css").read
+file "public/themes/default/style.css", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/style.css").read
 
 # JavaScripts
 run "rm public/javascripts/controls.js"

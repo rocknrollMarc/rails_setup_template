@@ -1,0 +1,10 @@
+/* Authorization */
+
+/* @group Structure */
+#page {width: 30em; margin: 0 auto;}
+#authorization {margin-top: 10em; border: 0.4em solid #000; -moz-border-radius: 0.5em; -webkit-border-radius: 0.5em; border-radius: 0.5em;}
+#authorization .header, #authorization .body, #authorization .footer {background: #FFF;}
+#authorization .header, #authorization .footer {height: 1.5em;}
+#authorization .fields {margin: 1.5em;}
+#authorization .error {margin: 1em 0;}
+/* @end */
