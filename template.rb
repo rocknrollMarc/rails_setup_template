@@ -1,7 +1,7 @@
 GITHUB_T1_ROOT = "http://github.com/aeonscope/rails_setup_template/raw/master"
 
 # Doc
-file "doc/README_FOR_APP", "TODO - You should document the application here."
+file "doc/README_FOR_APP", "TODO - Document your application...slacker."
 file "doc/design/site_layout.graffle", open("#{GITHUB_T1_ROOT}/rails/doc/design/site_layout.graffle").read
 
 # Controllers
@@ -18,6 +18,7 @@ file "app/helpers/layout_helper.rb", open("#{GITHUB_T1_ROOT}/rails/app/helpers/l
 file "app/helpers/navigation_helper.rb", open("#{GITHUB_T1_ROOT}/rails/app/helpers/navigation_helper.rb").read
 file "app/helpers/position_helper.rb", open("#{GITHUB_T1_ROOT}/rails/app/helpers/position_helper.rb").read
 file "app/helpers/system_helper.rb", open("#{GITHUB_T1_ROOT}/rails/app/helpers/system_helper.rb").read
+file "app/helpers/template_helper.rb", open("#{GITHUB_T1_ROOT}/rails/app/helpers/template_helper.rb").read
 file "app/helpers/text_helper.rb", open("#{GITHUB_T1_ROOT}/rails/app/helpers/text_helper.rb").read
 file "app/helpers/visitor_helper.rb", open("#{GITHUB_T1_ROOT}/rails/app/helpers/visitor_helper.rb").read
 
