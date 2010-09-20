@@ -75,7 +75,7 @@ Open a terminal window and execute one the following command lines depending on 
 
 Current Version (stable)
 
-  rails demo -m http://github.com/aeonscope/rails_setup_template/raw/v1.1.0/template.rb
+  rails demo -m http://github.com/aeonscope/rails_setup_template/raw/v1.2.0/template.rb
 
 Master Version (possibly unstable, use at your own risk)
 

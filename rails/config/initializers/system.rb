@@ -1,7 +1,7 @@
 # System-wide settings.
 SYSTEM_LABEL = "Demo"
 SYSTEM_DESCRIPTION = "A demo application."
-SYSTEM_VERSION = "1.1.0"
+SYSTEM_VERSION = "1.2.0"
 SYSTEM_EMAIL = "noreply@noreply.com"
 
 DEVELOPER_LABEL = "Brooke Kuhlmann"
