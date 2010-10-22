@@ -7,9 +7,9 @@ file "doc/design/site_layout.graffle", open("#{GITHUB_T1_ROOT}/rails/doc/design/
 # Controllers
 file "app/controllers/home_controller.rb", open("#{GITHUB_T1_ROOT}/rails/app/controllers/home_controller.rb").read
 file "app/controllers/about_controller.rb", open("#{GITHUB_T1_ROOT}/rails/app/controllers/about_controller.rb").read
-route "root :to => \"home#show\""
-route "resource :home, :controller => \"home\""
 route "resource :about, :controller => \"about\""
+route "resource :home, :controller => \"home\""
+route "root :to => \"home#show\""
 
 # Helpers
 file "app/helpers/navigation/menu.rb", open("#{GITHUB_T1_ROOT}/rails/app/helpers/navigation/menu.rb").read
