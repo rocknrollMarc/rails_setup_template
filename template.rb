@@ -45,7 +45,6 @@ file "config/initializers/ruby_enhancements.rb", open("#{GITHUB_T1_ROOT}/rails/c
 file "config/initializers/system.rb", open("#{GITHUB_T1_ROOT}/rails/config/initializers/system.rb").read
 file "config/initializers/validation.rb", open("#{GITHUB_T1_ROOT}/rails/config/initializers/validation.rb").read
 open("config/environments/development.rb", 'a') {|file| file << open("#{GITHUB_T1_ROOT}/rails/config/environments/development.rb").read}
-open("config/environments/test.rb", 'a') {|file| file << open("#{GITHUB_T1_ROOT}/rails/config/environments/test.rb").read}
 
 # Gems
 gem "paperclip"
