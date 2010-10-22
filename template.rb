@@ -7,6 +7,9 @@ file "doc/design/site_layout.graffle", open("#{GITHUB_T1_ROOT}/rails/doc/design/
 # Controllers
 file "app/controllers/home_controller.rb", open("#{GITHUB_T1_ROOT}/rails/app/controllers/home_controller.rb").read
 file "app/controllers/about_controller.rb", open("#{GITHUB_T1_ROOT}/rails/app/controllers/about_controller.rb").read
+route "root :to => \"home#show\""
+route "resource :home, :controller => \"home\""
+route "resource :about, :controller => \"about\""
 
 # Helpers
 file "app/helpers/navigation/menu.rb", open("#{GITHUB_T1_ROOT}/rails/app/helpers/navigation/menu.rb").read
@@ -38,7 +41,6 @@ file "lib/tasks/railroad.rake", open("#{GITHUB_T1_ROOT}/rails/lib/tasks/railroad
 file "lib/tasks/deadweight.rake", open("#{GITHUB_T1_ROOT}/rails/lib/tasks/deadweight.rake").read
 
 # Configurations
-file "config/routes.rb", open("#{GITHUB_T1_ROOT}/rails/config/routes.rb").read
 file "config/initializers/active_record.rb", open("#{GITHUB_T1_ROOT}/rails/config/initializers/active_record.rb").read
 file "config/initializers/date_time.rb", open("#{GITHUB_T1_ROOT}/rails/config/initializers/date_time.rb").read
 file "config/initializers/ruby_enhancements.rb", open("#{GITHUB_T1_ROOT}/rails/config/initializers/ruby_enhancements.rb").read
@@ -139,9 +141,6 @@ file "public/javascripts/jquery.tools.js", open("#{GITHUB_T1_ROOT}/rails/public/
 file "public/javascripts/underscore.js", open("http://github.com/documentcloud/underscore/raw/master/underscore.js").read
 file "public/javascripts/modernizr.js", open("http://cachedcommons.org/cache/modernizr/1.5.0/javascripts/modernizr.js").read
 file "public/javascripts/application.js", open("#{GITHUB_T1_ROOT}/rails/public/javascripts/application.js").read
-
-# Tests
-run "rm -rf test"
 
 # Git
 git :init
