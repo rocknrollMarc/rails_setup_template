@@ -16,7 +16,6 @@ The following highlights the changes that will be made to your Ruby on Rails app
 * Installs the {jQuery Tools 1.2.4}[http://flowplayer.org/tools/index.html] JavaScript library.
 * Installs the Underscore[http://github.com/documentcloud/underscore] JavaScript library.
 * Installs the Modernizr[http://www.modernizr.com] JavaScript library.
-* Removes the default Prototype/Scriptaculous libraries.
 * Installs a default application.html.erb file with a basic but structured site layout.
 * Installs a default {Blueprint CSS}[http://github.com/joshuaclayton/blueprint-css] theme.
 * Installs a jQueryUI theme to compliment the Blueprint CSS theme.

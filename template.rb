@@ -129,10 +129,6 @@ file "public/themes/default/screen.css", open("#{GITHUB_T1_ROOT}/rails/public/th
 file "public/themes/default/style.css", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/style.css").read
 
 # JavaScripts
-run "rm public/javascripts/controls.js"
-run "rm public/javascripts/dragdrop.js"
-run "rm public/javascripts/effects.js"
-run "rm public/javascripts/prototype.js"
 file "public/javascripts/jquery.js", open("http://code.jquery.com/jquery-1.4.3.js").read
 file "public/javascripts/jquery-ui.js", open("http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.js").read
 file "public/javascripts/jquery.blockUI.js", open("http://github.com/malsup/blockui/raw/master/jquery.blockUI.js").read

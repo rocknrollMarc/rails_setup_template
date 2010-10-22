@@ -1,8 +1,9 @@
-= v1.x.x (master)
+= vx.x.x (master)
 
-* Removed the heroku.rake file. See the {Heroku Plus}[http://github.com/aeonscope/heroku_plus] gem for additional capabilities.
+* Upgraded template to support Rails 3.0.0.
 * Upgraded to {jQuery 1.4.3}[http://jquery.com].
 * Upgraded to {jQuery UI 1.8.5}[http://jqueryui.com].
+* Removed the heroku.rake file. See the {Heroku Plus}[http://github.com/aeonscope/heroku_plus] gem for additional capabilities.
 
 = v1.2.0
 
