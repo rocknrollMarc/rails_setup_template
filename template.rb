@@ -61,11 +61,11 @@ generate :rspec
 generate :cucumber
 
 # Plugins
-plugin "More", :git => "git://github.com/cloudhead/more.git"
-plugin "Custom Error Message", :git => "git://github.com/gumayunov/custom-err-msg.git"
-plugin "Blue Ridge", :git => "git://github.com/relevance/blue-ridge.git"
-plugin "Rails Indexes", :git => "git://github.com/eladmeidar/rails_indexes.git"
-generate :blue_ridge
+# plugin "More", :git => "git://github.com/cloudhead/more.git"
+# plugin "Custom Error Message", :git => "git://github.com/gumayunov/custom-err-msg.git"
+# plugin "Blue Ridge", :git => "git://github.com/relevance/blue-ridge.git"
+# plugin "Rails Indexes", :git => "git://github.com/eladmeidar/rails_indexes.git"
+# generate :blue_ridge
 
 # Images
 run "rm -rf public/images"
