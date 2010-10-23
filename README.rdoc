@@ -9,13 +9,13 @@ The following highlights the changes that will be made to your Ruby on Rails app
 
 * Installs the {jQuery 1.4.3}[http://jquery.com] JavaScript library.
 * Installs the {jQuery UI 1.8.5}[http://jqueryui.com] JavaScript library.
-* Installs the {jQuery Block UI 2.26}[http://github.com/malsup/blockui] JavaScript library.
-* Installs the {jQuery Validation 1.5.2}[http://bassistance.de/jquery-plugins/jquery-plugin-validation] JavaScript library.
+* Installs the {jQuery Block UI 2.33}[http://github.com/malsup/blockui] JavaScript library.
+* Installs the {jQuery Validation 1.7}[http://bassistance.de/jquery-plugins/jquery-plugin-validation] JavaScript library.
 * Installs the {jQuery jGrowl 1.1.2}[http://stanlemon.net/projects/jgrowl.html] JavaScript library.
 * Installs the {jQuery Mark It Up 1.1.8}[http://markitup.jaysalvat.com] JavaScript library.
-* Installs the {jQuery Tools 1.2.4}[http://flowplayer.org/tools/index.html] JavaScript library.
-* Installs the Underscore[http://github.com/documentcloud/underscore] JavaScript library.
-* Installs the Modernizr[http://www.modernizr.com] JavaScript library.
+* Installs the {jQuery Tools 1.2.5}[http://flowplayer.org/tools/index.html] JavaScript library.
+* Installs the {Underscore 1.1.0}[http://github.com/documentcloud/underscore] JavaScript library.
+* Installs the {Modernizr 1.5.0}[http://www.modernizr.com] JavaScript library.
 * Installs a customized application.html.erb file with a basic but structured site layout.
 * Installs a customized {Blueprint CSS}[http://github.com/joshuaclayton/blueprint-css] theme.
 * Installs a customized jQueryUI theme to compliment the Blueprint CSS theme.

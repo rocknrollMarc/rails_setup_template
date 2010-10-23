@@ -123,13 +123,13 @@ file "public/themes/default/style.css", open("#{GITHUB_T1_ROOT}/rails/public/the
 # JavaScripts
 file "public/javascripts/jquery.js", open("http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.js").read
 file "public/javascripts/jquery-ui.js", open("http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.js").read
-file "public/javascripts/jquery.blockUI.js", open("http://github.com/malsup/blockui/raw/master/jquery.blockUI.js").read
-file "public/javascripts/jquery.validate.js", open("#{GITHUB_T1_ROOT}/rails/public/javascripts/jquery.validate.js").read
+file "public/javascripts/jquery.blockUI.js", open("http://cachedcommons.org/cache/jquery-blockui/2.3.3/javascripts/jquery-blockui.js").read
+file "public/javascripts/jquery.validate.js", open("http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.js").read
 file "public/javascripts/jquery.jgrowl.js", open("#{GITHUB_T1_ROOT}/rails/public/javascripts/jquery.jgrowl.js").read
 file "public/javascripts/jquery.markitup.js", open("http://cachedcommons.org/cache/markitup/1.1.8/javascripts/markitup.js").read
 file "public/javascripts/jquery.markitup.textile.js", open("#{GITHUB_T1_ROOT}/rails/public/javascripts/jquery.markitup.textile.js").read
-file "public/javascripts/jquery.tools.js", open("#{GITHUB_T1_ROOT}/rails/public/javascripts/jquery.tools.js").read
-file "public/javascripts/underscore.js", open("http://github.com/documentcloud/underscore/raw/master/underscore.js").read
+file "public/javascripts/jquery.tools.js", open("http://cdn.jquerytools.org/1.2.5/all/jquery.tools.min.js").read
+file "public/javascripts/underscore.js", open("http://cachedcommons.org/cache/underscore/1.1.0/javascripts/underscore.js").read
 file "public/javascripts/modernizr.js", open("http://cachedcommons.org/cache/modernizr/1.5.0/javascripts/modernizr.js").read
 file "public/javascripts/application.js", open("#{GITHUB_T1_ROOT}/rails/public/javascripts/application.js").read
 
