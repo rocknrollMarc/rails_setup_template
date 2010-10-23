@@ -49,6 +49,10 @@ file "config/initializers/validation.rb", open("#{GITHUB_T1_ROOT}/rails/config/i
 # open("config/environments/development.rb", 'a') {|file| file << open("#{GITHUB_T1_ROOT}/rails/config/environments/development.rb").read}
 
 # Gems
+
+gem "metric_fu"
+gem "webrat"
+gem "cucumber"
 gem "rspec-rails"
 
 gem "ruby-debug"

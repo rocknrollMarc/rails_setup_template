@@ -40,14 +40,21 @@ The following highlights the changes that will be made to your Ruby on Rails app
 * Adds the RedCloth[http://redcloth.org] gem requirement.
 * Adds the {AWS-S3}[http://github.com/marcel/aws-s3] gem requirement.
 * Adds the Paperclip[http://www.thoughtbot.com/projects/paperclip] gem requirement.
-* Adds the {RSpec}[http://github.com/dchelimsky/rspec] gem requirement.
+* Adds the {Ruby Debug}[http://rubyforge.org/projects/ruby-debug] gem.
+* Adds the Looksee[http://github.com/oggy/looksee] gem.
+* Adds the Wirble[http://github.com/blackwinter/wirble] gem.
+* Adds the Hirb[http://github.com/cldwalker/hirb] gem.
+* Adds the {Awesome Print}[http://github.com/michaeldv/awesome_print] gem.
+* Adds the {Ruby Growl}[http://rubyforge.org/projects/ruby-growl] gem.
+* Adds the Bullet[http://github.com/flyerhzm/bullet] gem requirement.
+* Adds the {Silent PostgreSQL}[http://github.com/dolzenko/silent-postgres] gem.
+* Adds the {Color Blind}[http://github.com/codegram/colorblind] gem.
+* Adds the Deadweight[http://github.com/aanand/deadweight] gem requirement.
+* Adds the Railroad[http://railroad.rubyforge.org] gem requirement.
 * Adds the {RSpec Rails}[http://github.com/dchelimsky/rspec-rails/tree/master] gem requirement.
 * Adds the Cucumber[http://github.com/aslakhellesoy/cucumber/tree/master] gem requirement.
 * Adds the Webrat[http://gitrdoc.com/brynary/webrat/tree/master] gem requirement.
 * Adds the {Metric Fu}[http://metric-fu.rubyforge.org] gem requirement.
-* Adds the Railroad[http://railroad.rubyforge.org] gem requirement.
-* Adds the Bullet[http://github.com/flyerhzm/bullet] gem requirement.
-* Adds the Deadweight[http://github.com/aanand/deadweight] gem requirement.
 
 = License
 
