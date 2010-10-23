@@ -35,7 +35,6 @@ file "app/views/shared/menus/_visitor.html.erb", open("#{GITHUB_T1_ROOT}/rails/a
 # Lib
 file "lib/acts_as_list_enhancements.rb", open("#{GITHUB_T1_ROOT}/rails/lib/acts_as_list_enhancements.rb").read
 file "lib/tasks/database.rake", open("#{GITHUB_T1_ROOT}/rails/lib/tasks/database.rake").read
-file "lib/tasks/heroku.rake", open("#{GITHUB_T1_ROOT}/rails/lib/tasks/heroku.rake").read
 file "lib/tasks/passenger.rake", open("#{GITHUB_T1_ROOT}/rails/lib/tasks/passenger.rake").read
 file "lib/tasks/railroad.rake", open("#{GITHUB_T1_ROOT}/rails/lib/tasks/railroad.rake").read
 file "lib/tasks/deadweight.rake", open("#{GITHUB_T1_ROOT}/rails/lib/tasks/deadweight.rake").read
@@ -46,7 +45,7 @@ file "config/initializers/date_time.rb", open("#{GITHUB_T1_ROOT}/rails/config/in
 file "config/initializers/ruby_enhancements.rb", open("#{GITHUB_T1_ROOT}/rails/config/initializers/ruby_enhancements.rb").read
 file "config/initializers/system.rb", open("#{GITHUB_T1_ROOT}/rails/config/initializers/system.rb").read
 file "config/initializers/validation.rb", open("#{GITHUB_T1_ROOT}/rails/config/initializers/validation.rb").read
-open("config/environments/development.rb", 'a') {|file| file << open("#{GITHUB_T1_ROOT}/rails/config/environments/development.rb").read}
+# open("config/environments/development.rb", 'a') {|file| file << open("#{GITHUB_T1_ROOT}/rails/config/environments/development.rb").read}
 
 # Gems
 gem "rake"
