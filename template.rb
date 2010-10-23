@@ -50,7 +50,7 @@ file "config/initializers/validation.rb", open("#{GITHUB_T1_ROOT}/rails/config/i
 
 # Gems
 gem "rake"
-gem "rails", "~> 3.0.0"
+gem "rails", "3.0.1"
 gem "resourcer"
 gem "aasm"
 gem "will_paginate"
