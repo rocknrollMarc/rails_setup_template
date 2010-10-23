@@ -49,23 +49,19 @@ file "config/initializers/validation.rb", open("#{GITHUB_T1_ROOT}/rails/config/i
 # open("config/environments/development.rb", 'a') {|file| file << open("#{GITHUB_T1_ROOT}/rails/config/environments/development.rb").read}
 
 # Gems
-group :test do
-	gem "rspec-rails"
-end
+gem "rspec-rails"
 
-group :development do
-	gem "ruby-debug"
-	gem "looksee", :require => "looksee/shortcuts"
-	gem "wirble"
-	gem "hirb"
-	gem "awesome_print"
-	gem "ruby-growl"
-	gem "bullet", "2.0.0.rc2"
-	gem "silent-postgres"
-	gem "colorblind"
-	gem "deadweight"
-	gem "railroad"
-end
+gem "ruby-debug"
+gem "looksee", :require => "looksee/shortcuts"
+gem "wirble"
+gem "hirb"
+gem "awesome_print"
+gem "ruby-growl"
+gem "bullet", "2.0.0.rc2"
+gem "silent-postgres"
+gem "colorblind"
+gem "deadweight"
+gem "railroad"
 
 gem "paperclip"
 gem "aws-s3", :require => "aws/s3"
@@ -80,8 +76,8 @@ gem "rails", "3.0.1"
 gem "rake"
 
 generate :resourcer_setup
-generate :rspec
-generate :cucumber
+generate "rspec:install"
+generate "cucumber:install --rspec"
 
 # Images
 run "rm -rf public/images"
