@@ -82,7 +82,7 @@ Current Version (stable)
 
 Master Version (possibly unstable, use at your own risk)
 
-  rails demo -m http://github.com/aeonscope/rails_setup_template/raw/master/template.rb
+  rails new demo -d=postgresql -J -T -m http://github.com/aeonscope/rails_setup_template/raw/master/template.rb
 
 When prompted to override files, choose the 'a' option. Files that will be overwritten are (trust me, nothing to get alarmed about):
 
