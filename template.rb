@@ -49,11 +49,17 @@ file "config/initializers/validation.rb", open("#{GITHUB_T1_ROOT}/rails/config/i
 # open("config/environments/development.rb", 'a') {|file| file << open("#{GITHUB_T1_ROOT}/rails/config/environments/development.rb").read}
 
 # Gems
-
-gem "metric_fu"
-gem "webrat"
-gem "cucumber"
-gem "rspec-rails"
+gem "rake"
+gem "rails"
+gem "resourcer"
+gem "aasm"
+gem "will_paginate"
+gem "formtastic"
+gem "acts_as_list"
+gem "lineage"
+gem "RedCloth"
+gem "aws-s3", :require => "aws/s3"
+gem "paperclip"
 
 gem "ruby-debug"
 gem "looksee", :require => "looksee/shortcuts"
@@ -67,17 +73,10 @@ gem "colorblind"
 gem "deadweight"
 gem "railroad"
 
-gem "paperclip"
-gem "aws-s3", :require => "aws/s3"
-gem "RedCloth"
-gem "lineage"
-gem "acts_as_list"
-gem "formtastic"
-gem "will_paginate"
-gem "aasm"
-gem "resourcer"
-gem "rails", "3.0.1"
-gem "rake"
+gem "rspec-rails"
+gem "cucumber"
+gem "webrat"
+gem "metric_fu"
 
 generate :resourcer_setup
 generate "rspec:install"
