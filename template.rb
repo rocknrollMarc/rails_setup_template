@@ -46,17 +46,39 @@ file "config/initializers/date_time.rb", open("#{GITHUB_T1_ROOT}/rails/config/in
 file "config/initializers/ruby_enhancements.rb", open("#{GITHUB_T1_ROOT}/rails/config/initializers/ruby_enhancements.rb").read
 file "config/initializers/system.rb", open("#{GITHUB_T1_ROOT}/rails/config/initializers/system.rb").read
 file "config/initializers/validation.rb", open("#{GITHUB_T1_ROOT}/rails/config/initializers/validation.rb").read
-open("config/environments/development.rb", 'a') {|file| file << open("#{GITHUB_T1_ROOT}/rails/config/environments/development.rb").read}
+# open("config/environments/development.rb", 'a') {|file| file << open("#{GITHUB_T1_ROOT}/rails/config/environments/development.rb").read}
 
 # Gems
+group :test do
+	gem "rspec-rails"
+end
+
+group :development do
+	gem "ruby-debug"
+	gem "looksee", :require => "looksee/shortcuts"
+	gem "wirble"
+	gem "hirb"
+	gem "awesome_print"
+	gem "ruby-growl"
+	gem "bullet", "2.0.0.rc2"
+	gem "silent-postgres"
+	gem "colorblind"
+	gem "deadweight"
+	gem "railroad"
+end
+
 gem "paperclip"
+gem "aws-s3", :require => "aws/s3"
 gem "RedCloth"
+gem "lineage"
+gem "acts_as_list"
+gem "formtastic"
 gem "will_paginate"
 gem "aasm"
-gem "acts_as_list"
-gem "lineage"
-gem "formtastic"
 gem "resourcer"
+gem "rails", "3.0.1"
+gem "rake"
+
 generate :resourcer_setup
 generate :rspec
 generate :cucumber
