@@ -1,11 +1,11 @@
 # System-wide settings.
 SYSTEM_LABEL = "Demo"
 SYSTEM_DESCRIPTION = "A demo application."
-SYSTEM_VERSION = "1.2.0"
+SYSTEM_VERSION = "1.3.0"
 SYSTEM_EMAIL = "noreply@noreply.com"
 
-DEVELOPER_LABEL = "Brooke Kuhlmann"
-DEVELOPER_URL = "http://www.google.com/profiles/114291115422773881390"
+DEVELOPER_LABEL = "Red Alchemist"
+DEVELOPER_URL = "http://www.redalchemist.com"
 
 THEME_NAME = "default"
 THEME_ROOT = "/themes/#{THEME_NAME}"
