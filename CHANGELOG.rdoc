@@ -4,6 +4,9 @@
 * Upgraded to {jQuery 1.4.3}[http://jquery.com].
 * Upgraded to {jQuery UI 1.8.5}[http://jqueryui.com].
 * Removed the heroku.rake file. See the {Heroku Plus}[http://github.com/aeonscope/heroku_plus] gem for additional capabilities.
+* Replaced the Awesome Nested Set with the {Lineage}[http://github.com/aeonscope/lineage] gem.
+* Removed the LESS[http://lesscss.org] gem and related More[http://github.com/cloudhead/more] plugin.
+* Removed all plugin installs.
 
 = v1.2.0
 

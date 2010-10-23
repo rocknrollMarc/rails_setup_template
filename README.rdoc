@@ -7,8 +7,8 @@ and is best applied when building a new Ruby on Rails application.
 
 The following highlights the changes that will be made to your Ruby on Rails app:
 
-* Installs the {jQuery 1.4.2}[http://jquery.com] JavaScript library.
-* Installs the {jQuery UI 1.8.2}[http://jqueryui.com] JavaScript library.
+* Installs the {jQuery 1.4.3}[http://jquery.com] JavaScript library.
+* Installs the {jQuery UI 1.8.5}[http://jqueryui.com] JavaScript library.
 * Installs the {jQuery Block UI 2.26}[http://github.com/malsup/blockui] JavaScript library.
 * Installs the {jQuery Validation 1.5.2}[http://bassistance.de/jquery-plugins/jquery-plugin-validation] JavaScript library.
 * Installs the {jQuery jGrowl 1.1.2}[http://stanlemon.net/projects/jgrowl.html] JavaScript library.
@@ -16,41 +16,35 @@ The following highlights the changes that will be made to your Ruby on Rails app
 * Installs the {jQuery Tools 1.2.4}[http://flowplayer.org/tools/index.html] JavaScript library.
 * Installs the Underscore[http://github.com/documentcloud/underscore] JavaScript library.
 * Installs the Modernizr[http://www.modernizr.com] JavaScript library.
-* Installs a default application.html.erb file with a basic but structured site layout.
-* Installs a default {Blueprint CSS}[http://github.com/joshuaclayton/blueprint-css] theme.
-* Installs a jQueryUI theme to compliment the Blueprint CSS theme.
-* Installs default application graphics.
+* Installs a customized application.html.erb file with a basic but structured site layout.
+* Installs a customized {Blueprint CSS}[http://github.com/joshuaclayton/blueprint-css] theme.
+* Installs a customized jQueryUI theme to compliment the Blueprint CSS theme.
+* Installs customized application graphics.
+* Installs customized configuration initializers.
+* Installs a rake script with additional database support such as seeds and sizes.
+* Installs a rake script with {Phusion Passenger}[http://www.modrails.com/] support.
+* Installs a rake script with Railroad diagram support.
+* Installs simple _home_ and _about_ controllers for basic demo usage.
+* Installs customized view helpers.
+* Installs OmniGraffle[http://www.omnigroup.com/products/OmniGraffle/] documentation for site layout and structure.
+* Installs site navigation with dynamic controller detection and menu selection.
+* Installs nested drop down menu support as inspired by {CSS Dropdown Menu}[http://www.webdesignerwall.com/tutorials/css3-dropdown-menu/].
 * Adds the Resourcer[http://github.com/aeonscope/resourcer] gem requirement.
-* Adds the LESS[http://lesscss.org] gem requirement.
 * Adds the Formtastic[http://github.com/justinfrench/formtastic] gem requirement.
 * Adds the {Acts as State Machine (AASM)}[http://github.com/rubyist/aasm] gem requirement.
 * Adds the {Acts as List}[http://github.com/ryanb/acts-as-list] gem requirement.
-* Adds the {Awesome Nested Set}[http://github.com/collectiveidea/awesome_nested_set] gem requirement.
+* Adds the {Lineage}[http://github.com/aeonscope/lineage] gem requirement.
 * Adds the {Will Paginate}[http://github.com/mislav/will_paginate] gem requirement.
 * Adds the RedCloth[http://redcloth.org] gem requirement.
 * Adds the Paperclip[http://www.thoughtbot.com/projects/paperclip] gem requirement.
 * Adds the {RSpec}[http://github.com/dchelimsky/rspec] gem requirement.
-* Adds the {RSpec for Rails}[http://github.com/dchelimsky/rspec-rails/tree/master] gem requirement.
+* Adds the {RSpec Rails}[http://github.com/dchelimsky/rspec-rails/tree/master] gem requirement.
 * Adds the Cucumber[http://github.com/aslakhellesoy/cucumber/tree/master] gem requirement.
 * Adds the Webrat[http://gitrdoc.com/brynary/webrat/tree/master] gem requirement.
 * Adds the {Metric Fu}[http://metric-fu.rubyforge.org] gem requirement.
 * Adds the Railroad[http://railroad.rubyforge.org] gem requirement.
 * Adds the Bullet[http://github.com/flyerhzm/bullet] gem requirement.
 * Adds the Deadweight[http://github.com/aanand/deadweight] gem requirement.
-* Installs the More[http://github.com/cloudhead/more] plugin.
-* Installs the {Custom Error Message}[http://github.com/gumayunov/custom-err-msg] plugin.
-* Installs the {Blue Ridge}[http://github.com/relevance/blue-ridge] plugin.
-* Installs the {Rails Indexes}[http://github.com/eladmeidar/rails_indexes] plugin.
-* Installs default configuration initializers.
-* Installs a rake script with additional database support such as seeds and sizes.
-* Installs a rake script with Heroku[http://heroku.com] support.
-* Installs a rake script with {Phusion Passenger}[http://www.modrails.com/] support.
-* Installs a rake script with Railroad diagram support.
-* Installs simple _home_ and _about_ controllers for basic demo usage.
-* Installs default view helpers.
-* Installs OmniGraffle[http://www.omnigroup.com/products/OmniGraffle/] documentation for site layout and structure.
-* Provides site navigation with dynamic controller detection and menu selection.
-* Provides nested drop down menu support as inspired by {CSS Dropdown Menu}[http://www.webdesignerwall.com/tutorials/css3-dropdown-menu/].
 
 = License
 
@@ -79,6 +73,14 @@ Current Version (stable)
 Master Version (possibly unstable, use at your own risk)
 
   rails demo -m http://github.com/aeonscope/rails_setup_template/raw/master/template.rb
+
+When prompted to override files, choose the 'a' option. Files that will be overwritten are (trust me, nothing to get alarmed about):
+
+* doc/README_FOR_APP
+* app/views/layouts/application.html.erb
+* public/favicon.ico
+* public/javascripts/application.js
+* .gitignore
 
 = Notes
 

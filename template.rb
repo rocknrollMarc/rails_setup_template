@@ -46,7 +46,7 @@ file "config/initializers/date_time.rb", open("#{GITHUB_T1_ROOT}/rails/config/in
 file "config/initializers/ruby_enhancements.rb", open("#{GITHUB_T1_ROOT}/rails/config/initializers/ruby_enhancements.rb").read
 file "config/initializers/system.rb", open("#{GITHUB_T1_ROOT}/rails/config/initializers/system.rb").read
 file "config/initializers/validation.rb", open("#{GITHUB_T1_ROOT}/rails/config/initializers/validation.rb").read
-# open("config/environments/development.rb", 'a') {|file| file << open("#{GITHUB_T1_ROOT}/rails/config/environments/development.rb").read}
+open("config/environments/development.rb", 'a') {|file| file << open("#{GITHUB_T1_ROOT}/rails/config/environments/development.rb").read}
 
 # Gems
 gem "paperclip"
@@ -54,24 +54,15 @@ gem "RedCloth"
 gem "will_paginate"
 gem "aasm"
 gem "acts_as_list"
-gem "awesome_nested_set"
+gem "lineage"
 gem "formtastic"
-gem "less"
 gem "resourcer"
 generate :resourcer_setup
 generate :rspec
 generate :cucumber
 
-# Plugins
-# plugin "More", :git => "git://github.com/cloudhead/more.git"
-# plugin "Custom Error Message", :git => "git://github.com/gumayunov/custom-err-msg.git"
-# plugin "Blue Ridge", :git => "git://github.com/relevance/blue-ridge.git"
-# plugin "Rails Indexes", :git => "git://github.com/eladmeidar/rails_indexes.git"
-# generate :blue_ridge
-
 # Images
 run "rm -rf public/images"
-
 file "public/favicon.ico", open("#{GITHUB_T1_ROOT}/rails/public/favicon.ico").read
 file "public/themes/default/images/icons/email.gif", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/icons/email.gif").read
 file "public/themes/default/images/icons/feed-comments.png", open("#{GITHUB_T1_ROOT}/rails/public/themes/default/images/icons/feed-comments.png").read
