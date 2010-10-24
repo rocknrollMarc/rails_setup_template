@@ -81,15 +81,7 @@ Current Version (stable)
 
 Master Version (possibly unstable, use at your own risk)
 
-  rails new demo -d=sqlite3 -J -T -m http://github.com/aeonscope/rails_setup_template/raw/master/template.rb
-
-When prompted to override files, choose the 'a' option and the following files will be overwritten:
-
-* doc/README_FOR_APP
-* app/views/layouts/application.html.erb
-* public/favicon.ico
-* public/javascripts/application.js
-* .gitignore
+  rails new demo -d=sqlite3 -J -T -f -m http://github.com/aeonscope/rails_setup_template/raw/master/template.rb
 
 = Notes
 
