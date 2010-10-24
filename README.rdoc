@@ -109,4 +109,4 @@ To install, simply do the following:
 
 = Contact/Feedback/Issues
 
-* {Brooke Kuhlmannn}[http://www.redalchemist.com]
+* {Red Alchemist}[http://www.redalchemist.com]
