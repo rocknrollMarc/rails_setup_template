@@ -31,6 +31,7 @@ The following highlights the changes that will be made to your Ruby on Rails app
 * Installs nested drop down menu support as inspired by {CSS Dropdown Menu}[http://www.webdesignerwall.com/tutorials/css3-dropdown-menu/].
 * Adds the Rake[http://github.com/jimweirich/rake] gem requirement.
 * Adds the {Ruby on Rails}[http://rubyonrails.org] gem requirement.
+* Adds the PostgreSQL[http://bitbucket.org/ged/ruby-pg/wiki/Home] gem requirement.
 * Adds the Resourcer[http://github.com/aeonscope/resourcer] gem requirement.
 * Adds the {Will Paginate}[http://github.com/mislav/will_paginate] gem requirement.
 * Adds the {Acts as State Machine (AASM)}[http://github.com/rubyist/aasm] gem requirement.
@@ -84,7 +85,7 @@ Master Version (possibly unstable, use at your own risk)
 
   rails new demo -d=postgresql -J -T -m http://github.com/aeonscope/rails_setup_template/raw/master/template.rb
 
-When prompted to override files, choose the 'a' option. Files that will be overwritten are (trust me, nothing to get alarmed about):
+When prompted to override files, choose the 'a' option and the following files will be overwritten:
 
 * doc/README_FOR_APP
 * app/views/layouts/application.html.erb
@@ -110,4 +111,4 @@ To install, simply do the following:
 
 = Contact/Feedback/Issues
 
-* {Brooke Kuhlmannn}[http://www.google.com/profiles/114291115422773881390]
+* {Brooke Kuhlmannn}[http://www.redalchemist.com]
