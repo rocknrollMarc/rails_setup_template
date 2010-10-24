@@ -57,7 +57,7 @@ The following highlights the changes that will be made to your Ruby on Rails app
 
 = License
 
-Copyright (c) 2009-2010 {Brooke Kuhlmann}[http://www.aeonscope.net].
+Copyright (c) 2010 {Red Alchemist}[http://www.redalchemist.com].
 See the included LICENSE for more info.
 
 = History
