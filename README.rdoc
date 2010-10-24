@@ -31,7 +31,6 @@ The following highlights the changes that will be made to your Ruby on Rails app
 * Installs nested drop down menu support as inspired by {CSS Dropdown Menu}[http://www.webdesignerwall.com/tutorials/css3-dropdown-menu/].
 * Adds the Rake[http://github.com/jimweirich/rake] gem requirement.
 * Adds the {Ruby on Rails}[http://rubyonrails.org] gem requirement.
-* Adds the PostgreSQL[http://bitbucket.org/ged/ruby-pg/wiki/Home] gem requirement.
 * Adds the Resourcer[http://github.com/aeonscope/resourcer] gem requirement.
 * Adds the {Will Paginate}[http://github.com/mislav/will_paginate] gem requirement.
 * Adds the {Acts as State Machine (AASM)}[http://github.com/rubyist/aasm] gem requirement.
@@ -48,7 +47,6 @@ The following highlights the changes that will be made to your Ruby on Rails app
 * Adds the {Awesome Print}[http://github.com/michaeldv/awesome_print] gem.
 * Adds the {Ruby Growl}[http://rubyforge.org/projects/ruby-growl] gem.
 * Adds the Bullet[http://github.com/flyerhzm/bullet] gem requirement.
-* Adds the {Silent PostgreSQL}[http://github.com/dolzenko/silent-postgres] gem.
 * Adds the {Color Blind}[http://github.com/codegram/colorblind] gem.
 * Adds the Deadweight[http://github.com/aanand/deadweight] gem requirement.
 * Adds the Railroad[http://railroad.rubyforge.org] gem requirement.
@@ -83,7 +81,7 @@ Current Version (stable)
 
 Master Version (possibly unstable, use at your own risk)
 
-  rails new demo -d=postgresql -J -T -m http://github.com/aeonscope/rails_setup_template/raw/master/template.rb
+  rails new demo -d=sqlite3 -J -T -m http://github.com/aeonscope/rails_setup_template/raw/master/template.rb
 
 When prompted to override files, choose the 'a' option and the following files will be overwritten:
 
