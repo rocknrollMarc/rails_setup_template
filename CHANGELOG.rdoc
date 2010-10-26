@@ -6,6 +6,7 @@
 * Upgraded to {jQuery Block UI 2.33}[http://github.com/malsup/blockui].
 * Upgraded to {jQuery Validation 1.7}[http://bassistance.de/jquery-plugins/jquery-plugin-validation].
 * Upgraded to {jQuery Tools 1.2.5}[http://flowplayer.org/tools/index.html].
+* Upgraded to {Modernizr 1.6.0}[http://www.modernizr.com].
 * Upgraded to {Underscore 1.1.0}[http://github.com/documentcloud/underscore].
 * Removed the heroku.rake file. See the {Heroku Plus}[http://github.com/aeonscope/heroku_plus] gem for additional capabilities.
 * Replaced the Awesome Nested Set with the {Lineage}[http://github.com/aeonscope/lineage] gem.

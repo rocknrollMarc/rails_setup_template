@@ -149,7 +149,7 @@ file "public/javascripts/jquery.markitup.js", open("http://cachedcommons.org/cac
 file "public/javascripts/jquery.markitup.textile.js", open("#{GITHUB_T1_ROOT}/rails/public/javascripts/jquery.markitup.textile.js").read
 file "public/javascripts/jquery.tools.js", open("http://cdn.jquerytools.org/1.2.5/all/jquery.tools.min.js").read
 file "public/javascripts/underscore.js", open("http://cachedcommons.org/cache/underscore/1.1.0/javascripts/underscore.js").read
-file "public/javascripts/modernizr.js", open("http://cachedcommons.org/cache/modernizr/1.5.0/javascripts/modernizr.js").read
+file "public/javascripts/modernizr.js", open("http://github.com/Modernizr/Modernizr/raw/v1.6/modernizr.js").read
 file "public/javascripts/application.js", open("#{GITHUB_T1_ROOT}/rails/public/javascripts/application.js").read
 
 # Git
