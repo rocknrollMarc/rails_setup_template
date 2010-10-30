@@ -1,16 +1,22 @@
 <!DOCTYPE html">
 <html class="no-js">
   <head>
-		<title><%= yield(:title) || SYSTEM_LABEL %></title>
+		<!-- Defaults -->
+		<meta charset="utf-8">
 		
+		<!-- Force latest IE rendering engine & Chrome Frame. Remove if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
 		<!-- Identity -->
+		<title><%= yield(:title) || SYSTEM_LABEL %></title>
 	  <meta name="keywords" content="Demo Ruby Ruby on Rails">
 	  <meta name="description" content="A generated Ruby on Rails app with default theming and utility support.">
+		<% tag :meta, :name => :author, :content => DEVELOPER_LABEL %>
 
 		<!-- Security -->
 		<%= csrf_meta_tag %>
 
-    <!-- Bookmark Icon -->	
+    <!-- Bookmark Icon -->
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="icon" href="/favicon.ico" />
 
