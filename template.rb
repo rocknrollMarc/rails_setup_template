@@ -142,6 +142,7 @@ file "public/themes/default/style.css", open("#{GITHUB_T1_ROOT}/rails/public/the
 # JavaScripts
 file "public/javascripts/jquery.js", open("http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.js").read
 file "public/javascripts/jquery-ui.js", open("http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.js").read
+file "public/javascripts/jquery.cookie.js", open("http://cachedcommons.org/cache/jquery-cookie/0.0.0/javascripts/jquery-cookie.js").read
 file "public/javascripts/jquery.blockUI.js", open("http://cachedcommons.org/cache/jquery-blockui/2.3.3/javascripts/jquery-blockui.js").read
 file "public/javascripts/jquery.validate.js", open("http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.js").read
 file "public/javascripts/jquery.jgrowl.js", open("#{GITHUB_T1_ROOT}/rails/public/javascripts/jquery.jgrowl.js").read
