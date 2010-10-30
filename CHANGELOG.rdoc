@@ -8,6 +8,7 @@
 * Upgraded to {jQuery Tools 1.2.5}[http://flowplayer.org/tools/index.html].
 * Upgraded to {Modernizr 1.6.0}[http://www.modernizr.com].
 * Upgraded to {Underscore 1.1.0}[http://github.com/documentcloud/underscore].
+* Added the {jQuery DataTables 1.7.4}[http://www.datatables.net] JavaScript library.
 * Removed the heroku.rake file. See the {Heroku Plus}[http://github.com/aeonscope/heroku_plus] gem for additional capabilities.
 * Replaced the Awesome Nested Set with the {Lineage}[http://github.com/aeonscope/lineage] gem.
 * Removed the LESS[http://lesscss.org] gem and related More[http://github.com/cloudhead/more] plugin.
