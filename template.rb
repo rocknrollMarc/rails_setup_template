@@ -69,6 +69,7 @@ gem "ruby-growl"
 # gem "bullet", "2.0.0.rc2"
 gem "colorblind"
 gem "deadweight"
+gem "rails-erd"
 gem "railroad"
 
 gem "rspec-rails"

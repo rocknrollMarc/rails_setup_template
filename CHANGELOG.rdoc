@@ -10,6 +10,7 @@
 * Upgraded to {Underscore 1.1.0}[http://github.com/documentcloud/underscore].
 * Added the {jQuery DataTables 1.7.4}[http://www.datatables.net] JavaScript library.
 * Added the {jQuery Cookie}[http://plugins.jquery.com/project/Cookie] JavaScript library.
+* Added the {Rails ERD}[http://rails-erd.rubyforge.org] gem requirement.
 * Removed the heroku.rake file. See the {Heroku Plus}[http://github.com/aeonscope/heroku_plus] gem for additional capabilities.
 * Replaced the Awesome Nested Set with the {Lineage}[http://github.com/aeonscope/lineage] gem.
 * Removed the LESS[http://lesscss.org] gem and related More[http://github.com/cloudhead/more] plugin.

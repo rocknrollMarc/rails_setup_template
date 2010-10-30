@@ -51,6 +51,7 @@ The following highlights the changes that will be made to your Ruby on Rails app
 * Adds the Bullet[http://github.com/flyerhzm/bullet] gem requirement.
 * Adds the {Color Blind}[http://github.com/codegram/colorblind] gem.
 * Adds the Deadweight[http://github.com/aanand/deadweight] gem requirement.
+* Adds the {Rails ERD}[http://rails-erd.rubyforge.org] gem requirement.
 * Adds the Railroad[http://railroad.rubyforge.org] gem requirement.
 * Adds the {RSpec Rails}[http://github.com/dchelimsky/rspec-rails/tree/master] gem requirement.
 * Adds the Cucumber[http://github.com/aslakhellesoy/cucumber/tree/master] gem requirement.
