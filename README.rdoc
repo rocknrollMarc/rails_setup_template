@@ -86,7 +86,11 @@ Master Version (possibly unstable, use at your own risk)
 
   rails new demo -d=sqlite3 -J -T -f -m http://github.com/aeonscope/rails_setup_template/raw/master/template.rb
 
-= Notes
+= Configuration
+
+Add/update the config/application.rb file with the following so that the utility libraries are automatically loaded for you:
+
+  config.autoload_paths += %W(#{config.root}/lib/utils)
 
 Make sure to replace the Growl password for the Bullet configuration in the config/environments/development.rb file.
 

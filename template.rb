@@ -33,7 +33,7 @@ file "app/views/about/show.html.erb", open("#{GITHUB_T1_ROOT}/rails/app/views/ab
 file "app/views/shared/menus/_visitor.html.erb", open("#{GITHUB_T1_ROOT}/rails/app/views/shared/menus/_visitor.html.erb").read
 
 # Lib
-file "lib/acts_as_list_enhancements.rb", open("#{GITHUB_T1_ROOT}/rails/lib/acts_as_list_enhancements.rb").read
+file "lib/utils/acts_as_list_enhancements.rb", open("#{GITHUB_T1_ROOT}/rails/lib/utils/acts_as_list_enhancements.rb").read
 file "lib/tasks/database.rake", open("#{GITHUB_T1_ROOT}/rails/lib/tasks/database.rake").read
 file "lib/tasks/passenger.rake", open("#{GITHUB_T1_ROOT}/rails/lib/tasks/passenger.rake").read
 file "lib/tasks/railroad.rake", open("#{GITHUB_T1_ROOT}/rails/lib/tasks/railroad.rake").read
