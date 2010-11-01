@@ -77,7 +77,7 @@ gem "cucumber"
 gem "webrat"
 gem "metric_fu"
 
-generate :resourcer_setup
+generate "resourcer:install"
 generate "rspec:install"
 generate "cucumber:install --rspec"
 
