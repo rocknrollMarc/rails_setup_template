@@ -81,11 +81,11 @@ Open a terminal window and execute one the following command lines depending on 
 
 Current Version (stable)
 
-  rails new demo -d=sqlite3 -J -T -f -m http://github.com/aeonscope/rails_setup_template/raw/v2.0.0/template.rb
+  rails new demo -d=sqlite3 -J -T -f -m https://github.com/aeonscope/rails_setup_template/raw/v2.0.0/template.rb
 
 Master Version (possibly unstable, use at your own risk)
 
-  rails new demo -d=sqlite3 -J -T -f -m http://github.com/aeonscope/rails_setup_template/raw/master/template.rb
+  rails new demo -d=sqlite3 -J -T -f -m https://github.com/aeonscope/rails_setup_template/raw/master/template.rb
 
 = Configuration
 
