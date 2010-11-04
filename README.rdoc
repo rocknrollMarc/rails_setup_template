@@ -35,6 +35,7 @@ The following highlights the changes that will be made to your Ruby on Rails app
 * Adds the {Ruby on Rails}[http://rubyonrails.org] gem requirement.
 * Adds the Resourcer[http://github.com/aeonscope/resourcer] gem requirement.
 * Adds the {Will Paginate}[http://github.com/mislav/will_paginate] gem requirement.
+* Adds the LESS[http://lesscss.org] gem requirement.
 * Adds the {Acts as State Machine (AASM)}[http://github.com/rubyist/aasm] gem requirement.
 * Adds the {Acts as List}[http://github.com/ryanb/acts-as-list] gem requirement.
 * Adds the {Lineage}[http://github.com/aeonscope/lineage] gem requirement.
@@ -80,7 +81,7 @@ Open a terminal window and execute one the following command lines depending on 
 
 Current Version (stable)
 
-  rails demo -m http://github.com/aeonscope/rails_setup_template/raw/v1.2.0/template.rb
+  rails new demo -d=sqlite3 -J -T -f -m http://github.com/aeonscope/rails_setup_template/raw/v2.0.0/template.rb
 
 Master Version (possibly unstable, use at your own risk)
 

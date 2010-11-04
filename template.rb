@@ -1,4 +1,4 @@
-GITHUB_T1_ROOT = "http://github.com/aeonscope/rails_setup_template/raw/master"
+GITHUB_T1_ROOT = "http://github.com/aeonscope/rails_setup_template/raw/v2.0.0"
 
 # Doc
 file "doc/README_FOR_APP", "TODO - Document your application...slacker."
@@ -53,6 +53,7 @@ gem "rails", "3.0.1"
 gem "resourcer"
 gem "aasm"
 gem "will_paginate"
+gem "less"
 gem "formtastic"
 gem "acts_as_list"
 gem "lineage"
