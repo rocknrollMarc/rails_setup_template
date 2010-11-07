@@ -3,17 +3,17 @@
 * Upgraded template to support Rails 3.0.0.
 * Upgraded to {jQuery 1.4.3}[http://jquery.com].
 * Upgraded to {jQuery UI 1.8.5}[http://jqueryui.com].
-* Upgraded to {jQuery Block UI 2.33}[http://github.com/malsup/blockui].
+* Upgraded to {jQuery Block UI 2.33}[https://github.com/malsup/blockui].
 * Upgraded to {jQuery Validation 1.7}[http://bassistance.de/jquery-plugins/jquery-plugin-validation].
 * Upgraded to {jQuery Tools 1.2.5}[http://flowplayer.org/tools/index.html].
 * Upgraded to {Modernizr 1.6.0}[http://www.modernizr.com].
-* Upgraded to {Underscore 1.1.0}[http://github.com/documentcloud/underscore].
+* Upgraded to {Underscore 1.1.0}[https://github.com/documentcloud/underscore].
 * Added the {jQuery DataTables 1.7.4}[http://www.datatables.net] JavaScript library.
 * Added the {jQuery Cookie}[http://plugins.jquery.com/project/Cookie] JavaScript library.
 * Added the {Rails ERD}[http://rails-erd.rubyforge.org] gem requirement.
-* Removed the heroku.rake file. See the {Heroku Plus}[http://github.com/aeonscope/heroku_plus] gem for additional capabilities.
-* Replaced the Awesome Nested Set with the {Lineage}[http://github.com/aeonscope/lineage] gem.
-* Removed the More[http://github.com/cloudhead/more] plugin.
+* Removed the heroku.rake file. See the {Heroku Plus}[https://github.com/aeonscope/heroku_plus] gem for additional capabilities.
+* Replaced the Awesome Nested Set with the {Lineage}[https://github.com/aeonscope/lineage] gem.
+* Removed the More[https://github.com/cloudhead/more] plugin.
 * Removed all plugin installs.
 
 = v1.2.0
@@ -32,22 +32,22 @@
 = v1.1.0
 
 * Added the LESS[http://lesscss.org] gem requirement.
-* Added the More[http://github.com/cloudhead/more] plugin.
-* Added the {Rails Indexes}[http://github.com/eladmeidar/rails_indexes] plugin.
-* Added the Formtastic[http://github.com/justinfrench/formtastic] gem requirement.
-* Added the Bullet[http://github.com/flyerhzm/bullet] gem requirement.
-* Added the Deadweight[http://github.com/aanand/deadweight] gem requirement.
+* Added the More[https://github.com/cloudhead/more] plugin.
+* Added the {Rails Indexes}[https://github.com/eladmeidar/rails_indexes] plugin.
+* Added the Formtastic[https://github.com/justinfrench/formtastic] gem requirement.
+* Added the Bullet[https://github.com/flyerhzm/bullet] gem requirement.
+* Added the Deadweight[https://github.com/aanand/deadweight] gem requirement.
 * Removed the AndAnd[http://andand.rubyforge.org] gem requirement.
 * Added Git setup and initialization.
 * Removed the visitor namespace.
-* Added the Underscore[http://github.com/documentcloud/underscore] JavaScript library.
+* Added the Underscore[https://github.com/documentcloud/underscore] JavaScript library.
 * Upgraded to {jQuery 1.4.2}[http://jquery.com].
 * Upgraded to {jQuery UI 1.8.2}[http://jqueryui.com].
 * Updated the db:reseed rake task so that it also rebuilds the models diagrams.
 * Added a rake task for printing database and database table sizes.
 * Added a rake task for Heroku deployments.
 * Added a rake task for Deadweight.
-* Upgraded to {Blueprint 0.9.1}[http://github.com/joshuaclayton/blueprint-css].
+* Upgraded to {Blueprint 0.9.1}[https://github.com/joshuaclayton/blueprint-css].
 * Added Phusion Passenger debug support (see passenger.rake).
 * Updated all gem definitions due to rubygems.org changes.
 

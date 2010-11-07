@@ -10,16 +10,16 @@ The following highlights the changes that will be made to your Ruby on Rails app
 * Installs the {jQuery 1.4.3}[http://jquery.com] JavaScript library.
 * Installs the {jQuery UI 1.8.5}[http://jqueryui.com] JavaScript library.
 * Installs the {jQuery Cookie}[http://plugins.jquery.com/project/Cookie] JavaScript library.
-* Installs the {jQuery Block UI 2.33}[http://github.com/malsup/blockui] JavaScript library.
+* Installs the {jQuery Block UI 2.33}[https://github.com/malsup/blockui] JavaScript library.
 * Installs the {jQuery Validation 1.7}[http://bassistance.de/jquery-plugins/jquery-plugin-validation] JavaScript library.
 * Installs the {jQuery jGrowl 1.1.2}[http://stanlemon.net/projects/jgrowl.html] JavaScript library.
 * Installs the {jQuery Mark It Up 1.1.8}[http://markitup.jaysalvat.com] JavaScript library.
 * Installs the {jQuery Tools 1.2.5}[http://flowplayer.org/tools/index.html] JavaScript library.
 * Installs the {jQuery DataTables 1.7.4}[http://www.datatables.net] JavaScript library.
-* Installs the {Underscore 1.1.0}[http://github.com/documentcloud/underscore] JavaScript library.
+* Installs the {Underscore 1.1.0}[https://github.com/documentcloud/underscore] JavaScript library.
 * Installs the {Modernizr 1.6.0}[http://www.modernizr.com] JavaScript library.
 * Installs a customized application.html.erb file with a basic but structured site layout.
-* Installs a customized {Blueprint CSS}[http://github.com/joshuaclayton/blueprint-css] theme.
+* Installs a customized {Blueprint CSS}[https://github.com/joshuaclayton/blueprint-css] theme.
 * Installs a customized jQueryUI theme to compliment the Blueprint CSS theme.
 * Installs customized application graphics.
 * Installs customized configuration initializers.
@@ -31,31 +31,31 @@ The following highlights the changes that will be made to your Ruby on Rails app
 * Installs OmniGraffle[http://www.omnigroup.com/products/OmniGraffle/] documentation for site layout and structure.
 * Installs site navigation with dynamic controller detection and menu selection.
 * Installs nested drop down menu support as inspired by {CSS Dropdown Menu}[http://www.webdesignerwall.com/tutorials/css3-dropdown-menu/].
-* Adds the Rake[http://github.com/jimweirich/rake] gem requirement.
+* Adds the Rake[https://github.com/jimweirich/rake] gem requirement.
 * Adds the {Ruby on Rails}[http://rubyonrails.org] gem requirement.
-* Adds the Resourcer[http://github.com/aeonscope/resourcer] gem requirement.
-* Adds the {Will Paginate}[http://github.com/mislav/will_paginate] gem requirement.
+* Adds the Resourcer[https://github.com/aeonscope/resourcer] gem requirement.
+* Adds the {Will Paginate}[https://github.com/mislav/will_paginate] gem requirement.
 * Adds the LESS[http://lesscss.org] gem requirement.
-* Adds the {Acts as State Machine (AASM)}[http://github.com/rubyist/aasm] gem requirement.
-* Adds the {Acts as List}[http://github.com/ryanb/acts-as-list] gem requirement.
-* Adds the {Lineage}[http://github.com/aeonscope/lineage] gem requirement.
-* Adds the Formtastic[http://github.com/justinfrench/formtastic] gem requirement.
+* Adds the {Acts as State Machine (AASM)}[https://github.com/rubyist/aasm] gem requirement.
+* Adds the {Acts as List}[https://github.com/ryanb/acts-as-list] gem requirement.
+* Adds the {Lineage}[https://github.com/aeonscope/lineage] gem requirement.
+* Adds the Formtastic[https://github.com/justinfrench/formtastic] gem requirement.
 * Adds the RedCloth[http://redcloth.org] gem requirement.
-* Adds the {AWS-S3}[http://github.com/marcel/aws-s3] gem requirement.
+* Adds the {AWS-S3}[https://github.com/marcel/aws-s3] gem requirement.
 * Adds the Paperclip[http://www.thoughtbot.com/projects/paperclip] gem requirement.
 * Adds the {Ruby Debug}[http://rubyforge.org/projects/ruby-debug] gem.
-* Adds the Looksee[http://github.com/oggy/looksee] gem.
-* Adds the Wirble[http://github.com/blackwinter/wirble] gem.
-* Adds the Hirb[http://github.com/cldwalker/hirb] gem.
-* Adds the {Awesome Print}[http://github.com/michaeldv/awesome_print] gem.
+* Adds the Looksee[https://github.com/oggy/looksee] gem.
+* Adds the Wirble[https://github.com/blackwinter/wirble] gem.
+* Adds the Hirb[https://github.com/cldwalker/hirb] gem.
+* Adds the {Awesome Print}[https://github.com/michaeldv/awesome_print] gem.
 * Adds the {Ruby Growl}[http://rubyforge.org/projects/ruby-growl] gem.
-* Adds the Bullet[http://github.com/flyerhzm/bullet] gem requirement.
-* Adds the {Color Blind}[http://github.com/codegram/colorblind] gem.
-* Adds the Deadweight[http://github.com/aanand/deadweight] gem requirement.
+* Adds the Bullet[https://github.com/flyerhzm/bullet] gem requirement.
+* Adds the {Color Blind}[https://github.com/codegram/colorblind] gem.
+* Adds the Deadweight[https://github.com/aanand/deadweight] gem requirement.
 * Adds the {Rails ERD}[http://rails-erd.rubyforge.org] gem requirement.
 * Adds the Railroad[http://railroad.rubyforge.org] gem requirement.
-* Adds the {RSpec Rails}[http://github.com/dchelimsky/rspec-rails/tree/master] gem requirement.
-* Adds the Cucumber[http://github.com/aslakhellesoy/cucumber/tree/master] gem requirement.
+* Adds the {RSpec Rails}[https://github.com/dchelimsky/rspec-rails/tree/master] gem requirement.
+* Adds the Cucumber[https://github.com/aslakhellesoy/cucumber/tree/master] gem requirement.
 * Adds the Webrat[http://gitrdoc.com/brynary/webrat/tree/master] gem requirement.
 * Adds the {Metric Fu}[http://metric-fu.rubyforge.org] gem requirement.
 
@@ -73,7 +73,7 @@ See the CHANGELOG file for more info.
 * A solid internet connection.
 * Mac OS/UNIX.
 * Ruby Gems 1.3.x or higher.
-* Applied the {Ruby Gem Setup}[http://github.com/aeonscope/ruby_gem_setup] script or have manually installed all gems listed above.
+* Applied the {Ruby Gem Setup}[https://github.com/aeonscope/ruby_gem_setup] script or have manually installed all gems listed above.
 
 = Usage
 
@@ -97,7 +97,7 @@ Make sure to replace the Growl password for the Bullet configuration in the conf
 
 Since the original Railroad gem hasn't been updated for ages, it is HIGHLY recommended that you use the fork:
 
-  http://github.com/unixmonkey/RailRoad
+  https://github.com/unixmonkey/RailRoad
 
 To install, simply do the following:
 
