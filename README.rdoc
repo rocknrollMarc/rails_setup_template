@@ -87,7 +87,7 @@ Master Version (possibly unstable, use at your own risk)
 
   rails new demo -d=sqlite3 -J -T -f -m https://github.com/aeonscope/rails_setup_template/raw/master/template.rb
 
-*NOTE* Due to a {bug in Rails 3.0.1}[https://rails.lighthouseapp.com/projects/8994/tickets/5926-bug-patch-allow-https-uris-to-be-supplied-for-rails-templates] you can't apply a Rails template via an HTTPS protocol. With that in mind, here is the workaround to the steps shown above:
+*NOTE*: Due to a {bug in Rails 3.0.1}[https://rails.lighthouseapp.com/projects/8994/tickets/5926-bug-patch-allow-https-uris-to-be-supplied-for-rails-templates] you can't apply a Rails template via an HTTPS protocol. With that in mind, here is the workaround to the steps shown above:
 
 1. git clone git@github.com:aeonscope/rails_setup_template.git
 2. rails new demo -d=sqlite3 -J -T -f -m <path to checked out Rails Setup Template project>/template.rb
