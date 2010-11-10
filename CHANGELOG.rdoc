@@ -1,3 +1,7 @@
+= vx.x.x
+
+* Updated the .gitignore file to exclude more Rspec and YARD files.
+
 = v2.0.0
 
 * Upgraded template to support Rails 3.0.0.

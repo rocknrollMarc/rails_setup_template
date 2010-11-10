@@ -1,5 +1,15 @@
+# Rails
 .bundle
+.config
+.rspec
+coverage
 db/*.sqlite3
-log/*.log
-tmp/**/*
 public/stylesheets/**/*
+spec/reports
+spec/temp
+log/*
+tmp/*
+
+# YARD
+.yardoc
+_yardoc
