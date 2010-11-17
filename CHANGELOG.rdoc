@@ -2,6 +2,8 @@
 
 * Updated the .gitignore file to exclude more Rspec and YARD files.
 * Upgraded to {jQuery Mark It Up 1.1.9}[http://markitup.jaysalvat.com].
+* Upgraded to {jQuery 1.4.4}[http://jquery.com] JavaScript library.
+* Upgraded to {jQuery UI 1.8.6}[http://jqueryui.com] JavaScript library.
 
 = v2.0.0
 
