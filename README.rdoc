@@ -33,12 +33,12 @@ The following highlights the changes that will be made to your Ruby on Rails app
 * Installs nested drop down menu support as inspired by {CSS Dropdown Menu}[http://www.webdesignerwall.com/tutorials/css3-dropdown-menu/].
 * Adds the Rake[https://github.com/jimweirich/rake] gem requirement.
 * Adds the {Ruby on Rails}[http://rubyonrails.org] gem requirement.
-* Adds the Resourcer[https://github.com/aeonscope/resourcer] gem requirement.
+* Adds the Resourcer[https://github.com/bkuhlmann/resourcer] gem requirement.
 * Adds the {Will Paginate}[https://github.com/mislav/will_paginate] gem requirement.
 * Adds the LESS[http://lesscss.org] gem requirement.
 * Adds the {Acts as State Machine (AASM)}[https://github.com/rubyist/aasm] gem requirement.
 * Adds the {Acts as List}[https://github.com/ryanb/acts-as-list] gem requirement.
-* Adds the {Lineage}[https://github.com/aeonscope/lineage] gem requirement.
+* Adds the {Lineage}[https://github.com/bkuhlmann/lineage] gem requirement.
 * Adds the Formtastic[https://github.com/justinfrench/formtastic] gem requirement.
 * Adds the RedCloth[http://redcloth.org] gem requirement.
 * Adds the {AWS-S3}[https://github.com/marcel/aws-s3] gem requirement.
@@ -73,7 +73,7 @@ See the CHANGELOG file for more info.
 * A solid internet connection.
 * Mac OS/UNIX.
 * Ruby Gems 1.3.x or higher.
-* Applied the {Ruby Gem Setup}[https://github.com/aeonscope/ruby_gem_setup] script or have manually installed all gems listed above.
+* Applied the {Ruby Gem Setup}[https://github.com/bkuhlmann/ruby_gem_setup] script or have manually installed all gems listed above.
 
 = Usage
 
@@ -81,15 +81,15 @@ Open a terminal window and execute one the following command lines depending on 
 
 Current Version (stable)
 
-  rails new demo -d=sqlite3 -J -T -f -m https://github.com/aeonscope/rails_setup_template/raw/master/template.rb
+  rails new demo -d=sqlite3 -J -T -f -m https://github.com/bkuhlmann/rails_setup_template/raw/master/template.rb
 
 Master Version (possibly unstable, use at your own risk)
 
-  rails new demo -d=sqlite3 -J -T -f -m https://github.com/aeonscope/rails_setup_template/raw/master/template.rb
+  rails new demo -d=sqlite3 -J -T -f -m https://github.com/bkuhlmann/rails_setup_template/raw/master/template.rb
 
 *NOTE*: Due to a {bug in Rails 3.0.1}[https://rails.lighthouseapp.com/projects/8994/tickets/5926-bug-patch-allow-https-uris-to-be-supplied-for-rails-templates] you can't apply a Rails template via a HTTPS scheme. With that in mind, here is the workaround to the steps shown above:
 
-  git clone git@github.com:aeonscope/rails_setup_template.git
+  git clone git@github.com:bkuhlmann/rails_setup_template.git
   rails new demo -d=sqlite3 -J -T -f -m <path to checked out Rails Setup Template project>/template.rb
 
 = Configuration
