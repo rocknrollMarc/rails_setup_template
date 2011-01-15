@@ -18,8 +18,8 @@
 * Added the {jQuery DataTables 1.7.4}[http://www.datatables.net] JavaScript library.
 * Added the {jQuery Cookie}[http://plugins.jquery.com/project/Cookie] JavaScript library.
 * Added the {Rails ERD}[http://rails-erd.rubyforge.org] gem requirement.
-* Removed the heroku.rake file. See the {Heroku Plus}[https://github.com/aeonscope/heroku_plus] gem for additional capabilities.
-* Replaced the Awesome Nested Set with the {Lineage}[https://github.com/aeonscope/lineage] gem.
+* Removed the heroku.rake file. See the {Heroku Plus}[https://github.com/bkuhlmann/heroku_plus] gem for additional capabilities.
+* Replaced the Awesome Nested Set with the {Lineage}[https://github.com/bkuhlmann/lineage] gem.
 * Removed the More[https://github.com/cloudhead/more] plugin.
 * Removed all plugin installs.
 

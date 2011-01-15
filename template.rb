@@ -1,6 +1,6 @@
 require "net/https"
 
-GITHUB_T1_ROOT = "https://github.com/aeonscope/rails_setup_template/raw/master"
+GITHUB_T1_ROOT = "https://github.com/bkuhlmann/rails_setup_template/raw/master"
 
 # Downloads a file, swiching to a secure connection if the source requires it. Also creates parent directories if they do not exist.
 # ==== Parameters
