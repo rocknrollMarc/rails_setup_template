@@ -69,7 +69,7 @@ download_file "#{GITHUB_T1_ROOT}/rails/config/initializers/validation.rb", "conf
 
 # Gems
 gem "rake"
-gem "rails", "3.0.1"
+gem "rails", "3.0.3"
 gem "resourcer"
 gem "aasm"
 gem "will_paginate"
