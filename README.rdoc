@@ -7,7 +7,7 @@ and is best applied when building a new Ruby on Rails application.
 
 The following highlights the changes that will be made to your Ruby on Rails app:
 
-* Installs the {jQuery 1.4.4}[http://jquery.com] JavaScript library.
+* Installs the {jQuery 1.5}[http://jquery.com] JavaScript library.
 * Installs the {jQuery UI 1.8.9}[http://jqueryui.com] JavaScript library.
 * Installs the {jQuery Cookie}[http://plugins.jquery.com/project/Cookie] JavaScript library.
 * Installs the {jQuery Block UI 2.33}[https://github.com/malsup/blockui] JavaScript library.
