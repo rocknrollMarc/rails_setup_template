@@ -37,7 +37,7 @@ The following highlights the changes that will be made to your Ruby on Rails app
 * Adds the {Will Paginate}[https://github.com/mislav/will_paginate] gem requirement.
 * Adds the LESS[http://lesscss.org] gem requirement.
 * Adds the {Acts as State Machine (AASM)}[https://github.com/rubyist/aasm] gem requirement.
-* Adds the {Acts as List}[https://github.com/ryanb/acts-as-list] gem requirement.
+* Adds the {Sorted Listed}[https://github.com/bkuhlmann/sorted_list] gem requirement.
 * Adds the {Lineage}[https://github.com/bkuhlmann/lineage] gem requirement.
 * Adds the Formtastic[https://github.com/justinfrench/formtastic] gem requirement.
 * Adds the RedCloth[http://redcloth.org] gem requirement.
