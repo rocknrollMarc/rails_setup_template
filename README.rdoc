@@ -13,7 +13,7 @@ The following highlights the changes that will be made to your Ruby on Rails app
 * Installs the {jQuery Block UI 2.33}[https://github.com/malsup/blockui] JavaScript library.
 * Installs the {jQuery Validation 1.7}[http://bassistance.de/jquery-plugins/jquery-plugin-validation] JavaScript library.
 * Installs the {jQuery jGrowl 1.1.2}[http://stanlemon.net/projects/jgrowl.html] JavaScript library.
-* Installs the {jQuery Mark It Up 1.1.9}[http://markitup.jaysalvat.com] JavaScript library.
+* Installs the {jQuery Mark It Up 1.1.10}[http://markitup.jaysalvat.com] JavaScript library.
 * Installs the {jQuery Tools 1.2.5}[http://flowplayer.org/tools/index.html] JavaScript library.
 * Installs the {jQuery DataTables 1.7.5}[http://www.datatables.net] JavaScript library.
 * Installs the {Underscore 1.1.0}[https://github.com/documentcloud/underscore] JavaScript library.
