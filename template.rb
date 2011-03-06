@@ -130,8 +130,6 @@ download_file "#{GITHUB_T1_ROOT}/rails/public/themes/default/images/markitup/pic
 download_file "#{GITHUB_T1_ROOT}/rails/public/themes/default/images/markitup/preview.png", "public/themes/default/images/markitup/preview.png"
 download_file "#{GITHUB_T1_ROOT}/rails/public/themes/default/images/markitup/quotes.png", "public/themes/default/images/markitup/quotes.png"
 download_file "#{GITHUB_T1_ROOT}/rails/public/themes/default/images/markitup/stroke.png", "public/themes/default/images/markitup/stroke.png"
-download_file "#{GITHUB_T1_ROOT}/rails/public/themes/default/images/tooltip/large.png", "public/themes/default/images/tooltip/large.png"
-download_file "#{GITHUB_T1_ROOT}/rails/public/themes/default/images/tooltip/tiny.png", "public/themes/default/images/tooltip/tiny.png"
 download_file "#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-bg_diagonals-thick_8_333333_40x40.png", "public/themes/default/images/ui-bg_diagonals-thick_8_333333_40x40.png"
 download_file "#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-bg_flat_65_ffffff_40x100.png", "public/themes/default/images/ui-bg_flat_65_ffffff_40x100.png"
 download_file "#{GITHUB_T1_ROOT}/rails/public/themes/default/images/ui-bg_glass_40_111111_1x400.png", "public/themes/default/images/ui-bg_glass_40_111111_1x400.png"

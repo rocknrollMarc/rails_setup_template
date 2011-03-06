@@ -103,11 +103,11 @@ ul.sidebar-menu li.hover a {color: #000;}
 #breadcrumbs a:hover, #breadcrumbs a:focus {color: #FFF;}
 /* @end */
 
-/* @group jQuery Tools */
-div.tooltip-large {background: #706f76 no-repeat scroll 0 0; font-size: 1em; padding: 1em; display: none; color: #FFF; z-index: 10; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; border-radius: 0.5em;}
-div.tooltip-large h3 {margin: 0; font-size: 1.5em; color: #fff;}
-div.tooltip-large p {margin: 0.5em 0; width: 20em;}
-div.tooltip-tiny {background: transparent url(images/tooltip/tiny.png) no-repeat scroll 0 0; font-size: 12px; text-align: center; width: 75px; height: 30px; padding: 10px 0; display: none; color: #FFF; z-index: 10;}
+/* @group jQuery TOOLS */
+div.tooltip-default {background: #3d3c41 no-repeat scroll 0 0; font-size: 1em; padding: 0.5em; display: none; color: #FFF; z-index: 10; border: 0.2em #FFF solid; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; border-radius: 0.5em; -webkit-box-shadow: 5px 5px 10px #595959; -moz-box-shadow: 5px 5px 10px #595959; box-shadow: 5px 5px 10px #595959;}
+div.tooltip-default h1, div.tooltip-default h2, div.tooltip-default h3, div.tooltip-default h4, div.tooltip-default h5, div.tooltip-default h6 {color: #FFF; margin: 0 0 0.5em 0;}
+div.tooltip-default p {margin: 0.5em 0; width: 20em;}
+div.tooltip-default a:hover {color: yellow;}
 /* @end */
 
 /* @group Position */
