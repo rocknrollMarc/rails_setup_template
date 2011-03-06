@@ -7,6 +7,7 @@
 * Upgraded to {jQuery DataTables 1.7.5}[http://www.datatables.net].
 * Upgraded to {Blueprint CSS 1.0}[https://github.com/joshuaclayton/blueprint-css].
 * Replaced the Acts as List gem with the {Sorted List}[https://github.com/bkuhlmann/sorted_list]
+* Removed the position_helper since it is part of the Sorted List gem now.
 
 = v2.0.0
 

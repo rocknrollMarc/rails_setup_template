@@ -39,7 +39,6 @@ download_file "#{GITHUB_T1_ROOT}/rails/app/helpers/flash_helper.rb", "app/helper
 download_file "#{GITHUB_T1_ROOT}/rails/app/helpers/image_helper.rb", "app/helpers/image_helper.rb"
 download_file "#{GITHUB_T1_ROOT}/rails/app/helpers/layout_helper.rb", "app/helpers/layout_helper.rb"
 download_file "#{GITHUB_T1_ROOT}/rails/app/helpers/navigation_helper.rb", "app/helpers/navigation_helper.rb"
-download_file "#{GITHUB_T1_ROOT}/rails/app/helpers/position_helper.rb", "app/helpers/position_helper.rb"
 download_file "#{GITHUB_T1_ROOT}/rails/app/helpers/system_helper.rb", "app/helpers/system_helper.rb"
 download_file "#{GITHUB_T1_ROOT}/rails/app/helpers/template_helper.rb", "app/helpers/template_helper.rb"
 download_file "#{GITHUB_T1_ROOT}/rails/app/helpers/text_helper.rb", "app/helpers/text_helper.rb"
