@@ -81,7 +81,6 @@ gem "aws-s3", :require => "aws/s3"
 gem "paperclip"
 
 gem "ruby-debug"
-gem "looksee", :require => "looksee/shortcuts"
 gem "wirble"
 gem "hirb"
 gem "awesome_print"
