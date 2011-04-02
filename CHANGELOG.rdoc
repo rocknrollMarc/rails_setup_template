@@ -1,7 +1,7 @@
 = vx.x.x
 
 * Updated the .gitignore file to exclude more RSpec and YARD files.
-* Upgraded to {jQuery 1.5.1}[http://jquery.com].
+* Upgraded to {jQuery 1.5.2}[http://jquery.com].
 * Upgraded to {jQuery UI 1.8.11}[http://jqueryui.com].
 * Upgraded to {jQuery Mark It Up 1.1.10}[http://markitup.jaysalvat.com].
 * Upgraded to {jQuery DataTables 1.7.5}[http://www.datatables.net].
