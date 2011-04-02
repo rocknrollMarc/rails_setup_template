@@ -58,15 +58,6 @@ The following highlights the changes that will be made to your Ruby on Rails app
 * Adds the Webrat[http://gitrdoc.com/brynary/webrat/tree/master] gem requirement.
 * Adds the {Metric Fu}[http://metric-fu.rubyforge.org] gem requirement.
 
-= License
-
-Copyright (c) 2010 {Red Alchemist}[http://www.redalchemist.com].
-See the included LICENSE for more info.
-
-= History
-
-See the CHANGELOG file for more info.
-
 = Requirements
 
 * A solid internet connection.
@@ -74,7 +65,7 @@ See the CHANGELOG file for more info.
 * Ruby Gems 1.3.x or higher.
 * Applied the {Ruby Gem Setup}[https://github.com/bkuhlmann/ruby_gem_setup] script or have manually installed all gems listed above.
 
-= Usage
+= Setup
 
 Open a terminal window and execute one the following command lines depending on your version preference:
 
@@ -91,9 +82,9 @@ Master Version (possibly unstable, use at your own risk)
   git clone git@github.com:bkuhlmann/rails_setup_template.git
   rails new demo -d=sqlite3 -J -T -f -m <path to checked out Rails Setup Template project>/template.rb
 
-Alternatively, you could open up the railties gem. Then open the lib/rails/generators/rails/app/app_generator.rb file, find the set_default_accessors! method, and change the first when clause from /^http:\/\// to /^https?:\/\//.
+Alternatively, you could open up the railties gem by opening the lib/rails/generators/rails/app/app_generator.rb file, find the set_default_accessors! method, and change the first when clause from /^http:\/\// to /^https?:\/\//.
 
-= Configuration
+= Usage
 
 Add/update the config/application.rb file with the following so that the utility libraries are automatically loaded for you:
 
@@ -113,6 +104,15 @@ To install, simply do the following:
 4. Type: gem build railroad.gemspec.
 5. Type: gem install railroad-<version>.gem
 
-= Contact/Feedback/Issues
+Author
 
-* {Red Alchemist}[http://www.redalchemist.com]
+{Red Alchemist}[http://www.redalchemist.com]
+
+License
+
+Copyright (c) 2010 {Red Alchemist}[http://www.redalchemist.com].
+Read the LICENSE for details.
+
+History
+
+Read the CHANGELOG for details.
