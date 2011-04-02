@@ -8,7 +8,7 @@
 * Upgraded to {Blueprint CSS 1.0}[https://github.com/joshuaclayton/blueprint-css].
 * Replaced the Acts as List gem with the {Sorted List}[https://github.com/bkuhlmann/sorted_list]
 * Removed the position_helper since it is part of the Sorted List gem now.
-* Removed any images related to jQuery TOOLS library. Updated the CSS to behave like the orignal images.
+* Removed any images related to jQuery TOOLS library. Updated the CSS to behave like the original images.
 * Removed the Looksee gem.
 
 = v2.0.0
