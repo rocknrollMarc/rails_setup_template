@@ -104,15 +104,15 @@ To install, simply do the following:
 4. Type: gem build railroad.gemspec.
 5. Type: gem install railroad-<version>.gem
 
-Author
+= Author
 
 {Red Alchemist}[http://www.redalchemist.com]
 
-License
+= License
 
 Copyright (c) 2010 {Red Alchemist}[http://www.redalchemist.com].
 Read the LICENSE for details.
 
-History
+= History
 
 Read the CHANGELOG for details.
