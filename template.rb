@@ -64,7 +64,7 @@ download_file "#{GITHUB_T1_ROOT}/rails/config/initializers/date_time.rb", "confi
 download_file "#{GITHUB_T1_ROOT}/rails/config/initializers/ruby_enhancements.rb", "config/initializers/ruby_enhancements.rb"
 download_file "#{GITHUB_T1_ROOT}/rails/config/initializers/system.rb", "config/initializers/system.rb"
 download_file "#{GITHUB_T1_ROOT}/rails/config/initializers/validation.rb", "config/initializers/validation.rb"
-# download_file "config/environments/development.rb", 'a') {|file| file << download_file "#{GITHUB_T1_ROOT}/rails/config/environments/development.rb"}
+download_file "config/environments/development.rb", 'a') {|file| file << download_file "#{GITHUB_T1_ROOT}/rails/config/environments/development.rb"}
 
 # Gems
 gem "rake"
@@ -85,7 +85,8 @@ gem "wirble"
 gem "hirb"
 gem "awesome_print"
 gem "ruby-growl"
-# gem "bullet", "2.0.0.rc2"
+gem "bullet"
+gem "active_sanity"
 gem "colorblind"
 gem "deadweight"
 gem "rails-erd"

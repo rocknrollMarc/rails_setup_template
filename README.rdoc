@@ -49,6 +49,7 @@ The following highlights the changes that will be made to your Ruby on Rails app
 * Adds the {Awesome Print}[https://github.com/michaeldv/awesome_print] gem.
 * Adds the {Ruby Growl}[http://rubyforge.org/projects/ruby-growl] gem.
 * Adds the Bullet[https://github.com/flyerhzm/bullet] gem requirement.
+* Adds the {Active Sanity}[https://github.com/versapay/active_sanity] gem.
 * Adds the {Color Blind}[https://github.com/codegram/colorblind] gem.
 * Adds the Deadweight[https://github.com/aanand/deadweight] gem requirement.
 * Adds the {Rails ERD}[http://rails-erd.rubyforge.org] gem requirement.

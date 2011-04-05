@@ -6,6 +6,7 @@
 * Upgraded to {jQuery Mark It Up 1.1.10}[http://markitup.jaysalvat.com].
 * Upgraded to {jQuery DataTables 1.7.5}[http://www.datatables.net].
 * Upgraded to {Blueprint CSS 1.0}[https://github.com/joshuaclayton/blueprint-css].
+* Added the {Active Sanity}[https://github.com/versapay/active_sanity] gem.
 * Replaced the Acts as List gem with the {Sorted List}[https://github.com/bkuhlmann/sorted_list]
 * Removed the position_helper since it is part of the Sorted List gem now.
 * Removed any images related to jQuery TOOLS library. Updated the CSS to behave like the original images.
