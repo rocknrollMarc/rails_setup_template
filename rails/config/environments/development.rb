@@ -17,10 +17,8 @@
     Bullet.disable_browser_cache = true
     begin
       require "ruby-growl"
-      Bullet.growl = true
-      Bullet.growl_password = {:password => "enter password"}
+      Bullet.growl = {:password => "enter password"}
     rescue MissingSourceFile
       STDERR.puts "Unable to enable Growl support: #{$!}"
     end
   end
-
