@@ -45,7 +45,7 @@ download_file "#{GITHUB_T1_ROOT}/rails/app/helpers/text_helper.rb", "app/helpers
 download_file "#{GITHUB_T1_ROOT}/rails/app/helpers/visitor_helper.rb", "app/helpers/visitor_helper.rb"
 
 # Views
-run "rm public/index.html"
+remove_file "public/index.html"
 download_file "#{GITHUB_T1_ROOT}/rails/app/views/layouts/application.html.erb", "app/views/layouts/application.html.erb"
 download_file "#{GITHUB_T1_ROOT}/rails/app/views/home/show.html.erb", "app/views/home/show.html.erb"
 download_file "#{GITHUB_T1_ROOT}/rails/app/views/about/show.html.erb", "app/views/about/show.html.erb"
@@ -64,11 +64,10 @@ download_file "#{GITHUB_T1_ROOT}/rails/config/initializers/date_time.rb", "confi
 download_file "#{GITHUB_T1_ROOT}/rails/config/initializers/ruby_enhancements.rb", "config/initializers/ruby_enhancements.rb"
 download_file "#{GITHUB_T1_ROOT}/rails/config/initializers/system.rb", "config/initializers/system.rb"
 download_file "#{GITHUB_T1_ROOT}/rails/config/initializers/validation.rb", "config/initializers/validation.rb"
-
 development_delta = "config/environments/development.delta.rb"
 download_file("#{GITHUB_T1_ROOT}/rails/config/environments/development.rb", development_delta)
 insert_into_file "config/environments/development.rb", open(development_delta).read, :before => "\nend\n"
-run "rm -f #{development_delta}"
+remove_file "#{development_delta}"
 
 # Gems
 gem "rake"
@@ -106,7 +105,7 @@ generate "rspec:install"
 generate "cucumber:install --rspec"
 
 # Images
-run "rm -rf public/images"
+remove_file "public/images"
 download_file "#{GITHUB_T1_ROOT}/rails/public/favicon.ico", "public/favicon.ico"
 download_file "#{GITHUB_T1_ROOT}/rails/public/themes/default/images/icons/email.gif", "public/themes/default/images/icons/email.gif"
 download_file "#{GITHUB_T1_ROOT}/rails/public/themes/default/images/icons/feed-comments.png", "public/themes/default/images/icons/feed-comments.png"
