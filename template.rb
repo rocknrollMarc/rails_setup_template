@@ -64,7 +64,11 @@ download_file "#{GITHUB_T1_ROOT}/rails/config/initializers/date_time.rb", "confi
 download_file "#{GITHUB_T1_ROOT}/rails/config/initializers/ruby_enhancements.rb", "config/initializers/ruby_enhancements.rb"
 download_file "#{GITHUB_T1_ROOT}/rails/config/initializers/system.rb", "config/initializers/system.rb"
 download_file "#{GITHUB_T1_ROOT}/rails/config/initializers/validation.rb", "config/initializers/validation.rb"
-open("config/environments/development.rb", 'a') {|file| file << download_file("#{GITHUB_T1_ROOT}/rails/config/environments/development.rb")}
+
+development_delta = "config/environments/development.delta.rb"
+download_file("#{GITHUB_T1_ROOT}/rails/config/environments/development.rb", development_delta)
+insert_into_file "config/environments/development.rb", open(development_delta).read, :before => "\nend\n"
+run "rm -f #{development_delta}"
 
 # Gems
 gem "rake"
