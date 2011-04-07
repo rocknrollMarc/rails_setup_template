@@ -1,3 +1,5 @@
+# Git Ignore File
+
 # Rails
 .bundle
 .config

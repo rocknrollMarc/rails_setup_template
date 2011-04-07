@@ -176,6 +176,9 @@ download_file "http://cachedcommons.org/cache/underscore/1.1.0/javascripts/under
 download_file "http://github.com/Modernizr/Modernizr/raw/v1.6/modernizr.js", "public/javascripts/modernizr.js"
 download_file "#{GITHUB_T1_ROOT}/rails/public/javascripts/application.js", "public/javascripts/application.js"
 
+# Ruby Version Manager (RVM)
+download_file "#{GITHUB_T1_ROOT}/rails/rvmrc.txt", ".rvmrc"
+
 # Git
 git :init
 download_file "#{GITHUB_T1_ROOT}/rails/gitignore.txt", ".gitignore"

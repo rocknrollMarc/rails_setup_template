@@ -1,0 +1,4 @@
+# Ruby Version Manager (RVM) File
+
+# Specify the Ruby version of your project here.
+# Example: rvm ruby-1.9.2

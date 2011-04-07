@@ -18,19 +18,6 @@ The following highlights what is applied with this template:
 * Installs the {jQuery DataTables 1.7.5}[http://www.datatables.net] JavaScript library.
 * Installs the {Underscore 1.1.0}[https://github.com/documentcloud/underscore] JavaScript library.
 * Installs the {Modernizr 1.6.0}[http://www.modernizr.com] JavaScript library.
-* Installs a customized application.html.erb file with a basic but structured site layout.
-* Installs a customized {Blueprint CSS}[https://github.com/joshuaclayton/blueprint-css] theme.
-* Installs a customized jQueryUI theme to compliment the Blueprint CSS theme.
-* Installs customized application graphics.
-* Installs customized configuration initializers.
-* Installs a rake script with additional database support such as seeds and sizes.
-* Installs a rake script with {Phusion Passenger}[http://www.modrails.com/] support.
-* Installs a rake script with Railroad diagram support.
-* Installs simple _home_ and _about_ controllers for basic demo usage.
-* Installs customized view helpers.
-* Installs OmniGraffle[http://www.omnigroup.com/products/OmniGraffle/] documentation for site layout and structure.
-* Installs site navigation with dynamic controller detection and menu selection.
-* Installs nested drop down menu support as inspired by {CSS Dropdown Menu}[http://www.webdesignerwall.com/tutorials/css3-dropdown-menu/].
 * Adds the Rake[https://github.com/jimweirich/rake] gem requirement.
 * Adds the {Ruby on Rails}[http://rubyonrails.org] gem requirement.
 * Adds the Resourcer[https://github.com/bkuhlmann/resourcer] gem requirement.
@@ -58,6 +45,21 @@ The following highlights what is applied with this template:
 * Adds the Cucumber[https://github.com/aslakhellesoy/cucumber/tree/master] gem requirement.
 * Adds the Webrat[http://gitrdoc.com/brynary/webrat/tree/master] gem requirement.
 * Adds the {Metric Fu}[http://metric-fu.rubyforge.org] gem requirement.
+* Installs a customized application.html.erb file with a basic but structured site layout.
+* Installs a customized {Blueprint CSS}[https://github.com/joshuaclayton/blueprint-css] theme.
+* Installs a customized jQueryUI theme to compliment the Blueprint CSS theme.
+* Installs customized application graphics.
+* Installs customized configuration initializers.
+* Installs a rake script with additional database support such as seeds and sizes.
+* Installs a rake script with {Phusion Passenger}[http://www.modrails.com/] support.
+* Installs a rake script with Railroad diagram support.
+* Installs simple _home_ and _about_ controllers for basic demo usage.
+* Installs customized view helpers.
+* Installs site navigation with dynamic controller detection and menu selection.
+* Installs nested drop down menu support as inspired by {CSS Dropdown Menu}[http://www.webdesignerwall.com/tutorials/css3-dropdown-menu/].
+* Installs OmniGraffle[http://www.omnigroup.com/products/OmniGraffle/] documentation for site layout and structure.
+* Installs a .gitignore file with general exclusions for Git[http://git-scm.com].
+* Installs a .rvmrc file for use with RVM[http://rvm.beginrescueend.com].
 
 = Requirements
 
