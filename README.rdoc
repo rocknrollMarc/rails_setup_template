@@ -22,6 +22,7 @@ The following highlights what is applied with this template:
 * Adds the {Ruby on Rails}[http://rubyonrails.org] gem requirement.
 * Adds the Resourcer[https://github.com/bkuhlmann/resourcer] gem requirement.
 * Adds the {Will Paginate}[https://github.com/mislav/will_paginate] gem requirement.
+* Adds the Linguist[https://github.com/bkuhlmann/linguist] gem requirement.
 * Adds the LESS[http://lesscss.org] gem requirement.
 * Adds the {Acts as State Machine (AASM)}[https://github.com/rubyist/aasm] gem requirement.
 * Adds the {Sorted Listed}[https://github.com/bkuhlmann/sorted_list] gem requirement.
