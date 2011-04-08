@@ -41,7 +41,6 @@ download_file "#{GITHUB_T1_ROOT}/rails/app/helpers/layout_helper.rb", "app/helpe
 download_file "#{GITHUB_T1_ROOT}/rails/app/helpers/navigation_helper.rb", "app/helpers/navigation_helper.rb"
 download_file "#{GITHUB_T1_ROOT}/rails/app/helpers/system_helper.rb", "app/helpers/system_helper.rb"
 download_file "#{GITHUB_T1_ROOT}/rails/app/helpers/template_helper.rb", "app/helpers/template_helper.rb"
-download_file "#{GITHUB_T1_ROOT}/rails/app/helpers/text_helper.rb", "app/helpers/text_helper.rb"
 download_file "#{GITHUB_T1_ROOT}/rails/app/helpers/visitor_helper.rb", "app/helpers/visitor_helper.rb"
 
 # Views
