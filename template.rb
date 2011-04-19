@@ -70,7 +70,7 @@ remove_file "#{development_delta}"
 
 # Gems
 gem "rake"
-gem "rails", "3.0.6"
+gem "rails", "3.0.7"
 gem "resourcer"
 gem "aasm"
 gem "will_paginate"
