@@ -182,5 +182,7 @@ download_file "#{GITHUB_T1_ROOT}/rails/rvmrc.txt", ".rvmrc"
 # Git
 git :init
 download_file "#{GITHUB_T1_ROOT}/rails/gitignore.txt", ".gitignore"
+run "pre-commit install"
+git :config => "pre-commit.checks 'console_log, debugger'"
 git :add => '.'
 git :commit => "-a -m \"Applied Rails Setup Template.\""
