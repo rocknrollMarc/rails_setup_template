@@ -42,9 +42,9 @@ The following highlights what is applied with this template:
 * Adds the Deadweight[https://github.com/aanand/deadweight] gem requirement.
 * Adds the {Rails ERD}[http://rails-erd.rubyforge.org] gem requirement.
 * Adds the Railroad[http://railroad.rubyforge.org] gem requirement.
-* Adds the {RSpec Rails}[https://github.com/dchelimsky/rspec-rails/tree/master] gem requirement.
-* Adds the Cucumber[https://github.com/aslakhellesoy/cucumber/tree/master] gem requirement.
-* Adds the Webrat[http://gitrdoc.com/brynary/webrat/tree/master] gem requirement.
+* Adds the {RSpec Rails}[https://github.com/dchelimsky/rspec-rails] gem requirement.
+* Adds the {Cucumber Rails}[https://github.com/aslakhellesoy/cucumber-rails] gem requirement.
+* Adds the Webrat[http://gitrdoc.com/brynary/webrat] gem requirement.
 * Adds the {Metric Fu}[http://metric-fu.rubyforge.org] gem requirement.
 * Installs a customized application.html.erb file with a basic but structured site layout.
 * Installs a customized {Blueprint CSS}[https://github.com/joshuaclayton/blueprint-css] theme.

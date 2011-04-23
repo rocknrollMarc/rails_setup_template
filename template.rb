@@ -96,7 +96,7 @@ gem "rails-erd"
 gem "railroad"
 
 gem "rspec-rails"
-gem "cucumber"
+gem "cucumber-rails"
 gem "webrat"
 gem "metric_fu"
 
