@@ -8,6 +8,7 @@
 * Upgraded to {Blueprint CSS 1.0}[https://github.com/joshuaclayton/blueprint-css].
 * Added the Linguist[https://github.com/bkuhlmann/linguist] gem requirement.
 * Added the {Active Sanity}[https://github.com/versapay/active_sanity] gem.
+* Added the CoffeeScript[https://github.com/Sutto/barista] gem.
 * Added a .rvmrc file.
 * Added Git commit checks (via the Pre-Commit gem).
 * Replaced the Acts as List gem with the {Sorted List}[https://github.com/bkuhlmann/sorted_list]

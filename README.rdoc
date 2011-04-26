@@ -20,6 +20,7 @@ The following highlights what is applied with this template:
 * Installs the {Modernizr 1.6.0}[http://www.modernizr.com] JavaScript library.
 * Adds the Rake[https://github.com/jimweirich/rake] gem requirement.
 * Adds the {Ruby on Rails}[http://rubyonrails.org] gem requirement.
+* Adds the CoffeeScript[https://github.com/Sutto/barista] gem requirement.
 * Adds the Resourcer[https://github.com/bkuhlmann/resourcer] gem requirement.
 * Adds the {Will Paginate}[https://github.com/mislav/will_paginate] gem requirement.
 * Adds the Linguist[https://github.com/bkuhlmann/linguist] gem requirement.
