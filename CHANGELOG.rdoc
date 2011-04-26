@@ -12,6 +12,7 @@
 * Added Git commit checks (via the Pre-Commit gem).
 * Replaced the Acts as List gem with the {Sorted List}[https://github.com/bkuhlmann/sorted_list]
 * Replaced the Cucumber gem with the Cucumber-Rails gem.
+* Replaced the LESS gem with the SASS gem.
 * Removed the position_helper since it is part of the Sorted List gem now.
 * Removed any images related to jQuery TOOLS library. Updated the CSS to behave like the original images.
 * Removed the Looksee gem.
