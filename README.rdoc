@@ -8,7 +8,7 @@ and is best applied when building a new Ruby on Rails application.
 The following highlights what is applied with this template:
 
 * Installs the {jQuery 1.5.2}[http://jquery.com] JavaScript library.
-* Installs the {jQuery UI 1.8.11}[http://jqueryui.com] JavaScript library.
+* Installs the {jQuery UI 1.8.12}[http://jqueryui.com] JavaScript library.
 * Installs the {jQuery Cookie}[http://plugins.jquery.com/project/Cookie] JavaScript library.
 * Installs the {jQuery Block UI 2.33}[https://github.com/malsup/blockui] JavaScript library.
 * Installs the {jQuery Validation 1.7}[http://bassistance.de/jquery-plugins/jquery-plugin-validation] JavaScript library.
