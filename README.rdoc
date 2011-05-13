@@ -7,7 +7,7 @@ and is best applied when building a new Ruby on Rails application.
 
 The following highlights what is applied with this template:
 
-* Installs the {jQuery 1.6.0}[http://jquery.com] JavaScript library.
+* Installs the {jQuery 1.6.1}[http://jquery.com] JavaScript library.
 * Installs the {jQuery UI 1.8.12}[http://jqueryui.com] JavaScript library.
 * Installs the {jQuery Cookie}[http://plugins.jquery.com/project/Cookie] JavaScript library.
 * Installs the {jQuery Block UI 2.33}[https://github.com/malsup/blockui] JavaScript library.
@@ -17,7 +17,7 @@ The following highlights what is applied with this template:
 * Installs the {jQuery Tools 1.2.5}[http://flowplayer.org/tools/index.html] JavaScript library.
 * Installs the {jQuery DataTables 1.7.5}[http://www.datatables.net] JavaScript library.
 * Installs the {Underscore 1.1.0}[https://github.com/documentcloud/underscore] JavaScript library.
-* Installs the {Modernizr 1.6.0}[http://www.modernizr.com] JavaScript library.
+* Installs the {Modernizr 1.7.0}[http://www.modernizr.com] JavaScript library.
 * Adds the Rake[https://github.com/jimweirich/rake] gem requirement.
 * Adds the {Ruby on Rails}[http://rubyonrails.org] gem requirement.
 * Adds the CoffeeScript[https://github.com/Sutto/barista] gem requirement.
