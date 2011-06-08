@@ -10,4 +10,3 @@ Time::DATE_FORMATS[:hr_date] = "%B %d, %Y"
 Time::DATE_FORMATS[:hr_day] = "%A"
 Time::DATE_FORMATS[:hr_hms] = "%I:%M:%S %p"
 Time::DATE_FORMATS[:hr_hm] = "%I:%M %p"
-

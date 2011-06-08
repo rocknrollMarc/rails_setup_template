@@ -1,2 +1,2 @@
-# Only update the attributes of a record that have changed.
+# Only update record attributes that have changed.
 ActiveRecord::Base.partial_updates = true
