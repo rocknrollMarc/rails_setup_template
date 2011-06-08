@@ -37,7 +37,6 @@ The following highlights what is applied with this template:
 * Adds the Hirb[https://github.com/cldwalker/hirb] gem.
 * Adds the {Awesome Print}[https://github.com/michaeldv/awesome_print] gem.
 * Adds the {Ruby Growl}[http://rubyforge.org/projects/ruby-growl] gem.
-* Adds the Bullet[https://github.com/flyerhzm/bullet] gem requirement.
 * Adds the {Active Sanity}[https://github.com/versapay/active_sanity] gem.
 * Adds the {Color Blind}[https://github.com/codegram/colorblind] gem.
 * Adds the Deadweight[https://github.com/aanand/deadweight] gem requirement.
@@ -95,8 +94,6 @@ Alternatively, you could open up the railties gem by opening the lib/rails/gener
 Add/update the config/application.rb file with the following so that the utility libraries are automatically loaded for you:
 
   config.autoload_paths += %W(#{config.root}/lib/utils)
-
-Make sure to replace the Growl password for the Bullet configuration in the config/environments/development.rb file.
 
 Since the original Railroad gem hasn't been updated for ages, it is HIGHLY recommended that you use the fork:
 

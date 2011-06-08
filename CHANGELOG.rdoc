@@ -20,6 +20,7 @@
 * Removed the lib/utils/acts_as_list_enhancements.rb module enhancements as these are now part of the Sorted List gem.
 * Removed any images related to jQuery TOOLS library. Updated the CSS to behave like the original images.
 * Removed the Looksee gem.
+* Removed the Bullet gem. Proved to be too buggy.
 
 = v2.0.0
 
