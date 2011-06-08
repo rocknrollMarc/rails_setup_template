@@ -1,4 +1,6 @@
+require "net/http"
 require "net/https"
+require "uri"
 
 GITHUB_T1_ROOT = "https://github.com/bkuhlmann/rails_setup_template/raw/master"
 
@@ -10,7 +12,7 @@ def download_file source, destination
   say "Downloading: #{source} to #{destination}..."
   uri = URI.parse source
   http = Net::HTTP.new uri.host, uri.port
-  http.use_ssl = uri.scheme == "https"
+  http.use_ssl = true
   http.verify_mode = OpenSSL::SSL::VERIFY_NONE
   request = Net::HTTP::Get.new uri.request_uri
   response = http.request request
