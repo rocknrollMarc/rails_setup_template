@@ -2,7 +2,7 @@ require "net/http"
 require "net/https"
 require "uri"
 
-GITHUB_T1_ROOT = "https://github.com/bkuhlmann/rails_setup_template/raw/master"
+GITHUB_T1_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/master"
 
 # Downloads a file, swiching to a secure connection if the source requires it. Also creates parent directories if they do not exist.
 # ==== Parameters
@@ -12,7 +12,7 @@ def download_file source, destination
   say "Downloading: #{source} to #{destination}..."
   uri = URI.parse source
   http = Net::HTTP.new uri.host, uri.port
-  http.use_ssl = true
+  http.use_ssl = uri.scheme == "https"
   http.verify_mode = OpenSSL::SSL::VERIFY_NONE
   request = Net::HTTP::Get.new uri.request_uri
   response = http.request request
@@ -71,7 +71,7 @@ remove_file "#{development_delta}"
 
 # Gems
 gem "rake"
-gem "rails", "3.0.7"
+gem "rails", "3.0.8"
 gem "barista"
 gem "resourcer"
 gem "aasm"
@@ -187,4 +187,4 @@ download_file "#{GITHUB_T1_ROOT}/rails/gitignore.txt", ".gitignore"
 run "pre-commit install"
 git :config => "pre-commit.checks 'console_log, debugger'"
 git :add => '.'
-git :commit => "-a -m \"Applied Rails Setup Template.\""
+git :commit => "-n -a -m \"Applied Rails Setup Template.\""
