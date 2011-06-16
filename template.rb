@@ -71,7 +71,7 @@ remove_file "#{development_delta}"
 
 # Gems
 gem "rake"
-gem "rails", "3.0.8"
+gem "rails", "3.0.9"
 gem "barista"
 gem "resourcer"
 gem "aasm"
