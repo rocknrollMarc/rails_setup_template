@@ -9,11 +9,11 @@ module LayoutHelper
   
   # Dynamically loads stylesheet files.
   def stylesheet *args
-    content_for(:stylesheet) {stylesheet_link_tag args}
+    content_for(:stylesheet) {stylesheet_link_tag(*args)}
   end
   
   # Dynamically loads javascript files.
   def javascript *args
-    content_for(:javascript) {javascript_include_tag args}
+    content_for(:javascript) {javascript_include_tag(*args)}
   end
 end
