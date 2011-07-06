@@ -164,7 +164,7 @@ download_file "#{GITHUB_T1_ROOT}/rails/public/themes/default/screen.css", "publi
 download_file "#{GITHUB_T1_ROOT}/rails/public/themes/default/style.css", "public/themes/default/style.css"
 
 # JavaScripts
-download_file "http://code.jquery.com/jquery-1.6.1.js", "public/javascripts/jquery.js"
+download_file "http://code.jquery.com/jquery-1.6.2.js", "public/javascripts/jquery.js"
 download_file "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.js", "public/javascripts/jquery-ui.js"
 download_file "http://cachedcommons.org/cache/jquery-cookie/0.0.0/javascripts/jquery-cookie.js", "public/javascripts/jquery.cookie.js"
 download_file "http://cachedcommons.org/cache/jquery-blockui/2.3.3/javascripts/jquery-blockui.js", "public/javascripts/jquery.blockUI.js"
