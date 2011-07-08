@@ -1,7 +1,7 @@
 = Overview
 
-This template bootstraps a Ruby on Rails project beyond what you get with default project generation (i.e. rails <project name>)
-and is best applied when building a new Ruby on Rails application.
+Bootstraps a Ruby on Rails project beyond what you get with default project generation (i.e. rails <project name>). 
+Best applied when building a new Ruby on Rails application.
 
 = Features
 
@@ -65,40 +65,27 @@ The following highlights what is applied with this template:
 
 = Requirements
 
-* A solid internet connection.
 * Mac OS, Linux, or UNIX.
-* Ruby Gems 1.3.x or higher.
-* Applied the {Ruby Gem Setup}[https://github.com/bkuhlmann/ruby_gem_setup] script or have manually installed all gems listed above.
+* Run the {Ruby Gem Setup}[https://github.com/bkuhlmann/ruby_gem_setup] script or have manually installed all gems listed above.
+* A solid internet connection.
 
-= Setup
+= Usage
 
 Open a terminal window and execute one the following command lines depending on your version preference:
 
-Current Version (stable)
+Current Version (stable):
 
   rails new demo -d=sqlite3 -J -T -f -m https://github.com/bkuhlmann/rails_setup_template/raw/master/template.rb
 
-Master Version (possibly unstable, use at your own risk)
+Master Version (possibly unstable, use at your own risk):
 
   rails new demo -d=sqlite3 -J -T -f -m https://github.com/bkuhlmann/rails_setup_template/raw/master/template.rb
 
-= Usage
+= Setup
 
 Add/update the config/application.rb file with the following so that the utility libraries are automatically loaded for you:
 
   config.autoload_paths += %W(#{config.root}/lib/utils)
-
-Since the original Railroad gem hasn't been updated for ages, it is HIGHLY recommended that you use the fork:
-
-  https://github.com/unixmonkey/RailRoad
-
-To install, simply do the following:
-
-1. Click on the Downloads page of the GitHub project (via the link above) and download the latest *.tar.gz file.
-2. Uncompress the download (i.e. tar -xvzf <file name>).
-3. Change directory to the root of the extracted directory structure.
-4. Type: gem build railroad.gemspec.
-5. Type: gem install railroad-<version>.gem
 
 = Author
 
