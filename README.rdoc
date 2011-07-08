@@ -82,13 +82,6 @@ Master Version (possibly unstable, use at your own risk)
 
   rails new demo -d=sqlite3 -J -T -f -m https://github.com/bkuhlmann/rails_setup_template/raw/master/template.rb
 
-*NOTE*: Due to a {bug in Rails 3.0.0}[https://rails.lighthouseapp.com/projects/8994/tickets/5926-bug-patch-allow-https-uris-to-be-supplied-for-rails-templates] you can't apply a Rails template via the HTTPS scheme. With that in mind, here is the workaround to the steps shown above:
-
-  git clone git@github.com:bkuhlmann/rails_setup_template.git
-  rails new demo -d=sqlite3 -J -T -f -m <path to checked out Rails Setup Template project>/template.rb
-
-Alternatively, you could open up the railties gem by opening the lib/rails/generators/rails/app/app_generator.rb file, find the set_default_accessors! method, and change the first when clause from /^http:\/\// to /^https?:\/\//.
-
 = Usage
 
 Add/update the config/application.rb file with the following so that the utility libraries are automatically loaded for you:
