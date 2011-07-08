@@ -1,6 +1,6 @@
 = Overview
 
-Bootstraps a Ruby on Rails project beyond what you get with default project generation (i.e. rails <project name>). 
+Bootstraps a Ruby on Rails project beyond what you get with default project generation (i.e. rails new <project name>). 
 Best applied when building a new Ruby on Rails application.
 
 = Features
@@ -77,7 +77,7 @@ Current Version (stable):
 
   rails new demo -d=sqlite3 -J -T -f -m https://github.com/bkuhlmann/rails_setup_template/raw/master/template.rb
 
-Master Version (possibly unstable, use at your own risk):
+Master Version (unstable):
 
   rails new demo -d=sqlite3 -J -T -f -m https://github.com/bkuhlmann/rails_setup_template/raw/master/template.rb
 
