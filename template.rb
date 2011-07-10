@@ -53,7 +53,6 @@ download_file "#{GITHUB_T1_ROOT}/rails/app/views/about/show.html.erb", "app/view
 download_file "#{GITHUB_T1_ROOT}/rails/app/views/shared/menus/_visitor.html.erb", "app/views/shared/menus/_visitor.html.erb"
 
 # Lib
-download_file "#{GITHUB_T1_ROOT}/rails/lib/tasks/database.rake", "lib/tasks/database.rake"
 download_file "#{GITHUB_T1_ROOT}/rails/lib/tasks/passenger.rake", "lib/tasks/passenger.rake"
 download_file "#{GITHUB_T1_ROOT}/rails/lib/tasks/railroad.rake", "lib/tasks/railroad.rake"
 download_file "#{GITHUB_T1_ROOT}/rails/lib/tasks/deadweight.rake", "lib/tasks/deadweight.rake"

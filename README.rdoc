@@ -51,7 +51,6 @@ The following highlights what is applied with this template:
 * Installs a customized jQueryUI theme to compliment the Blueprint CSS theme.
 * Installs customized application graphics.
 * Installs customized configuration initializers.
-* Installs a rake script with additional database support such as seeds and sizes.
 * Installs a rake script with {Phusion Passenger}[http://www.modrails.com/] support.
 * Installs a rake script with Railroad diagram support.
 * Installs simple _home_ and _about_ controllers for basic demo usage.
