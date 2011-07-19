@@ -169,7 +169,7 @@ download_file "http://cachedcommons.org/cache/jquery-cookie/0.0.0/javascripts/jq
 download_file "http://cachedcommons.org/cache/jquery-blockui/2.3.3/javascripts/jquery-blockui.js", "public/javascripts/jquery.blockUI.js"
 download_file "http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.js", "public/javascripts/jquery.validate.js"
 download_file "#{GITHUB_T1_ROOT}/rails/public/javascripts/jquery.jgrowl.js", "public/javascripts/jquery.jgrowl.js"
-download_file "https://github.com/markitup/1.x/raw/1.1.10/markitup/jquery.markitup.js", "public/javascripts/jquery.markitup.js"
+download_file "https://raw.github.com/markitup/1.x/1.1.11/markitup/jquery.markitup.js", "public/javascripts/jquery.markitup.js"
 download_file "#{GITHUB_T1_ROOT}/rails/public/javascripts/jquery.markitup.textile.js", "public/javascripts/jquery.markitup.textile.js"
 download_file "http://cdn.jquerytools.org/1.2.5/all/jquery.tools.min.js", "public/javascripts/jquery.tools.js"
 download_file "http://www.datatables.net/download/build/jquery.dataTables.js", "public/javascripts/jquery.dataTables.js"
