@@ -22,6 +22,7 @@ The following highlights what is applied with this template:
 * Adds the {Ruby on Rails}[http://rubyonrails.org] gem requirement.
 * Adds the CoffeeScript[https://github.com/Sutto/barista] gem requirement.
 * Adds the Resourcer[https://github.com/bkuhlmann/resourcer] gem requirement.
+* Adds the Sessioner[https://github.com/bkuhlmann/sessioner] gem requirement.
 * Adds the Squeel[https://github.com/ernie/squeel] gem requirement.
 * Adds the Ransack[https://github.com/ernie/ransack] gem requirement.
 * Adds the {Will Paginate}[https://github.com/mislav/will_paginate] gem requirement.
