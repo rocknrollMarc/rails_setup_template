@@ -99,6 +99,7 @@ gem "railroad"
 
 gem "rspec-rails"
 gem "cucumber-rails"
+gem "factory_girl_rails"
 gem "webrat"
 gem "metric_fu"
 

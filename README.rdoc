@@ -46,6 +46,7 @@ The following highlights what is applied with this template:
 * Adds the Railroad[http://railroad.rubyforge.org] gem requirement.
 * Adds the {RSpec Rails}[https://github.com/dchelimsky/rspec-rails] gem requirement.
 * Adds the {Cucumber Rails}[https://github.com/aslakhellesoy/cucumber-rails] gem requirement.
+* Adds the {Factory Girl Rails}[https://github.com/thoughtbot/factory_girl_rails] gem requirement.
 * Adds the Webrat[http://gitrdoc.com/brynary/webrat] gem requirement.
 * Adds the {Metric Fu}[http://metric-fu.rubyforge.org] gem requirement.
 * Installs a customized application.html.erb file with a basic but structured site layout.
