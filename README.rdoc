@@ -29,6 +29,7 @@ The following highlights what is applied with this template:
 * Adds the Linguist[https://github.com/bkuhlmann/linguist] gem requirement.
 * Adds the SASS[https://github.com/nex3/sass] gem requirement.
 * Adds the {Acts as State Machine (AASM)}[https://github.com/rubyist/aasm] gem requirement.
+* Adds the Token[https://github.com/bkuhlmann/token] gem.
 * Adds the {Sorter}[https://github.com/bkuhlmann/sorter] gem requirement.
 * Adds the {Lineage}[https://github.com/bkuhlmann/lineage] gem requirement.
 * Adds the Formtastic[https://github.com/justinfrench/formtastic] gem requirement.
