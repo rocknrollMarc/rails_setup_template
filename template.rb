@@ -180,6 +180,9 @@ download_file "http://cachedcommons.org/cache/underscore/1.1.0/javascripts/under
 download_file "https://github.com/Modernizr/Modernizr/raw/v1.7/modernizr.js", "public/javascripts/modernizr.js"
 download_file "#{GITHUB_T1_ROOT}/rails/public/javascripts/application.js", "public/javascripts/application.js"
 
+# Factories
+create_file "spec/factories.rb"
+
 # Ruby Version Manager (RVM)
 download_file "#{GITHUB_T1_ROOT}/rails/rvmrc.txt", ".rvmrc"
 
