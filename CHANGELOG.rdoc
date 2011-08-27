@@ -16,6 +16,7 @@
 * Added the {Factory Girl Rails}[https://github.com/thoughtbot/factory_girl_rails] gem.
 * Added the Sessioner[https://github.com/bkuhlmann/sessioner] gem.
 * Added the Token[https://github.com/bkuhlmann/token] gem.
+* Added the {Paperclip Plus}[https://github.com/bkuhlmann/paperclip_plus] gem.
 * Added a .rvmrc file.
 * Added Git commit checks (via the Pre-Commit gem).
 * Replaced the Cucumber gem with the Cucumber-Rails gem.

@@ -87,6 +87,7 @@ gem "lineage"
 gem "RedCloth"
 gem "aws-s3", :require => "aws/s3"
 gem "paperclip"
+gem "paperclip_plus"
 
 gem "ruby-debug"
 gem "wirble"

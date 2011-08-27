@@ -36,6 +36,7 @@ The following highlights what is applied with this template:
 * Adds the RedCloth[http://redcloth.org] gem requirement.
 * Adds the {AWS-S3}[https://github.com/marcel/aws-s3] gem requirement.
 * Adds the Paperclip[http://www.thoughtbot.com/projects/paperclip] gem requirement.
+* Adds the {Paperclip Plus}[https://github.com/bkuhlmann/paperclip_plus] gem requirement.
 * Adds the {Ruby Debug}[http://rubyforge.org/projects/ruby-debug] gem.
 * Adds the Wirble[https://github.com/blackwinter/wirble] gem.
 * Adds the Hirb[https://github.com/cldwalker/hirb] gem.
