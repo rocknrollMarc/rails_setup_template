@@ -7,7 +7,7 @@ Best applied when building a new Ruby on Rails application.
 
 The following highlights what is applied with this template:
 
-* Installs the {jQuery 1.6.2}[http://jquery.com] JavaScript library.
+* Installs the {jQuery 1.6.3}[http://jquery.com] JavaScript library.
 * Installs the {jQuery UI 1.8.16}[http://jqueryui.com] JavaScript library.
 * Installs the {jQuery Cookie}[http://plugins.jquery.com/project/Cookie] JavaScript library.
 * Installs the {jQuery Block UI 2.33}[https://github.com/malsup/blockui] JavaScript library.
