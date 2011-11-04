@@ -92,9 +92,13 @@ Add/update the config/application.rb file with the following so that the utility
 
   config.autoload_paths += %W(#{config.root}/lib/utils)
 
-= Author
+= Company
 
 {Red Alchemist}[http://www.redalchemist.com]
+	
+= Author
+
+{Brooke Kuhlmann}[http://www.redalchemist.com]
 
 = License
 
