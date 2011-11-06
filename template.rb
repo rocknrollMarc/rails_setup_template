@@ -29,9 +29,9 @@ download_file "#{GITHUB_T1_ROOT}/rails/doc/design/site_layout.graffle", "doc/des
 # Controllers
 download_file "#{GITHUB_T1_ROOT}/rails/app/controllers/home_controller.rb", "app/controllers/home_controller.rb"
 download_file "#{GITHUB_T1_ROOT}/rails/app/controllers/about_controller.rb", "app/controllers/about_controller.rb"
-route "resource :about, :controller => \"about\""
-route "resource :home, :controller => \"home\""
-route "root :to => \"home#show\""
+route "resource :about, controller: \"about\""
+route "resource :home, controller: \"home\""
+route "root to: \"home#show\""
 
 # Helpers
 download_file "#{GITHUB_T1_ROOT}/rails/app/helpers/navigation/menu.rb", "app/helpers/navigation/menu.rb"
@@ -65,7 +65,7 @@ download_file "#{GITHUB_T1_ROOT}/rails/config/initializers/system.rb", "config/i
 download_file "#{GITHUB_T1_ROOT}/rails/config/initializers/validation.rb", "config/initializers/validation.rb"
 development_delta = "config/environments/development.delta.rb"
 download_file("#{GITHUB_T1_ROOT}/rails/config/environments/development.rb", development_delta)
-insert_into_file "config/environments/development.rb", open(development_delta).read, :before => "\nend\n"
+insert_into_file "config/environments/development.rb", open(development_delta).read, before: "\nend\n"
 remove_file "#{development_delta}"
 
 # Gems
@@ -85,11 +85,11 @@ gem "tokener"
 gem "sorter"
 gem "lineage"
 gem "RedCloth"
-gem "aws-s3", :require => "aws/s3"
+gem "aws-s3", require: "aws/s3"
 gem "paperclip"
 gem "paperclip_plus"
 
-gem "ruby-debug"
+gem "ruby-debug19"
 gem "wirble"
 gem "hirb"
 gem "awesome_print"
@@ -193,6 +193,6 @@ download_file "#{GITHUB_T1_ROOT}/rails/rvmrc.txt", ".rvmrc"
 git :init
 download_file "#{GITHUB_T1_ROOT}/rails/gitignore.txt", ".gitignore"
 run "pre-commit install"
-git :config => "pre-commit.checks 'console_log, debugger'"
-git :add => '.'
-git :commit => "-n -a -m \"Applied Rails Setup Template.\""
+git config: "pre-commit.checks 'console_log, debugger'"
+git add: '.'
+git commit: "-n -a -m \"Applied Rails Setup Template.\""

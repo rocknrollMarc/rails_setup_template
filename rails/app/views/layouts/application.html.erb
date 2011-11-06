@@ -11,7 +11,7 @@
 		<title><%= yield(:title) || SYSTEM_LABEL %></title>
 	  <meta name="keywords" content="Demo Ruby Ruby on Rails">
 	  <meta name="description" content="A generated Ruby on Rails app with default theming and utility support.">
-		<% tag :meta, :name => :author, :content => DEVELOPER_LABEL %>
+		<% tag :meta, name: :author, content: DEVELOPER_LABEL %>
 
 		<!-- Security -->
 		<%= csrf_meta_tag %>
@@ -21,14 +21,14 @@
     <link rel="icon" href="/favicon.ico" />
 
     <!-- Apple WebClip Icon -->
-		<%= tag :link, :rel => "apple-touch-icon", :href => "#{THEME_ROOT}/images/main/apple-webclip.png" %>
+		<%= tag :link, rel: "apple-touch-icon", href: "#{THEME_ROOT}/images/main/apple-webclip.png" %>
     
     <!-- Stylesheets -->
-		<%= stylesheet_link_tag "#{THEME_ROOT}/screen", :media => "screen, projection" %>
-		<%= stylesheet_link_tag "#{THEME_ROOT}/jquery-ui", :media => "screen, projection" %>
-		<%= stylesheet_link_tag "#{THEME_ROOT}/common", :media => "screen, projection" %>
-		<%= stylesheet_link_tag "#{THEME_ROOT}/style", :media => "screen, projection" %>
-		<%= stylesheet_link_tag "#{THEME_ROOT}/print", :media => "print" %>
+		<%= stylesheet_link_tag "#{THEME_ROOT}/screen", media: "screen, projection" %>
+		<%= stylesheet_link_tag "#{THEME_ROOT}/jquery-ui", media: "screen, projection" %>
+		<%= stylesheet_link_tag "#{THEME_ROOT}/common", media: "screen, projection" %>
+		<%= stylesheet_link_tag "#{THEME_ROOT}/style", media: "screen, projection" %>
+		<%= stylesheet_link_tag "#{THEME_ROOT}/print", media: "print" %>
 		<%= yield :stylesheet %>
     <!--[if lt IE 9]><link rel="stylesheet" href="/themes/default/ie.css" type="text/css" media="screen, projection"><![endif]-->
 
@@ -56,7 +56,7 @@
 				<div id="description"><%= SYSTEM_DESCRIPTION %></div>
 				<div id="account"><%= render_account_header_info %></div>
 				<div id="navigation">
-					<%= render :partial => "shared/menus/" + current_route %>
+					<%= render partial: "shared/menus/" + current_route %>
 				</div>
 			</div>
       <div id="body">
@@ -74,7 +74,7 @@
       </div>
     </div>
 		<div id="ajax">
-			<%= image_tag "#{THEME_ROOT}/images/main/spinner.gif", :alt => "spinner" %>
+			<%= image_tag "#{THEME_ROOT}/images/main/spinner.gif", alt: "spinner" %>
 			<p>Please wait...</p>
 		</div>
   </body>
