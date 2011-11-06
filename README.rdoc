@@ -80,7 +80,7 @@ Open a terminal window and execute one the following command lines depending on 
 
 Current Version (stable):
 
-  rails new demo -d=sqlite3 -J -T -f -m https://raw.github.com/bkuhlmann/rails_setup_template/v2.0.0/template.rb
+  rails new demo -d=sqlite3 -J -T -f -m https://raw.github.com/bkuhlmann/rails_setup_template/v3.0.0/template.rb
 
 Master Version (unstable):
 

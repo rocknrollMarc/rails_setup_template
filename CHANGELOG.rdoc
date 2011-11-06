@@ -1,4 +1,4 @@
-= vx.x.x (master)
+= v3.0.0
 
 * Updated the .gitignore file to exclude more RSpec and YARD files.
 * Upgraded to {jQuery 1.7.0}[http://jquery.com].
@@ -26,7 +26,7 @@
 * Removed the lib/utils/acts_as_list_enhancements.rb module enhancements as these are now part of the Sorted List gem.
 * Removed any images related to jQuery TOOLS library. Updated the CSS to behave like the original images.
 * Removed the Looksee gem.
-* Removed the Bullet gem. Proved to be too buggy.
+* Removed the Bullet gem.
 
 = v2.0.0
 
