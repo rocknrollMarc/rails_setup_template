@@ -89,6 +89,8 @@ gem "aws-s3", require: "aws/s3"
 gem "paperclip"
 gem "paperclip_plus"
 
+gem "newrelic_rpm"
+
 gem "ruby-debug19"
 gem "wirble"
 gem "hirb"
