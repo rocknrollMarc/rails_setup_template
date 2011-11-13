@@ -1,7 +1,7 @@
 class Navigation::Menu < Navigation::Item
   def initialize controller, template, options = {}, &block
     @@controller = controller
-    @options = {class: :menu}.merge options
+    @options = {:class => :menu}.merge options
     @level = 0
     @children = []
     @template = template

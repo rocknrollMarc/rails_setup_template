@@ -7,7 +7,7 @@ class Navigation::Item
   end
 
   def add title, link, template, item_options = {}, link_options = {}, &block
-    returning Navigation::Item.new(title, link, @level +1, template, item_options, link_options) do |adding|
+    Navigation::Item.new(title, link, @level +1, template, item_options, link_options).tap do |adding|
       @children << adding
       yield adding if block_given?
     end
@@ -23,7 +23,7 @@ class Navigation::Item
   end
 
   def child_output
-    children.empty? ? '' : content_tag(:ul, @children.collect(&:render).join.html_safe, class: level_class)
+    children.empty? ? '' : content_tag(:ul, @children.collect(&:render).join.html_safe, :class => level_class)
   end
 
   def active?
