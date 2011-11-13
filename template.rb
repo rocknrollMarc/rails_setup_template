@@ -180,7 +180,7 @@ download_file "#{GITHUB_T1_ROOT}/rails/public/javascripts/jquery.markitup.textil
 download_file "http://cdn.jquerytools.org/1.2.6/all/jquery.tools.min.js", "public/javascripts/jquery.tools.js"
 download_file "http://www.datatables.net/download/build/jquery.dataTables.js", "public/javascripts/jquery.dataTables.js"
 download_file "http://cachedcommons.org/cache/underscore/1.1.0/javascripts/underscore.js", "public/javascripts/underscore.js"
-download_file "https://github.com/Modernizr/Modernizr/raw/v1.7/modernizr.js", "public/javascripts/modernizr.js"
+download_file "http://www.modernizr.com/downloads/modernizr-2.0.6.js", "public/javascripts/modernizr.js"
 download_file "#{GITHUB_T1_ROOT}/rails/public/javascripts/application.js", "public/javascripts/application.js"
 
 # Factories
