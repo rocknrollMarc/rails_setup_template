@@ -95,6 +95,10 @@ After the template has been applied, the following might worse configuring as we
   config.i18n.default_locale = "en-US"
   config.encoding = "utf-8"
 
+= Best Practices
+
+* {Rails Style Guide}[https://github.com/bbatsov/rails-style-guide]
+
 = Company
 
 {Red Alchemist}[http://www.redalchemist.com]
