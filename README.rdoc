@@ -99,13 +99,13 @@ After the template has been applied, the following might worse configuring as we
 
 * {Rails Style Guide}[https://github.com/bbatsov/rails-style-guide]
 
-= Company
+= Contributions
 
-{Red Alchemist}[http://www.redalchemist.com]
-	
-= Author
+Please log all feedback/issues via {GitHub Issues}[https://github.com/bkuhlmann/rails_setup_template/issues]. Thanks.
 
-{Brooke Kuhlmann}[http://www.redalchemist.com]
+= Credits
+
+Developed by {Brooke Kuhlmann}[http://www.redalchemist.com] at {Red Alchemist}[http://www.redalchemist.com]
 
 = License
 
