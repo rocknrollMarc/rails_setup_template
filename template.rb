@@ -2,7 +2,7 @@ require "net/http"
 require "net/https"
 require "uri"
 
-GITHUB_T1_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/v3.0.0"
+GITHUB_T1_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/master"
 
 # Downloads a file, swiching to a secure connection if the source requires it. Also creates parent directories if they do not exist.
 # ==== Parameters
