@@ -9,7 +9,7 @@ GITHUB_T1_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/master"
 # * +source+ - The remote source URL.
 # * +destination+ - The local file destination path.
 def download_file source, destination
-  say "Downloading: #{source} to #{destination}..."
+  say_status :download, "#{source} to #{destination}."
   uri = URI.parse source
   http = Net::HTTP.new uri.host, uri.port
   http.use_ssl = uri.scheme == "https"
