@@ -22,9 +22,27 @@ def download_file source, destination
   File.open(project_file, "w") {|file| file.write response.body}
 end
 
-# Doc
-file "doc/README_FOR_APP", "TODO - Document your application...slacker."
-download_file "#{GITHUB_T1_ROOT}/rails/doc/design/site_layout.graffle", "doc/design/site_layout.graffle"
+# Simple Ruby Version Management (rbenv)
+download_file "#{GITHUB_T1_ROOT}/rails/rbenv-version.txt", ".rbenv-version"
+
+# Configurations
+download_file "#{GITHUB_T1_ROOT}/rails/config/initializers/active_record.rb", "config/initializers/active_record.rb"
+download_file "#{GITHUB_T1_ROOT}/rails/config/initializers/date_time.rb", "config/initializers/date_time.rb"
+download_file "#{GITHUB_T1_ROOT}/rails/config/initializers/ruby_enhancements.rb", "config/initializers/ruby_enhancements.rb"
+download_file "#{GITHUB_T1_ROOT}/rails/config/initializers/system.rb", "config/initializers/system.rb"
+download_file "#{GITHUB_T1_ROOT}/rails/config/initializers/validation.rb", "config/initializers/validation.rb"
+development_delta = "config/environments/development.delta.rb"
+download_file("#{GITHUB_T1_ROOT}/rails/config/environments/development.rb", development_delta)
+insert_into_file "config/environments/development.rb", open(development_delta).read, before: "\nend\n"
+remove_file "#{development_delta}"
+
+# Gems
+download_file "#{GITHUB_T1_ROOT}/rails/Gemfile", "Gemfile"
+run "bundle install"
+generate "resourcer:install"
+generate "simple_form:install"
+generate "rspec:install"
+generate "cucumber:install --rspec"
 
 # Controllers
 download_file "#{GITHUB_T1_ROOT}/rails/app/controllers/home_controller.rb", "app/controllers/home_controller.rb"
@@ -56,24 +74,6 @@ download_file "#{GITHUB_T1_ROOT}/rails/app/views/shared/menus/_visitor.html.erb"
 download_file "#{GITHUB_T1_ROOT}/rails/lib/tasks/passenger.rake", "lib/tasks/passenger.rake"
 download_file "#{GITHUB_T1_ROOT}/rails/lib/tasks/railroad.rake", "lib/tasks/railroad.rake"
 download_file "#{GITHUB_T1_ROOT}/rails/lib/tasks/deadweight.rake", "lib/tasks/deadweight.rake"
-
-# Configurations
-download_file "#{GITHUB_T1_ROOT}/rails/config/initializers/active_record.rb", "config/initializers/active_record.rb"
-download_file "#{GITHUB_T1_ROOT}/rails/config/initializers/date_time.rb", "config/initializers/date_time.rb"
-download_file "#{GITHUB_T1_ROOT}/rails/config/initializers/ruby_enhancements.rb", "config/initializers/ruby_enhancements.rb"
-download_file "#{GITHUB_T1_ROOT}/rails/config/initializers/system.rb", "config/initializers/system.rb"
-download_file "#{GITHUB_T1_ROOT}/rails/config/initializers/validation.rb", "config/initializers/validation.rb"
-development_delta = "config/environments/development.delta.rb"
-download_file("#{GITHUB_T1_ROOT}/rails/config/environments/development.rb", development_delta)
-insert_into_file "config/environments/development.rb", open(development_delta).read, before: "\nend\n"
-remove_file "#{development_delta}"
-
-# Gems
-download_file "#{GITHUB_T1_ROOT}/rails/Gemfile", "Gemfile"
-generate "resourcer:install"
-generate "simple_form:install"
-generate "rspec:install"
-generate "cucumber:install --rspec"
 
 # Images
 remove_file "app/assets/images/rails.png"
@@ -134,11 +134,12 @@ download_file "http://cachedcommons.org/cache/underscore/1.1.0/javascripts/under
 download_file "http://www.modernizr.com/downloads/modernizr-2.0.6.js", "app/assets/javascripts/modernizr.js"
 download_file "#{GITHUB_T1_ROOT}/rails/app/assets/javascripts/base.js", "app/assets/javascripts/base.js"
 
+# Doc
+file "doc/README_FOR_APP", "TODO - Document your application...slacker."
+download_file "#{GITHUB_T1_ROOT}/rails/doc/design/site_layout.graffle", "doc/design/site_layout.graffle"
+
 # Factories
 create_file "spec/factories.rb"
-
-# Simple Ruby Version Management (rbenv)
-download_file "#{GITHUB_T1_ROOT}/rails/rbenv-version.txt", ".rbenv-version"
 
 # Git
 git :init
@@ -147,3 +148,6 @@ run "pre-commit install"
 git config: "pre-commit.checks 'console_log, debugger'"
 git add: '.'
 git commit: "-n -a -m \"Applied Rails Setup Template.\""
+
+# End
+say_status :end, "Rails Template Setup Complete!"
