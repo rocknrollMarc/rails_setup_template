@@ -70,15 +70,15 @@ remove_file "#{development_delta}"
 
 # Gems
 gem "rake"
-gem "rails", "3.0.11"
-gem "barista"
+gem "rails", "3.1.3"
+gem "sqlite3"
 gem "andand"
+gem "will_paginate"
 gem "resourcer"
 gem "sessioner"
 gem "squeel"
 gem "ransack"
 gem "aasm"
-gem "will_paginate"
 gem "linguist"
 gem "sass"
 gem "simple_form"
@@ -90,27 +90,30 @@ gem "aws-s3", require: "aws/s3"
 gem "paperclip"
 gem "paperclip_plus"
 
-gem "newrelic_rpm"
+gem "sass-rails", group: "assets"
+gem "coffee-rails", group: "assets"
+gem "uglifier", group: "assets"
 
-gem "ruby-debug19"
-gem "wirble"
-gem "hirb"
-gem "awesome_print"
-gem "rack-webconsole"
-gem "ruby-growl"
-gem "active_sanity"
-gem "colorblind"
-gem "deadweight"
-gem "rails-erd"
-gem "railroad"
+gem "ruby-debug19", group: "development"
+gem "wirble", group: "development"
+gem "hirb", group: "development"
+gem "awesome_print", group: "development"
+gem "rack-webconsole", group: "development"
+gem "ruby-growl", group: "development"
+gem "active_sanity", group: "development"
+gem "colorblind", group: "development"
+gem "deadweight", group: "development"
+gem "rails-erd", group: "development"
+gem "railroad", group: "development"
 
-gem "rspec-rails"
-gem "cucumber-rails"
-gem "factory_girl_rails"
-gem "webrat"
-gem "metric_fu"
+gem "rspec-rails", group: "test"
+gem "cucumber-rails", group: "test"
+gem "factory_girl_rails", group: "test"
+gem "webrat", group: "test"
+gem "metric_fu", group: "test"
 
-generate "barista:install"
+gem "newrelic_rpm", group: "production"
+
 generate "resourcer:install"
 generate "simple_form:install"
 generate "rspec:install"
@@ -191,8 +194,8 @@ download_file "#{GITHUB_T1_ROOT}/rails/public/javascripts/application.js", "publ
 # Factories
 create_file "spec/factories.rb"
 
-# Ruby Version Manager (RVM)
-download_file "#{GITHUB_T1_ROOT}/rails/rvmrc.txt", ".rvmrc"
+# Simple Ruby Version Management (rbenv)
+download_file "#{GITHUB_T1_ROOT}/rails/rbenv-version.txt", ".rbenv-version"
 
 # Git
 git :init

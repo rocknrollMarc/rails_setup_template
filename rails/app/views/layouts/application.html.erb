@@ -9,12 +9,12 @@
 
 		<!-- Identity -->
 		<title><%= yield(:title) || SYSTEM_LABEL %></title>
-	  <meta name="keywords" content="Demo Ruby Ruby on Rails">
+	  <meta name="keywords" content="Demo Ruby on Rails">
 	  <meta name="description" content="A generated Ruby on Rails app with default theming and utility support.">
 		<% tag :meta, name: :author, content: DEVELOPER_LABEL %>
 
 		<!-- Security -->
-		<%= csrf_meta_tag %>
+		<%= csrf_meta_tags %>
 
     <!-- Bookmark Icon -->
     <link rel="shortcut icon" href="/favicon.ico" />
