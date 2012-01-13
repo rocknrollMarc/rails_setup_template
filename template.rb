@@ -82,7 +82,6 @@ download_file "#{GITHUB_T1_ROOT}/rails/app/assets/images/icons/feed-comments.png
 download_file "#{GITHUB_T1_ROOT}/rails/app/assets/images/icons/feed.png", "app/assets/images/icons/feed.png"
 download_file "#{GITHUB_T1_ROOT}/rails/app/assets/images/jgrowl/default.png", "app/assets/images/jgrowl/default.png"
 download_file "#{GITHUB_T1_ROOT}/rails/app/assets/images/main/apple-webclip.png", "app/assets/images/main/apple-webclip.png"
-download_file "#{GITHUB_T1_ROOT}/rails/app/assets/images/main/background.jpg", "app/assets/images/main/background.jpg"
 download_file "#{GITHUB_T1_ROOT}/rails/app/assets/images/main/spinner.gif", "app/assets/images/main/spinner.gif"
 download_file "#{GITHUB_T1_ROOT}/rails/app/assets/images/markitup/bold.png", "app/assets/images/markitup/bold.png"
 download_file "#{GITHUB_T1_ROOT}/rails/app/assets/images/markitup/code.png", "app/assets/images/markitup/code.png"
