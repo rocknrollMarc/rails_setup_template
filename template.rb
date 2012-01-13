@@ -129,7 +129,6 @@ download_file "http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validat
 download_file "#{GITHUB_T1_ROOT}/rails/app/assets/javascripts/jquery.jgrowl.js", "app/assets/javascripts/jquery.jgrowl.js"
 download_file "https://raw.github.com/markitup/1.x/1.1.12/markitup/jquery.markitup.js", "app/assets/javascripts/jquery.markitup.js"
 download_file "#{GITHUB_T1_ROOT}/rails/app/assets/javascripts/jquery.markitup.textile.js", "app/assets/javascripts/jquery.markitup.textile.js"
-download_file "http://cdn.jquerytools.org/1.2.6/all/jquery.tools.min.js", "app/assets/javascripts/jquery.tools.js"
 download_file "http://www.datatables.net/download/build/jquery.dataTables.js", "app/assets/javascripts/jquery.dataTables.js"
 download_file "http://cachedcommons.org/cache/underscore/1.1.0/javascripts/underscore.js", "app/assets/javascripts/underscore.js"
 download_file "http://www.modernizr.com/downloads/modernizr-2.0.6.js", "app/assets/javascripts/modernizr.js"
