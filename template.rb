@@ -133,7 +133,7 @@ download_file "http://cdn.jquerytools.org/1.2.6/all/jquery.tools.min.js", "app/a
 download_file "http://www.datatables.net/download/build/jquery.dataTables.js", "app/assets/javascripts/jquery.dataTables.js"
 download_file "http://cachedcommons.org/cache/underscore/1.1.0/javascripts/underscore.js", "app/assets/javascripts/underscore.js"
 download_file "http://www.modernizr.com/downloads/modernizr-2.0.6.js", "app/assets/javascripts/modernizr.js"
-download_file "#{GITHUB_T1_ROOT}/rails/app/assets/javascripts/application.js", "app/assets/javascripts/application.js"
+download_file "#{GITHUB_T1_ROOT}/rails/app/assets/javascripts/base.js", "app/assets/javascripts/base.js"
 
 # Factories
 create_file "spec/factories.rb"
