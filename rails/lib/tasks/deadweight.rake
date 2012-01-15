@@ -1,8 +1,8 @@
 require 'deadweight'
 
-desc "Runs Deadweight"
+desc "Runs Deadweight. Usage: rake deadweight"
 Deadweight::RakeTask.new do |dw|
-  dw.root = "http://demo.dev"
-  dw.stylesheets = Dir["app/assets/stylesheets/**/*", "vendor/assets/stylesheets/**/*"]
+  dw.root = "http://localhost:3000"
+  dw.stylesheets = ["/assets/shared/style.css"]
   dw.pages = ["/"]
 end
