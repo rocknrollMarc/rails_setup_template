@@ -147,7 +147,7 @@ download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/application.js", "a
 
 # Doc
 file "doc/README_FOR_APP", "TODO - Document your application."
-download_file "#{TEMPLATE_ROOT}/rails/doc/design/site_layout.graffle", "doc/design/site_layout.graffle"
+download_file "#{TEMPLATE_ROOT}/rails/public/humans.txt", "public/humans.txt"
 
 # Factories
 create_file "spec/factories.rb"
