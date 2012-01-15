@@ -1,7 +1,7 @@
 = Overview
 
 Bootstraps a Ruby on Rails project beyond what you get with default project generation (i.e. rails new <project name>). 
-Best applied when building a new Ruby on Rails application.
+Best applied when creating a new Ruby on Rails application.
 
 = Features
 
@@ -70,9 +70,10 @@ The following highlights what is applied with this template:
 
 = Requirements
 
-* Mac OS, Linux, or UNIX.
-* Run the {Ruby Gem Setup}[https://github.com/bkuhlmann/ruby_gem_setup] script or have manually installed all gems listed above.
-* A solid internet connection.
+1. A UNIX-based system.
+2. {Ruby 1.9.x}[http://www.ruby-lang.org].
+3. Experience with basic {Ruby on Rails 3.x}[http://rubyonrails.org] apps.
+4. A solid internet connection.
 
 = Usage
 
