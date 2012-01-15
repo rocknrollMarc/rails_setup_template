@@ -108,10 +108,11 @@ download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/markitup/picture.png"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/markitup/preview.png", "vendor/assets/images/markitup/preview.png"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/markitup/quotes.png", "vendor/assets/images/markitup/quotes.png"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/markitup/stroke.png", "vendor/assets/images/markitup/stroke.png"
-download_file "#{TEMPLATE_ROOT}/rails/app/assets/images/main/apple-webclip.png", "app/assets/images/main/apple-webclip.png"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/images/main/spinner.gif", "app/assets/images/main/spinner.gif"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/images/icons/feed-comments.png", "app/assets/images/icons/feed-comments.png"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/images/icons/feed.png", "app/assets/images/icons/feed.png"
+download_file "#{TEMPLATE_ROOT}/rails/public/apple-touch-icon-114x114.png", "public/apple-touch-icon-114x114.png"
+download_file "#{TEMPLATE_ROOT}/rails/public/fapple-touch-icon.png", "public/apple-touch-icon.png"
 download_file "#{TEMPLATE_ROOT}/rails/public/favicon.ico", "public/favicon.ico"
 
 # Stylesheets
