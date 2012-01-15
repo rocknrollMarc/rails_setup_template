@@ -23,7 +23,7 @@ class Navigation::Item
   end
 
   def child_output
-    children.empty? ? '' : content_tag(:ul, @children.collect(&:render).join.html_safe, :class => level_class)
+    children.empty? ? '' : content_tag(:ul, @children.collect(&:render).join.html_safe, class: level_class)
   end
 
   def active?
