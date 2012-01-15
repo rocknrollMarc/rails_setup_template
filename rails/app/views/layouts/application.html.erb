@@ -22,33 +22,31 @@
     <!-- JavaScripts -->
     <%= javascript_include_tag "application" %>
   </head>
+
   <body>
-    <div id="page" class="container">
-			<div id="header">
-				<div id="label"><%= SYSTEM_LABEL %></div>
-				<div id="description"><%= SYSTEM_DESCRIPTION %></div>
-				<div id="account"><%= render_account_header_info %></div>
-				<div id="navigation">
-					<%= render partial: "shared/menus/" + current_route %>
+		<div class="topbar">
+			<div class="fill">
+				<div class="container">
+					<%= link_to SYSTEM_LABEL, root_path, class: "brand" %>
+					<%= render_visitor_menu %>
+					<p class="pull-right"><%= render_account_header_info %></p>
 				</div>
 			</div>
-      <div id="body">
-				<%= render_flash_messages %>
-				<%= yield :breadcrumbs %>
-        <%= yield %>
-      </div>
-      <div id="footer">
-        <p class="center">
-					<em>
-						&copy; <%= SYSTEM_LABEL %>, <%= render_system_version %><br/>
-						Developed by <%= link_to DEVELOPER_LABEL, DEVELOPER_URL %>
-					</em>
-				</p>
-      </div>
-    </div>
+		</div>
+
+    <div class="container">
+			<%= render_flash_messages %>
+			<%= yield :breadcrumbs %>
+      <%= yield %>
+			<footer>
+				&copy; <%= SYSTEM_LABEL %>, <%= render_system_version %> | Developed by <%= link_to DEVELOPER_LABEL, DEVELOPER_URL %>
+			</footer>
+		</div>
+				
 		<div id="ajax">
 			<%= image_tag "main/spinner.gif", alt: "spinner" %>
 			<p>Please wait...</p>
 		</div>
+
   </body>
 </html>

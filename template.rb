@@ -69,7 +69,6 @@ remove_file "public/index.html"
 download_file "#{TEMPLATE_ROOT}/rails/app/views/layouts/application.html.erb", "app/views/layouts/application.html.erb"
 download_file "#{TEMPLATE_ROOT}/rails/app/views/home/show.html.erb", "app/views/home/show.html.erb"
 download_file "#{TEMPLATE_ROOT}/rails/app/views/about/show.html.erb", "app/views/about/show.html.erb"
-download_file "#{TEMPLATE_ROOT}/rails/app/views/shared/menus/_visitor.html.erb", "app/views/shared/menus/_visitor.html.erb"
 
 # Lib
 download_file "#{TEMPLATE_ROOT}/rails/lib/tasks/passenger.rake", "lib/tasks/passenger.rake"
@@ -118,8 +117,9 @@ download_file "#{TEMPLATE_ROOT}/rails/public/favicon.ico", "public/favicon.ico"
 # Stylesheets
 download_file "#{BOOTSTRAP_ROOT}/bootstrap.css", "vendor/assets/stylesheets/bootstrap.css"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/stylesheets/jquery-ui.css", "vendor/assets/stylesheets/jquery-ui.css"
+download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/stylesheets/jquery.blockUI.css", "vendor/assets/stylesheets/jquery.blockUI.css"
+download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/stylesheets/jquery.markitup.css", "vendor/assets/stylesheets/jquery.markitup.css"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/shared/style.css", "app/assets/stylesheets/shared/style.css"
-download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/public/style.css", "app/assets/stylesheets/public/style.css"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/application.css", "app/assets/stylesheets/application.css"
 
 # JavaScripts
