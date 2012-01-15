@@ -104,7 +104,7 @@ After the template has been applied, the following might worse configuring as we
   config.i18n.default_locale = "en-US"
   config.encoding = "utf-8"
 
-= Best Practices
+= Resources
 
 * {Rails Style Guide}[https://github.com/bbatsov/rails-style-guide]
 
