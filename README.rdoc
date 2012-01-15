@@ -107,6 +107,7 @@ After the template has been applied, the following might worse configuring as we
 = Resources
 
 * {Rails Style Guide}[https://github.com/bbatsov/rails-style-guide]
+* Extending Rails 3 with Railties[http://www.engineyard.com/blog/2010/extending-rails-3-with-railties]
 
 = Contributions
 

@@ -4,23 +4,24 @@
 // It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
 // the compiled file.
 //
-//= require jquery.js
-//= require jquery-ui.js
-//= require jquery.blockUI.js
-//= require jquery.cookie.js
-//= require jquery.validate.js
-//= require jquery.dataTables.js
-//= require jquery.markitup.js
-//= require jquery.markitup.textile.js
-//= require jquery.jgrowl.js
-//= require bootstrap-alerts.js
-//= require bootstrap-buttons.js
-//= require bootstrap-dropdown.js
-//= require bootstrap-modal.js
-//= require bootstrap-popover.js
-//= require bootstrap-scrollspy.js
-//= require bootstrap-tabs.js
-//= require bootstrap-twipsy.js
-//= require modernizr.js
-//= require underscore.js
+//= require jquery
+//= require jquery-ui
+//= require jquery.blockUI
+//= require jquery.cookie
+//= require jquery.validate
+//= require jquery.dataTables
+//= require jquery.markitup
+//= require jquery.markitup.textile
+//= require jquery.jgrowl
+//= require bootstrap-alerts
+//= require bootstrap-buttons
+//= require bootstrap-dropdown
+//= require bootstrap-modal
+//= require bootstrap-popover
+//= require bootstrap-scrollspy
+//= require bootstrap-tabs
+//= require bootstrap-twipsy
+//= require modernizr
+//= require underscore
 //= require_tree ./shared
+
