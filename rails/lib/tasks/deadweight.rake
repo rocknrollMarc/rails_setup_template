@@ -2,7 +2,7 @@ require 'deadweight'
 
 desc "Runs Deadweight"
 Deadweight::RakeTask.new do |dw|
-  dw.root = "http://demo.local"
-  dw.stylesheets = ["#{THEME_ROOT}/style.css"]
+  dw.root = "http://demo.dev"
+  dw.stylesheets = Dir["app/assets/stylesheets/**/*", "vendor/assets/stylesheets/**/*"]
   dw.pages = ["/"]
 end
