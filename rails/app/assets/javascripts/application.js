@@ -13,15 +13,14 @@
 //= require jquery.markitup
 //= require jquery.markitup.textile
 //= require jquery.jgrowl
-//= require bootstrap-alerts
-//= require bootstrap-buttons
-//= require bootstrap-dropdown
 //= require bootstrap-modal
-//= require bootstrap-popover
+//= require bootstrap-alerts
+//= require bootstrap-dropdown
 //= require bootstrap-scrollspy
+//= require bootstrap-buttons
 //= require bootstrap-tabs
 //= require bootstrap-twipsy
+//= require bootstrap-popover
 //= require modernizr
 //= require underscore
 //= require_tree ./shared
-
