@@ -19,14 +19,12 @@ The following highlights what is applied with this template:
 * Installs the {Modernizr 2.6.0}[http://www.modernizr.com] JavaScript library.
 * Adds the Rake[https://github.com/jimweirich/rake] gem requirement.
 * Adds the {Ruby on Rails}[http://rubyonrails.org] gem requirement.
-* Adds the CoffeeScript[https://github.com/Sutto/barista] gem requirement.
 * Adds the Resourcer[https://github.com/bkuhlmann/resourcer] gem requirement.
 * Adds the Sessioner[https://github.com/bkuhlmann/sessioner] gem requirement.
 * Adds the Squeel[https://github.com/ernie/squeel] gem requirement.
 * Adds the Ransack[https://github.com/ernie/ransack] gem requirement.
 * Adds the {Will Paginate}[https://github.com/mislav/will_paginate] gem requirement.
 * Adds the Linguist[https://github.com/bkuhlmann/linguist] gem requirement.
-* Adds the SASS[https://github.com/nex3/sass] gem requirement.
 * Adds the {Acts as State Machine (AASM)}[https://github.com/rubyist/aasm] gem requirement.
 * Adds the Tokener[https://github.com/bkuhlmann/tokener] gem requirement.
 * Adds the {Sorter}[https://github.com/bkuhlmann/sorter] gem requirement.
@@ -53,9 +51,9 @@ The following highlights what is applied with this template:
 * Adds the {Factory Girl Rails}[https://github.com/thoughtbot/factory_girl_rails] gem requirement.
 * Adds the Webrat[http://gitrdoc.com/brynary/webrat] gem requirement.
 * Adds the {Metric Fu}[http://metric-fu.rubyforge.org] gem requirement.
+* Installs {Twitter Bootstrap}[http://twitter.github.com/bootstrap] assets.
+* Installs jQuery UI assets.
 * Installs a customized application.html.erb file with a basic but structured site layout.
-* Installs a customized {Blueprint CSS}[https://github.com/joshuaclayton/blueprint-css] theme.
-* Installs a customized jQueryUI theme to compliment the Blueprint CSS theme.
 * Installs customized application graphics.
 * Installs customized configuration initializers.
 * Installs a rake script with {Phusion Passenger}[http://www.modrails.com/] support.
@@ -63,11 +61,9 @@ The following highlights what is applied with this template:
 * Installs simple _home_ and _about_ controllers for basic demo usage.
 * Installs customized view helpers.
 * Installs site navigation with dynamic controller detection and menu selection.
-* Installs nested drop down menu support as inspired by {CSS Dropdown Menu}[http://www.webdesignerwall.com/tutorials/css3-dropdown-menu/].
-* Installs OmniGraffle[http://www.omnigroup.com/products/OmniGraffle/] documentation for site layout and structure.
 * Installs Git commit checks (via the Pre-Commit gem).
 * Installs a .gitignore file with general exclusions for Git[http://git-scm.com].
-* Installs a .rvmrc file for use with RVM[http://rvm.beginrescueend.com].
+* Installs a .rbenv-version file for use with rbenv[https://github.com/sstephenson/rbenv].
 
 = Requirements
 
