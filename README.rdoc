@@ -98,7 +98,7 @@ Here is what each option is doing and why:
 
 = Setup
 
-After the template has been applied, the following might worse configuring as well:
+After the template has been applied, the following might worth configuring as well:
 
   config.autoload_paths += %W(#{config.root}/lib/utils)
   config.time_zone = "UTC"
