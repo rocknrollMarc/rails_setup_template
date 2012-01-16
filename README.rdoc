@@ -14,10 +14,9 @@ The following highlights what is applied with this template:
 * Installs the {jQuery Validation 1.7}[http://bassistance.de/jquery-plugins/jquery-plugin-validation] JavaScript library.
 * Installs the {jQuery jGrowl 1.2.5}[http://stanlemon.net/projects/jgrowl.html] JavaScript library.
 * Installs the {jQuery Mark It Up 1.1.12}[http://markitup.jaysalvat.com] JavaScript library.
-* Installs the {jQuery Tools 1.2.5}[http://flowplayer.org/tools/index.html] JavaScript library.
 * Installs the {jQuery DataTables 1.7.5}[http://www.datatables.net] JavaScript library.
 * Installs the {Underscore 1.1.0}[https://github.com/documentcloud/underscore] JavaScript library.
-* Installs the {Modernizr 1.7.0}[http://www.modernizr.com] JavaScript library.
+* Installs the {Modernizr 2.6.0}[http://www.modernizr.com] JavaScript library.
 * Adds the Rake[https://github.com/jimweirich/rake] gem requirement.
 * Adds the {Ruby on Rails}[http://rubyonrails.org] gem requirement.
 * Adds the CoffeeScript[https://github.com/Sutto/barista] gem requirement.
@@ -29,21 +28,23 @@ The following highlights what is applied with this template:
 * Adds the Linguist[https://github.com/bkuhlmann/linguist] gem requirement.
 * Adds the SASS[https://github.com/nex3/sass] gem requirement.
 * Adds the {Acts as State Machine (AASM)}[https://github.com/rubyist/aasm] gem requirement.
-* Adds the Tokener[https://github.com/bkuhlmann/tokener] gem.
+* Adds the Tokener[https://github.com/bkuhlmann/tokener] gem requirement.
 * Adds the {Sorter}[https://github.com/bkuhlmann/sorter] gem requirement.
 * Adds the {Lineage}[https://github.com/bkuhlmann/lineage] gem requirement.
-* Adds the Formtastic[https://github.com/justinfrench/formtastic] gem requirement.
+* Adds the {Simple Form}[https://github.com/plataformatec/simple_form] gem requirement.
 * Adds the RedCloth[http://redcloth.org] gem requirement.
 * Adds the {AWS-S3}[https://github.com/marcel/aws-s3] gem requirement.
 * Adds the Paperclip[http://www.thoughtbot.com/projects/paperclip] gem requirement.
 * Adds the {Paperclip Plus}[https://github.com/bkuhlmann/paperclip_plus] gem requirement.
-* Adds the {Ruby Debug}[http://rubyforge.org/projects/ruby-debug] gem.
-* Adds the Wirble[https://github.com/blackwinter/wirble] gem.
-* Adds the Hirb[https://github.com/cldwalker/hirb] gem.
-* Adds the {Awesome Print}[https://github.com/michaeldv/awesome_print] gem.
-* Adds the {Ruby Growl}[http://rubyforge.org/projects/ruby-growl] gem.
-* Adds the {Active Sanity}[https://github.com/versapay/active_sanity] gem.
-* Adds the {Color Blind}[https://github.com/codegram/colorblind] gem.
+* Added the AndAnd[http://andand.rubyforge.org] gem requirement.
+* Adds the {Ruby Debug}[http://rubyforge.org/projects/ruby-debug] gem requirement.
+* Adds the Wirble[https://github.com/blackwinter/wirble] gem requirement.
+* Adds the Hirb[https://github.com/cldwalker/hirb] gem requirement.
+* Adds the {Awesome Print}[https://github.com/michaeldv/awesome_print] gem requirement.
+* Adds the {Ruby Growl}[http://rubyforge.org/projects/ruby-growl] gem requirement.
+* Adds the {Rack Webconsole}[https://github.com/codegram/rack-webconsole] gem requirement.
+* Adds the {Active Sanity}[https://github.com/versapay/active_sanity] gem requirement.
+* Adds the {Color Blind}[https://github.com/codegram/colorblind] gem requirement.
 * Adds the Deadweight[https://github.com/aanand/deadweight] gem requirement.
 * Adds the {Rails ERD}[http://rails-erd.rubyforge.org] gem requirement.
 * Adds the Railroad[http://railroad.rubyforge.org] gem requirement.
@@ -81,7 +82,7 @@ Open a terminal window and execute one the following command lines depending on 
 
 Current Version (stable):
 
-  rails new demo -d=sqlite3 -J -T -f --skip-bundle -m https://raw.github.com/bkuhlmann/rails_setup_template/v3.0.0/template.rb
+  rails new demo -d=sqlite3 -J -T -f --skip-bundle -m https://raw.github.com/bkuhlmann/rails_setup_template/v4.0.0/template.rb
 
 Master Version (unstable):
 

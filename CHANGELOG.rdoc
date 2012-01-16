@@ -1,3 +1,40 @@
+= v4.0.0
+
+* Fixed deprecation warnings with navigation menu and items classes.
+* Applied Ruby 1.9 syntax upgrades.
+* Removed the current_route method from the navigation helper.
+* Updated the date/time initializer with new patterns.
+* Updated the README with additional post-install configurations.
+* Added the New Relic gem.
+* Upgraded to Rails 3.1.3.
+* Upgraded to jQuery 1.7.1.
+* Upgraded to jQuery UI 1.8.17.
+* Upgraded to Modernizr 2.0.6.
+* Added a Best Practices section to the README which includes the Rails Style Guide.
+* Added the simple_form and andand gems.
+* Removed the formtastic gem.
+* Added the rack-webconsole gem.
+* Dropped RVM support and switched to rbenv.
+* Moved all gem requirements from the template.rb to the Gemfile template (better formatting, easier to read).
+* Cleaned the download messages so that they behave and look like other Thor messages.
+* Moved all public folders for images, stylesheets, and javascript to the app/assets and vendor/assets folders respectively.
+* Removed the email and unknown icons.
+* Removed the background image.
+* Removed the jQuery TOOLS JavaScript library.
+* Added bundle install to template execution.
+* Added BOOTSTRAP_ROOT for Twitter Bootstrap CSS and JavaScript files to template.
+* Renamed GITHUB_T1_ROOT to TEMPLATE_ROOT.
+* Updated all javascript and stylesheet links within the application.html.erb layout.
+* Added the Apple iOS icons for dimensions 57x57 and 114x114 pixels.
+* Cleaned up the application.html.erb encoding and identity code.
+* Removed the THEME_NAME and THEME_ROOT constants.
+* Removed the site design docs - See Twitter Bootstrap docs instead.
+* Applied Twitter Bootstrap theme to project - layouts and views are in sync.
+* Updated the system initializer with new system label and description.
+* Added humans.txt to the public folder.
+* Renamed Best Practices to Resources in README.
+* Added "Extending Rails" doc to Resources section of the README.
+
 = v3.0.0
 
 * Updated the .gitignore file to exclude more RSpec and YARD files.
