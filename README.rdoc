@@ -7,8 +7,8 @@ Best applied when creating a new Ruby on Rails application.
 
 The following highlights what is applied with this template:
 
-* Installs the {jQuery 1.7.0}[http://jquery.com] JavaScript library.
-* Installs the {jQuery UI 1.8.16}[http://jqueryui.com] JavaScript library.
+* Installs the {jQuery 1.7.1}[http://jquery.com] JavaScript library.
+* Installs the {jQuery UI 1.8.17}[http://jqueryui.com] JavaScript library.
 * Installs the {jQuery Cookie}[http://plugins.jquery.com/project/Cookie] JavaScript library.
 * Installs the {jQuery Block UI 2.33}[https://github.com/malsup/blockui] JavaScript library.
 * Installs the {jQuery Validation 1.7}[http://bassistance.de/jquery-plugins/jquery-plugin-validation] JavaScript library.
@@ -108,7 +108,7 @@ After the template has been applied, the following might worse configuring as we
 = Resources
 
 * {Rails Style Guide}[https://github.com/bbatsov/rails-style-guide]
-* Extending Rails 3 with Railties[http://www.engineyard.com/blog/2010/extending-rails-3-with-railties]
+* {Extending Rails 3 with Railties}[http://www.engineyard.com/blog/2010/extending-rails-3-with-railties]
 
 = Contributions
 
