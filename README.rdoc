@@ -42,7 +42,6 @@ The following highlights what is applied with this template:
 * Adds the {Ruby Growl}[http://rubyforge.org/projects/ruby-growl] gem requirement.
 * Adds the {Rack Webconsole}[https://github.com/codegram/rack-webconsole] gem requirement.
 * Adds the {Active Sanity}[https://github.com/versapay/active_sanity] gem requirement.
-* Adds the {Color Blind}[https://github.com/codegram/colorblind] gem requirement.
 * Adds the Deadweight[https://github.com/aanand/deadweight] gem requirement.
 * Adds the {Rails ERD}[http://rails-erd.rubyforge.org] gem requirement.
 * Adds the Railroad[http://railroad.rubyforge.org] gem requirement.
