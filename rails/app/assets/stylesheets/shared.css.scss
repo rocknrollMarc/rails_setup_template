@@ -1,0 +1,20 @@
+/* @group General */
+a {outline: none; text-decoration: none;}
+.left {float: left;}
+.right {float: right;}
+.center {text-align: center;}
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+/* @end */
+
+/* @group Rails Error Handling */
+.errorExplanation {
+	color: #8A1F11; border: 0.2em solid #FBC2C4; background-color: #FBE3E4; padding: 0.8em; margin-bottom: 1em;
+	h2, a {color: #8A1F11;}
+	p {display: none;}
+}
+.field_error {
+	color: #8A1F11;
+	input, select, textarea {border-color: #8A1F11;}
+}
+/* @end */
