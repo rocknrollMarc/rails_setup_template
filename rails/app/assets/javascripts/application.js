@@ -6,6 +6,7 @@
 //
 //= require jquery
 //= require jquery-ui
+//= require jquery.rest
 //= require jquery.blockUI
 //= require jquery.cookie
 //= require jquery.validate
