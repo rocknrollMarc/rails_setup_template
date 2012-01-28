@@ -2,7 +2,7 @@ require "net/http"
 require "net/https"
 require "uri"
 
-TEMPLATE_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/v4.1.0"
+TEMPLATE_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/master"
 BOOTSTRAP_ROOT = "https://raw.github.com/twitter/bootstrap/v1.4.0"
 
 # Downloads a file, swiching to a secure connection if the source requires it. Also creates parent directories if they do not exist.
