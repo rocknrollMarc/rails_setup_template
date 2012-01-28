@@ -68,7 +68,7 @@ The following highlights what is applied with this template:
 
 1. A UNIX-based system.
 2. {Ruby 1.9.x}[http://www.ruby-lang.org].
-3. Experience with basic {Ruby on Rails 3.x}[http://rubyonrails.org] apps.
+3. {Ruby on Rails 3.x}[http://rubyonrails.org].
 4. A solid internet connection.
 
 = Usage
@@ -90,6 +90,10 @@ Here is what each option is doing and why:
 * -T - Skips setting up Test::Unit files since RSpec is what we want.
 * -f - Forces overwrite of any existing files so the template is not interrupted during setup.
 * --skip-bundle - Skips running "bundle install" since the template does this for you at appropriate time of setup.
+
+BTW, you can reduce unnecessary typing with new app generation by adding the new rails options, listed above,
+to your .railsrc file and simply type "rails new demo" each time. See my
+{.railsrc}[https://github.com/bkuhlmann/dotfiles/blob/master/home_files/railsrc.txt] for usage.
 
 = Setup
 

@@ -1,3 +1,11 @@
+= v4.1.0
+
+* Fixed README typos and invalid links.
+* Fixed load order of Twitter Bootstrap JavaScript files.
+* Upgraded to Ruby 1.9.3-p0. Removed the paperclip and silent-postgres gems.
+* Ugraded to Rails 3.2.1.
+* Removed the Colorblind gem.
+
 = v4.0.0
 
 * Fixed deprecation warnings with navigation menu and items classes.

@@ -115,14 +115,16 @@ download_file "#{TEMPLATE_ROOT}/rails/public/apple-touch-icon.png", "public/appl
 download_file "#{TEMPLATE_ROOT}/rails/public/favicon.ico", "public/favicon.ico"
 
 # Stylesheets
+download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/application.css", "app/assets/stylesheets/application.css"
+download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/shared.css.scss", "app/assets/stylesheets/shared.css.scss"
 download_file "#{BOOTSTRAP_ROOT}/bootstrap.css", "vendor/assets/stylesheets/bootstrap.css"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/stylesheets/jquery-ui.css", "vendor/assets/stylesheets/jquery-ui.css"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/stylesheets/jquery.blockUI.css", "vendor/assets/stylesheets/jquery.blockUI.css"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/stylesheets/jquery.markitup.css", "vendor/assets/stylesheets/jquery.markitup.css"
-download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/shared/style.css", "app/assets/stylesheets/shared/style.css"
-download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/application.css", "app/assets/stylesheets/application.css"
 
 # JavaScripts
+download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/application.js", "app/assets/javascripts/application.js"
+download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/shared.js", "app/assets/javascripts/shared.js"
 download_file "http://code.jquery.com/jquery-1.7.1.js", "vendor/assets/javascripts/jquery.js"
 download_file "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.js", "vendor/assets/javascripts/jquery-ui.js"
 download_file "http://cachedcommons.org/cache/jquery-cookie/0.0.0/javascripts/jquery-cookie.js", "vendor/assets/javascripts/jquery.cookie.js"
@@ -142,8 +144,6 @@ download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-tabs.js", "vendor/assets/javascrip
 download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-twipsy.js", "vendor/assets/javascripts/bootstrap-twipsy.js"
 download_file "http://www.modernizr.com/downloads/modernizr-2.0.6.js", "vendor/assets/javascripts/modernizr.js"
 download_file "http://cachedcommons.org/cache/underscore/1.1.0/javascripts/underscore.js", "vendor/assets/javascripts/underscore.js"
-download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/shared/base.js", "app/assets/javascripts/shared/base.js"
-download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/application.js", "app/assets/javascripts/application.js"
 
 # Doc
 file "doc/README_FOR_APP", "TODO - Document your application."

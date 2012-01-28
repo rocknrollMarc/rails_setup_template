@@ -23,4 +23,4 @@
 //= require bootstrap-popover
 //= require modernizr
 //= require underscore
-//= require_tree ./shared
+//= require shared
