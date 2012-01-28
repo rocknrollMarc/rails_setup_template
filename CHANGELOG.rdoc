@@ -3,7 +3,7 @@
 * Fixed README typos and invalid links.
 * Fixed load order of Twitter Bootstrap JavaScript files.
 * Upgraded to Ruby 1.9.3-p0.
-* Ugraded to Rails 3.2.1.
+* Upgraded to Rails 3.2.1.
 * Removed the paperclip and silent-postgres gems.
 * Removed the Colorblind gem.
 

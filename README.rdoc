@@ -7,6 +7,8 @@ Best applied when creating a new Ruby on Rails application.
 
 The following highlights what is applied with this template:
 
+* Uses {Ruby 1.9.3}[http://www.ruby-lang.org].
+* Uses {Ruby on Rails 3.2.1}[http://rubyonrails.org].
 * Installs the {jQuery 1.7.1}[http://jquery.com] JavaScript library.
 * Installs the {jQuery UI 1.8.17}[http://jqueryui.com] JavaScript library.
 * Installs the {jQuery Cookie}[http://plugins.jquery.com/project/Cookie] JavaScript library.
