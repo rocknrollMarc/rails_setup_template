@@ -121,13 +121,18 @@ download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/application.css", "
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/shared.css.scss", "app/assets/stylesheets/shared.css.scss"
 download_file "#{BOOTSTRAP_ROOT}/docs/assets/css/bootstrap.css", "vendor/assets/stylesheets/bootstrap.css.scss"
 download_file "#{BOOTSTRAP_ROOT}/docs/assets/css/bootstrap-responsive.css", "vendor/assets/stylesheets/bootstrap-responsive.css"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/stylesheets/jquery-ui.css", "vendor/assets/stylesheets/jquery-ui.css"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/stylesheets/jquery.blockUI.css", "vendor/assets/stylesheets/jquery.blockUI.css"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/stylesheets/jquery.markitup.css", "vendor/assets/stylesheets/jquery.markitup.css"
+download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/stylesheets/jquery-ui.css", "vendor/assets/stylesheets/jquery-ui.css.scss"
+download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/stylesheets/jquery.blockUI.css", "vendor/assets/stylesheets/jquery.blockUI.css.scss"
+download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/stylesheets/jquery.markitup.css", "vendor/assets/stylesheets/jquery.markitup.css.scss"
 
 # Stylesheets (CSS to SCSS asset conversion)
-gsub_file "vendor/assets/stylesheets/bootstrap.css.scss", /url\(..\/img\//, 'image-url("bootstrap/'
-gsub_file "vendor/assets/stylesheets/bootstrap.css.scss", /\.png\);/, '.png");'
+gsub_file "vendor/assets/stylesheets/bootstrap.css.scss", /url\(\"\.\.\/img\//, 'image-url("bootstrap/'
+gsub_file "vendor/assets/stylesheets/jquery-ui.css.scss", /url\(images\//, 'image-url("jquery-ui/'
+gsub_file "vendor/assets/stylesheets/jquery-ui.css.scss", /\.png\)/, '.png")'
+gsub_file "vendor/assets/stylesheets/jquery.blockUI.css.scss", /url\(images\//, 'image-url("jquery-blockUI/'
+gsub_file "vendor/assets/stylesheets/jquery.blockUI.css.scss", /\.png\)/, '.png")'
+gsub_file "vendor/assets/stylesheets/jquery.markitup.css.scss", /url\(images\//, 'image-url("'
+gsub_file "vendor/assets/stylesheets/jquery.markitup.css.scss", /\.png\)/, '.png")'
 
 # JavaScripts
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/application.js", "app/assets/javascripts/application.js"
