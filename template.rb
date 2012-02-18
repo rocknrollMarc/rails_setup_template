@@ -131,8 +131,6 @@ download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/stylesheets/jquery.markitup.
 gsub_file "vendor/assets/stylesheets/bootstrap.css.scss", /url\(\"\.\.\/img\//, 'image-url("bootstrap/'
 gsub_file "vendor/assets/stylesheets/jquery-ui.css.scss", /url\(images\//, 'image-url("jquery-ui/'
 gsub_file "vendor/assets/stylesheets/jquery-ui.css.scss", /\.png\)/, '.png")'
-gsub_file "vendor/assets/stylesheets/jquery.blockUI.css.scss", /url\(images\//, 'image-url("jquery-blockUI/'
-gsub_file "vendor/assets/stylesheets/jquery.blockUI.css.scss", /\.png\)/, '.png")'
 gsub_file "vendor/assets/stylesheets/jquery.markitup.css.scss", /url\(images\//, 'image-url("'
 gsub_file "vendor/assets/stylesheets/jquery.markitup.css.scss", /\.png\)/, '.png")'
 

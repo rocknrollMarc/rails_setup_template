@@ -3,8 +3,3 @@
 #ajax img {float: left;}
 #ajax p {float: left; padding: 0.5em 0 0.5em 1em;}
 /* @end */
-
-/* @group Block UI - Growl */
-.growlUI {background: url(images/jgrowl/default.png) no-repeat 16px 16px;}
-.growlUI h1, div.growlUI h2 {color: white; padding: 5px 5px 5px 75px; text-align: left;}
-/* @end */
