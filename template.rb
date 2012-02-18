@@ -4,7 +4,7 @@ require "uri"
 
 TEMPLATE_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/master"
 BOOTSTRAP_ROOT = "https://raw.github.com/twitter/bootstrap/v2.0.1"
-UNDERSCORE_ROOT = "https://raw.github.com/documentcloud/underscore/v1.3.1"
+UNDERSCORE_ROOT = "https://raw.github.com/documentcloud/underscore/1.3.1"
 MODERNIZR_ROOT = "https://raw.github.com/Modernizr/Modernizr/v2.5.3"
 
 # Downloads a file, swiching to a secure connection if the source requires it. Also creates parent directories if they do not exist.
@@ -128,7 +128,6 @@ download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/stylesheets/jquery.markitup.
 # Stylesheets (CSS to SCSS conversion)
 gsub_file "vendor/assets/stylesheets/bootstrap.css.scss", /url\(..\/img\//, 'image-url("bootstrap/'
 gsub_file "vendor/assets/stylesheets/bootstrap.css.scss", /\.png\);/, '.png");'
-# gsub_file "vendor/assets/stylesheets/bootstrap.css.scss", /border-radius\: 0 \\0\/;/, "border-radius: 0;"
 
 # JavaScripts
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/application.js", "app/assets/javascripts/application.js"
