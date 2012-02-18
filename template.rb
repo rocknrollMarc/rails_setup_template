@@ -152,7 +152,7 @@ download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-collapse.js", "vendor/assets/javas
 download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-carousel.js", "vendor/assets/javascripts/bootstrap-carousel.js"
 download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-typeahead.js", "vendor/assets/javascripts/bootstrap-typeahead.js"
 download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-transition.js", "vendor/assets/javascripts/bootstrap-transition.js"
-download_file "http://www.modernizr.com/downloads/modernizr-2.0.6.js", "vendor/assets/javascripts/modernizr.js"
+download_file "http://www.modernizr.com/downloads/modernizr-2.5.3.js", "vendor/assets/javascripts/modernizr.js"
 download_file "http://cachedcommons.org/cache/underscore/1.1.0/javascripts/underscore.js", "vendor/assets/javascripts/underscore.js"
 
 # Doc
