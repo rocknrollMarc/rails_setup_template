@@ -4,6 +4,7 @@ require "uri"
 
 TEMPLATE_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/master"
 BOOTSTRAP_ROOT = "https://raw.github.com/twitter/bootstrap/v2.0.1"
+UNDERSCORE_ROOT = "https://raw.github.com/documentcloud/underscore/v1.3.1"
 
 # Downloads a file, swiching to a secure connection if the source requires it. Also creates parent directories if they do not exist.
 # ==== Parameters
@@ -153,7 +154,7 @@ download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-carousel.js", "vendor/assets/javas
 download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-typeahead.js", "vendor/assets/javascripts/bootstrap-typeahead.js"
 download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-transition.js", "vendor/assets/javascripts/bootstrap-transition.js"
 download_file "http://www.modernizr.com/downloads/modernizr-2.5.3.js", "vendor/assets/javascripts/modernizr.js"
-download_file "http://cachedcommons.org/cache/underscore/1.1.0/javascripts/underscore.js", "vendor/assets/javascripts/underscore.js"
+download_file "#{UNDERSCORE_ROOT}/underscore.js", "vendor/assets/javascripts/underscore.js"
 
 # Doc
 file "doc/README_FOR_APP", "TODO - Document your application."
