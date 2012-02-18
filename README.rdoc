@@ -17,8 +17,8 @@ The following highlights what is applied with this template:
 * Installs the {jQuery jGrowl 1.2.5}[http://stanlemon.net/projects/jgrowl.html] JavaScript library.
 * Installs the {jQuery Mark It Up 1.1.12}[http://markitup.jaysalvat.com] JavaScript library.
 * Installs the {jQuery DataTables 1.7.5}[http://www.datatables.net] JavaScript library.
-* Installs the {Underscore 1.1.0}[https://github.com/documentcloud/underscore] JavaScript library.
-* Installs the {Modernizr 2.6.0}[http://www.modernizr.com] JavaScript library.
+* Installs the {Underscore 1.3.1}[https://github.com/documentcloud/underscore] JavaScript library.
+* Installs the {Modernizr 2.5.3}[http://www.modernizr.com] JavaScript library.
 * Adds the Rake[https://github.com/jimweirich/rake] gem requirement.
 * Adds the {Ruby on Rails}[http://rubyonrails.org] gem requirement.
 * Adds the Resourcer[https://github.com/bkuhlmann/resourcer] gem requirement.

@@ -125,7 +125,7 @@ download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/stylesheets/jquery-ui.css", 
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/stylesheets/jquery.blockUI.css", "vendor/assets/stylesheets/jquery.blockUI.css"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/stylesheets/jquery.markitup.css", "vendor/assets/stylesheets/jquery.markitup.css"
 
-# Stylesheets (CSS to SCSS conversion)
+# Stylesheets (CSS to SCSS asset conversion)
 gsub_file "vendor/assets/stylesheets/bootstrap.css.scss", /url\(..\/img\//, 'image-url("bootstrap/'
 gsub_file "vendor/assets/stylesheets/bootstrap.css.scss", /\.png\);/, '.png");'
 
