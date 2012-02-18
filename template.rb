@@ -79,6 +79,8 @@ download_file "#{TEMPLATE_ROOT}/rails/lib/tasks/deadweight.rake", "lib/tasks/dea
 
 # Images
 remove_file "app/assets/images/rails.png"
+download_file "#{BOOTSTRAP_ROOT}/img/glyphicons-halflings.png", "vendor/assets/images/bootstrap/glyphicons-halflings.png"
+download_file "#{BOOTSTRAP_ROOT}/img/glyphicons-halflings-white.png", "vendor/assets/images/bootstrap/glyphicons-halflings-white.png"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-bg_diagonals-thick_75_f3d8d8_40x40.png", "vendor/assets/images/jquery-ui/ui-bg_diagonals-thick_75_f3d8d8_40x40.png"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-bg_dots-small_65_a6a6a6_2x2.png", "vendor/assets/images/jquery-ui/ui-bg_dots-small_65_a6a6a6_2x2.png"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-bg_flat_0_333333_40x100.png", "vendor/assets/images/jquery-ui/ui-bg_flat_0_333333_40x100.png"
