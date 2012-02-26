@@ -11,8 +11,6 @@
 //= require jquery.cookie
 //= require jquery.validate
 //= require jquery.dataTables
-//= require jquery.markitup
-//= require jquery.markitup.textile
 //= require jquery.jgrowl
 //= require bootstrap-transition
 //= require bootstrap-alert

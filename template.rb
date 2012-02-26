@@ -93,24 +93,6 @@ download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-bg_highl
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-icons_004276_256x240.png", "vendor/assets/images/jquery-ui/ui-icons_004276_256x240.png"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-icons_cc0000_256x240.png", "vendor/assets/images/jquery-ui/ui-icons_cc0000_256x240.png"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-icons_ffffff_256x240.png", "vendor/assets/images/jquery-ui/ui-icons_ffffff_256x240.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/markitup/bold.png", "vendor/assets/images/markitup/bold.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/markitup/code.png", "vendor/assets/images/markitup/code.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/markitup/h1.png", "vendor/assets/images/markitup/h1.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/markitup/h2.png", "vendor/assets/images/markitup/h2.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/markitup/h3.png", "vendor/assets/images/markitup/h3.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/markitup/h4.png", "vendor/assets/images/markitup/h4.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/markitup/h5.png", "vendor/assets/images/markitup/h5.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/markitup/h6.png", "vendor/assets/images/markitup/h6.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/markitup/handle.png", "vendor/assets/images/markitup/handle.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/markitup/italic.png", "vendor/assets/images/markitup/italic.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/markitup/link.png", "vendor/assets/images/markitup/link.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/markitup/list-bullet.png", "vendor/assets/images/markitup/list-bullet.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/markitup/list-numeric.png", "vendor/assets/images/markitup/list-numeric.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/markitup/paragraph.png", "vendor/assets/images/markitup/paragraph.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/markitup/picture.png", "vendor/assets/images/markitup/picture.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/markitup/preview.png", "vendor/assets/images/markitup/preview.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/markitup/quotes.png", "vendor/assets/images/markitup/quotes.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/markitup/stroke.png", "vendor/assets/images/markitup/stroke.png"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/images/main/spinner.gif", "app/assets/images/main/spinner.gif"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/images/icons/feed-comments.png", "app/assets/images/icons/feed-comments.png"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/images/icons/feed.png", "app/assets/images/icons/feed.png"
@@ -125,14 +107,11 @@ download_file "#{BOOTSTRAP_ROOT}/docs/assets/css/bootstrap.css", "vendor/assets/
 download_file "#{BOOTSTRAP_ROOT}/docs/assets/css/bootstrap-responsive.css", "vendor/assets/stylesheets/bootstrap-responsive.css"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/stylesheets/jquery-ui.css", "vendor/assets/stylesheets/jquery-ui.css.scss"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/stylesheets/jquery.blockUI.css", "vendor/assets/stylesheets/jquery.blockUI.css.scss"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/stylesheets/jquery.markitup.css", "vendor/assets/stylesheets/jquery.markitup.css.scss"
 
 # Stylesheets (CSS to SCSS asset conversion)
 gsub_file "vendor/assets/stylesheets/bootstrap.css.scss", /url\(\"\.\.\/img\//, 'image-url("bootstrap/'
 gsub_file "vendor/assets/stylesheets/jquery-ui.css.scss", /url\(images\//, 'image-url("jquery-ui/'
 gsub_file "vendor/assets/stylesheets/jquery-ui.css.scss", /\.png\)/, '.png")'
-gsub_file "vendor/assets/stylesheets/jquery.markitup.css.scss", /url\(images\//, 'image-url("'
-gsub_file "vendor/assets/stylesheets/jquery.markitup.css.scss", /\.png\)/, '.png")'
 
 # JavaScripts
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/application.js", "app/assets/javascripts/application.js"
@@ -142,8 +121,6 @@ download_file "http://code.jquery.com/ui/1.8.18/jquery-ui.js", "vendor/assets/ja
 download_file "http://cachedcommons.org/cache/jquery-cookie/0.0.0/javascripts/jquery-cookie.js", "vendor/assets/javascripts/jquery.cookie.js"
 download_file "http://cachedcommons.org/cache/jquery-blockui/2.3.3/javascripts/jquery-blockui.js", "vendor/assets/javascripts/jquery.blockUI.js"
 download_file "http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.js", "vendor/assets/javascripts/jquery.validate.js"
-download_file "https://raw.github.com/markitup/1.x/1.1.12/markitup/jquery.markitup.js", "vendor/assets/javascripts/jquery.markitup.js"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/javascripts/jquery.markitup.textile.js", "vendor/assets/javascripts/jquery.markitup.textile.js"
 download_file "http://www.datatables.net/download/build/jquery.dataTables.js", "vendor/assets/javascripts/jquery.dataTables.js"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/javascripts/jquery.jgrowl.js", "vendor/assets/javascripts/jquery.jgrowl.js"
 download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-modal.js", "vendor/assets/javascripts/bootstrap-modal.js"
