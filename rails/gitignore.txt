@@ -5,6 +5,7 @@
 .config
 .rspec
 coverage
+config/database.yml
 db/*.sqlite3
 public/stylesheets/**/*
 spec/reports
