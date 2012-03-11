@@ -29,6 +29,8 @@ end
 download_file "#{TEMPLATE_ROOT}/rails/rbenv-version.txt", ".rbenv-version"
 
 # Configurations
+download_file "#{TEMPLATE_ROOT}/rails/Capfile", "Capfile"
+download_file "#{TEMPLATE_ROOT}/rails/config/deploy.rb", "config/deploy.rb"
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/active_record.rb", "config/initializers/active_record.rb"
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/date_time.rb", "config/initializers/date_time.rb"
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/ruby_enhancements.rb", "config/initializers/ruby_enhancements.rb"
