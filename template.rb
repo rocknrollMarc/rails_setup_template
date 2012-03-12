@@ -3,7 +3,7 @@ require "net/https"
 require "uri"
 
 TEMPLATE_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/master"
-BOOTSTRAP_ROOT = "https://raw.github.com/twitter/bootstrap/v2.0.1"
+BOOTSTRAP_ROOT = "https://raw.github.com/twitter/bootstrap/v2.0.2"
 UNDERSCORE_ROOT = "https://raw.github.com/documentcloud/underscore/1.3.1"
 MODERNIZR_ROOT = "https://raw.github.com/Modernizr/Modernizr/v2.5.3"
 
