@@ -81,11 +81,11 @@ Open a terminal window and execute one the following command lines depending on 
 
 Current Version (stable):
 
-  rails new demo -d=sqlite3 -J -T -f --skip-bundle -m https://raw.github.com/bkuhlmann/rails_setup_template/v4.2.0/template.rb
+  rails new demo -d sqlite3 -J -T -f --skip-bundle -m https://raw.github.com/bkuhlmann/rails_setup_template/v4.2.0/template.rb
 
 Master Version (unstable):
 
-  rails new demo -d=sqlite3 -J -T -f --skip-bundle -m https://raw.github.com/bkuhlmann/rails_setup_template/master/template.rb
+  rails new demo -d sqlite3 -J -T -f --skip-bundle -m https://raw.github.com/bkuhlmann/rails_setup_template/master/template.rb
 
 Here is what each option is doing and why:
 
@@ -97,7 +97,7 @@ Here is what each option is doing and why:
 
 BTW, you can reduce unnecessary typing with new app generation by adding the new rails options, listed above,
 to your .railsrc file and simply type "rails new demo" each time. See my
-{.railsrc}[https://github.com/bkuhlmann/dotfiles/blob/master/home_files/railsrc.txt] for usage.
+{.railsrc}[https://github.com/bkuhlmann/dotfiles/blob/master/home_files/railsrc.txt] file for usage.
 
 = Setup
 
