@@ -25,7 +25,7 @@ def download_file source, destination
   File.open(project_file, "w") {|file| file.write response.body}
 end
 
-# Simple Ruby Version Management (rbenv)
+# Ruby Version Management (rbenv)
 download_file "#{TEMPLATE_ROOT}/rails/rbenv-version.txt", ".rbenv-version"
 
 # Configurations
@@ -40,6 +40,7 @@ development_delta = "config/environments/development.delta.rb"
 download_file("#{TEMPLATE_ROOT}/rails/config/environments/development.rb", development_delta)
 insert_into_file "config/environments/development.rb", open(development_delta).read, before: "\nend\n"
 remove_file "#{development_delta}"
+gsub_file "config/application.rb", /# config.active_record.whitelist_attributes = true/, "config.active_record.whitelist_attributes = true"
 
 # Gems
 download_file "#{TEMPLATE_ROOT}/rails/Gemfile", "Gemfile"
