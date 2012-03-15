@@ -31,11 +31,13 @@ download_file "#{TEMPLATE_ROOT}/rails/rbenv-version.txt", ".rbenv-version"
 # Configurations
 download_file "#{TEMPLATE_ROOT}/rails/Capfile", "Capfile"
 download_file "#{TEMPLATE_ROOT}/rails/config/deploy.rb", "config/deploy.rb"
+download_file "#{TEMPLATE_ROOT}/rails/config/database.yml", "config/database.yml"
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/active_record.rb", "config/initializers/active_record.rb"
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/date_time.rb", "config/initializers/date_time.rb"
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/ruby_enhancements.rb", "config/initializers/ruby_enhancements.rb"
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/system.rb", "config/initializers/system.rb"
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/validation.rb", "config/initializers/validation.rb"
+copy_file "config/environments/production.rb", "config/environments/stage.rb"
 development_delta = "config/environments/development.delta.rb"
 download_file("#{TEMPLATE_ROOT}/rails/config/environments/development.rb", development_delta)
 insert_into_file "config/environments/development.rb", open(development_delta).read, before: "\nend\n"

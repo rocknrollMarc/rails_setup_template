@@ -1,0 +1,23 @@
+login: &login
+  adapter: postgresql
+  host: localhost
+  username: demo
+  password: demo
+  encoding: unicode
+  pool: 5
+
+production:
+  database: demo_dev
+  <<: *login
+
+stage:
+  database: demo_stage
+  <<: *login
+
+development:
+  database: demo_dev
+  <<: *login
+
+test:
+  database: demo_test
+  <<: *login
