@@ -1,23 +1,22 @@
 login: &login
-  adapter: postgresql
+  adapter: sqlite3
   host: localhost
-  username: demo
-  password: demo
   encoding: unicode
   pool: 5
+  timeout: 5000
 
 production:
-  database: demo_dev
+  database: db/development.sqlite3
   <<: *login
 
 stage:
-  database: demo_stage
+  database: db/stage.sqlite3
   <<: *login
 
 development:
-  database: demo_dev
+  database: db/development.sqlite3
   <<: *login
 
 test:
-  database: demo_test
+  database: db/test.sqlite3
   <<: *login
