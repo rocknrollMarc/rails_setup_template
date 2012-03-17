@@ -14,10 +14,7 @@
 * Added Capistrano support.
 * Added config/database.yml to .gitignore.
 * Added a stage environment (defaults to a mirror of the production environment).
-* Auto-adjust the application.rb file with the following settings:
- ** config.time_zone = "UTC"
- ** config.i18n.default_locale = "en-US"
- ** config.active_record.whitelist_attributes = true
+* Added auto-adjustments to the application.rb file for time_zone, default_locale, and whitelist_attributes. 
 * Added responsive top bar navigation collapsing.
 * Cleaned up the options for new rails apps in the README.
 
