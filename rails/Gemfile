@@ -36,7 +36,7 @@ group :development do
   gem "rack-webconsole"
   gem "active_sanity"
   gem "rails-erd"
-  gem "railroad"
+  gem "railroady"
   gem "rspec-rails"
 end
 
