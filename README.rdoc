@@ -63,7 +63,6 @@ The following highlights what is applied with this template:
 * Installs simple _home_ and _about_ controllers for basic demo usage.
 * Installs customized view helpers.
 * Installs site navigation with dynamic controller detection and menu selection.
-* Installs Git commit checks (via the Pre-Commit gem).
 * Installs a .gitignore file with general exclusions for Git[http://git-scm.com].
 * Installs a .rbenv-version file for use with rbenv[https://github.com/sstephenson/rbenv].
 

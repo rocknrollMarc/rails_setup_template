@@ -154,8 +154,6 @@ create_file "spec/factories.rb"
 # Git
 git :init
 download_file "#{TEMPLATE_ROOT}/rails/gitignore.txt", ".gitignore"
-run "pre-commit install"
-git config: "pre-commit.checks 'console_log, debugger'"
 git add: '.'
 git commit: "-n -a -m \"Applied Rails Setup Template.\""
 

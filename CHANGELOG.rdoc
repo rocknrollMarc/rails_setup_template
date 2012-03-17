@@ -7,6 +7,7 @@
 * Upgraded to jQuery 1.8.18.
 * Removed MarkItUp support.
 * Removed Deadweight gem support.
+* Removed Pre-Commit gem support.
 * Relaxed/reduced the CSS shared defaults.
 * Updated the title helper so that system name is a suffix and not a prefix.
 * Switched the breadcrumbs helper to use a class instead of an ID for better compatibility with Twitter Bootstrap.
@@ -14,9 +15,9 @@
 * Added config/database.yml to .gitignore.
 * Added a stage environment (defaults to a mirror of the production environment).
 * Auto-adjust the application.rb file with the following settings:
-** config.time_zone = "UTC"
-** config.i18n.default_locale = "en-US"
-** config.active_record.whitelist_attributes = true
+* * config.time_zone = "UTC"
+* * config.i18n.default_locale = "en-US"
+* * config.active_record.whitelist_attributes = true
 * Added responsive top bar navigation collapsing.
 * Cleaned up the options for new rails apps in the README.
 
