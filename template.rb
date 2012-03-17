@@ -42,6 +42,8 @@ development_delta = "config/environments/development.delta.rb"
 download_file("#{TEMPLATE_ROOT}/rails/config/environments/development.rb", development_delta)
 insert_into_file "config/environments/development.rb", open(development_delta).read, before: "\nend\n"
 remove_file "#{development_delta}"
+gsub_file "config/application.rb", /# config.time_zone = \'Central Time \(US & Canada\)\'/, "config.time_zone = \"UTC\""
+gsub_file "config/application.rb", /# config.i18n.default_locale = :de/, "config.i18n.default_locale = \"en-US\""
 gsub_file "config/application.rb", /# config.active_record.whitelist_attributes = true/, "config.active_record.whitelist_attributes = true"
 
 # Gems
