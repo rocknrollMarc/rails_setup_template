@@ -82,7 +82,6 @@ download_file "#{TEMPLATE_ROOT}/rails/app/views/about/show.html.erb", "app/views
 # Lib
 download_file "#{TEMPLATE_ROOT}/rails/lib/tasks/passenger.rake", "lib/tasks/passenger.rake"
 download_file "#{TEMPLATE_ROOT}/rails/lib/tasks/railroad.rake", "lib/tasks/railroad.rake"
-download_file "#{TEMPLATE_ROOT}/rails/lib/tasks/deadweight.rake", "lib/tasks/deadweight.rake"
 
 # Images
 remove_file "app/assets/images/rails.png"
