@@ -76,7 +76,6 @@ download_file "#{TEMPLATE_ROOT}/rails/app/helpers/visitor_helper.rb", "app/helpe
 remove_file "public/index.html"
 download_file "#{TEMPLATE_ROOT}/rails/app/views/layouts/application.html.erb", "app/views/layouts/application.html.erb"
 download_file "#{TEMPLATE_ROOT}/rails/app/views/shared/_flash_messages.html.erb", "app/views/shared/_flash_messages.html.erb"
-
 download_file "#{TEMPLATE_ROOT}/rails/app/views/home/show.html.erb", "app/views/home/show.html.erb"
 download_file "#{TEMPLATE_ROOT}/rails/app/views/about/show.html.erb", "app/views/about/show.html.erb"
 
