@@ -1,0 +1,5 @@
+<% unless flash.empty? %>
+	<% flash.map do |type, message| %>
+		<%= content_tag :div, message, class: "alert alert-#{type}" %>
+	<% end %>
+<% end %>
