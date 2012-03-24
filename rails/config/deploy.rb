@@ -43,3 +43,4 @@ namespace :deploy do
 end
 
 after "bundle:install", "deploy:symlink_configs"
+after "deploy:update_code", "deploy:migrate"
