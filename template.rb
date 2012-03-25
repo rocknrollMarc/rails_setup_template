@@ -50,7 +50,7 @@ gsub_file "config/application.rb", /# config.active_record.whitelist_attributes 
 download_file "#{TEMPLATE_ROOT}/rails/Gemfile", "Gemfile"
 run "bundle install"
 generate "resourcer:install"
-generate "simple_form:install"
+generate "simple_form:install --bootstrap"
 generate "rspec:install"
 generate "cucumber:install --rspec"
 
