@@ -43,10 +43,11 @@
 	    </div>
 	  </div>
 
-    <div id="page" class="container">
-			<%= render "shared/flash_messages" %>
+    <div class="container">
+			<%= render "shared/flash_messages", flash: flash %>
 			<%= yield :breadcrumbs %>
       <%= yield %>
+
 			<footer>
 				&copy; <%= SYSTEM_LABEL %>, <%= render_system_version %> | Developed by <%= link_to DEVELOPER_LABEL, DEVELOPER_URL %>
 			</footer>
