@@ -55,8 +55,11 @@ generate "rspec:install"
 generate "cucumber:install --rspec"
 
 # Controllers
+insert_into_file "app/controllers/application_controller.rb", "  helper :all\n", after: "class ApplicationController < ActionController::Base\n"
 download_file "#{TEMPLATE_ROOT}/rails/app/controllers/home_controller.rb", "app/controllers/home_controller.rb"
 download_file "#{TEMPLATE_ROOT}/rails/app/controllers/about_controller.rb", "app/controllers/about_controller.rb"
+
+# Routes
 route "resource :about, controller: \"about\""
 route "resource :home, controller: \"home\""
 route "root to: \"home#show\""
