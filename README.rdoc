@@ -108,9 +108,18 @@ After the template has been applied, you'll want to tweak the following files:
 * public/favicon.ico = Replace with your own custom icon.
 * public/humans.txt = Replace with your own info.
 
+= Style Guides
+
+The following is a selection of code style guides to use when writing clean code
+for your application (use whatever fits your needs):
+
+* GitHub[https://github.com/styleguide/ruby]
+* {Dan Kubb}[http://pastebin.com/Xixb7YNW]
+* {Bozhidar Batsov (Ruby)}[https://github.com/bbatsov/ruby-style-guide]
+* {Bozhidar Batsov (Rails)}[https://github.com/bbatsov/rails-style-guide]
+
 = Resources
 
-* {Rails Style Guide}[https://github.com/bbatsov/rails-style-guide]
 * {Extending Rails 3 with Railties}[http://www.engineyard.com/blog/2010/extending-rails-3-with-railties]
 
 = Contributions
