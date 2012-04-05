@@ -52,6 +52,8 @@ generate "resourcer:install"
 generate "simple_form:install --bootstrap"
 generate "rspec:install"
 generate "cucumber:install --rspec"
+create_file "spec/factories.rb"
+run "guard init rspec"
 
 # Controllers
 insert_into_file "app/controllers/application_controller.rb", "  helper :all\n", after: "class ApplicationController < ActionController::Base\n"
@@ -149,9 +151,6 @@ download_file "#{MODERNIZR_ROOT}/modernizr.js", "vendor/assets/javascripts/moder
 # Doc
 file "doc/README_FOR_APP", "TODO - Document your application."
 download_file "#{TEMPLATE_ROOT}/rails/public/humans.txt", "public/humans.txt"
-
-# Factories
-create_file "spec/factories.rb"
 
 # Git
 git :init
