@@ -37,6 +37,8 @@ group :development do
   gem "rails-erd"
   gem "railroady"
   gem "rspec-rails"
+  gem "rb-fsevent"
+  gem "guard-rspec"
 end
 
 group :test do
