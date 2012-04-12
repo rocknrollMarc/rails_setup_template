@@ -5,6 +5,7 @@ load "config/recipes/rbenv"
 load "config/recipes/postgresql"
 load "config/recipes/redis"
 load "config/recipes/nginx"
+load "config/recipes/unicorn"
 
 set :application, "example"
 set :user, "dev"

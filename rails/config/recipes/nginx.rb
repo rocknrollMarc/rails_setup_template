@@ -15,7 +15,7 @@ namespace :nginx do
     run "#{sudo} rm -f #{nginx_root}/sites-available/default"
     template "nginx.site.erb", "/tmp/nginx.site"
     run "#{sudo} mv /tmp/nginx.site #{nginx_root}/sites-available/#{application}.#{env}"
-    run "#{sudo} ln -s #{nginx_root}/sites-available/#{application}.#{env} #{nginx_root}/sites-enabled/#{application}.#{env}"
+    run "#{sudo} ln -fs #{nginx_root}/sites-available/#{application}.#{env} #{nginx_root}/sites-enabled/#{application}.#{env}"
     restart
   end
   after "deploy:setup", "nginx:setup"
