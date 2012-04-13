@@ -31,7 +31,6 @@ namespace :postgresql do
     run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
   end
   after "deploy:finalize_update", "postgresql:symlink"
-  # after "bundle:install", "deploy:symlink_configs"
 
   %w[start stop restart].each do |command|
     desc "#{command.capitalize} PostgreSQL."

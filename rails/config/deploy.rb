@@ -6,9 +6,10 @@ load "config/recipes/postgresql"
 load "config/recipes/redis"
 load "config/recipes/nginx"
 load "config/recipes/unicorn"
+load "config/recipes/amazon_s3"
 
 set :application, "example"
-set :user, "dev"
+set :user, "app"
 set :use_sudo, false
 
 set :scm, "git"
