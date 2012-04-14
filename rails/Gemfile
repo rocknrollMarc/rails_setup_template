@@ -34,6 +34,7 @@ group :development do
   gem "capistrano"
   gem "rack-webconsole"
   gem "active_sanity"
+  gem "quiet_assets"
   gem "rails-erd"
   gem "railroady"
   gem "rspec-rails"
