@@ -35,6 +35,7 @@ group :development do
   gem "rack-webconsole"
   gem "active_sanity"
   gem "quiet_assets"
+  gem "log_plus"
   gem "rails-erd"
   gem "railroady"
   gem "rspec-rails"
