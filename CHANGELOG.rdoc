@@ -1,3 +1,33 @@
+= v4.4.0
+
+* Fixed bad CSS class name for field-error.
+* Fixed bug with bogus end quote for DOCTYPE html statement.
+* Fixed flash messages partial and added alert message close support via Twitter Bootstrap.
+* Upgraded to jQuery 1.7.2.
+* Upgraded to Rails 3.2.3.
+* Removed the enabling of config.active_record.whitelist_attributes since this is default in Rails 3.2.3 now.
+* Removed FlashMessage helper and replaced with a shared/_flash_messages partial.
+* Added template for form error messages.
+* Added autotomatic DB migrations to cap deployments.
+* Added "helper :all" to application_controller.rb.
+* Switched to fix layout for Twitter Bootstrap.
+* Removed the page ID from the application.html.erb file.
+* Updated simple form generator to specify the bootstrap option.
+* Added meta tag for device width to application.html.erb.
+* Moved loading of JavaScript files to end of application.html.erb body tag.
+* Added more style guides to the README.
+* Dropped RailRoad gem support and switched to the Railroady gem instead.
+* Replaced the aws-s3 gem with the aws-sdk gem.
+* Removed the ruby-growl gem.
+* Added the bootstrap-will_paginate gem.
+* Added the rb-fsevent and guard-rspec gems.
+* Added guard initialization to template.
+* Added the quiet_assets gem.
+* Added the log_plus gem.
+* Added Capistrano recipes for amazon_s3, nginx, node.js, postgresql, rbenv, redis, and unicorn.
+* Added smart user and database detection for PostgreSQL and multi-environment support for nginx and unicorn.
+* Switched config/database.yml to config/*.yml in the gitignore file.
+
 = v4.3.0
 
 * Fixed load order for Twitter Bootstrap JS files.

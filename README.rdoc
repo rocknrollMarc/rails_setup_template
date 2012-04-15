@@ -8,8 +8,8 @@ Best applied when creating a new Ruby on Rails application.
 The following highlights what is applied with this template:
 
 * Uses {Ruby 1.9.3-p125}[http://www.ruby-lang.org].
-* Uses {Ruby on Rails 3.2.2}[http://rubyonrails.org].
-* Installs the {jQuery 1.7.1}[http://jquery.com] JavaScript library.
+* Uses {Ruby on Rails 3.2.3}[http://rubyonrails.org].
+* Installs the {jQuery 1.7.2}[http://jquery.com] JavaScript library.
 * Installs the {jQuery UI 1.8.18}[http://jqueryui.com] JavaScript library.
 * Installs the {jQuery Cookie}[http://plugins.jquery.com/project/Cookie] JavaScript library.
 * Installs the {jQuery Block UI 2.33}[https://github.com/malsup/blockui] JavaScript library.
@@ -26,6 +26,7 @@ The following highlights what is applied with this template:
 * Adds the Squeel[https://github.com/ernie/squeel] gem requirement.
 * Adds the Ransack[https://github.com/ernie/ransack] gem requirement.
 * Adds the {Will Paginate}[https://github.com/mislav/will_paginate] gem requirement.
+* Adds the {Twitter Bootstrap Will Paginate}[https://github.com/yrgoldteeth/bootstrap-will_paginate] gem requirement.
 * Adds the Linguist[https://github.com/bkuhlmann/linguist] gem requirement.
 * Adds the {Acts as State Machine (AASM)}[https://github.com/rubyist/aasm] gem requirement.
 * Adds the Tokener[https://github.com/bkuhlmann/tokener] gem requirement.
@@ -33,7 +34,7 @@ The following highlights what is applied with this template:
 * Adds the {Lineage}[https://github.com/bkuhlmann/lineage] gem requirement.
 * Adds the {Simple Form}[https://github.com/plataformatec/simple_form] gem requirement.
 * Adds the RedCloth[http://redcloth.org] gem requirement.
-* Adds the {AWS-S3}[https://github.com/marcel/aws-s3] gem requirement.
+* Adds the {AWS-SDK}[http://aws.amazon.com/sdkforruby] gem requirement.
 * Adds the Paperclip[http://www.thoughtbot.com/projects/paperclip] gem requirement.
 * Adds the {Paperclip Plus}[https://github.com/bkuhlmann/paperclip_plus] gem requirement.
 * Added the AndAnd[http://andand.rubyforge.org] gem requirement.
@@ -41,18 +42,19 @@ The following highlights what is applied with this template:
 * Adds the Wirble[https://github.com/blackwinter/wirble] gem requirement.
 * Adds the Hirb[https://github.com/cldwalker/hirb] gem requirement.
 * Adds the {Awesome Print}[https://github.com/michaeldv/awesome_print] gem requirement.
-* Adds the {Ruby Growl}[http://rubyforge.org/projects/ruby-growl] gem requirement.
+* Adds the Capistrano[https://github.com/capistrano/capistrano] gem requirement.
 * Adds the {Rack Webconsole}[https://github.com/codegram/rack-webconsole] gem requirement.
 * Adds the {Active Sanity}[https://github.com/versapay/active_sanity] gem requirement.
-* Adds the Deadweight[https://github.com/aanand/deadweight] gem requirement.
+* Adds the {Quiet Assets}[https://github.com/evrone/quiet_assets] gem requirement.
+* Adds the {Log+}[https://github.com/bkuhlmann/log_plus] gem requirement.
 * Adds the {Rails ERD}[http://rails-erd.rubyforge.org] gem requirement.
-* Adds the Railroad[http://railroad.rubyforge.org] gem requirement.
+* Adds the Railroady[https://github.com/preston/railroady] gem requirement.
 * Adds the {RSpec Rails}[https://github.com/dchelimsky/rspec-rails] gem requirement.
+* Adds the {Ruby fsevent}[https://github.com/thibaudgg/rb-fsevent] gem requirement.
+* Adds the {Guard RSpec}[https://github.com/guard/guard-rspec] gem requirement.
 * Adds the {Cucumber Rails}[https://github.com/aslakhellesoy/cucumber-rails] gem requirement.
 * Adds the {Factory Girl Rails}[https://github.com/thoughtbot/factory_girl_rails] gem requirement.
 * Adds the Timecop[https://github.com/jtrupiano/timecop] gem requirement.
-* Adds the Webrat[http://gitrdoc.com/brynary/webrat] gem requirement.
-* Adds the {Metric Fu}[http://metric-fu.rubyforge.org] gem requirement.
 * Installs Twitter Bootstrap stylesheets and images.
 * Installs jQuery UI assets.
 * Installs a customized application.html.erb file with a basic but structured site layout.
@@ -70,7 +72,7 @@ The following highlights what is applied with this template:
 
 1. A UNIX-based system.
 2. {Ruby 1.9.x}[http://www.ruby-lang.org].
-3. {Ruby on Rails 3.x}[http://rubyonrails.org].
+3. {Ruby on Rails 3.2.x+}[http://rubyonrails.org].
 4. A solid internet connection.
 
 = Usage
