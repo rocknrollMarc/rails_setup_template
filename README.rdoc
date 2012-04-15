@@ -121,8 +121,8 @@ from scratch, deploy, and launch your rails app. Here are the commands for doing
 * cap <environment> deploy:cold
 * cap <environment> deploy
 
-NOTE: These scripts are setup to support multiple environments so make sure to replace the <environment> with
-the environment you are working in. For example, I like to use "stage" and "production" environments.
+NOTE: These scripts are configured to support multiple environments so make sure to replace the <environment> with
+the environment you are working in. For example, I like to use _stage_ and _production_ environments.
 
 = Style Guides
 
