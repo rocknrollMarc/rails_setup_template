@@ -109,6 +109,21 @@ After the template has been applied, you'll want to tweak the following files:
 * public/favicon.ico = Replace with your own custom icon.
 * public/humans.txt = Replace with your own info.
 
+= Capistrano
+
+This project comes equiped with several Capistrano recipes (see config/recipes directory). Make sure to configure
+the deploy.rb file as you see fit (as mentioned above). You might want to configure the recipes and templates (see
+config/recipes/templates) as well. Once configured, you can perform the following commands to setup a remote server
+from scratch, deploy, and launch your rails app. Here are the commands for doing this:
+
+* cap deploy:install
+* cap <environment> deploy:setup
+* cap <environment> deploy:cold
+* cap <environment> deploy
+
+NOTE: These scripts are setup to support multiple environments so make sure to replace the <environment> with
+the environment you are working in. For example, I like to use "stage" and "production" environments.
+
 = Style Guides
 
 The following is a selection of code style guides to use when writing clean code
