@@ -52,7 +52,6 @@ The following highlights what is applied with this template:
 * Adds the {RSpec Rails}[https://github.com/dchelimsky/rspec-rails] gem requirement.
 * Adds the {Ruby fsevent}[https://github.com/thibaudgg/rb-fsevent] gem requirement.
 * Adds the {Guard RSpec}[https://github.com/guard/guard-rspec] gem requirement.
-* Adds the {Cucumber Rails}[https://github.com/aslakhellesoy/cucumber-rails] gem requirement.
 * Adds the {Factory Girl Rails}[https://github.com/thoughtbot/factory_girl_rails] gem requirement.
 * Adds the Timecop[https://github.com/jtrupiano/timecop] gem requirement.
 * Installs Twitter Bootstrap stylesheets and images.

@@ -65,7 +65,6 @@ run "bundle install"
 generate "resourcer:install"
 generate "simple_form:install --bootstrap"
 generate "rspec:install"
-generate "cucumber:install --rspec"
 create_file "spec/factories.rb"
 run "guard init rspec"
 

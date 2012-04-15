@@ -19,6 +19,7 @@
 * Dropped RailRoad gem support and switched to the Railroady gem instead.
 * Replaced the aws-s3 gem with the aws-sdk gem.
 * Removed the ruby-growl gem.
+* Removed the cucumber-rails gem.
 * Added the bootstrap-will_paginate gem.
 * Added the rb-fsevent and guard-rspec gems.
 * Added guard initialization to template.
