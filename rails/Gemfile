@@ -30,7 +30,7 @@ end
 
 group :development do
   gem "ruby-debug19"
-  gem "wirble"
+  gem "wirb"
   gem "hirb"
   gem "awesome_print"
   gem "capistrano"
