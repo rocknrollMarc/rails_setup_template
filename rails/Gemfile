@@ -67,15 +67,3 @@ end
 group :production do
   gem "newrelic_rpm"
 end
-
-# capybara
-# aruba
-# factory_girl_rails
-# webrat
-# fakeweb
-# timecop
-# newrelic_rpm
-# localtunnel
-# rb-fsevent
-# guard-rspec
-# brakeman
