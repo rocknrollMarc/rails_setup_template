@@ -28,12 +28,16 @@ group :assets do
   gem "uglifier"
 end
 
-group :development do
+group :development, :test do
   gem "pry"
-  gem "pry-vterm_aliases"
-  gem "pry-stack_explorer"
-  gem "pry-remote"
   gem "pry-nav"
+  gem "pry-stack_explorer"
+  gem "pry-vterm_aliases"
+  gem "pry-remote"
+  gem "log_plus"
+end
+
+group :development do
   gem "wirb"
   gem "hirb"
   gem "awesome_print"
@@ -41,12 +45,9 @@ group :development do
   gem "rack-webconsole"
   gem "active_sanity"
   gem "quiet_assets"
-  gem "log_plus"
   gem "rails-erd"
   gem "railroady"
   gem "rspec-rails"
-  gem "rb-fsevent"
-  gem "guard-rspec"
 end
 
 group :test do
@@ -55,6 +56,8 @@ group :test do
   gem "factory_girl_rails"
   gem "capybara"
   gem "timecop"
+  gem "rb-fsevent"
+  gem "guard-rspec"
 end
 
 group :production do
