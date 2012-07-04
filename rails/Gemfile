@@ -45,6 +45,7 @@ group :development do
   gem "hirb"
   gem "awesome_print"
   gem "capistrano"
+  gem "sextant"
   gem "rack-webconsole"
   gem "active_sanity"
   gem "quiet_assets"
@@ -67,19 +68,6 @@ group :production do
   gem "newrelic_rpm"
 end
 
-# number_to_fraction
-# gravatarify
-# rack-webconsole
-# sextant
-# active_sanity
-# quiet_assets
-# log_plus
-# rails-erd
-# railroady
-# ruby-growl
-# tweeter
-# pennyworth
-# rspec-rails
 # capybara
 # aruba
 # factory_girl_rails
