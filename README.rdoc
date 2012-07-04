@@ -7,28 +7,32 @@ Best applied when creating a new Ruby on Rails application.
 
 The following highlights what is applied with this template:
 
-* Uses {Ruby 1.9.3-p125}[http://www.ruby-lang.org].
-* Uses {Ruby on Rails 3.2.3}[http://rubyonrails.org].
+* Uses {Ruby 1.9.3-p194}[http://www.ruby-lang.org].
+* Uses {Ruby on Rails 3.2.6}[http://rubyonrails.org].
 * Installs the {jQuery 1.7.2}[http://jquery.com] JavaScript library.
-* Installs the {jQuery UI 1.8.18}[http://jqueryui.com] JavaScript library.
+* Installs the {jQuery UI 1.8.21}[http://jqueryui.com] JavaScript library.
 * Installs the {jQuery Cookie}[http://plugins.jquery.com/project/Cookie] JavaScript library.
 * Installs the {jQuery Block UI 2.33}[https://github.com/malsup/blockui] JavaScript library.
 * Installs the {jQuery Validation 1.7}[http://bassistance.de/jquery-plugins/jquery-plugin-validation] JavaScript library.
 * Installs the {jQuery jGrowl 1.2.5}[http://stanlemon.net/projects/jgrowl.html] JavaScript library.
 * Installs the {jQuery DataTables 1.7.5}[http://www.datatables.net] JavaScript library.
-* Installs the {Twitter Bootstrap 2.0.2}[http://twitter.github.com/bootstrap] JavaScript libraries.
-* Installs the {Underscore 1.3.1}[https://github.com/documentcloud/underscore] JavaScript library.
+* Installs the {Twitter Bootstrap 2.0.4}[http://twitter.github.com/bootstrap] JavaScript libraries.
+* Installs the {Underscore 1.3.3}[https://github.com/documentcloud/underscore] JavaScript library.
 * Installs the {Modernizr 2.5.3}[http://www.modernizr.com] JavaScript library.
 * Adds the Rake[https://github.com/jimweirich/rake] gem requirement.
+* Adds the Bcrypt[https://github.com/codahale/bcrypt-ruby] gem requirement.
 * Adds the {Ruby on Rails}[http://rubyonrails.org] gem requirement.
+* Adds the CanCan[https://github.com/ryanb/cancan] gem requirement.
 * Adds the Resourcer[https://github.com/bkuhlmann/resourcer] gem requirement.
 * Adds the Sessioner[https://github.com/bkuhlmann/sessioner] gem requirement.
 * Adds the Squeel[https://github.com/ernie/squeel] gem requirement.
 * Adds the Ransack[https://github.com/ernie/ransack] gem requirement.
 * Adds the {Will Paginate}[https://github.com/mislav/will_paginate] gem requirement.
 * Adds the {Twitter Bootstrap Will Paginate}[https://github.com/yrgoldteeth/bootstrap-will_paginate] gem requirement.
+* Adds the Redis[https://github.com/redis/redis-rb] gem requirement.
+* Adds the {Redis Namespace}[https://github.com/defunkt/redis-namespace] gem requirement.
 * Adds the Linguist[https://github.com/bkuhlmann/linguist] gem requirement.
-* Adds the {Acts as State Machine (AASM)}[https://github.com/rubyist/aasm] gem requirement.
+* Adds the {State Machine}[https://github.com/pluginaweek/state_machine] gem requirement.
 * Adds the Tokener[https://github.com/bkuhlmann/tokener] gem requirement.
 * Adds the {Sorter}[https://github.com/bkuhlmann/sorter] gem requirement.
 * Adds the {Lineage}[https://github.com/bkuhlmann/lineage] gem requirement.
@@ -37,12 +41,18 @@ The following highlights what is applied with this template:
 * Adds the {AWS-SDK}[http://aws.amazon.com/sdkforruby] gem requirement.
 * Adds the Paperclip[http://www.thoughtbot.com/projects/paperclip] gem requirement.
 * Adds the {Paperclip Plus}[https://github.com/bkuhlmann/paperclip_plus] gem requirement.
+* Adds the Prawn+[https://github.com/bkuhlmann/prawn_plus] gem requirement.
 * Added the AndAnd[http://andand.rubyforge.org] gem requirement.
-* Adds the {Ruby Debug}[http://rubyforge.org/projects/ruby-debug] gem requirement.
-* Adds the Wirble[https://github.com/blackwinter/wirble] gem requirement.
+* Adds the Pry[https://github.com/pry/pry] gem requirement.
+* Adds the {Pry Nav}[https://github.com/nixme/pry-nav] gem requirement.
+* Adds the {Pry Remote}[https://github.com/Mon-Ouie/pry-remote] gem requirement.
+* Adds the {Pry Stack Explorer}[https://github.com/banister/pry-stack_explorer] gem requirement.
+* Adds the {Pry VTerm Aliases}[https://github.com/envygeeks/pry-vterm_aliases] gem requirement.
+* Adds the Wirb[https://github.com/janlelis/wirb] gem requirement.
 * Adds the Hirb[https://github.com/cldwalker/hirb] gem requirement.
 * Adds the {Awesome Print}[https://github.com/michaeldv/awesome_print] gem requirement.
 * Adds the Capistrano[https://github.com/capistrano/capistrano] gem requirement.
+* Adds the Sextant[https://github.com/schneems/sextant] gem requirement.
 * Adds the {Rack Webconsole}[https://github.com/codegram/rack-webconsole] gem requirement.
 * Adds the {Active Sanity}[https://github.com/versapay/active_sanity] gem requirement.
 * Adds the {Quiet Assets}[https://github.com/evrone/quiet_assets] gem requirement.
@@ -53,6 +63,7 @@ The following highlights what is applied with this template:
 * Adds the {Ruby fsevent}[https://github.com/thibaudgg/rb-fsevent] gem requirement.
 * Adds the {Guard RSpec}[https://github.com/guard/guard-rspec] gem requirement.
 * Adds the {Factory Girl Rails}[https://github.com/thoughtbot/factory_girl_rails] gem requirement.
+* Adds the Capybara[https://github.com/jnicklas/capybara] gem requirement.
 * Adds the Timecop[https://github.com/jtrupiano/timecop] gem requirement.
 * Installs Twitter Bootstrap stylesheets and images.
 * Installs jQuery UI assets.
@@ -80,7 +91,7 @@ Open a terminal window and execute one the following command lines depending on 
 
 Current Version (stable):
 
-  rails new demo -d sqlite3 -J -T -f --skip-bundle -m https://raw.github.com/bkuhlmann/rails_setup_template/v4.4.0/template.rb
+  rails new demo -d sqlite3 -J -T -f --skip-bundle -m https://raw.github.com/bkuhlmann/rails_setup_template/v4.5.0/template.rb
 
 Master Version (unstable):
 

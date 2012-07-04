@@ -1,3 +1,26 @@
+= v4.5.0
+
+* Fixed error message with Guard initialization.
+* Upgraded to Ruby 1.9.3-p194.
+* Upgraded to Rails 3.2.6.
+* Upgraded to jQuery UI 1.8.21.
+* Upgraded to Twitter Bootstrap 2.0.4.
+* Upgraded to Underscore 1.3.3.
+* Added Redis initialization support
+* Added the redis-namespace gem.
+* Added the pry, pry-vterm_aliases, pry-stack_explorer, pry-remote, and pry-nav gem requirements.
+* Added the Capybara gem requirement.
+* Added the bcrypt-ruby gem requirement.
+* Added the cancan gem requirement.
+* Added the Prawn+ gem requirement.
+* Added the sextant gem requirement.
+* Added Sorter assets to application JS and CSS files.
+* Created a common set of gems for both development and test in the Gemfile.
+* Replaced AASM with the state_machine gem.
+* Renamed application.css to application.css.scss.
+* Removed the ruby-debug19 gem requirement.
+* Switched gem requirement from Wirble to Wirb.
+
 = v4.4.0
 
 * Fixed bad CSS class name for field-error.
