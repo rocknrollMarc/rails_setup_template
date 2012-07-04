@@ -67,7 +67,7 @@ generate "resourcer:install"
 generate "simple_form:install --bootstrap"
 generate "rspec:install"
 create_file "spec/factories.rb"
-run "guard init rspec"
+run "bundle exec guard init rspec"
 
 # Controllers
 insert_into_file "app/controllers/application_controller.rb", "  helper :all\n", after: "class ApplicationController < ActionController::Base\n"
