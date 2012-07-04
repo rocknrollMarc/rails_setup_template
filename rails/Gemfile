@@ -22,6 +22,7 @@ gem "lineage"
 gem "RedCloth"
 gem "aws-sdk"
 gem "paperclip_plus"
+gem "prawn_plus"
 gem "andand"
 
 group :assets do
@@ -66,12 +67,6 @@ group :production do
   gem "newrelic_rpm"
 end
 
-# navigator
-# rmagick
-# prawn_plus
-# aws-sdk
-# paperclip_plus
-# enhanced_select
 # number_to_fraction
 # gravatarify
 # rack-webconsole
