@@ -11,7 +11,7 @@ gem "resourcer"
 gem "sessioner"
 gem "squeel"
 gem "ransack"
-gem "aasm"
+gem "state_machine"
 gem "redis"
 gem "redis-namespace"
 gem "linguist"
@@ -66,15 +66,7 @@ group :production do
   gem "newrelic_rpm"
 end
 
-# aasm
-# tokener
-# linguist
-# sorter
-# lineage
 # navigator
-# will_paginate
-# bootstrap-will_paginate
-# RedCloth
 # rmagick
 # prawn_plus
 # aws-sdk
@@ -104,4 +96,3 @@ end
 # rb-fsevent
 # guard-rspec
 # brakeman
-# vagrant
