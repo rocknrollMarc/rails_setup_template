@@ -6,6 +6,7 @@ gem "sqlite3"
 gem "rails", "3.2.6"
 gem "will_paginate"
 gem "bootstrap-will_paginate"
+gem "cancan"
 gem "resourcer"
 gem "sessioner"
 gem "squeel"
@@ -65,22 +66,6 @@ group :production do
   gem "newrelic_rpm"
 end
 
-
-# redis
-# redis-namespace
-# db
-# powder
-# rails
-# rails_best_practices
-# resourcer
-# sessioner
-# cancan
-# squeel
-# ransack
-# andand
-# sass-rails
-# coffee-rails
-# simple_form
 # aasm
 # tokener
 # linguist
