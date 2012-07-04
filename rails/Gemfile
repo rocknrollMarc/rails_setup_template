@@ -1,6 +1,7 @@
 source :rubygems
 
 gem "rake"
+gem "bcrypt-ruby"
 gem "sqlite3"
 gem "rails", "3.2.6"
 gem "will_paginate"
@@ -63,3 +64,59 @@ end
 group :production do
   gem "newrelic_rpm"
 end
+
+
+# redis
+# redis-namespace
+# db
+# powder
+# rails
+# rails_best_practices
+# resourcer
+# sessioner
+# cancan
+# squeel
+# ransack
+# andand
+# sass-rails
+# coffee-rails
+# simple_form
+# aasm
+# tokener
+# linguist
+# sorter
+# lineage
+# navigator
+# will_paginate
+# bootstrap-will_paginate
+# RedCloth
+# rmagick
+# prawn_plus
+# aws-sdk
+# paperclip_plus
+# enhanced_select
+# number_to_fraction
+# gravatarify
+# rack-webconsole
+# sextant
+# active_sanity
+# quiet_assets
+# log_plus
+# rails-erd
+# railroady
+# ruby-growl
+# tweeter
+# pennyworth
+# rspec-rails
+# capybara
+# aruba
+# factory_girl_rails
+# webrat
+# fakeweb
+# timecop
+# newrelic_rpm
+# localtunnel
+# rb-fsevent
+# guard-rspec
+# brakeman
+# vagrant
