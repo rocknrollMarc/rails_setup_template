@@ -66,6 +66,7 @@ run "bundle install"
 generate "resourcer:install"
 generate "simple_form:install --bootstrap"
 generate "rspec:install"
+download_file "#{TEMPLATE_ROOT}/rails/rspec.txt", ".rspec"
 create_file "spec/factories.rb"
 run "bundle exec guard init rspec"
 
