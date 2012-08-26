@@ -25,6 +25,7 @@
 //= require bootstrap-collapse
 //= require bootstrap-carousel
 //= require bootstrap-typeahead
+//= require bootstrap-affix
 //= require modernizr
 //= require underscore
 //= require shared
