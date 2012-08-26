@@ -49,9 +49,9 @@ group :development do
   gem "rack-webconsole"
   gem "active_sanity"
   gem "quiet_assets"
+  gem "mailcatcher"
   gem "rails-erd"
   gem "railroady"
-  gem "rspec-rails"
 end
 
 group :test do
