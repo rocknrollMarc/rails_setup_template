@@ -5,7 +5,7 @@ require "uri"
 TEMPLATE_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/master"
 BOOTSTRAP_ROOT = "https://raw.github.com/twitter/bootstrap/v2.1.1"
 UNDERSCORE_ROOT = "https://raw.github.com/documentcloud/underscore/1.3.3"
-MODERNIZR_ROOT = "https://raw.github.com/Modernizr/Modernizr/v2.6.1"
+MODERNIZR_ROOT = "https://raw.github.com/Modernizr/Modernizr/v2.6.2"
 
 # Downloads a file, swiching to a secure connection if the source requires it. Also creates parent directories if they do not exist.
 # ==== Parameters
