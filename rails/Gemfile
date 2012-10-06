@@ -60,7 +60,7 @@ group :test do
   gem "factory_girl_rails"
   gem "capybara"
   gem "timecop"
-  gem "rb-fsevent"
+  gem "rb-fsevent", require: false if RUBY_PLATFORM =~ /darwin/i # OSX only.
   gem "guard-rspec"
 end
 
