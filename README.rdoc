@@ -151,7 +151,7 @@ for your application (use whatever fits your needs):
 
 = Contributions
 
-Please log all feedback/issues via {GitHub Issues}[https://github.com/bkuhlmann/rails_setup_template/issues]. Thanks.
+Read CONTRIBUTING for details.
 
 = Credits
 
