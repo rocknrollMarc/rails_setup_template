@@ -149,7 +149,7 @@ gsub_file "vendor/assets/stylesheets/jquery-ui.css.scss", /\.png\)/, '.png")'
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/application.js", "app/assets/javascripts/application.js"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/shared.js", "app/assets/javascripts/shared.js"
 download_file "http://code.jquery.com/jquery-1.8.2.js", "vendor/assets/javascripts/jquery.js"
-download_file "http://code.jquery.com/ui/1.9.0/jquery-ui.js", "vendor/assets/javascripts/jquery-ui.js"
+download_file "http://code.jquery.com/ui/1.9.1/jquery-ui.js", "vendor/assets/javascripts/jquery-ui.js"
 download_file "http://cachedcommons.org/cache/jquery-cookie/0.0.0/javascripts/jquery-cookie.js", "vendor/assets/javascripts/jquery.cookie.js"
 download_file "http://cachedcommons.org/cache/jquery-blockui/2.3.3/javascripts/jquery-blockui.js", "vendor/assets/javascripts/jquery.blockUI.js"
 download_file "http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.js", "vendor/assets/javascripts/jquery.validate.js"
