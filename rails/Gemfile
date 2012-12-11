@@ -52,6 +52,7 @@ group :development do
   gem "mailcatcher"
   gem "rails-erd"
   gem "railroady"
+  gem "license_finder"
 end
 
 group :test do
