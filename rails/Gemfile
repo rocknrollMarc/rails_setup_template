@@ -53,6 +53,7 @@ group :development do
   gem "rails-erd"
   gem "railroady"
   gem "license_finder"
+  gem "better_errors"
 end
 
 group :test do
