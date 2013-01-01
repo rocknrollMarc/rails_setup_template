@@ -24,6 +24,7 @@ gem "aws-sdk"
 gem "paperclip_plus"
 gem "prawn_plus"
 gem "andand"
+gem "browser_details"
 
 group :assets do
   gem "sass-rails"
