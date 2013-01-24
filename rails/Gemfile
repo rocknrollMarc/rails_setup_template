@@ -55,16 +55,15 @@ group :development do
   gem "railroady"
   gem "license_finder"
   gem "better_errors"
+  gem 'rb-fsevent', :require => false
+  gem "guard-rspec"
 end
 
 group :test do
-  gem "turn", require: false
   gem "rspec-rails"
   gem "factory_girl_rails"
   gem "capybara"
   gem "timecop"
-  gem "rb-fsevent", require: false if RUBY_PLATFORM =~ /darwin/i # OSX only.
-  gem "guard-rspec"
 end
 
 group :production do
