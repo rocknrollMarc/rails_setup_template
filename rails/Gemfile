@@ -47,7 +47,6 @@ group :development do
   gem "awesome_print"
   gem "capistrano"
   gem "sextant"
-  gem "rack-webconsole"
   gem "active_sanity"
   gem "quiet_assets"
   gem "mailcatcher"
