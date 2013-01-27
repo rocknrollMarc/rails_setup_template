@@ -1,5 +1,4 @@
 
-
     # Override generator defaults
     config.generators do |generator|
       generator.assets false
