@@ -63,7 +63,7 @@ remove_file "#{development_delta}"
 
 application_delta = "config/application.delta.rb"
 download_file("#{TEMPLATE_ROOT}/rails/config/application.rb", application_delta)
-insert_into_file "config/development.rb", open(application_delta).read, after: "  config.assets.version = '1.0'\n"
+insert_into_file "config/application.rb", open(application_delta).read, after: "  config.assets.version = '1.0'\n"
 gsub_file "config/application.rb", /# config.time_zone = \'Central Time \(US & Canada\)\'/, "config.time_zone = \"UTC\""
 gsub_file "config/application.rb", /# config.i18n.default_locale = :de/, "config.i18n.default_locale = \"en-US\""
 remove_file "#{application_delta}"
