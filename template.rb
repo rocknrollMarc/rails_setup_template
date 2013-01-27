@@ -53,14 +53,20 @@ download_file "#{TEMPLATE_ROOT}/rails/config/initializers/ruby_enhancements.rb",
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/system.rb", "config/initializers/system.rb"
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/validation.rb", "config/initializers/validation.rb"
 run "cp config/environments/production.rb config/environments/stage.rb"
+
 development_delta = "config/environments/development.delta.rb"
 download_file("#{TEMPLATE_ROOT}/rails/config/environments/development.rb", development_delta)
 insert_into_file "config/environments/development.rb", open(development_delta).read, before: "\nend\n"
 insert_into_file "config/environments/development.rb", "  config.action_mailer.smtp_settings = { :address => \"localhost\", :port => 1025 }\n", after: "  config.action_mailer.raise_delivery_errors = false\n"
 insert_into_file "config/environments/development.rb", "  config.action_mailer.delivery_method = :smtp\n", after: "  config.action_mailer.raise_delivery_errors = false\n"
 remove_file "#{development_delta}"
+
+application_delta = "config/application.delta.rb"
+download_file("#{TEMPLATE_ROOT}/rails/config/application.rb", application_delta)
+insert_into_file "config/development.rb", open(application_delta).read, after: "  config.assets.version = '1.0'\n"
 gsub_file "config/application.rb", /# config.time_zone = \'Central Time \(US & Canada\)\'/, "config.time_zone = \"UTC\""
 gsub_file "config/application.rb", /# config.i18n.default_locale = :de/, "config.i18n.default_locale = \"en-US\""
+remove_file "#{application_delta}"
 
 # Gems
 download_file "#{TEMPLATE_ROOT}/rails/Gemfile", "Gemfile"
