@@ -1,3 +1,26 @@
+= v4.6.0
+
+* Upgraded to Ruby 1.9.3-p374.
+* Upgraded to Rails 3.2.11.
+* Upgraded to jQuery 1.9.0.
+* Upgraded to jQuery UI 1.10.0.
+* Upgraded to Underscore 1.4.2.
+* Upgraded to Modernizr 2.6.2.
+* Upgraded to Twitter Bootstrap 2.2.2.
+* Added the MailCatcher gem requirement.
+* Added the License Finder gem.
+* Added the Better Errors gem.
+* Added the Browser Details gem.
+* Added the fakeweb gem.
+* Added Code Climate support.
+* Added default Rspec coloring and formating to the rspec.txt template.
+* Added generator default overrides to application.rb.
+* Switched Twitter Bootstrap meta attribute tag order.
+* Converted/detailed the CONTRIBUTING guidelines per GitHub requirements.
+* Removed the turn gem and moved the guard gems in to the development group.
+* Removed the rack-webconsole gem.
+* Renamed the application and development files so they include and clearly indicate 'delta' in the name.
+
 = v4.5.0
 
 * Fixed error message with Guard initialization.
