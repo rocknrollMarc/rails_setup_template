@@ -4,7 +4,7 @@ require "uri"
 
 TEMPLATE_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/master"
 BOOTSTRAP_ROOT = "https://raw.github.com/twitter/bootstrap/v2.2.2"
-UNDERSCORE_ROOT = "https://raw.github.com/documentcloud/underscore/1.4.2"
+UNDERSCORE_ROOT = "https://raw.github.com/documentcloud/underscore/1.4.3"
 MODERNIZR_ROOT = "https://raw.github.com/Modernizr/Modernizr/v2.6.2"
 
 # Downloads a file, swiching to a secure connection if the source requires it. Also creates parent directories if they do not exist.
@@ -53,14 +53,8 @@ download_file "#{TEMPLATE_ROOT}/rails/config/initializers/ruby_enhancements.rb",
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/system.rb", "config/initializers/system.rb"
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/validation.rb", "config/initializers/validation.rb"
 run "cp config/environments/production.rb config/environments/stage.rb"
-
-development_delta = "config/environments/development.delta.rb"
-download_file("#{TEMPLATE_ROOT}/rails/config/environments/development.delta.rb", development_delta)
-insert_into_file "config/environments/development.rb", open(development_delta).read, before: "\nend\n"
 insert_into_file "config/environments/development.rb", "  config.action_mailer.smtp_settings = { :address => \"localhost\", :port => 1025 }\n", after: "  config.action_mailer.raise_delivery_errors = false\n"
 insert_into_file "config/environments/development.rb", "  config.action_mailer.delivery_method = :smtp\n", after: "  config.action_mailer.raise_delivery_errors = false\n"
-remove_file "#{development_delta}"
-
 application_delta = "config/application.delta.rb"
 download_file("#{TEMPLATE_ROOT}/rails/config/application.delta.rb", application_delta)
 insert_into_file "config/application.rb", open(application_delta).read, after: "  config.assets.version = '1.0'\n"
