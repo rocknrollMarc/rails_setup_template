@@ -20,7 +20,7 @@
 * Converted/detailed the CONTRIBUTING guidelines per GitHub requirements.
 * Removed the turn gem.
 * Removed the rack-webconsole gem.
-* Removed Phusion Passenger development support.
+* Removed Phusion Passenger support.
 
 = v4.5.0
 

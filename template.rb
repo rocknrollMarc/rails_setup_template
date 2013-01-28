@@ -101,9 +101,6 @@ download_file "#{TEMPLATE_ROOT}/rails/app/views/shared/_error_messages.html.erb"
 download_file "#{TEMPLATE_ROOT}/rails/app/views/home/show.html.erb", "app/views/home/show.html.erb"
 download_file "#{TEMPLATE_ROOT}/rails/app/views/about/show.html.erb", "app/views/about/show.html.erb"
 
-# Lib
-download_file "#{TEMPLATE_ROOT}/rails/lib/tasks/passenger.rake", "lib/tasks/passenger.rake"
-
 # Images
 remove_file "app/assets/images/rails.png"
 download_file "#{BOOTSTRAP_ROOT}/img/glyphicons-halflings.png", "vendor/assets/images/bootstrap/glyphicons-halflings.png"

@@ -9,18 +9,18 @@ Best applied when creating a new Ruby on Rails application.
 
 The following highlights what is applied with this template:
 
-* Uses {Ruby 1.9.3-p194}[http://www.ruby-lang.org].
-* Uses {Ruby on Rails 3.2.6}[http://rubyonrails.org].
-* Installs the {jQuery 1.7.2}[http://jquery.com] JavaScript library.
-* Installs the {jQuery UI 1.8.21}[http://jqueryui.com] JavaScript library.
+* Uses {Ruby 1.9.3-p374}[http://www.ruby-lang.org].
+* Uses {Ruby on Rails 3.2.11}[http://rubyonrails.org].
+* Installs the {jQuery 1.9.0}[http://jquery.com] JavaScript library.
+* Installs the {jQuery UI 1.10.0}[http://jqueryui.com] JavaScript library.
 * Installs the {jQuery Cookie}[http://plugins.jquery.com/project/Cookie] JavaScript library.
 * Installs the {jQuery Block UI 2.33}[https://github.com/malsup/blockui] JavaScript library.
 * Installs the {jQuery Validation 1.7}[http://bassistance.de/jquery-plugins/jquery-plugin-validation] JavaScript library.
 * Installs the {jQuery jGrowl 1.2.5}[http://stanlemon.net/projects/jgrowl.html] JavaScript library.
 * Installs the {jQuery DataTables 1.7.5}[http://www.datatables.net] JavaScript library.
-* Installs the {Twitter Bootstrap 2.0.4}[http://twitter.github.com/bootstrap] JavaScript libraries.
-* Installs the {Underscore 1.3.3}[https://github.com/documentcloud/underscore] JavaScript library.
-* Installs the {Modernizr 2.5.3}[http://www.modernizr.com] JavaScript library.
+* Installs the {Twitter Bootstrap 2.2.2}[http://twitter.github.com/bootstrap] JavaScript libraries.
+* Installs the {Underscore 1.4.3}[https://github.com/documentcloud/underscore] JavaScript library.
+* Installs the {Modernizr 2.6.2}[http://www.modernizr.com] JavaScript library.
 * Adds the Rake[https://github.com/jimweirich/rake] gem requirement.
 * Adds the Bcrypt[https://github.com/codahale/bcrypt-ruby] gem requirement.
 * Adds the {Ruby on Rails}[http://rubyonrails.org] gem requirement.
@@ -44,7 +44,8 @@ The following highlights what is applied with this template:
 * Adds the Paperclip[http://www.thoughtbot.com/projects/paperclip] gem requirement.
 * Adds the {Paperclip Plus}[https://github.com/bkuhlmann/paperclip_plus] gem requirement.
 * Adds the Prawn+[https://github.com/bkuhlmann/prawn_plus] gem requirement.
-* Added the AndAnd[http://andand.rubyforge.org] gem requirement.
+* Adds the AndAnd[http://andand.rubyforge.org] gem requirement.
+* Adds the {Browser Details}[https://github.com/gshutler/browser_details] gem requirement.
 * Adds the Pry[https://github.com/pry/pry] gem requirement.
 * Adds the {Pry Nav}[https://github.com/nixme/pry-nav] gem requirement.
 * Adds the {Pry Remote}[https://github.com/Mon-Ouie/pry-remote] gem requirement.
@@ -55,24 +56,27 @@ The following highlights what is applied with this template:
 * Adds the {Awesome Print}[https://github.com/michaeldv/awesome_print] gem requirement.
 * Adds the Capistrano[https://github.com/capistrano/capistrano] gem requirement.
 * Adds the Sextant[https://github.com/schneems/sextant] gem requirement.
-* Adds the {Rack Webconsole}[https://github.com/codegram/rack-webconsole] gem requirement.
 * Adds the {Active Sanity}[https://github.com/versapay/active_sanity] gem requirement.
 * Adds the {Quiet Assets}[https://github.com/evrone/quiet_assets] gem requirement.
+* Adds the {Mail Catcher}[https://github.com/sj26/mailcatcher] gem requirement.
 * Adds the {Log+}[https://github.com/bkuhlmann/log_plus] gem requirement.
 * Adds the {Rails ERD}[http://rails-erd.rubyforge.org] gem requirement.
 * Adds the Railroady[https://github.com/preston/railroady] gem requirement.
+* Adds the {License Finder}[https://github.com/pivotal/LicenseFinder] gem requirement.
+* Adds the {Better Errors}[https://github.com/charliesome/better_errors] gem requirement.
 * Adds the {RSpec Rails}[https://github.com/dchelimsky/rspec-rails] gem requirement.
 * Adds the {Ruby fsevent}[https://github.com/thibaudgg/rb-fsevent] gem requirement.
 * Adds the {Guard RSpec}[https://github.com/guard/guard-rspec] gem requirement.
 * Adds the {Factory Girl Rails}[https://github.com/thoughtbot/factory_girl_rails] gem requirement.
 * Adds the Capybara[https://github.com/jnicklas/capybara] gem requirement.
+* Adds the FakeWeb[https://github.com/chrisk/fakeweb] gem requirement.
 * Adds the Timecop[https://github.com/jtrupiano/timecop] gem requirement.
 * Installs Twitter Bootstrap stylesheets and images.
 * Installs jQuery UI assets.
 * Installs a customized application.html.erb file with a basic but structured site layout.
 * Installs customized application graphics.
-* Installs customized configuration initializers.
-* Installs a rake script with {Phusion Passenger}[http://www.modrails.com/] support.
+* Installs customized initializers.
+* Installs customized generator defaults.
 * Installs a rake script with Railroad diagram support.
 * Installs simple _home_ and _about_ controllers for basic demo usage.
 * Installs customized view helpers.
