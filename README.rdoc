@@ -111,9 +111,8 @@ Here is what each option is doing and why:
 * -f - Forces overwrite of any existing files so the template is not interrupted during setup.
 * --skip-bundle - Skips running "bundle install" since the template does this for you at appropriate time of setup.
 
-BTW, you can reduce unnecessary typing with new app generation by adding the new rails options, listed above,
-to your .railsrc file and simply type "rails new demo" each time. See my
-{.railsrc}[https://github.com/bkuhlmann/dotfiles/blob/master/home_files/railsrc.txt] file for usage.
+*TIP*: You can reduce unnecessary typing with new app generation by adding the new rails options, listed above,
+to your .railsrc file. Any options in the .railsrc file will be applied with each new app generation.
 
 = Setup
 
