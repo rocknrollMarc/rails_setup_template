@@ -90,7 +90,6 @@ download_file "#{TEMPLATE_ROOT}/rails/app/helpers/image_helper.rb", "app/helpers
 download_file "#{TEMPLATE_ROOT}/rails/app/helpers/layout_helper.rb", "app/helpers/layout_helper.rb"
 download_file "#{TEMPLATE_ROOT}/rails/app/helpers/navigation_helper.rb", "app/helpers/navigation_helper.rb"
 download_file "#{TEMPLATE_ROOT}/rails/app/helpers/system_helper.rb", "app/helpers/system_helper.rb"
-download_file "#{TEMPLATE_ROOT}/rails/app/helpers/template_helper.rb", "app/helpers/template_helper.rb"
 download_file "#{TEMPLATE_ROOT}/rails/app/helpers/visitor_helper.rb", "app/helpers/visitor_helper.rb"
 
 # Views
