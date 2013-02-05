@@ -121,7 +121,6 @@ download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-icons_e0
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-icons_f5e175_256x240.png", "vendor/assets/images/jquery-ui/ui-icons_f5e175_256x240.png"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-icons_f7a50d_256x240.png", "vendor/assets/images/jquery-ui/ui-icons_f7a50d_256x240.png"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-icons_fcd113_256x240.png", "vendor/assets/images/jquery-ui/ui-icons_fcd113_256x240.png"
-download_file "#{TEMPLATE_ROOT}/rails/app/assets/images/main/spinner.gif", "app/assets/images/main/spinner.gif"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/images/icons/feed-comments.png", "app/assets/images/icons/feed-comments.png"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/images/icons/feed.png", "app/assets/images/icons/feed.png"
 download_file "#{TEMPLATE_ROOT}/rails/public/apple-touch-icon-114x114.png", "public/apple-touch-icon-114x114.png"
