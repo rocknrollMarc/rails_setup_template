@@ -54,7 +54,8 @@ group :development do
   gem "railroady"
   gem "license_finder"
   gem "better_errors"
-  gem 'rb-fsevent', :require => false
+  gem "rb-fsevent", :require => false # OSX
+  gem "rb-inotify", :require => false # Linux
   gem "guard-rspec"
 end
 
