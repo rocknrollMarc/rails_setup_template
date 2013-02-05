@@ -167,7 +167,8 @@ download_file "#{UNDERSCORE_ROOT}/underscore.js", "vendor/assets/javascripts/und
 download_file "#{MODERNIZR_ROOT}/modernizr.js", "vendor/assets/javascripts/modernizr.js"
 
 # Doc
-file "doc/README_FOR_APP", "TODO - Document your application."
+file "README.rdoc", "TODO - Document application."
+file "doc/README_FOR_APP", "TODO - Document application."
 download_file "#{TEMPLATE_ROOT}/rails/public/humans.txt", "public/humans.txt"
 
 # Git
