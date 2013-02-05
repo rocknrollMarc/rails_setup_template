@@ -6,7 +6,6 @@
 //
 //= require jquery
 //= require jquery-ui
-//= require jquery.blockUI
 //= require jquery.cookie
 //= require jquery.validate
 //= require jquery.dataTables

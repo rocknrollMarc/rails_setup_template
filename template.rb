@@ -135,7 +135,6 @@ download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/shared.css.scss", "
 download_file "#{BOOTSTRAP_ROOT}/docs/assets/css/bootstrap.css", "vendor/assets/stylesheets/bootstrap.css.scss"
 download_file "#{BOOTSTRAP_ROOT}/docs/assets/css/bootstrap-responsive.css", "vendor/assets/stylesheets/bootstrap-responsive.css"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/stylesheets/jquery-ui.css", "vendor/assets/stylesheets/jquery-ui.css.scss"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/stylesheets/jquery.blockUI.css", "vendor/assets/stylesheets/jquery.blockUI.css.scss"
 
 # Stylesheets (CSS to SCSS asset conversion)
 gsub_file "vendor/assets/stylesheets/bootstrap.css.scss", /url\(\"\.\.\/img\//, 'image-url("bootstrap/'
@@ -148,7 +147,6 @@ download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/shared.js", "app/as
 download_file "http://code.jquery.com/jquery-1.9.0.js", "vendor/assets/javascripts/jquery.js"
 download_file "http://code.jquery.com/ui/1.10.0/jquery-ui.js", "vendor/assets/javascripts/jquery-ui.js"
 download_file "http://cachedcommons.org/cache/jquery-cookie/0.0.0/javascripts/jquery-cookie.js", "vendor/assets/javascripts/jquery.cookie.js"
-download_file "http://cachedcommons.org/cache/jquery-blockui/2.3.3/javascripts/jquery-blockui.js", "vendor/assets/javascripts/jquery.blockUI.js"
 download_file "http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.js", "vendor/assets/javascripts/jquery.validate.js"
 download_file "http://www.datatables.net/download/build/jquery.dataTables.js", "vendor/assets/javascripts/jquery.dataTables.js"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/javascripts/jquery.jgrowl.js", "vendor/assets/javascripts/jquery.jgrowl.js"
