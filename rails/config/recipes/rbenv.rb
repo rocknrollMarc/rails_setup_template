@@ -1,4 +1,4 @@
-set_default :ruby_version, "1.9.3-p374"
+set_default :ruby_version, "1.9.3-p385"
 set_default :ruby_url, "http://ftp.ruby-lang.org/pub/ruby/1.9"
 
 namespace :rbenv do
