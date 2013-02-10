@@ -152,6 +152,7 @@ for your application (use whatever fits your needs):
 
 = Resources
 
+* {Railscast 148 - Custom App Generators}[http://railscasts.com/episodes/148-custom-app-generators-revised]
 * {Extending Rails 3 with Railties}[http://www.engineyard.com/blog/2010/extending-rails-3-with-railties]
 
 = Contributions
