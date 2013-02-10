@@ -174,8 +174,7 @@ download_file "#{TEMPLATE_ROOT}/rails/public/humans.txt", "public/humans.txt"
 # Git
 git :init
 download_file "#{TEMPLATE_ROOT}/rails/gitignore.txt", ".gitignore"
-git add: '.'
-git commit: "-n -a -m \"Applied Rails Setup Template.\""
+git add: '.', commit: "-n -a -m \"Applied Rails Setup Template.\""
 
 # End
 say_status :end, "Rails Template Setup Complete!"
