@@ -13,7 +13,7 @@ The following highlights what is applied with this template:
 * Uses {Ruby on Rails 3.2.13}[http://rubyonrails.org].
 * Installs the {jQuery 1.9.1}[http://jquery.com] JavaScript library.
 * Installs the {jQuery UI 1.10.0}[http://jqueryui.com] JavaScript library.
-* Installs the {jQuery Cookie}[http://plugins.jquery.com/project/Cookie] JavaScript library.
+* Installs the {jQuery Cookie 1.3.1}[http://plugins.jquery.com/cookie] JavaScript library.
 * Installs the {jQuery Validation 1.7}[http://bassistance.de/jquery-plugins/jquery-plugin-validation] JavaScript library.
 * Installs the {jQuery DataTables 1.9.4}[http://www.datatables.net] JavaScript library.
 * Installs the {Twitter Bootstrap 2.3.1}[http://twitter.github.com/bootstrap] JavaScript libraries.
