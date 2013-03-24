@@ -8,8 +8,8 @@ module ImageHelper
   def render_image_for target, options = {}
     options.reverse_merge name: :image, style: :thumb, alt: "Missing"
     file_name = options[:name].to_s + "_file_name"
-    if target.respond_to?(file_name) && target.send(file_name).present?
-      image_tag target.send(options[:name]).url(options[:style]), id: options[:id], alt: target.send(file_name)
+    if target.respond_to?(file_name) && target.public_send(file_name).present?
+      image_tag target.public_send(options[:name]).url(options[:style]), id: options[:id], alt: target.send(file_name)
     else
       image_tag "missing.png", id: options[:id], alt: options[:alt]
     end

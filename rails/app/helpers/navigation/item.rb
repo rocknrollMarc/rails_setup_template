@@ -41,6 +41,6 @@ class Navigation::Item
 
   # Punts to the helper context for helper methods not defined in this class.
   def method_missing *args, &block
-    @template.send *args, &block
+    @template.public_send *args, &block
   end  
 end

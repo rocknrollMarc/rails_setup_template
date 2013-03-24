@@ -26,6 +26,6 @@ module DateTimeHelper
   # * +method+ - Required. The object method to call.
   # * +method+ - Optional. The date/time format to use. Defaults to "hr_date_time".
   def render_date_time_for object, method, format = :hr_date_time
-    raw([method.to_s.humanize.gsub(/\sat/, " on"), render_date_time(object.send(method), format)] * ' ')
+    raw([method.to_s.humanize.gsub(/\sat/, " on"), render_date_time(object.public_send(method), format)] * ' ')
   end
 end
