@@ -55,7 +55,6 @@ group :development do
   gem "license_finder"
   gem "better_errors"
   gem "rb-fsevent" # Guard file events for OSX.
-  gem "rb-inotify" # Guard file events for Linux.
   gem "guard-rspec"
 end
 
