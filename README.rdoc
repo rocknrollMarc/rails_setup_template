@@ -9,16 +9,15 @@ Best applied when creating a new Ruby on Rails application.
 
 The following highlights what is applied with this template:
 
-* Uses {Ruby 1.9.3-p374}[http://www.ruby-lang.org].
-* Uses {Ruby on Rails 3.2.11}[http://rubyonrails.org].
-* Installs the {jQuery 1.9.0}[http://jquery.com] JavaScript library.
+* Uses {Ruby 2.0.0-p0}[http://www.ruby-lang.org].
+* Uses {Ruby on Rails 3.2.13}[http://rubyonrails.org].
+* Installs the {jQuery 1.9.1}[http://jquery.com] JavaScript library.
 * Installs the {jQuery UI 1.10.0}[http://jqueryui.com] JavaScript library.
 * Installs the {jQuery Cookie}[http://plugins.jquery.com/project/Cookie] JavaScript library.
-* Installs the {jQuery Block UI 2.33}[https://github.com/malsup/blockui] JavaScript library.
 * Installs the {jQuery Validation 1.7}[http://bassistance.de/jquery-plugins/jquery-plugin-validation] JavaScript library.
 * Installs the {jQuery jGrowl 1.2.5}[http://stanlemon.net/projects/jgrowl.html] JavaScript library.
 * Installs the {jQuery DataTables 1.7.5}[http://www.datatables.net] JavaScript library.
-* Installs the {Twitter Bootstrap 2.2.2}[http://twitter.github.com/bootstrap] JavaScript libraries.
+* Installs the {Twitter Bootstrap 2.3.1}[http://twitter.github.com/bootstrap] JavaScript libraries.
 * Installs the {Underscore 1.4.3}[https://github.com/documentcloud/underscore] JavaScript library.
 * Installs the {Modernizr 2.6.2}[http://www.modernizr.com] JavaScript library.
 * Adds the Rake[https://github.com/jimweirich/rake] gem requirement.
@@ -69,6 +68,7 @@ The following highlights what is applied with this template:
 * Adds the {Guard RSpec}[https://github.com/guard/guard-rspec] gem requirement.
 * Adds the {Factory Girl Rails}[https://github.com/thoughtbot/factory_girl_rails] gem requirement.
 * Adds the Capybara[https://github.com/jnicklas/capybara] gem requirement.
+* Adds the {Database Cleaner}[https://github.com/bmabey/database_cleaner] gem requirement.
 * Adds the FakeWeb[https://github.com/chrisk/fakeweb] gem requirement.
 * Adds the Timecop[https://github.com/jtrupiano/timecop] gem requirement.
 * Installs Twitter Bootstrap stylesheets and images.
@@ -87,8 +87,8 @@ The following highlights what is applied with this template:
 = Requirements
 
 1. A UNIX-based system.
-2. {Ruby 1.9.x}[http://www.ruby-lang.org].
-3. {Ruby on Rails 3.2.x+}[http://rubyonrails.org].
+2. {Ruby 2.0.x}[http://www.ruby-lang.org].
+3. {Ruby on Rails 3.2.x}[http://rubyonrails.org].
 4. A solid internet connection.
 
 = Usage

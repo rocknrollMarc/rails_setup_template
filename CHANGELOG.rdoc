@@ -1,3 +1,29 @@
+= v5.0.0
+
+* Upgraded to Ruby 2.0.0-p0.
+* Upgraded to Rails 3.2.13.
+* Upgraded to jQuery 1.9.1.
+* Upgraded to Twitter Bootstrap 2.3.1.
+* Removed the New Relic Gem.
+* Removed the template_helper.rb file.
+* Added CanCan initializer to template setup.
+* Added default page header styling.
+* Removed Block UI JavaScript library and related resources.
+* Removed jQuery BlockUI spinner and styling.
+* Removed developer label and URL info.
+* Fixed README text in regards to the .railsrc file.
+* Fixed HTML meta description text to use system description instead of missing translation.
+* Added the Twitter Bootstrap patch stylesheet.
+* Updated and labeled the Guard gems for file system notifications on OSX and Linux.
+* Removed the .center CSS class - Provided by Twitter Bootstrap now.
+* Condensed the git add and commit lines to one line in template.rb.
+* Added Railscast 148 to README.
+* Added the database cleaner gem to the test group.
+* Added 'Why we don't use a Rails template' to the README. Thanks Eric.
+* Applied Code Climate GPA badge.
+* Switched from HTTP to HTTPS when sourcing from RubyGems.
+* Cleaned up Guard gem dependency requirements.
+
 = v4.6.0
 
 * Upgraded to Ruby 1.9.3-p374.
