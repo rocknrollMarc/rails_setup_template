@@ -9,7 +9,6 @@
 //= require jquery.cookie
 //= require jquery.validate
 //= require jquery.dataTables
-//= require jquery.jgrowl
 //= require jquery.rest
 //= require jquery.sorter
 //= require bootstrap-transition

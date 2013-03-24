@@ -149,7 +149,6 @@ download_file "http://code.jquery.com/ui/1.10.0/jquery-ui.js", "vendor/assets/ja
 download_file "http://cachedcommons.org/cache/jquery-cookie/0.0.0/javascripts/jquery-cookie.js", "vendor/assets/javascripts/jquery.cookie.js"
 download_file "http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.js", "vendor/assets/javascripts/jquery.validate.js"
 download_file "http://www.datatables.net/download/build/jquery.dataTables.js", "vendor/assets/javascripts/jquery.dataTables.js"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/javascripts/jquery.jgrowl.js", "vendor/assets/javascripts/jquery.jgrowl.js"
 download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-transition.js", "vendor/assets/javascripts/bootstrap-transition.js"
 download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-alert.js", "vendor/assets/javascripts/bootstrap-alert.js"
 download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-modal.js", "vendor/assets/javascripts/bootstrap-modal.js"

@@ -5,6 +5,7 @@
 * Upgraded to jQuery 1.9.1.
 * Upgraded to Twitter Bootstrap 2.3.1.
 * Removed the New Relic Gem.
+* Removed the jQuery Growl JavaScript library.
 * Removed the template_helper.rb file.
 * Added CanCan initializer to template setup.
 * Added default page header styling.
