@@ -1,5 +1,5 @@
-set_default :ruby_version, "1.9.3-p392"
-set_default :ruby_url, "http://ftp.ruby-lang.org/pub/ruby/1.9"
+set_default :ruby_version, "2.0.0-p0"
+set_default :ruby_url, "http://ftp.ruby-lang.org/pub/ruby/2.0"
 
 namespace :rbenv do
   desc "Install rbenv, Ruby, and the Bundler gem"
