@@ -4,8 +4,9 @@ require "uri"
 
 TEMPLATE_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/master"
 JQUERY_COOKIE_ROOT = "https://raw.github.com/carhartl/jquery-cookie/v1.3.1"
+JQUERY_VALIDATION_ROOT = "https://raw.github.com/jzaefferer/jquery-validation/1.11.1"
 BOOTSTRAP_ROOT = "https://raw.github.com/twitter/bootstrap/v2.3.1"
-UNDERSCORE_ROOT = "https://raw.github.com/documentcloud/underscore/1.4.3"
+UNDERSCORE_ROOT = "https://raw.github.com/documentcloud/underscore/1.4.4"
 MODERNIZR_ROOT = "https://raw.github.com/Modernizr/Modernizr/v2.6.2"
 
 # Downloads a file, swiching to a secure connection if the source requires it. Also creates parent directories if they do not exist.
@@ -149,7 +150,7 @@ download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/shared.js", "app/as
 download_file "http://code.jquery.com/jquery-1.9.1.js", "vendor/assets/javascripts/jquery.js"
 download_file "http://code.jquery.com/ui/1.10.2/jquery-ui.js", "vendor/assets/javascripts/jquery-ui.js"
 download_file "#{JQUERY_COOKIE_ROOT}/jquery.cookie.js", "vendor/assets/javascripts/jquery.cookie.js"
-download_file "http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.js", "vendor/assets/javascripts/jquery.validate.js"
+download_file "#{JQUERY_VALIDATION_ROOT}/jquery.validate.js", "vendor/assets/javascripts/jquery.validate.js"
 download_file "http://www.datatables.net/download/build/jquery.dataTables.js", "vendor/assets/javascripts/jquery.dataTables.js"
 download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-transition.js", "vendor/assets/javascripts/bootstrap-transition.js"
 download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-alert.js", "vendor/assets/javascripts/bootstrap-alert.js"

@@ -14,10 +14,10 @@ The following highlights what is applied with this template:
 * Installs the {jQuery 1.9.1}[http://jquery.com] JavaScript library.
 * Installs the {jQuery UI 1.10.0}[http://jqueryui.com] JavaScript library.
 * Installs the {jQuery Cookie 1.3.1}[http://plugins.jquery.com/cookie] JavaScript library.
-* Installs the {jQuery Validation 1.7}[http://bassistance.de/jquery-plugins/jquery-plugin-validation] JavaScript library.
+* Installs the {jQuery Validation 1.11.1}[http://plugins.jquery.com/validation] JavaScript library.
 * Installs the {jQuery DataTables 1.9.4}[http://www.datatables.net] JavaScript library.
 * Installs the {Twitter Bootstrap 2.3.1}[http://twitter.github.com/bootstrap] JavaScript libraries.
-* Installs the {Underscore 1.4.3}[https://github.com/documentcloud/underscore] JavaScript library.
+* Installs the {Underscore 1.4.4}[https://github.com/documentcloud/underscore] JavaScript library.
 * Installs the {Modernizr 2.6.2}[http://www.modernizr.com] JavaScript library.
 * Adds the Rake[https://github.com/jimweirich/rake] gem requirement.
 * Adds the Bcrypt[https://github.com/codahale/bcrypt-ruby] gem requirement.
