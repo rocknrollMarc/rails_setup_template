@@ -58,6 +58,7 @@ group :development do
   gem "rb-fsevent" # Guard file events for OSX.
   gem "guard-rspec"
   gem "rack-livereload"
+  gem "guard-livereload"
 end
 
 group :test do
