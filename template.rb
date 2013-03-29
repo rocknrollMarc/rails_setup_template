@@ -74,6 +74,7 @@ generate "rspec:install"
 download_file "#{TEMPLATE_ROOT}/rails/rspec.txt", ".rspec"
 create_file "spec/factories.rb"
 run "bundle exec guard init rspec"
+run "bundle exec guard init livereload"
 
 # Controllers
 insert_into_file "app/controllers/application_controller.rb", "  helper :all\n", after: "class ApplicationController < ActionController::Base\n"
