@@ -55,6 +55,7 @@ download_file "#{TEMPLATE_ROOT}/rails/config/initializers/ruby_enhancements.rb",
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/system.rb", "config/initializers/system.rb"
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/validation.rb", "config/initializers/validation.rb"
 run "cp config/environments/production.rb config/environments/stage.rb"
+insert_into_file "config/environments/development.rb", "  # Enables Guard::LiveReload support without requiring a browser extension.\n  config.middleware.insert_after ActionDispatch::Static, Rack::LiveReload\n", after: "  # Settings specified here will take precedence over those in config/application.rb\n"
 insert_into_file "config/environments/development.rb", "  config.action_mailer.smtp_settings = { :address => \"localhost\", :port => 1025 }\n", after: "  config.action_mailer.raise_delivery_errors = false\n"
 insert_into_file "config/environments/development.rb", "  config.action_mailer.delivery_method = :smtp\n", after: "  config.action_mailer.raise_delivery_errors = false\n"
 application_delta = "config/application.delta.rb"
