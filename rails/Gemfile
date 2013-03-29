@@ -54,6 +54,7 @@ group :development do
   gem "railroady"
   gem "license_finder"
   gem "better_errors"
+  gem "meta_request" # Required by the RailsPanel browser extension.
   gem "rb-fsevent" # Guard file events for OSX.
   gem "guard-rspec"
 end
