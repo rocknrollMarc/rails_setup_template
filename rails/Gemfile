@@ -28,6 +28,7 @@ gem "browser_details"
 
 group :assets do
   gem "sass-rails"
+  gem "bootstrap-sass"
   gem "coffee-rails"
   gem "uglifier"
 end
