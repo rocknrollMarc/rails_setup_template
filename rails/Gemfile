@@ -39,6 +39,7 @@ group :development, :test do
   gem "pry-vterm_aliases"
   gem "pry-remote"
   gem "log_plus"
+  gem "launchy" # Allows save_and_open_page to work in Capybara.
 end
 
 group :development do
