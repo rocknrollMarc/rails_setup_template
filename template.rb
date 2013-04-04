@@ -5,7 +5,6 @@ require "uri"
 TEMPLATE_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/master"
 JQUERY_COOKIE_ROOT = "https://raw.github.com/carhartl/jquery-cookie/v1.3.1"
 JQUERY_VALIDATION_ROOT = "https://raw.github.com/jzaefferer/jquery-validation/1.11.1"
-BOOTSTRAP_ROOT = "https://raw.github.com/twitter/bootstrap/v2.3.1"
 UNDERSCORE_ROOT = "https://raw.github.com/documentcloud/underscore/1.4.4"
 MODERNIZR_ROOT = "https://raw.github.com/Modernizr/Modernizr/v2.6.2"
 
@@ -107,8 +106,6 @@ download_file "#{TEMPLATE_ROOT}/rails/app/views/about/show.html.erb", "app/views
 
 # Images
 remove_file "app/assets/images/rails.png"
-download_file "#{BOOTSTRAP_ROOT}/img/glyphicons-halflings.png", "vendor/assets/images/bootstrap/glyphicons-halflings.png"
-download_file "#{BOOTSTRAP_ROOT}/img/glyphicons-halflings-white.png", "vendor/assets/images/bootstrap/glyphicons-halflings-white.png"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/animated-overlay.gif", "vendor/assets/images/jquery-ui/animated-overlay.gif"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-bg_flat_55_999999_40x100.png", "vendor/assets/images/jquery-ui/ui-bg_flat_55_999999_40x100.png"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-bg_flat_75_aaaaaa_40x100.png", "vendor/assets/images/jquery-ui/ui-bg_flat_75_aaaaaa_40x100.png"
@@ -137,12 +134,9 @@ remove_file "app/assets/stylesheets/application.css"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/application.css.scss", "app/assets/stylesheets/application.css.scss"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/bootstrap-patch.css.scss", "app/assets/stylesheets/bootstrap-patch.css.scss"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/shared.css.scss", "app/assets/stylesheets/shared.css.scss"
-download_file "#{BOOTSTRAP_ROOT}/docs/assets/css/bootstrap.css", "vendor/assets/stylesheets/bootstrap.css.scss"
-download_file "#{BOOTSTRAP_ROOT}/docs/assets/css/bootstrap-responsive.css", "vendor/assets/stylesheets/bootstrap-responsive.css"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/stylesheets/jquery-ui.css", "vendor/assets/stylesheets/jquery-ui.css.scss"
 
 # Stylesheets (CSS to SCSS asset conversion)
-gsub_file "vendor/assets/stylesheets/bootstrap.css.scss", /url\(\"\.\.\/img\//, 'image-url("bootstrap/'
 gsub_file "vendor/assets/stylesheets/jquery-ui.css.scss", /url\(images\//, 'image-url("jquery-ui/'
 gsub_file "vendor/assets/stylesheets/jquery-ui.css.scss", /\.png\)/, '.png")'
 
@@ -154,19 +148,6 @@ download_file "http://code.jquery.com/ui/1.10.2/jquery-ui.js", "vendor/assets/ja
 download_file "#{JQUERY_COOKIE_ROOT}/jquery.cookie.js", "vendor/assets/javascripts/jquery.cookie.js"
 download_file "#{JQUERY_VALIDATION_ROOT}/jquery.validate.js", "vendor/assets/javascripts/jquery.validate.js"
 download_file "http://www.datatables.net/download/build/jquery.dataTables.js", "vendor/assets/javascripts/jquery.dataTables.js"
-download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-transition.js", "vendor/assets/javascripts/bootstrap-transition.js"
-download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-alert.js", "vendor/assets/javascripts/bootstrap-alert.js"
-download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-modal.js", "vendor/assets/javascripts/bootstrap-modal.js"
-download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-dropdown.js", "vendor/assets/javascripts/bootstrap-dropdown.js"
-download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-scrollspy.js", "vendor/assets/javascripts/bootstrap-scrollspy.js"
-download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-tab.js", "vendor/assets/javascripts/bootstrap-tab.js"
-download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-tooltip.js", "vendor/assets/javascripts/bootstrap-tooltip.js"
-download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-popover.js", "vendor/assets/javascripts/bootstrap-popover.js"
-download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-button.js", "vendor/assets/javascripts/bootstrap-button.js"
-download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-collapse.js", "vendor/assets/javascripts/bootstrap-collapse.js"
-download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-carousel.js", "vendor/assets/javascripts/bootstrap-carousel.js"
-download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-typeahead.js", "vendor/assets/javascripts/bootstrap-typeahead.js"
-download_file "#{BOOTSTRAP_ROOT}/js/bootstrap-affix.js", "vendor/assets/javascripts/bootstrap-affix.js"
 download_file "#{UNDERSCORE_ROOT}/underscore.js", "vendor/assets/javascripts/underscore.js"
 download_file "#{MODERNIZR_ROOT}/modernizr.js", "vendor/assets/javascripts/modernizr.js"
 
