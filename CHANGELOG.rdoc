@@ -1,3 +1,20 @@
+= v5.1.0
+
+* Removed the Code Climate badge.
+* Removed manual setup of Twitter Bootstrap assets. Everything is provided via the bootstrap-sass gem now.
+* Removed the andand gem.
+* Added the MetaRequest[https://github.com/dejan/rails_panel/tree/master/meta_request] gem requirement.
+* Added the {Rack LiveReload}[https://github.com/johnbintz/rack-livereload] gem requirement.
+* Added the Guard::LiveReload[https://github.com/guard/guard-livereload] gem requirement.
+* Added the Lauchy[https://github.com/copiousfreetime/launchy] gem requirement.
+* Added the bootstrap-sass[https://github.com/thomas-mcdonald/bootstrap-sass] gem requirement.
+* Added the {Fast Blank}[https://github.com/SamSaffron/fast_blank] gem requirement.
+* Added the {Chrome Logger}[https://github.com/cookrn/chrome_logger] gem requirement.
+* Added Guard initialization for LiveReload support.
+* Added Guard::LiveReload middleware support to development environment.
+* Switched to using the public_send instead of the send method where appropriate.
+* Force Bundler to generate binstubs.
+
 = v5.0.0
 
 * Upgraded to Ruby 2.0.0-p0.
@@ -124,7 +141,7 @@
 * Added Capistrano support.
 * Added config/database.yml to .gitignore.
 * Added a stage environment (defaults to a mirror of the production environment).
-* Added auto-adjustments to the application.rb file for time_zone, default_locale, and whitelist_attributes. 
+* Added auto-adjustments to the application.rb file for time_zone, default_locale, and whitelist_attributes.
 * Added responsive top bar navigation collapsing.
 * Cleaned up the options for new rails apps in the README.
 

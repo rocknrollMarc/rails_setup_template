@@ -1,6 +1,6 @@
 = Overview
 
-Bootstraps a Ruby on Rails project beyond what you get with default project generation (i.e. rails new <project name>). 
+Bootstraps a Ruby on Rails project beyond what you get with default project generation (i.e. rails new <project name>).
 Best applied when creating a new Ruby on Rails application.
 
 = Features
@@ -18,6 +18,7 @@ The following highlights what is applied with this template:
 * Installs the {Underscore 1.4.4}[https://github.com/documentcloud/underscore] JavaScript library.
 * Installs the {Modernizr 2.6.2}[http://www.modernizr.com] JavaScript library.
 * Adds the Rake[https://github.com/jimweirich/rake] gem requirement.
+* Adds the {Fast Blank}[https://github.com/SamSaffron/fast_blank] gem requirement.
 * Adds the Bcrypt[https://github.com/codahale/bcrypt-ruby] gem requirement.
 * Adds the {Ruby on Rails}[http://rubyonrails.org] gem requirement.
 * Adds the CanCan[https://github.com/ryanb/cancan] gem requirement.
@@ -40,8 +41,8 @@ The following highlights what is applied with this template:
 * Adds the Paperclip[http://www.thoughtbot.com/projects/paperclip] gem requirement.
 * Adds the {Paperclip Plus}[https://github.com/bkuhlmann/paperclip_plus] gem requirement.
 * Adds the Prawn+[https://github.com/bkuhlmann/prawn_plus] gem requirement.
-* Adds the AndAnd[http://andand.rubyforge.org] gem requirement.
 * Adds the {Browser Details}[https://github.com/gshutler/browser_details] gem requirement.
+* Adds the bootstrap-sass[https://github.com/thomas-mcdonald/bootstrap-sass] gem requirement.
 * Adds the Pry[https://github.com/pry/pry] gem requirement.
 * Adds the {Pry Nav}[https://github.com/nixme/pry-nav] gem requirement.
 * Adds the {Pry Remote}[https://github.com/Mon-Ouie/pry-remote] gem requirement.
@@ -56,13 +57,18 @@ The following highlights what is applied with this template:
 * Adds the {Quiet Assets}[https://github.com/evrone/quiet_assets] gem requirement.
 * Adds the {Mail Catcher}[https://github.com/sj26/mailcatcher] gem requirement.
 * Adds the {Log+}[https://github.com/bkuhlmann/log_plus] gem requirement.
+* Adds the Lauchy[https://github.com/copiousfreetime/launchy] gem requirement.
 * Adds the {Rails ERD}[http://rails-erd.rubyforge.org] gem requirement.
 * Adds the Railroady[https://github.com/preston/railroady] gem requirement.
 * Adds the {License Finder}[https://github.com/pivotal/LicenseFinder] gem requirement.
 * Adds the {Better Errors}[https://github.com/charliesome/better_errors] gem requirement.
+* Adds the MetaRequest[https://github.com/dejan/rails_panel/tree/master/meta_request] gem requirement.
 * Adds the {RSpec Rails}[https://github.com/dchelimsky/rspec-rails] gem requirement.
 * Adds the {Ruby fsevent}[https://github.com/thibaudgg/rb-fsevent] gem requirement.
 * Adds the {Guard RSpec}[https://github.com/guard/guard-rspec] gem requirement.
+* Adds the {Rack LiveReload}[https://github.com/johnbintz/rack-livereload] gem requirement.
+* Adds the Guard::LiveReload[https://github.com/guard/guard-livereload] gem requirement.
+* Adds the {Chrome Logger}[https://github.com/cookrn/chrome_logger] gem requirement.
 * Adds the {Factory Girl Rails}[https://github.com/thoughtbot/factory_girl_rails] gem requirement.
 * Adds the Capybara[https://github.com/jnicklas/capybara] gem requirement.
 * Adds the {Database Cleaner}[https://github.com/bmabey/database_cleaner] gem requirement.
