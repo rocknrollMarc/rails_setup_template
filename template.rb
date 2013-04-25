@@ -26,8 +26,8 @@ def download_file source, destination
   File.open(project_file, "w") {|file| file.write response.body}
 end
 
-# Ruby Version Management (rbenv)
-download_file "#{TEMPLATE_ROOT}/rails/rbenv-version.txt", ".rbenv-version"
+# Ruby Version Management
+download_file "#{TEMPLATE_ROOT}/rails/ruby-version.txt", ".ruby-version"
 
 # Configurations
 download_file "#{TEMPLATE_ROOT}/rails/Capfile", "Capfile"
