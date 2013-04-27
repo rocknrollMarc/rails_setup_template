@@ -2,7 +2,7 @@ require "net/http"
 require "net/https"
 require "uri"
 
-TEMPLATE_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/v5.1.0"
+TEMPLATE_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/master"
 JQUERY_COOKIE_ROOT = "https://raw.github.com/carhartl/jquery-cookie/v1.3.1"
 JQUERY_VALIDATION_ROOT = "https://raw.github.com/jzaefferer/jquery-validation/1.11.1"
 UNDERSCORE_ROOT = "https://raw.github.com/documentcloud/underscore/1.4.4"
