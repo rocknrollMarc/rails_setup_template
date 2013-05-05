@@ -38,6 +38,7 @@ group :development, :test do
   gem "pry"
   gem "pry-remote"
   gem "pry-debugger"
+  gem "pry-rescue"
   gem "pry-stack_explorer"
   gem "pry-vterm_aliases"
   gem "log_plus"
