@@ -46,6 +46,7 @@ group :development, :test do
 end
 
 group :development do
+  gem "bond"
   gem "wirb"
   gem "hirb"
   gem "awesome_print"
