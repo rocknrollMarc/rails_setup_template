@@ -48,6 +48,7 @@ download_file "#{TEMPLATE_ROOT}/rails/config/recipes/templates/unicorn.rb.erb", 
 download_file "#{TEMPLATE_ROOT}/rails/config/recipes/templates/unicorn.service.erb", "config/recipes/templates/unicorn.service.erb"
 download_file "#{TEMPLATE_ROOT}/rails/config/database.yml", "config/database.yml"
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/active_record.rb", "config/initializers/active_record.rb"
+download_file "#{TEMPLATE_ROOT}/rails/config/initializers/better_errors.rb", "config/initializers/better_errors.rb"
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/date_time.rb", "config/initializers/date_time.rb"
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/redis.rb", "config/initializers/redis.rb"
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/ruby_enhancements.rb", "config/initializers/ruby_enhancements.rb"
