@@ -1,4 +1,7 @@
 
+    # Block or throttle abusive clients.
+    config.middleware.use Rack::Attack
+
     # Override generator defaults
     config.generators do |generator|
       generator.assets false
