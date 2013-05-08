@@ -145,7 +145,7 @@ gsub_file "vendor/assets/stylesheets/jquery-ui.css.scss", /\.png\)/, '.png")'
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/application.js", "app/assets/javascripts/application.js"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/shared.js", "app/assets/javascripts/shared.js"
 download_file "http://code.jquery.com/jquery-2.0.0.js", "vendor/assets/javascripts/jquery.js"
-download_file "http://code.jquery.com/ui/1.10.2/jquery-ui.js", "vendor/assets/javascripts/jquery-ui.js"
+download_file "http://code.jquery.com/ui/1.10.3/jquery-ui.js", "vendor/assets/javascripts/jquery-ui.js"
 download_file "#{JQUERY_COOKIE_ROOT}/jquery.cookie.js", "vendor/assets/javascripts/jquery.cookie.js"
 download_file "#{JQUERY_VALIDATION_ROOT}/jquery.validate.js", "vendor/assets/javascripts/jquery.validate.js"
 download_file "http://www.datatables.net/download/build/jquery.dataTables.js", "vendor/assets/javascripts/jquery.dataTables.js"
