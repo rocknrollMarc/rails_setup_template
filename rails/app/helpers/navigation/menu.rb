@@ -10,5 +10,5 @@ class Navigation::Menu < Navigation::Item
 
   def render
     content_tag(:ul, @children.map(&:render).join.html_safe, @options)
-  end    
+  end
 end

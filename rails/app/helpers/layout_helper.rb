@@ -6,12 +6,12 @@ module LayoutHelper
   def title title = action_name.titleize, separator = '|'
     content_for(:title) {[title, SYSTEM_LABEL].compact * " #{separator} "}
   end
-  
+
   # Dynamically loads stylesheet files.
   def stylesheet *args
     content_for(:stylesheet) {stylesheet_link_tag(*args)}
   end
-  
+
   # Dynamically loads javascript files.
   def javascript *args
     content_for(:javascript) {javascript_include_tag(*args)}

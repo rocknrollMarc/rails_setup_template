@@ -19,7 +19,7 @@ namespace :nginx do
     restart
   end
   after "deploy:setup", "nginx:setup"
-  
+
   %w[start stop restart].each do |command|
     desc "#{command.capitalize} Nginx."
     task command, roles: :web do

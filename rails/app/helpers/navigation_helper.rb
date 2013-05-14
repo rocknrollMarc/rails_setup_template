@@ -2,7 +2,7 @@ module NavigationHelper
   def breadcrumb text, url = nil
     content_tag :li, (url ? link_to(text, url) : content_tag(:span, text))
   end
-  
+
   # Renders breadcrumb navigation.
   # * +crumbs+ - The breadcrumb array.
   def breadcrumbs *crumbs
