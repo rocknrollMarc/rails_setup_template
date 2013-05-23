@@ -1,3 +1,18 @@
+= v5.2.0
+
+* Upgraded to Ruby 2.0.0-p195.
+* Upgraded to jQuery 2.0.0.
+* Upgraded to jQuery UI 1.10.3.
+* Renamed .rbenv-version to .ruby-version to be compatible with multiple Ruby version managers.
+* Added the {Xray Rails}[https://github.com/brentd/xray-rails] gem requirement.
+* Added the {Rack::Attack}[https://github.com/kickstarter/rack-attack] gem requirement.
+* Switched from pry-nav to the pry-debugger gem.
+* Added the better_errors.rb initializer which enables Pry by default when inspecting exceptions.
+* Added pry-rescue support.
+* Added Bond[https://github.com/cldwalker/bond] gem support.
+* Converted tabs to spaces. Removed excess whitespace.
+* Enable SASS debugging in development mode.
+
 = v5.1.0
 
 * Removed the Code Climate badge.
