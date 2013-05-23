@@ -43,7 +43,7 @@ The following highlights what is applied with this template:
 * Adds the {Paperclip Plus}[https://github.com/bkuhlmann/paperclip_plus] gem requirement.
 * Adds the Prawn+[https://github.com/bkuhlmann/prawn_plus] gem requirement.
 * Adds the {Browser Details}[https://github.com/gshutler/browser_details] gem requirement.
-* Adds the bootstrap-sass[https://github.com/thomas-mcdonald/bootstrap-sass] gem requirement.
+* Adds the {Bootstrap SASS}[https://github.com/thomas-mcdonald/bootstrap-sass] gem requirement.
 * Adds the Pry[https://github.com/pry/pry] gem requirement.
 * Adds the {Pry Remote}[https://github.com/Mon-Ouie/pry-remote] gem requirement.
 * Adds the {Pry Debugger}[https://github.com/nixme/pry-debugger] gem requirement.
