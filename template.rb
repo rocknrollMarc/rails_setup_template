@@ -148,7 +148,6 @@ download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/shared.js", "app/as
 download_file "http://code.jquery.com/jquery-2.0.1.js", "vendor/assets/javascripts/jquery.js"
 download_file "http://code.jquery.com/ui/1.10.3/jquery-ui.js", "vendor/assets/javascripts/jquery-ui.js"
 download_file "#{JQUERY_COOKIE_ROOT}/jquery.cookie.js", "vendor/assets/javascripts/jquery.cookie.js"
-download_file "http://www.datatables.net/download/build/jquery.dataTables.js", "vendor/assets/javascripts/jquery.dataTables.js"
 download_file "#{UNDERSCORE_ROOT}/underscore.js", "vendor/assets/javascripts/underscore.js"
 download_file "#{MODERNIZR_ROOT}/modernizr.js", "vendor/assets/javascripts/modernizr.js"
 

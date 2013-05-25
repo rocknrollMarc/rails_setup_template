@@ -7,7 +7,6 @@
 //= require jquery
 //= require jquery-ui
 //= require jquery.cookie
-//= require jquery.dataTables
 //= require jquery.rest
 //= require jquery.sorter
 //= require bootstrap-transition
