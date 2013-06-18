@@ -163,6 +163,13 @@ for your application (use whatever fits your needs):
 * {Extending Rails 3 with Railties}[http://www.engineyard.com/blog/2010/extending-rails-3-with-railties]
 * {Why we don't use a Rails template}[http://thunderboltlabs.com/posts/why-we-dont-use-a-rails-template]
 
+= Versioning
+
+Read {Semantic Versioning}[http://semver.org] for details. Briefly, it means:
+* Patch (x.y.Z) - Incremented for small, backwards compatible bug fixes.
+* Minor (x.Y.z) - Incremented for new, backwards compatible public API enhancements and/or bug fixes.
+* Major (X.y.z) - Incremented for any backwards incompatible public API changes.
+
 = Contributions
 
 Read CONTRIBUTING for details.
