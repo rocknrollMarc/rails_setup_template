@@ -1,36 +1,36 @@
-= v5.2.0
+# v5.2.0
 
 * Upgraded to Ruby 2.0.0-p195.
 * Upgraded to jQuery 2.0.0.
 * Upgraded to jQuery UI 1.10.3.
 * Renamed .rbenv-version to .ruby-version to be compatible with multiple Ruby version managers.
-* Added the {Xray Rails}[https://github.com/brentd/xray-rails] gem requirement.
-* Added the {Rack::Attack}[https://github.com/kickstarter/rack-attack] gem requirement.
+* Added the Xray Rails gem requirement.
+* Added the Rack::Attack gem requirement.
 * Switched from pry-nav to the pry-debugger gem.
 * Added the better_errors.rb initializer which enables Pry by default when inspecting exceptions.
 * Added pry-rescue support.
-* Added Bond[https://github.com/cldwalker/bond] gem support.
+* Added Bond gem support.
 * Converted tabs to spaces. Removed excess whitespace.
 * Enable SASS debugging in development mode.
 
-= v5.1.0
+# v5.1.0
 
 * Removed the Code Climate badge.
 * Removed manual setup of Twitter Bootstrap assets. Everything is provided via the bootstrap-sass gem now.
 * Removed the andand gem.
-* Added the MetaRequest[https://github.com/dejan/rails_panel/tree/master/meta_request] gem requirement.
-* Added the {Rack LiveReload}[https://github.com/johnbintz/rack-livereload] gem requirement.
-* Added the Guard::LiveReload[https://github.com/guard/guard-livereload] gem requirement.
-* Added the Lauchy[https://github.com/copiousfreetime/launchy] gem requirement.
-* Added the bootstrap-sass[https://github.com/thomas-mcdonald/bootstrap-sass] gem requirement.
-* Added the {Fast Blank}[https://github.com/SamSaffron/fast_blank] gem requirement.
-* Added the {Chrome Logger}[https://github.com/cookrn/chrome_logger] gem requirement.
+* Added the MetaRequest gem requirement.
+* Added the Rack LiveReload gem requirement.
+* Added the Guard::LiveReload gem requirement.
+* Added the Lauchy gem requirement.
+* Added the bootstrap-sass gem requirement.
+* Added the Fast Blank gem requirement.
+* Added the Chrome Logger gem requirement.
 * Added Guard initialization for LiveReload support.
 * Added Guard::LiveReload middleware support to development environment.
 * Switched to using the public_send instead of the send method where appropriate.
 * Force Bundler to generate binstubs.
 
-= v5.0.0
+# v5.0.0
 
 * Upgraded to Ruby 2.0.0-p0.
 * Upgraded to Rails 3.2.13.
@@ -62,7 +62,7 @@
 * Switched from HTTP to HTTPS when sourcing from RubyGems.
 * Cleaned up Guard gem dependency requirements.
 
-= v4.6.0
+# v4.6.0
 
 * Upgraded to Ruby 1.9.3-p374.
 * Upgraded to Rails 3.2.11.
@@ -86,7 +86,7 @@
 * Removed the rack-webconsole gem.
 * Removed Phusion Passenger support.
 
-= v4.5.0
+# v4.5.0
 
 * Fixed error message with Guard initialization.
 * Upgraded to Ruby 1.9.3-p194.
@@ -109,7 +109,7 @@
 * Removed the ruby-debug19 gem requirement.
 * Switched gem requirement from Wirble to Wirb.
 
-= v4.4.0
+# v4.4.0
 
 * Fixed bad CSS class name for field-error.
 * Fixed bug with bogus end quote for DOCTYPE html statement.
@@ -140,7 +140,7 @@
 * Added smart user and database detection for PostgreSQL and multi-environment support for nginx and unicorn.
 * Switched config/database.yml to config/*.yml in the gitignore file.
 
-= v4.3.0
+# v4.3.0
 
 * Fixed load order for Twitter Bootstrap JS files.
 * Fixed the jQuery UI CSS file name.
@@ -160,7 +160,7 @@
 * Added responsive top bar navigation collapsing.
 * Cleaned up the options for new rails apps in the README.
 
-= v4.2.0
+# v4.2.0
 
 * Fixed image-url path references in the bootstrap, jquery-ui, and marktitup stylesheets.
 * Upgraded to Ruby 1.9.3-p125.
@@ -173,7 +173,7 @@
 * Added the timecop gem.
 * Removed references to jQuery Block UI growl styles and images.
 
-= v4.1.0
+# v4.1.0
 
 * Fixed README typos and invalid links.
 * Fixed load order of Twitter Bootstrap JavaScript files.
@@ -182,7 +182,7 @@
 * Removed the paperclip and silent-postgres gems.
 * Removed the Colorblind gem.
 
-= v4.0.0
+# v4.0.0
 
 * Fixed deprecation warnings with navigation menu and items classes.
 * Applied Ruby 1.9 syntax upgrades.
@@ -219,55 +219,55 @@
 * Renamed Best Practices to Resources in README.
 * Added "Extending Rails" doc to Resources section of the README.
 
-= v3.0.0
+# v3.0.0
 
 * Updated the .gitignore file to exclude more RSpec and YARD files.
-* Upgraded to {jQuery 1.7.0}[http://jquery.com].
-* Upgraded to {jQuery UI 1.8.16}[http://jqueryui.com].
-* Upgraded to {jQuery Mark It Up 1.1.12}[http://markitup.jaysalvat.com].
-* Upgraded to {jQuery DataTables 1.7.5}[http://www.datatables.net].
-* Upgraded to {jQuery jGrowl 1.2.5}[http://stanlemon.net/projects/jgrowl.html].
-* Upgraded to {Modernizr 1.7.0}[http://www.modernizr.com].
-* Upgraded to {Blueprint CSS 1.0}[https://github.com/joshuaclayton/blueprint-css].
-* Added the Linguist[https://github.com/bkuhlmann/linguist] gem requirement.
-* Added the {Active Sanity}[https://github.com/versapay/active_sanity] gem.
-* Added the CoffeeScript[https://github.com/Sutto/barista] gem.
-* Added the Squeel[https://github.com/ernie/squeel] gem.
-* Added the Ransack[https://github.com/ernie/ransack] gem.
-* Added the {Factory Girl Rails}[https://github.com/thoughtbot/factory_girl_rails] gem.
-* Added the Sessioner[https://github.com/bkuhlmann/sessioner] gem.
-* Added the Tokener[https://github.com/bkuhlmann/tokener] gem.
-* Added the {Paperclip Plus}[https://github.com/bkuhlmann/paperclip_plus] gem.
+* Upgraded to jQuery 1.7.0.
+* Upgraded to jQuery UI 1.8.16.
+* Upgraded to jQuery Mark It Up 1.1.12.
+* Upgraded to jQuery DataTables 1.7.5.
+* Upgraded to jQuery jGrowl 1.2.5.
+* Upgraded to Modernizr 1.7.0.
+* Upgraded to Blueprint CSS 1.0.
+* Added the Linguist gem requirement.
+* Added the Active Sanity gem.
+* Added the CoffeeScript gem.
+* Added the Squeel gem.
+* Added the Ransack gem.
+* Added the Factory Girl Rails gem.
+* Added the Sessioner gem.
+* Added the Tokener gem.
+* Added the Paperclip Plus gem.
 * Added a .rvmrc file.
 * Added Git commit checks (via the Pre-Commit gem).
 * Replaced the Cucumber gem with the Cucumber-Rails gem.
 * Replaced the LESS gem with the SASS gem.
-* Replaced the Acts as List gem with the {Sorter}[https://github.com/bkuhlmann/sorter] gem.
+* Replaced the Acts as List gem with the Sorter gem.
 * Removed the position_helper since it is part of the Sorter gem now.
 * Removed the lib/utils/acts_as_list_enhancements.rb module enhancements as these are now part of the Sorted List gem.
 * Removed any images related to jQuery TOOLS library. Updated the CSS to behave like the original images.
 * Removed the Looksee gem.
 * Removed the Bullet gem.
 
-= v2.0.0
+# v2.0.0
 
 * Upgraded template to support Rails 3.0.0.
-* Upgraded to {jQuery 1.4.3}[http://jquery.com].
-* Upgraded to {jQuery UI 1.8.5}[http://jqueryui.com].
-* Upgraded to {jQuery Block UI 2.33}[https://github.com/malsup/blockui].
-* Upgraded to {jQuery Validation 1.7}[http://bassistance.de/jquery-plugins/jquery-plugin-validation].
-* Upgraded to {jQuery Tools 1.2.5}[http://flowplayer.org/tools/index.html].
-* Upgraded to {Modernizr 1.6.0}[http://www.modernizr.com].
-* Upgraded to {Underscore 1.1.0}[https://github.com/documentcloud/underscore].
-* Added the {jQuery DataTables 1.7.4}[http://www.datatables.net] JavaScript library.
-* Added the {jQuery Cookie}[http://plugins.jquery.com/project/Cookie] JavaScript library.
-* Added the {Rails ERD}[http://rails-erd.rubyforge.org] gem requirement.
-* Removed the heroku.rake file. See the {Heroku Plus}[https://github.com/bkuhlmann/heroku_plus] gem for additional capabilities.
-* Replaced the Awesome Nested Set with the {Lineage}[https://github.com/bkuhlmann/lineage] gem.
-* Removed the More[https://github.com/cloudhead/more] plugin.
+* Upgraded to jQuery 1.4.3.
+* Upgraded to jQuery UI 1.8.5.
+* Upgraded to jQuery Block UI 2.33.
+* Upgraded to jQuery Validation 1.7.
+* Upgraded to jQuery Tools 1.2.5.
+* Upgraded to Modernizr 1.6.0.
+* Upgraded to Underscore 1.1.0.
+* Added the jQuery DataTables 1.7.4 JavaScript library.
+* Added the jQuery Cookie JavaScript library.
+* Added the Rails ERD gem requirement.
+* Removed the heroku.rake file. See the Heroku Plus gem for additional capabilities.
+* Replaced the Awesome Nested Set with the Lineage gem.
+* Removed the More plugin.
 * Removed all plugin installs.
 
-= v1.2.0
+# v1.2.0
 
 * Fixed an issue where the opening HTML tag was missing from the application.html.erb layout.
 * Fixed issue with template inheritance (i.e. when other templates inherit this template).
@@ -275,33 +275,33 @@
 * Moved the bullet, deadweight, and railroad gem definitions to the development.rb environment.
 * Moved the rspec, rspec-rails, cucumber, webrat, metric_fu gems definitions to the test.rb environment.
 * Added enhancements to the default Acts as List behavior (see lib/acts_as_list_enhancements.rb).
-* Added the {jQuery Mark It Up 1.1.8}[http://markitup.jaysalvat.com] JavaScript library.
-* Added the {jQuery Tools 1.2.4}[http://flowplayer.org/tools/index.html] JavaScript library.
-* Added the Modernizr[http://www.modernizr.com] JavaScript library.
+* Added the jQuery Mark It Up 1.1.8 JavaScript library.
+* Added the jQuery Tools 1.2.4 JavaScript library.
+* Added the Modernizr JavaScript library.
 * Added improved menu navigation.
 
-= v1.1.0
+# v1.1.0
 
-* Added the LESS[http://lesscss.org] gem requirement.
-* Added the More[https://github.com/cloudhead/more] plugin.
-* Added the {Rails Indexes}[https://github.com/eladmeidar/rails_indexes] plugin.
-* Added the Formtastic[https://github.com/justinfrench/formtastic] gem requirement.
-* Added the Bullet[https://github.com/flyerhzm/bullet] gem requirement.
-* Added the Deadweight[https://github.com/aanand/deadweight] gem requirement.
-* Removed the AndAnd[http://andand.rubyforge.org] gem requirement.
+* Added the LESS gem requirement.
+* Added the More plugin.
+* Added the Rails Indexes plugin.
+* Added the Formtastic gem requirement.
+* Added the Bullet gem requirement.
+* Added the Deadweight gem requirement.
+* Removed the AndAnd gem requirement.
 * Added Git setup and initialization.
 * Removed the visitor namespace.
-* Added the Underscore[https://github.com/documentcloud/underscore] JavaScript library.
-* Upgraded to {jQuery 1.4.2}[http://jquery.com].
-* Upgraded to {jQuery UI 1.8.2}[http://jqueryui.com].
+* Added the Underscore JavaScript library.
+* Upgraded to jQuery 1.4.2.
+* Upgraded to jQuery UI 1.8.2.
 * Updated the db:reseed rake task so that it also rebuilds the models diagrams.
 * Added a rake task for printing database and database table sizes.
 * Added a rake task for Heroku deployments.
 * Added a rake task for Deadweight.
-* Upgraded to {Blueprint 0.9.1}[https://github.com/joshuaclayton/blueprint-css].
+* Upgraded to Blueprint 0.9.1.
 * Added Phusion Passenger debug support (see passenger.rake).
 * Updated all gem definitions due to rubygems.org changes.
 
-= v1.0.0
+# v1.0.0
 
 * Initial version.
