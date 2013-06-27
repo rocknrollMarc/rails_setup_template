@@ -86,7 +86,7 @@ download_file "#{TEMPLATE_ROOT}/rails/app/controllers/about_controller.rb", "app
 # Routes
 route "resource :about, controller: \"about\""
 route "resource :home, controller: \"home\""
-route "root to: \"home#show\""
+route "root \"home#show\""
 
 # Helpers
 download_file "#{TEMPLATE_ROOT}/rails/app/helpers/navigation/menu.rb", "app/helpers/navigation/menu.rb"
