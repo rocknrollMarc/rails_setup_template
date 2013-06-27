@@ -27,13 +27,11 @@ gem "paperclip_plus"
 gem "prawn_plus"
 gem "browser_details"
 
-group :assets do
-  gem "sass-rails"
-  gem "bootstrap-sass"
-  gem "bourbon"
-  gem "coffee-rails"
-  gem "uglifier"
-end
+gem "sass-rails"
+gem "coffee-rails"
+gem "uglifier"
+gem "bootstrap-sass"
+gem "bourbon"
 
 group :development, :test do
   gem "pry"
