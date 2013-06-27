@@ -33,6 +33,10 @@ gem "uglifier"
 gem "bootstrap-sass"
 gem "bourbon"
 
+group :doc do
+  gem "sdoc", require: false # Run "rake doc:rails" to generate API in the doc/api folder.
+end
+
 group :development, :test do
   gem "pry"
   gem "pry-remote"
