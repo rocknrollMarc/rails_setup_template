@@ -99,7 +99,6 @@ download_file "#{TEMPLATE_ROOT}/rails/app/helpers/system_helper.rb", "app/helper
 download_file "#{TEMPLATE_ROOT}/rails/app/helpers/visitor_helper.rb", "app/helpers/visitor_helper.rb"
 
 # Views
-remove_file "public/index.html"
 download_file "#{TEMPLATE_ROOT}/rails/app/views/layouts/application.html.erb", "app/views/layouts/application.html.erb"
 download_file "#{TEMPLATE_ROOT}/rails/app/views/shared/_flash_messages.html.erb", "app/views/shared/_flash_messages.html.erb"
 download_file "#{TEMPLATE_ROOT}/rails/app/views/shared/_error_messages.html.erb", "app/views/shared/_error_messages.html.erb"
