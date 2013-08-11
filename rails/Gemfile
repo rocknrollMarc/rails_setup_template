@@ -27,6 +27,7 @@ gem "aws-sdk"
 gem "paperclip_plus"
 gem "prawn_plus"
 gem "browser_details"
+gem "breach-mitigation-rails"
 
 gem "sass-rails"
 gem "coffee-rails"
