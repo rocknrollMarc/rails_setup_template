@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 gem "rake"
+gem "naught"
 gem "fast_blank"
 gem "bcrypt-ruby"
 gem "sqlite3"
