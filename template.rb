@@ -68,7 +68,6 @@ remove_file "#{application_delta}"
 
 # Gems
 download_file "#{TEMPLATE_ROOT}/rails/Gemfile", "Gemfile"
-run "bundle install --binstubs"
 generate "cancan:ability"
 generate "resourcer:install"
 generate "simple_form:install --bootstrap"
