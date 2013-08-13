@@ -36,7 +36,8 @@ gem "bootstrap-sass"
 gem "bourbon"
 
 group :doc do
-  gem "sdoc", require: false # Run "rake doc:rails" to generate API in the doc/api folder.
+  # Run "rake doc:rails" to generate API in the doc/api folder.
+  gem "sdoc", require: false
 end
 
 group :development, :test do
