@@ -37,7 +37,7 @@ gem "bourbon"
 
 group :doc do
   # Run "rake doc:rails" to generate API in the doc/api folder.
-  gem "sdoc", require: false
+  gem "sdoc", :require => false
 end
 
 group :development, :test do
