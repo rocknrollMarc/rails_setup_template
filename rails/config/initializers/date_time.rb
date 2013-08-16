@@ -1,5 +1,5 @@
 # Date and time formats.
-Time::DATE_FORMATS[:default] = "%Y-%m-%d %I:%M:%S %p"
+Time::DATE_FORMATS[:default] = "%Y-%m-%d %I:%M %p"
 Time::DATE_FORMATS[:js] = "%Y/%m/%d %H:%M:%S"
 Time::DATE_FORMATS[:ymd_hms] = "%Y%m%d-%I%M%S"
 Time::DATE_FORMATS[:ymd_dash] = "%Y-%m-%d"
