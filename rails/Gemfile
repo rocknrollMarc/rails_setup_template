@@ -75,6 +75,7 @@ group :development do
   gem "bullet"
   gem "rack-mini-profiler"
   gem "flay"
+  gem "rails-footnotes"
 end
 
 group :test do
