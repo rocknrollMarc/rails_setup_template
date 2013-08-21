@@ -2,7 +2,7 @@ require "net/http"
 require "net/https"
 require "uri"
 
-TEMPLATE_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/master"
+TEMPLATE_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/v6.0.0"
 JQUERY_COOKIE_ROOT = "https://raw.github.com/carhartl/jquery-cookie/v1.3.1"
 UNDERSCORE_ROOT = "https://raw.github.com/documentcloud/underscore/1.4.4"
 MODERNIZR_ROOT = "https://raw.github.com/Modernizr/Modernizr/v2.6.2"
