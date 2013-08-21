@@ -1,39 +1,52 @@
 source "https://rubygems.org"
 
-gem "rake"
-gem "naught"
-gem "fast_blank"
-gem "bcrypt-ruby"
+# Databases
 gem "sqlite3"
-gem "rack-attack"
-gem "rails", "4.0.0"
-gem "will_paginate"
-gem "bootstrap-will_paginate"
-gem "cancan"
-gem "resourcer"
-gem "sessioner"
-gem "squeel"
-gem "ransack"
-gem "state_machine"
 gem "redis"
 gem "redis-namespace"
-gem "linguist"
-gem "simple_form"
+
+# Application
+gem "rake"
+gem "rails", "4.0.0"
+gem "naught"
 gem "tokener"
+gem "sessioner"
+gem "resourcer"
+gem "cancan"
+gem "squeel"
+gem "ransack"
+gem "simple_form"
+gem "state_machine"
+gem "linguist"
 gem "sorter"
 gem "lineage"
+gem "navigator"
+gem "will_paginate"
+gem "bootstrap-will_paginate"
 gem "RedCloth"
+gem "prawn_plus"
 gem "aws-sdk"
 gem "paperclip_plus"
-gem "prawn_plus"
-gem "browser_details"
-gem "breach-mitigation-rails"
+gem "number_to_fraction"
+gem "gravatarify"
 
-gem "sass-rails"
-gem "coffee-rails"
+# Assets
 gem "uglifier"
+gem "sass-rails"
 gem "bootstrap-sass"
 gem "bourbon"
+
+# Performance
+gem "fast_blank"
+
+# Security
+gem "bcrypt-ruby"
+gem "rack-attack"
+gem "secure_headers"
+gem "breach-mitigation-rails"
+
+# Metrics
+gem "browser_details"
 
 group :doc do
   # Run "rake doc:rails" to generate API in the doc/api folder.
@@ -48,24 +61,19 @@ group :development, :test do
   gem "pry-stack_explorer"
   gem "pry-vterm_aliases"
   gem "pry-doc"
-  gem "log_plus"
-  gem "launchy" # Allows save_and_open_page to work in Capybara.
-end
-
-group :development do
   gem "bond"
   gem "wirb"
   gem "hirb"
   gem "awesome_print"
-  gem "capistrano"
   gem "active_sanity"
   gem "quiet_assets"
-  gem "mailcatcher"
-  gem "rails-erd"
-  gem "railroady"
-  gem "license_finder"
-  gem "xray-rails"
+  gem "log_plus"
+end
+
+group :development do
+  gem "capistrano"
   gem "better_errors"
+  gem "xray-rails"
   gem "meta_request" # Required by the RailsPanel browser extension.
   gem "rb-fsevent" # Guard file events for OSX.
   gem "guard-rspec"
@@ -74,16 +82,20 @@ group :development do
   gem "chrome_logger"
   gem "bullet"
   gem "rack-mini-profiler"
-  gem "flay"
   gem "rails-footnotes"
+  gem "mailcatcher"
+  gem "rails-erd"
+  gem "railroady"
 end
 
 group :test do
-  gem "rspec-rails"
-  gem "factory_girl_rails"
-  gem "capybara"
   gem "database_cleaner"
+  gem "factory_girl_rails"
+  gem "rspec-rails"
+  gem "timecop"
   gem "fakeweb"
   gem "vcr"
-  gem "timecop"
+  gem "launchy" # Allows save_and_open_page to work in Capybara.
+  gem "capybara"
+  gem "simplecov"
 end
