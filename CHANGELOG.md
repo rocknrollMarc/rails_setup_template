@@ -1,5 +1,24 @@
 # v6.0.0
 
+* Fixed the Better Errors initializer to only enable Pry in development environment only.
+* Fixed gem requirements to use hashrockets syntax since it causes errors to be thrown during install.
+* Upgraded to Ruby 2.0.0-p247.
+* Upgraded to Rails 4.0.0.
+* Upgraded to jQuery 2.0.3.
+* Upgraded ActiveRecord initializer to use partial_writes since partial_updates is deprecated in Rails 4.
+* Removed the jQuery Validation library.
+* Removed the Data Tables library.
+* Removed the README.rdoc and doc/README_FOR_APP template stubs since the Rails 4.0.0 defaults are better.
+* Removed deletion of the public/index.html since it is no longer provided in Rails 4.0.0.
+* Removed the :assets group from the Gemfile.
+* Removed the Sextant gem since it part of Rails 4.0.0 now.
+* Removed 'to' from root route.
+* Removed the Pry Debugger gem.
+* Removed the installation of bundler binstubs.
+* Removed seconds from default datetime format.
+* Added a Versioning section to the README.
+* Added the doc asset group.
+* Added media: 'all' to application.html.erb layout.
 * Added the Naught gem.
 * Added the Navigator gem.
 * Added the Gravitarify gem.
@@ -15,6 +34,8 @@
 * Added the Rails Footnotes gem.
 * Added the VCR gem.
 * Added the SimpleCov gem.
+* Broke Gemfile into sections for readability.
+* Converted from RDoc to Markdown documentation.
 
 # v5.2.0
 
@@ -145,7 +166,7 @@
 * Added meta tag for device width to application.html.erb.
 * Moved loading of JavaScript files to end of application.html.erb body tag.
 * Added more style guides to the README.
-* Dropped RailRoad gem support and switched to the Railroady gem instead.
+* Removed RailRoad gem support and switched to the Railroady gem instead.
 * Replaced the aws-s3 gem with the aws-sdk gem.
 * Removed the ruby-growl gem.
 * Removed the cucumber-rails gem.

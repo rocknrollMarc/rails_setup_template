@@ -7,13 +7,11 @@ Best applied when creating a new Ruby on Rails application.
 
 The following highlights what is applied with this template:
 
-* Uses [Ruby 2.0.0-p195](http://www.ruby-lang.org).
-* Uses [Ruby on Rails 3.2.13](http://rubyonrails.org).
-* Installs the [jQuery 2.0.0](http://jquery.com) JavaScript library.
+* Uses [Ruby 2.0.0-p247](http://www.ruby-lang.org).
+* Uses [Ruby on Rails 4.0.0](http://rubyonrails.org).
+* Installs the [jQuery 2.0.3](http://jquery.com) JavaScript library.
 * Installs the [jQuery UI 1.10.3](http://jqueryui.com) JavaScript library.
 * Installs the [jQuery Cookie 1.3.1](http://plugins.jquery.com/cookie) JavaScript library.
-* Installs the [jQuery Validation 1.11.1](http://plugins.jquery.com/validation) JavaScript library.
-* Installs the [jQuery DataTables 1.9.4](http://www.datatables.net) JavaScript library.
 * Installs the [Twitter Bootstrap 2.3.1](http://twitter.github.com/bootstrap) JavaScript libraries.
 * Installs the [Underscore 1.4.4](https://github.com/documentcloud/underscore) JavaScript library.
 * Installs the [Modernizr 2.6.2](http://www.modernizr.com) JavaScript library.
@@ -108,7 +106,7 @@ The following highlights what is applied with this template:
 
 0. A UNIX-based system.
 0. [Ruby 2.0.x](http://www.ruby-lang.org).
-0. [Ruby on Rails 3.2.x](http://rubyonrails.org).
+0. [Ruby on Rails 4.0.0](http://rubyonrails.org).
 0. A solid internet connection.
 
 # Usage
@@ -117,7 +115,7 @@ Open a terminal window and execute one the following command lines depending on 
 
 Current Version (stable):
 
-    rails new demo -d sqlite3 -J -T -f --skip-bundle -m https://raw.github.com/bkuhlmann/rails_setup_template/v5.2.0/template.rb
+    rails new demo -d sqlite3 -J -T -f --skip-bundle -m https://raw.github.com/bkuhlmann/rails_setup_template/v6.0.0/template.rb
 
 Master Version (unstable):
 
