@@ -1,3 +1,21 @@
+# v6.0.0
+
+* Added the Naught gem.
+* Added the Navigator gem.
+* Added the Gravitarify gem.
+* Added the Uglifier gem.
+* Added the SASS Rails gem.
+* Added the Bourbon gem.
+* Added the Secure Headers gem.
+* Added the Breach Mitigation Rails gem.
+* Added the Pry ByeBug gem.
+* Added the Pry Doc gem.
+* Added the Bullet gem.
+* Added the Rack::MiniProfiler gem.
+* Added the Rails Footnotes gem.
+* Added the VCR gem.
+* Added the SimpleCov gem.
+
 # v5.2.0
 
 * Upgraded to Ruby 2.0.0-p195.
