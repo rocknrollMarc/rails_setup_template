@@ -51,6 +51,7 @@ download_file "#{TEMPLATE_ROOT}/rails/config/initializers/active_record.rb", "co
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/better_errors.rb", "config/initializers/better_errors.rb"
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/date_time.rb", "config/initializers/date_time.rb"
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/footnotes.rb", "config/initializers/footnotes.rb"
+download_file "#{TEMPLATE_ROOT}/rails/config/initializers/mini_profiler.rb", "config/initializers/mini_profiler.rb"
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/redis.rb", "config/initializers/redis.rb"
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/ruby_enhancements.rb", "config/initializers/ruby_enhancements.rb"
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/system.rb", "config/initializers/system.rb"
