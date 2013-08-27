@@ -60,6 +60,7 @@ group :development, :test do
   gem "pry-rescue"
   gem "pry-stack_explorer"
   gem "pry-vterm_aliases"
+  gem "pry-git"
   gem "pry-doc"
   gem "bond"
   gem "wirb"
