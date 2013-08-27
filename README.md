@@ -17,7 +17,7 @@ The following highlights what is applied with this template:
 * Installs the [Modernizr 2.6.2](http://www.modernizr.com) JavaScript library.
 * Adds the [SQLite3](https://www.sqlite.org) gem.
 * Adds the [Redis](https://github.com/redis/redis-rb) gem requirement.
-* Adds the [Redis Namespace](https://github.com/defunkt/redis-namespace) gem requirement.
+* Adds the [Redis Namespace](https://github.com/resque/redis-namespace) gem requirement.
 * Adds the [Rake](https://github.com/jimweirich/rake) gem requirement.
 * Adds the [Ruby on Rails](http://rubyonrails.org) gem requirement.
 * Adds the [Naught](https://github.com/avdi/naught) gem requirement.
