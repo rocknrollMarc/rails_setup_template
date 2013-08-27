@@ -45,6 +45,7 @@ download_file "#{TEMPLATE_ROOT}/rails/config/recipes/templates/postgresql.sh.erb
 download_file "#{TEMPLATE_ROOT}/rails/config/recipes/templates/postgresql.yml.erb", "config/recipes/templates/postgresql.yml.erb"
 download_file "#{TEMPLATE_ROOT}/rails/config/recipes/templates/unicorn.rb.erb", "config/recipes/templates/unicorn.rb.erb"
 download_file "#{TEMPLATE_ROOT}/rails/config/recipes/templates/unicorn.service.erb", "config/recipes/templates/unicorn.service.erb"
+download_file "#{TEMPLATE_ROOT}/rails/config/application.yml", "config/application.yml"
 download_file "#{TEMPLATE_ROOT}/rails/config/database.yml", "config/database.yml"
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/active_record.rb", "config/initializers/active_record.rb"
 download_file "#{TEMPLATE_ROOT}/rails/config/initializers/better_errors.rb", "config/initializers/better_errors.rb"
