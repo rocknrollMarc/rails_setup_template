@@ -2,7 +2,7 @@ require "net/http"
 require "net/https"
 require "uri"
 
-TEMPLATE_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/v6.0.0"
+TEMPLATE_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/master"
 JQUERY_COOKIE_ROOT = "https://raw.github.com/carhartl/jquery-cookie/v1.3.1"
 UNDERSCORE_ROOT = "https://raw.github.com/documentcloud/underscore/1.4.4"
 MODERNIZR_ROOT = "https://raw.github.com/Modernizr/Modernizr/v2.6.2"
@@ -63,6 +63,7 @@ download_file("#{TEMPLATE_ROOT}/rails/config/environments/development.delta.rb",
 insert_into_file "config/environments/development.rb", open(development_delta).read, before: "\nend"
 remove_file development_delta
 insert_into_file "config/environments/development.rb", "\n  # Enables Guard::LiveReload support without requiring a browser extension.\n  config.middleware.insert_after ActionDispatch::Static, Rack::LiveReload\n", after: "  # Settings specified here will take precedence over those in config/application.rb.\n"
+gsub_file "config/environments/development.rb", /# Don't care if the mailer can't send./, "# Configured for use by the MailCatcher gem."
 insert_into_file "config/environments/development.rb", "  config.action_mailer.smtp_settings = { :address => \"localhost\", :port => 1025 }\n", after: "  config.action_mailer.raise_delivery_errors = false\n"
 insert_into_file "config/environments/development.rb", "  config.action_mailer.delivery_method = :smtp\n", after: "  config.action_mailer.raise_delivery_errors = false\n"
 
