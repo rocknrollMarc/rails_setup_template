@@ -96,6 +96,7 @@ route "resource :home, controller: \"home\""
 route "root \"home#show\""
 
 # Helpers
+remove_file "app/helpers/application_helper.rb"
 download_file "#{TEMPLATE_ROOT}/rails/app/helpers/navigation/menu.rb", "app/helpers/navigation/menu.rb"
 download_file "#{TEMPLATE_ROOT}/rails/app/helpers/navigation/item.rb", "app/helpers/navigation/item.rb"
 download_file "#{TEMPLATE_ROOT}/rails/app/helpers/date_time_helper.rb", "app/helpers/date_time_helper.rb"
