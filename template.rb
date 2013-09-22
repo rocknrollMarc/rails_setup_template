@@ -2,6 +2,7 @@ require "net/http"
 require "net/https"
 require "uri"
 
+TEMPLATE_NAME = "Rails Setup Template"
 TEMPLATE_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/master"
 JQUERY_COOKIE_ROOT = "https://raw.github.com/carhartl/jquery-cookie/v1.3.1"
 UNDERSCORE_ROOT = "https://raw.github.com/documentcloud/underscore/1.4.4"
@@ -164,7 +165,7 @@ download_file "#{TEMPLATE_ROOT}/rails/public/humans.txt", "public/humans.txt"
 # Git
 git :init
 download_file "#{TEMPLATE_ROOT}/rails/gitignore.txt", ".gitignore"
-git add: '.', commit: "-n -a -m \"Applied Rails Setup Template.\""
+git add: '.', commit: "-n -a -m \"Applied #{TEMPLATE_NAME}.\""
 
 # End
-say_status :end, "Rails Template Setup Complete!"
+say_status :end, "#{TEMPLATE_NAME} Complete!"
