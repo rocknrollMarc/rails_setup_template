@@ -83,7 +83,7 @@ group :development do
   gem "rack-livereload"
   gem "guard-livereload"
   gem "bullet"
-  gem "tracer_bullet"
+  gem "tracer_bullets"
   gem "rack-mini-profiler"
   gem "rails-footnotes"
   gem "rails-erd"
