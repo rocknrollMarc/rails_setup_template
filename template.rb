@@ -74,6 +74,7 @@ gsub_file "config/environments/development.rb", /# Don't care if the mailer can'
 insert_into_file "config/environments/development.rb", "  config.action_mailer.smtp_settings = { :address => \"localhost\", :port => 1025 }\n", after: "  config.action_mailer.raise_delivery_errors = false\n"
 insert_into_file "config/environments/development.rb", "  config.action_mailer.delivery_method = :smtp\n", after: "  config.action_mailer.raise_delivery_errors = false\n"
 
+uncomment_lines "config/environments/production.rb", /config.cache_store/
 run "cp config/environments/production.rb config/environments/stage.rb"
 
 # Gems
