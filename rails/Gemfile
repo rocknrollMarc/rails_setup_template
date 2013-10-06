@@ -5,10 +5,15 @@ gem "sqlite3"
 gem "redis"
 gem "redis-namespace"
 
+# Cache
+gem "dalli"
+
+# Server
+gem "puma"
+
 # Application
 gem "rake"
 gem "rails", "4.0.0"
-gem "dalli"
 gem "figaro"
 gem "naught"
 gem "tokener"
