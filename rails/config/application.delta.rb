@@ -1,4 +1,7 @@
 
+    # Enable concurrent threads.
+    config.allow_concurrency = true
+
     # Block or throttle abusive clients.
     config.middleware.use Rack::Attack
 
