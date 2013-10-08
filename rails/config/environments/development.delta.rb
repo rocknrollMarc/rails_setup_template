@@ -1,4 +1,6 @@
 
+  # Enables web console long-polling.
+  config.web_console.timeout = 45.seconds
 
   # SASS Debugging
   config.sass.debug_info = true
