@@ -81,6 +81,7 @@ end
 group :development do
   gem "capistrano"
   gem "better_errors"
+  gem "web-console"
   gem "xray-rails"
   gem "meta_request" # Required by the RailsPanel browser extension.
   gem "rb-fsevent" # Guard file events for OSX.
