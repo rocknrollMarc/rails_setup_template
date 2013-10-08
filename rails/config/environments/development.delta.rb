@@ -1,9 +1,8 @@
 
-  # Enables web console long-polling.
-  config.web_console.timeout = 45.seconds
 
-  # Enables web console xterm colors.
+  # Web Console Settings
   config.web_console.style.colors = :xterm
+  config.web_console.timeout = 45.seconds
 
   # SASS Debugging
   config.sass.debug_info = true
