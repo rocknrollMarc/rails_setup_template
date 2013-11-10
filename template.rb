@@ -163,6 +163,9 @@ download_file "#{MODERNIZR_ROOT}/modernizr.js", "vendor/assets/javascripts/moder
 # Doc
 download_file "#{TEMPLATE_ROOT}/rails/public/humans.txt", "public/humans.txt"
 
+# Specs
+download_file "#{TEMPLATE_ROOT}/rails/spec/spec_helper.rb", "spec/spec_helper.rb"
+
 # Git
 git :init
 download_file "#{TEMPLATE_ROOT}/rails/gitignore.txt", ".gitignore"
