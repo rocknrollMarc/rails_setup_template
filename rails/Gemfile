@@ -39,6 +39,7 @@ gem "gravatarify"
 
 # Assets
 gem "uglifier"
+gem "slim"
 gem "sass-rails"
 gem "bootstrap-sass"
 gem "bourbon"
