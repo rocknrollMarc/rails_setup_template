@@ -76,6 +76,7 @@ group :development, :test do
   gem "awesome_print"
   gem "active_sanity"
   gem "quiet_assets"
+  gem "rails_db_info"
   gem "log_plus"
 end
 
