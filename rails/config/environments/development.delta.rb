@@ -7,6 +7,9 @@
   # SASS Debugging
   config.sass.debug_info = true
 
+  # Sprockets Better Errors
+  config.assets.raise_production_errors = true
+
   # Bullet
   config.after_initialize do
     Bullet.enable = true

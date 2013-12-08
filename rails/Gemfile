@@ -84,6 +84,7 @@ end
 group :development do
   gem "capistrano"
   gem "better_errors"
+  gem "sprockets_better_errors"
   gem "web-console"
   gem "xray-rails"
   gem "meta_request" # Required by the RailsPanel browser extension.
