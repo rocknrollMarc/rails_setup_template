@@ -5,6 +5,9 @@ gem "sqlite3"
 gem "redis"
 gem "redis-namespace"
 
+# Cache
+gem "dalli"
+
 # Server
 gem "puma"
 
