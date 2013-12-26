@@ -11,7 +11,7 @@
     # Enable concurrent threads.
     config.allow_concurrency = true
 
-    # Enable mem cache
+    # Enable mem cache.
     config.cache_store = :mem_cache_store
 
     # Override generator defaults
