@@ -64,6 +64,9 @@ remove_file application_delta
 gsub_file "config/application.rb", /# config.time_zone = \'Central Time \(US & Canada\)\'/, "config.time_zone = \"UTC\""
 gsub_file "config/application.rb", /# config.i18n.default_locale = :de/, "config.i18n.default_locale = \"en-US\""
 
+uncomment_lines "config/environments/production.rb", /config.cache_store/
+run "cp config/environments/production.rb config/environments/stage.rb"
+
 development_delta = "config/environments/development.delta.rb"
 download_file("#{TEMPLATE_ROOT}/rails/config/environments/development.delta.rb", development_delta)
 insert_into_file "config/environments/development.rb", open(development_delta).read, before: "\nend"
@@ -72,9 +75,6 @@ insert_into_file "config/environments/development.rb", "\n  # Enables Guard::Liv
 gsub_file "config/environments/development.rb", /# Don't care if the mailer can't send./, "# Configured for use by the MailCatcher gem."
 insert_into_file "config/environments/development.rb", "  config.action_mailer.smtp_settings = { :address => \"localhost\", :port => 1025 }\n", after: "  config.action_mailer.raise_delivery_errors = false\n"
 insert_into_file "config/environments/development.rb", "  config.action_mailer.delivery_method = :smtp\n", after: "  config.action_mailer.raise_delivery_errors = false\n"
-
-uncomment_lines "config/environments/production.rb", /config.cache_store/
-run "cp config/environments/production.rb config/environments/stage.rb"
 
 # Gems
 download_file "#{TEMPLATE_ROOT}/rails/Gemfile", "Gemfile"
