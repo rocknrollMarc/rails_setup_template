@@ -6,6 +6,13 @@ require "capybara/rails"
 require "capybara-extensions"
 require "vcr"
 require "pry"
+require "pry-byebug"
+require "pry-remote"
+require "pry-rescue"
+require "pry-stack_explorer"
+require "pry-vterm_aliases"
+require "pry-git"
+require "pry-doc"
 
 Dir[Rails.root.join("spec/support/**/*.rb")].each { |file| require file }
 
