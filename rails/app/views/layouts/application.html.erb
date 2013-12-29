@@ -22,25 +22,24 @@
   </head>
 
   <body>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-
-          <%= link_to SYSTEM_LABEL, root_path, class: "brand" %>
-
-          <div class="nav-collapse">
-            <%= render_visitor_menu %>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="container">
+      <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <%= link_to SYSTEM_LABEL, root_path, class: "navbar-brand" %>
+        </div>
+
+        <div class="collapse nav-collapse">
+          <%= render_visitor_menu %>
+        </div>
+      </nav>
+
       <%= render "shared/flash_messages", flash: flash %>
       <%= yield :breadcrumbs %>
       <%= yield %>
