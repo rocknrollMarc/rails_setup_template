@@ -3,6 +3,7 @@
 * Fixed Tracer Bullet Gemfile requirement.
 * Fixed the loading of Bootstrap SASS and JavaScript files.
 * Fixed RSpec deprecation warnings for treating metadata symbol keys as true values.
+* Fixed asset pipeline errors regarding loading of Bootstrap and jQuery UI assets.
 * Removed the Chrome Logger gem.
 * Removed the FakeWeb gem.
 * Removed the MailCatcher gem since it can cause conflicts with other gems.
