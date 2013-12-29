@@ -1,3 +1,42 @@
+# v7.0.0
+
+* Fixed Tracer Bullet Gemfile requirement.
+* Fixed the loading of Bootstrap SASS and JavaScript files.
+* Fixed RSpec deprecation warnings for treating metadata symbol keys as true values.
+* Removed the Chrome Logger gem.
+* Removed the FakeWeb gem.
+* Removed the MailCatcher gem since it can cause conflicts with other gems.
+* Removed the appliation_helper.rb from the install.
+* Updated to Ruby 2.1.0.
+* Updated to Rails 4.0.2.
+* Updated the humans.txt file.
+* Updated template to uncomment default cache store for production and stage environments.
+* Updated the Rails application to use concurrent threads.
+* Updated the development environment to use long-polling for web console.
+* Updated development.rb to use xterm colors for web console.
+* Updated Web Console settings for development environment.
+* Added a Rack::MiniProfiler initializer.
+* Added the [Pry Git](https://github.com/pry/pry-git) gem.
+* Added the [Pry Doc](https://github.com/pry/pry-doc) gem.
+* Added the [Figaro](https://github.com/laserlemon/figaro) gem.
+* Added the application.yml (for use with Figaro).
+* Added the [Tracer Bullets](https://github.com/n8/tracer_bullets) gem.
+* Added the [Dalli](https://github.com/mperham/dalli) gem.
+* Added the [Puma](http://puma.io) gem.
+* Added the [Web Console](https://github.com/rails/web-console) gem.
+* Added the [Webmock](https://github.com/bblimke/webmock) gem.
+* Added the [Capybara Extensions](https://github.com/dockyard/capybara-extensions) gem.
+* Added the [Slim](https://github.com/slim-template/slim) gem.
+* Added the [Rails DB Info](https://github.com/vlado/rails_db_info) gem.
+* Added the [Deep Tree](https://github.com/PatrickTulskie/deep_tree) gem.
+* Added the [Sprockets Better Errors](https://github.com/schneems/sprockets_better_errors) gem.
+* Added conditional SSL support for all application environments.
+* Added HTTPS support for template file download.
+* Added default RSpec spec helper settings.
+* Added HTML, CSS, and JavaScript compression.
+* Added mem cache store for all environments by default.
+* Added a Ruby BigDecimal inspection enhancement.
+
 # v6.0.0
 
 * Fixed the Better Errors initializer to only enable Pry in development environment only.

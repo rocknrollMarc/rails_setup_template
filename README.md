@@ -7,8 +7,8 @@ Best applied when creating a new Ruby on Rails application.
 
 The following highlights what is applied with this template:
 
-* Uses [Ruby 2.0.0-p247](http://www.ruby-lang.org).
-* Uses [Ruby on Rails 4.0.0](http://rubyonrails.org).
+* Uses [Ruby 2.1.0](http://www.ruby-lang.org).
+* Uses [Ruby on Rails 4.0.2](http://rubyonrails.org).
 * Installs the [jQuery 2.0.3](http://jquery.com) JavaScript library.
 * Installs the [jQuery UI 1.10.3](http://jqueryui.com) JavaScript library.
 * Installs the [jQuery Cookie 1.3.1](http://plugins.jquery.com/cookie) JavaScript library.
@@ -18,8 +18,11 @@ The following highlights what is applied with this template:
 * Adds the [SQLite3](https://www.sqlite.org) gem.
 * Adds the [Redis](https://github.com/redis/redis-rb) gem requirement.
 * Adds the [Redis Namespace](https://github.com/resque/redis-namespace) gem requirement.
+* Adds the [Dalli](https://github.com/mperham/dalli) gem requirement.
+* Adds the [Puma](http://puma.io) gem requirement.
 * Adds the [Rake](https://github.com/jimweirich/rake) gem requirement.
 * Adds the [Ruby on Rails](http://rubyonrails.org) gem requirement.
+* Adds the [Figaro](https://github.com/laserlemon/figaro) gem requirement.
 * Adds the [Naught](https://github.com/avdi/naught) gem requirement.
 * Adds the [Tokener](https://github.com/bkuhlmann/tokener) gem requirement.
 * Adds the [Sessioner](https://github.com/bkuhlmann/sessioner) gem requirement.
@@ -42,10 +45,12 @@ The following highlights what is applied with this template:
 * Adds the [Number to Fraction](https://github.com/bkuhlmann/number_to_fraction) gem requirement.
 * Adds the [Gravatarify](https://github.com/lwe/gravatarify) gem requirement.
 * Adds the [Uglifier](https://github.com/lautis/uglifier) gem requirement.
+* Adds the [Slim](https://github.com/slim-template/slim) gem requirement.
 * Adds the [SASS Rails](https://github.com/rails/sass-rails) gem requirement.
 * Adds the [Bootstrap SASS](https://github.com/thomas-mcdonald/bootstrap-sass) gem requirement.
 * Adds the [Bourbon](https://github.com/thoughtbot/bourbon) gem requirement.
 * Adds the [Fast Blank](https://github.com/SamSaffron/fast_blank) gem requirement.
+* Adds the [Deep Tree](https://github.com/PatrickTulskie/deep_tree) gem requirement.
 * Adds the [Bcrypt](https://github.com/codahale/bcrypt-ruby) gem requirement.
 * Adds the [Rack::Attack](https://github.com/kickstarter/rack-attack) gem requirement.
 * Adds the [Secure Headers](https://github.com/twitter/secureheaders) gem requirement.
@@ -57,6 +62,7 @@ The following highlights what is applied with this template:
 * Adds the [Pry Rescue](https://github.com/ConradIrwin/pry-rescue) gem requirement.
 * Adds the [Pry Stack Explorer](https://github.com/banister/pry-stack_explorer) gem requirement.
 * Adds the [Pry VTerm Aliases](https://github.com/envygeeks/pry-vterm_aliases) gem requirement.
+* Adds the [Pry Git](https://github.com/pry/pry-git) gem requirement.
 * Adds the [Pry Doc](https://github.com/pry/pry-doc) gem requirement.
 * Adds the [Bond](https://github.com/cldwalker/bond) gem requirement.
 * Adds the [Wirb](https://github.com/janlelis/wirb) gem requirement.
@@ -64,30 +70,33 @@ The following highlights what is applied with this template:
 * Adds the [Awesome Print](https://github.com/michaeldv/awesome_print) gem requirement.
 * Adds the [Active Sanity](https://github.com/versapay/active_sanity) gem requirement.
 * Adds the [Quiet Assets](https://github.com/evrone/quiet_assets) gem requirement.
+* Adds the [Rails DB Info](https://github.com/vlado/rails_db_info) gem requirement.
 * Adds the [Log+](https://github.com/bkuhlmann/log_plus) gem requirement.
 * Adds the [Capistrano](https://github.com/capistrano/capistrano) gem requirement.
 * Adds the [Better Errors](https://github.com/charliesome/better_errors) gem requirement.
+* Adds the [Sprockets Better Errors](https://github.com/schneems/sprockets_better_errors) gem requirement.
+* Adds the [Web Console](https://github.com/rails/web-console) gem requirement.
 * Adds the [Xray Rails](https://github.com/brentd/xray-rails) gem requirement.
 * Adds the [MetaRequest](https://github.com/dejan/rails_panel/tree/master/meta_request) gem requirement.
 * Adds the [Ruby fsevent](https://github.com/thibaudgg/rb-fsevent) gem requirement.
 * Adds the [Guard RSpec](https://github.com/guard/guard-rspec) gem requirement.
 * Adds the [Rack LiveReload](https://github.com/johnbintz/rack-livereload) gem requirement.
 * Adds the [Guard::LiveReload](https://github.com/guard/guard-livereload) gem requirement.
-* Adds the [Chrome Logger](https://github.com/cookrn/chrome_logger) gem requirement.
 * Adds the [Bullet](https://github.com/flyerhzm/bullet) gem requirement.
+* Adds the [Tracer Bullets](https://github.com/n8/tracer_bullets) gem requirement.
 * Adds the [Rack::MiniProfiler](https://github.com/SamSaffron/MiniProfiler/tree/master/Ruby) gem requirement.
 * Adds the [Rails Footnotes](https://github.com/josevalim/rails-footnotes) gem requirement.
-* Adds the [Mail Catcher](https://github.com/sj26/mailcatcher) gem requirement.
 * Adds the [Rails ERD](http://rails-erd.rubyforge.org) gem requirement.
 * Adds the [Railroady](https://github.com/preston/railroady) gem requirement.
 * Adds the [Database Cleaner](https://github.com/bmabey/database_cleaner) gem requirement.
 * Adds the [Factory Girl Rails](https://github.com/thoughtbot/factory_girl_rails) gem requirement.
 * Adds the [RSpec Rails](https://github.com/dchelimsky/rspec-rails) gem requirement.
 * Adds the [Timecop](https://github.com/jtrupiano/timecop) gem requirement.
-* Adds the [FakeWeb](https://github.com/chrisk/fakeweb) gem requirement.
+* Adds the [Webmock](https://github.com/bblimke/webmock) gem requirement.
 * Adds the [VCR](https://github.com/vcr/vcr) gem requirement.
 * Adds the [Lauchy](https://github.com/copiousfreetime/launchy) gem requirement.
 * Adds the [Capybara](https://github.com/jnicklas/capybara) gem requirement.
+* Adds the [Capybara Extensions](https://github.com/dockyard/capybara-extensions) gem requirement.
 * Adds the [SimpleCov](https://github.com/colszowka/simplecov) gem requirement.
 * Installs Twitter Bootstrap stylesheets and images.
 * Installs jQuery UI assets.
@@ -106,7 +115,7 @@ The following highlights what is applied with this template:
 
 0. A UNIX-based system.
 0. [Ruby 2.x.x](http://www.ruby-lang.org).
-0. [Ruby on Rails 4.0.0](http://rubyonrails.org).
+0. [Ruby on Rails 4.x.x](http://rubyonrails.org).
 0. A solid internet connection.
 
 # Usage
@@ -115,7 +124,7 @@ Open a terminal window and execute one the following command lines depending on 
 
 Current Version (stable):
 
-    rails new demo -d sqlite3 -J -T -f --skip-bundle -m https://raw.github.com/bkuhlmann/rails_setup_template/v6.0.0/template.rb
+    rails new demo -d sqlite3 -J -T -f --skip-bundle -m https://raw.github.com/bkuhlmann/rails_setup_template/v7.0.0/template.rb
 
 Master Version (unstable):
 
