@@ -13,7 +13,7 @@ The following highlights what is applied with this template:
 * Installs the [jQuery UI 1.10.3](http://jqueryui.com) JavaScript library.
 * Installs the [jQuery Cookie 1.3.1](http://plugins.jquery.com/cookie) JavaScript library.
 * Installs the [Underscore 1.5.2](https://github.com/documentcloud/underscore) JavaScript library.
-* Installs the [Modernizr 2.6.2](http://www.modernizr.com) JavaScript library.
+* Installs the [Modernizr 2.7.1](http://www.modernizr.com) JavaScript library.
 * Adds the [SQLite3](https://www.sqlite.org) gem.
 * Adds the [Redis](https://github.com/redis/redis-rb) gem requirement.
 * Adds the [Redis Namespace](https://github.com/resque/redis-namespace) gem requirement.

@@ -10,6 +10,8 @@
 * Removed the appliation_helper.rb from the install.
 * Updated to Ruby 2.1.0.
 * Updated to Rails 4.0.2.
+* Updated to Underscore.js 1.5.2.
+* Updated to Modernizr 2.7.1.
 * Updated the humans.txt file.
 * Updated template to uncomment default cache store for production and stage environments.
 * Updated the Rails application to use concurrent threads.
