@@ -169,7 +169,7 @@ download_file "#{TEMPLATE_ROOT}/rails/spec/spec_helper.rb", "spec/spec_helper.rb
 # Git
 git :init
 download_file "#{TEMPLATE_ROOT}/rails/gitignore.txt", ".gitignore"
-git add: '.', commit: "-n -a -m \"Applied #{TEMPLATE_NAME}.\""
+git add: '.', commit: "-n -a -m \"Added the #{TEMPLATE_NAME}.\""
 
 # End
 say_status :end, "#{TEMPLATE_NAME} Complete!"
