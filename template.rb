@@ -154,7 +154,6 @@ gsub_file "vendor/assets/stylesheets/jquery-ui.css.scss", /\.png\)/, '.png")'
 # JavaScripts
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/application.js", "app/assets/javascripts/application.js"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/shared.js", "app/assets/javascripts/shared.js"
-download_file "http://code.jquery.com/jquery-2.0.3.js", "vendor/assets/javascripts/jquery.js"
 download_file "http://code.jquery.com/ui/1.10.3/jquery-ui.js", "vendor/assets/javascripts/jquery-ui.js"
 download_file "#{JQUERY_COOKIE_ROOT}/jquery.cookie.js", "vendor/assets/javascripts/jquery.cookie.js"
 download_file "#{UNDERSCORE_ROOT}/underscore.js", "vendor/assets/javascripts/underscore.js"
