@@ -42,6 +42,7 @@ gem "uglifier"
 gem "slim"
 gem "sass-rails"
 gem "jquery-rails"
+gem "modernizr-rails"
 gem "bootstrap-sass"
 gem "bourbon"
 

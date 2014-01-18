@@ -10,6 +10,5 @@
 //= require jquery.rest
 //= require jquery.sorter
 //= require bootstrap
-//= require modernizr
 //= require underscore
 //= require shared

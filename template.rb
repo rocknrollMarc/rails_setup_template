@@ -6,7 +6,6 @@ TEMPLATE_NAME = "Rails Setup Template"
 TEMPLATE_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/v7.0.0"
 JQUERY_COOKIE_ROOT = "https://raw.github.com/carhartl/jquery-cookie/v1.3.1"
 UNDERSCORE_ROOT = "https://raw.github.com/documentcloud/underscore/1.5.2"
-MODERNIZR_ROOT = "https://raw.github.com/Modernizr/Modernizr/v2.7.1"
 
 # Downloads a file, swiching to a secure connection if the source requires it. Also creates parent directories if they do not exist.
 # ==== Parameters
@@ -157,7 +156,6 @@ download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/shared.js", "app/as
 download_file "http://code.jquery.com/ui/1.10.3/jquery-ui.js", "vendor/assets/javascripts/jquery-ui.js"
 download_file "#{JQUERY_COOKIE_ROOT}/jquery.cookie.js", "vendor/assets/javascripts/jquery.cookie.js"
 download_file "#{UNDERSCORE_ROOT}/underscore.js", "vendor/assets/javascripts/underscore.js"
-download_file "#{MODERNIZR_ROOT}/modernizr.js", "vendor/assets/javascripts/modernizr.js"
 
 # Doc
 download_file "#{TEMPLATE_ROOT}/rails/public/humans.txt", "public/humans.txt"
