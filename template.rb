@@ -3,7 +3,7 @@ require "net/https"
 require "uri"
 
 TEMPLATE_NAME = "Rails Setup Template"
-TEMPLATE_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/v7.0.0"
+TEMPLATE_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/master"
 JQUERY_COOKIE_ROOT = "https://raw.github.com/carhartl/jquery-cookie/v1.3.1"
 UNDERSCORE_ROOT = "https://raw.github.com/documentcloud/underscore/1.5.2"
 
