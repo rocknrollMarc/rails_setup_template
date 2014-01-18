@@ -1,4 +1,7 @@
 
+    # Add Modernizr to assets precompile path.
+    config.assets.precompile += %w(modernizr)
+
     # Block or throttle abusive clients.
     config.middleware.use Rack::Attack
 
