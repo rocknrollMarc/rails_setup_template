@@ -59,7 +59,7 @@ The following highlights what is applied with this template:
 * Adds the [Pry ByeBug](https://github.com/deivid-rodriguez/pry-byebug) gem requirement.
 * Adds the [Pry Remote](https://github.com/Mon-Ouie/pry-remote) gem requirement.
 * Adds the [Pry Rescue](https://github.com/ConradIrwin/pry-rescue) gem requirement.
-* Adds the [Pry Stack Explorer](https://github.com/banister/pry-stack_explorer) gem requirement.
+* Adds the [Pry Stack Explorer](https://github.com/pry/pry-stack_explorer) gem requirement.
 * Adds the [Pry VTerm Aliases](https://github.com/envygeeks/pry-vterm_aliases) gem requirement.
 * Adds the [Pry Git](https://github.com/pry/pry-git) gem requirement.
 * Adds the [Pry Doc](https://github.com/pry/pry-doc) gem requirement.
