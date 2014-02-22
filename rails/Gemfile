@@ -51,7 +51,7 @@ gem "fast_blank"
 gem "deep_tree"
 
 # Security
-gem "bcrypt-ruby"
+gem "bcrypt"
 gem "rack-attack"
 gem "secure_headers"
 gem "breach-mitigation-rails"
