@@ -28,7 +28,7 @@ end
 download_file "#{TEMPLATE_ROOT}/rails/ruby-version.txt", ".ruby-version"
 
 # Configurations
-download_file "#{TEMPLATE_ROOT}/rails/env.txt", "config/.env"
+download_file "#{TEMPLATE_ROOT}/rails/env.txt", ".env"
 download_file "#{TEMPLATE_ROOT}/rails/Capfile", "Capfile"
 download_file "#{TEMPLATE_ROOT}/rails/config/deploy.rb", "config/deploy.rb"
 download_file "#{TEMPLATE_ROOT}/rails/config/recipes/amazon_s3.rb", "config/recipes/amazon_s3.rb"
@@ -126,7 +126,7 @@ download_file "#{TEMPLATE_ROOT}/rails/public/favicon.ico", "public/favicon.ico"
 
 # Stylesheets
 remove_file "app/assets/stylesheets/application.css"
-download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/application.scss", "app/assets/stylesheets/application.scss"
+download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/application.css.scss", "app/assets/stylesheets/application.css.scss"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/shared.css.scss", "app/assets/stylesheets/shared.css.scss"
 
 # JavaScripts

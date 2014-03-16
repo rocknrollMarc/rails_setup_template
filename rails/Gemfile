@@ -38,7 +38,7 @@ gem "gravatarify"
 # Assets
 gem "uglifier"
 gem "slim-rails"
-gem "sass-rails"
+gem "sass-rails", "~> 4.0.2" # Fixed "environment nil" bug.
 gem "jquery-rails"
 gem "modernizr-rails"
 gem "foundation-rails"
