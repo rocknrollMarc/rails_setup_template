@@ -1,0 +1,49 @@
+doctype html
+html lang="en"
+  head
+    /! Encoding
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+
+    /! Force latest IE rendering engine & Chrome Frame. Remove if you use the .htaccess
+    meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+
+    /! Identity
+    title == yield(:title) || SYSTEM_LABEL
+    = tag :meta, name: "keywords", content: yield(:meta_keywords)
+    = tag :meta, name: "description", content: SYSTEM_DESCRIPTION
+    = tag :meta, name: "author", content: SYSTEM_LABEL
+
+    /! Security
+    = csrf_meta_tag
+
+    /! Stylesheets
+    = stylesheet_link_tag "application", media: "all"
+
+    /! JavaScripts
+    = javascript_include_tag :modernizr
+
+  body
+    nav class="top-bar" data-topbar=''
+      ul class="title-area"
+        li class="name"
+          h1
+            = link_to SYSTEM_LABEL, root_path
+      section class="top-bar-section"
+        ul class="right"
+          li
+            = link_to render_system_version, '#'
+
+
+        ul class="left"
+          li
+            = link_to "Home", root_path
+          li
+            = link_to "About", about_path
+
+    = yield :breadcrumbs
+    = yield
+
+    /! JavaScripts
+    = javascript_include_tag "application"
