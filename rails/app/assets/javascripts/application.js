@@ -10,4 +10,7 @@
 //= require jquery.rest
 //= require jquery.sorter
 //= require underscore
+//= require foundation
 //= require shared
+
+$(function(){ $(document).foundation(); });

@@ -111,6 +111,7 @@ download_file "#{TEMPLATE_ROOT}/rails/app/helpers/system_helper.rb", "app/helper
 download_file "#{TEMPLATE_ROOT}/rails/app/helpers/visitor_helper.rb", "app/helpers/visitor_helper.rb"
 
 # Views
+remove_file "app/views/layouts/application.html.erb"
 download_file "#{TEMPLATE_ROOT}/rails/app/views/layouts/application.html.slim", "app/views/layouts/application.html.slim"
 download_file "#{TEMPLATE_ROOT}/rails/app/views/home/show.html.slim", "app/views/home/show.html.slim"
 download_file "#{TEMPLATE_ROOT}/rails/app/views/about/show.html.slim", "app/views/about/show.html.slim"
