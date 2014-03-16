@@ -77,6 +77,8 @@ insert_into_file "config/environments/development.rb", "  config.action_mailer.d
 
 # Gems
 download_file "#{TEMPLATE_ROOT}/rails/Gemfile", "Gemfile"
+run "bundle install"
+run "bundle exec spring binstub --all"
 generate "cancan:ability"
 generate "resourcer:install"
 generate "simple_form:install --bootstrap"

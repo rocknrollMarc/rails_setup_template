@@ -97,6 +97,7 @@ group :development do
   gem "rails-footnotes"
   gem "rails-erd"
   gem "railroady"
+  gem "spring"
 end
 
 group :test do
