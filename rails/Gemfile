@@ -14,7 +14,6 @@ gem "puma"
 # Application
 gem "rake"
 gem "rails", "4.0.4"
-gem "figaro"
 gem "naught"
 gem "tokener"
 gem "sessioner"
@@ -65,6 +64,7 @@ group :doc do
 end
 
 group :development, :test do
+  gem "dotenv-rails"
   gem "pry"
   gem "pry-byebug"
   gem "pry-remote"
