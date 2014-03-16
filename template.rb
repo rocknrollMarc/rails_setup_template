@@ -118,23 +118,6 @@ download_file "#{TEMPLATE_ROOT}/rails/app/views/about/show.html.erb", "app/views
 
 # Images
 remove_file "app/assets/images/rails.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/animated-overlay.gif", "vendor/assets/images/jquery-ui/animated-overlay.gif"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-bg_flat_55_999999_40x100.png", "vendor/assets/images/jquery-ui/ui-bg_flat_55_999999_40x100.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-bg_flat_75_aaaaaa_40x100.png", "vendor/assets/images/jquery-ui/ui-bg_flat_75_aaaaaa_40x100.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-bg_glass_45_0078ae_1x400.png", "vendor/assets/images/jquery-ui/ui-bg_glass_45_0078ae_1x400.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-bg_glass_55_f8da4e_1x400.png", "vendor/assets/images/jquery-ui/ui-bg_glass_55_f8da4e_1x400.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-bg_glass_75_79c9ec_1x400.png", "vendor/assets/images/jquery-ui/ui-bg_glass_75_79c9ec_1x400.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-bg_gloss-wave_45_e14f1c_500x100.png", "vendor/assets/images/jquery-ui/ui-bg_gloss-wave_45_e14f1c_500x100.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-bg_gloss-wave_50_6eac2c_500x100.png", "vendor/assets/images/jquery-ui/ui-bg_gloss-wave_50_6eac2c_500x100.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-bg_gloss-wave_75_2191c0_500x100.png", "vendor/assets/images/jquery-ui/ui-bg_gloss-wave_75_2191c0_500x100.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-bg_inset-hard_100_fcfdfd_1x100.png", "vendor/assets/images/jquery-ui/ui-bg_inset-hard_100_fcfdfd_1x100.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-icons_0078ae_256x240.png", "vendor/assets/images/jquery-ui/ui-icons_0078ae_256x240.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-icons_056b93_256x240.png", "vendor/assets/images/jquery-ui/ui-icons_056b93_256x240.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-icons_d8e7f3_256x240.png", "vendor/assets/images/jquery-ui/ui-icons_d8e7f3_256x240.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-icons_e0fdff_256x240.png", "vendor/assets/images/jquery-ui/ui-icons_e0fdff_256x240.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-icons_f5e175_256x240.png", "vendor/assets/images/jquery-ui/ui-icons_f5e175_256x240.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-icons_f7a50d_256x240.png", "vendor/assets/images/jquery-ui/ui-icons_f7a50d_256x240.png"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/images/jquery-ui/ui-icons_fcd113_256x240.png", "vendor/assets/images/jquery-ui/ui-icons_fcd113_256x240.png"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/images/icons/feed-comments.png", "app/assets/images/icons/feed-comments.png"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/images/icons/feed.png", "app/assets/images/icons/feed.png"
 download_file "#{TEMPLATE_ROOT}/rails/public/apple-touch-icon-114x114.png", "public/apple-touch-icon-114x114.png"
@@ -146,16 +129,10 @@ remove_file "app/assets/stylesheets/application.css"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/application.css", "app/assets/stylesheets/application.css"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/bootstrap-patch.css.scss", "app/assets/stylesheets/bootstrap-patch.css.scss"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/shared.css.scss", "app/assets/stylesheets/shared.css.scss"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/stylesheets/jquery-ui.css", "vendor/assets/stylesheets/jquery-ui.css.scss"
-
-# Stylesheets (CSS to SCSS asset conversion)
-gsub_file "vendor/assets/stylesheets/jquery-ui.css.scss", /url\(images\//, 'image-url("jquery-ui/'
-gsub_file "vendor/assets/stylesheets/jquery-ui.css.scss", /\.png\)/, '.png")'
 
 # JavaScripts
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/application.js", "app/assets/javascripts/application.js"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/shared.js", "app/assets/javascripts/shared.js"
-download_file "http://code.jquery.com/ui/1.10.3/jquery-ui.js", "vendor/assets/javascripts/jquery-ui.js"
 download_file "#{JQUERY_COOKIE_ROOT}/jquery.cookie.js", "vendor/assets/javascripts/jquery.cookie.js"
 download_file "#{UNDERSCORE_ROOT}/underscore.js", "vendor/assets/javascripts/underscore.js"
 
