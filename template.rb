@@ -78,7 +78,7 @@ insert_into_file "config/environments/development.rb", "  config.action_mailer.d
 # Gems
 download_file "#{TEMPLATE_ROOT}/rails/Gemfile", "Gemfile"
 run "bundle install"
-generate "foundation:install"
+generate "foundation:install --slim"
 generate "cancan:ability"
 generate "resourcer:install"
 generate "simple_form:install"
