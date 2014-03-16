@@ -143,7 +143,7 @@ download_file "#{TEMPLATE_ROOT}/rails/public/favicon.ico", "public/favicon.ico"
 
 # Stylesheets
 remove_file "app/assets/stylesheets/application.css"
-download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/application.css.scss", "app/assets/stylesheets/application.css.scss"
+download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/application.css", "app/assets/stylesheets/application.css"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/bootstrap-patch.css.scss", "app/assets/stylesheets/bootstrap-patch.css.scss"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/shared.css.scss", "app/assets/stylesheets/shared.css.scss"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/stylesheets/jquery-ui.css", "vendor/assets/stylesheets/jquery-ui.css.scss"
