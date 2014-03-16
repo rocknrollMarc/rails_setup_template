@@ -57,11 +57,6 @@ gem "breach-mitigation-rails"
 # Metrics
 gem "browser_details"
 
-group :doc do
-  # Run "rake doc:rails" to generate API in the doc/api folder.
-  gem "sdoc", :require => false
-end
-
 group :development, :test do
   gem "dotenv-rails"
   gem "pry"
