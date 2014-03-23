@@ -78,6 +78,8 @@ insert_into_file "config/environments/development.rb", "  config.action_mailer.d
 # Gems
 download_file "#{TEMPLATE_ROOT}/rails/Gemfile", "Gemfile"
 run "bundle install"
+run "bundle binstubs rspec-core"
+run "bundle binstubs guard"
 generate "foundation:install --slim --skip"
 generate "cancan:ability"
 generate "resourcer:install"
@@ -85,9 +87,8 @@ generate "simple_form:install"
 generate "rspec:install"
 download_file "#{TEMPLATE_ROOT}/rails/rspec.txt", ".rspec"
 create_file "spec/factories.rb"
-run "bundle exec guard init rspec"
-run "bundle exec guard init livereload"
-run "bundle exec spring binstub --all"
+run "bin/guard init rspec"
+run "bin/guard init livereload"
 
 # Controllers
 insert_into_file "app/controllers/application_controller.rb", "  helper :all\n", after: "class ApplicationController < ActionController::Base\n"
