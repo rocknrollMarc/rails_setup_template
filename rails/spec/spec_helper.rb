@@ -27,23 +27,13 @@ RSpec.configure do |config|
   config.order = "random"
   config.infer_base_class_for_anonymous_controllers = false
 
-  config.before(:suite) do
-    DatabaseCleaner.clean_with :truncation
-  end
+  config.before(:suite) { DatabaseCleaner.clean_with :truncation }
 
-  config.before(:each) do
-    DatabaseCleaner.strategy = :transaction
-  end
+  config.before(:all) { GC.disable }
+  config.after(:all) { GC.enable }
 
-  config.before(:each, js: true) do
-    DatabaseCleaner.strategy = :truncation
-  end
-
-  config.before(:each) do
-    DatabaseCleaner.start
-  end
-
-  config.after(:each) do
-    DatabaseCleaner.clean
-  end
+  config.before(:each) { DatabaseCleaner.strategy = :transaction }
+  config.before(:each, js: true) { DatabaseCleaner.strategy = :truncation }
+  config.before(:each) { DatabaseCleaner.start }
+  config.after(:each) { DatabaseCleaner.clean }
 end
