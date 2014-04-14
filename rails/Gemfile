@@ -42,7 +42,6 @@ gem "bower-rails"
 gem "jquery-rails"
 gem "modernizr-rails"
 gem "foundation-rails"
-gem "bourbon"
 
 # APIs
 gem "jbuilder"
