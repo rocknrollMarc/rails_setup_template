@@ -27,9 +27,15 @@ end
 download_file "#{TEMPLATE_ROOT}/rails/ruby-version.txt", ".ruby-version"
 
 # Configurations
-download_file "#{TEMPLATE_ROOT}/rails/env.txt", ".env"
-download_file "#{TEMPLATE_ROOT}/rails/Capfile", "Capfile"
-download_file "#{TEMPLATE_ROOT}/rails/config/deploy.rb", "config/deploy.rb"
+download_file "#{TEMPLATE_ROOT}/rails/config/initializers/active_record.rb", "config/initializers/active_record.rb"
+download_file "#{TEMPLATE_ROOT}/rails/config/initializers/better_errors.rb", "config/initializers/better_errors.rb"
+download_file "#{TEMPLATE_ROOT}/rails/config/initializers/date_time.rb", "config/initializers/date_time.rb"
+download_file "#{TEMPLATE_ROOT}/rails/config/initializers/footnotes.rb", "config/initializers/footnotes.rb"
+download_file "#{TEMPLATE_ROOT}/rails/config/initializers/mini_profiler.rb", "config/initializers/mini_profiler.rb"
+download_file "#{TEMPLATE_ROOT}/rails/config/initializers/redis.rb", "config/initializers/redis.rb"
+download_file "#{TEMPLATE_ROOT}/rails/config/initializers/ruby_enhancements.rb", "config/initializers/ruby_enhancements.rb"
+download_file "#{TEMPLATE_ROOT}/rails/config/initializers/system.rb", "config/initializers/system.rb"
+download_file "#{TEMPLATE_ROOT}/rails/config/initializers/validation.rb", "config/initializers/validation.rb"
 download_file "#{TEMPLATE_ROOT}/rails/config/recipes/amazon_s3.rb", "config/recipes/amazon_s3.rb"
 download_file "#{TEMPLATE_ROOT}/rails/config/recipes/base.rb", "config/recipes/base.rb"
 download_file "#{TEMPLATE_ROOT}/rails/config/recipes/nginx.rb", "config/recipes/nginx.rb"
@@ -45,15 +51,10 @@ download_file "#{TEMPLATE_ROOT}/rails/config/recipes/templates/postgresql.yml.er
 download_file "#{TEMPLATE_ROOT}/rails/config/recipes/templates/unicorn.rb.erb", "config/recipes/templates/unicorn.rb.erb"
 download_file "#{TEMPLATE_ROOT}/rails/config/recipes/templates/unicorn.service.erb", "config/recipes/templates/unicorn.service.erb"
 download_file "#{TEMPLATE_ROOT}/rails/config/database.yml", "config/database.yml"
-download_file "#{TEMPLATE_ROOT}/rails/config/initializers/active_record.rb", "config/initializers/active_record.rb"
-download_file "#{TEMPLATE_ROOT}/rails/config/initializers/better_errors.rb", "config/initializers/better_errors.rb"
-download_file "#{TEMPLATE_ROOT}/rails/config/initializers/date_time.rb", "config/initializers/date_time.rb"
-download_file "#{TEMPLATE_ROOT}/rails/config/initializers/footnotes.rb", "config/initializers/footnotes.rb"
-download_file "#{TEMPLATE_ROOT}/rails/config/initializers/mini_profiler.rb", "config/initializers/mini_profiler.rb"
-download_file "#{TEMPLATE_ROOT}/rails/config/initializers/redis.rb", "config/initializers/redis.rb"
-download_file "#{TEMPLATE_ROOT}/rails/config/initializers/ruby_enhancements.rb", "config/initializers/ruby_enhancements.rb"
-download_file "#{TEMPLATE_ROOT}/rails/config/initializers/system.rb", "config/initializers/system.rb"
-download_file "#{TEMPLATE_ROOT}/rails/config/initializers/validation.rb", "config/initializers/validation.rb"
+download_file "#{TEMPLATE_ROOT}/rails/config/deploy.rb", "config/deploy.rb"
+download_file "#{TEMPLATE_ROOT}/rails/config/secrets.yml", "config/secrets.yml"
+download_file "#{TEMPLATE_ROOT}/rails/env.txt", ".env"
+download_file "#{TEMPLATE_ROOT}/rails/Capfile", "Capfile"
 
 application_delta = "config/application.delta.rb"
 download_file("#{TEMPLATE_ROOT}/rails/config/application.delta.rb", application_delta)
@@ -140,6 +141,9 @@ run "bin/guard init livereload"
 download_file "#{TEMPLATE_ROOT}/rails/rspec.txt", ".rspec"
 download_file "#{TEMPLATE_ROOT}/rails/spec/spec_helper.rb", "spec/spec_helper.rb"
 create_file "spec/factories.rb"
+
+# Secrets
+run "echo \"SECRET_KEY_BASE=$(bundle exec rake secret)\" >> .env"
 
 # Git
 git :init
