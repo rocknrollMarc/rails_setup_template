@@ -5,7 +5,6 @@ require "uri"
 TEMPLATE_NAME = "Rails Setup Template"
 TEMPLATE_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/master"
 JQUERY_COOKIE_ROOT = "https://raw.github.com/carhartl/jquery-cookie/v1.3.1"
-UNDERSCORE_ROOT = "https://raw.github.com/documentcloud/underscore/1.6.0"
 
 # Downloads a file, swiching to a secure connection if the source requires it. Also creates parent directories if they do not exist.
 # ==== Parameters
@@ -133,7 +132,6 @@ download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/shared.css.scss", "
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/application.js", "app/assets/javascripts/application.js"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/shared.js", "app/assets/javascripts/shared.js"
 download_file "#{JQUERY_COOKIE_ROOT}/jquery.cookie.js", "vendor/assets/javascripts/jquery.cookie.js"
-download_file "#{UNDERSCORE_ROOT}/underscore.js", "vendor/assets/javascripts/underscore.js"
 
 # Doc
 download_file "#{TEMPLATE_ROOT}/rails/public/humans.txt", "public/humans.txt"

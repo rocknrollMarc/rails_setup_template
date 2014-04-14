@@ -9,7 +9,6 @@
 //= require jquery.cookie
 //= require jquery.rest
 //= require jquery.sorter
-//= require underscore
 //= require foundation
 //= require shared
 
