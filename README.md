@@ -90,7 +90,7 @@ The following highlights what is applied with this template:
 * Adds the [Timecop](https://github.com/jtrupiano/timecop) gem requirement.
 * Adds the [Webmock](https://github.com/bblimke/webmock) gem requirement.
 * Adds the [VCR](https://github.com/vcr/vcr) gem requirement.
-* Adds the [Lauchy](https://github.com/copiousfreetime/launchy) gem requirement.
+* Adds the [Launchy](https://github.com/copiousfreetime/launchy) gem requirement.
 * Adds the [Capybara](https://github.com/jnicklas/capybara) gem requirement.
 * Adds the [Capybara Extensions](https://github.com/dockyard/capybara-extensions) gem requirement.
 * Adds the [SimpleCov](https://github.com/colszowka/simplecov) gem requirement.
