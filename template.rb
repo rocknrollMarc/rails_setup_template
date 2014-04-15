@@ -36,10 +36,11 @@ download_file "#{SETUP_TEMPLATE_ROOT}/rails/Capfile", "Capfile"
 
 application_delta = "config/application.delta.rb"
 download_file("#{SETUP_TEMPLATE_ROOT}/rails/config/application.delta.rb", application_delta)
-insert_into_file "config/application.rb", open(application_delta).read, after: "  # config.i18n.default_locale = :de\n"
+insert_into_file "config/application.rb", open(application_delta).read, after: "    config.i18n.default_locale = \"en-US\"\n"
 remove_file application_delta
 
 uncomment_lines "config/environments/production.rb", /config.cache_store/
+run "cp config/environments/production.rb config/environments/stage.rb"
 
 development_delta = "config/environments/development.delta.rb"
 download_file("#{SETUP_TEMPLATE_ROOT}/rails/config/environments/development.delta.rb", development_delta)
