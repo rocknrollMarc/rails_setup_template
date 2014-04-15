@@ -95,7 +95,6 @@ download_file "#{JQUERY_COOKIE_ROOT}/jquery.cookie.js", "vendor/assets/javascrip
 generate "foundation:install --slim --skip"
 generate "cancan:ability"
 generate "resourcer:install"
-generate "simple_form:install"
 run "bin/guard init rspec"
 run "bin/guard init livereload"
 
