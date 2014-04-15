@@ -7,6 +7,10 @@ JQUERY_COOKIE_ROOT = "https://raw.github.com/carhartl/jquery-cookie/v1.3.1"
 # Slim Template
 apply SLIM_TEMPLATE
 
+# Bundler
+download_file "#{SETUP_TEMPLATE_ROOT}/rails/Gemfile", "Gemfile"
+run "bundle install"
+
 # Configurations
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/config/initializers/active_record.rb", "config/initializers/active_record.rb"
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/config/initializers/better_errors.rb", "config/initializers/better_errors.rb"
@@ -50,12 +54,6 @@ insert_into_file "config/environments/development.rb", "\n  # Enables Guard::Liv
 insert_into_file "config/environments/development.rb", "  config.action_mailer.smtp_settings = { :address => \"localhost\", :port => 1025 }\n", after: "  config.action_mailer.raise_delivery_errors = false\n"
 insert_into_file "config/environments/development.rb", "  config.action_mailer.delivery_method = :smtp\n", after: "  config.action_mailer.raise_delivery_errors = false\n"
 
-# Bundler
-download_file "#{SETUP_TEMPLATE_ROOT}/rails/Gemfile", "Gemfile"
-run "bundle install"
-run "bundle binstubs rspec-core"
-run "bundle binstubs guard"
-
 # Controllers
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/app/controllers/about_controller.rb", "app/controllers/about_controller.rb"
 
@@ -95,8 +93,9 @@ download_file "#{JQUERY_COOKIE_ROOT}/jquery.cookie.js", "vendor/assets/javascrip
 generate "foundation:install --slim --skip"
 generate "cancan:ability"
 generate "resourcer:install"
-run "bin/guard init rspec"
-run "bin/guard init livereload"
+run "bundle exec guard init rspec"
+run "bundle exec guard init livereload"
+run "bundle exec spring binstub --all"
 
 # Git
 git :init
