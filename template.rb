@@ -57,7 +57,6 @@ run "bundle binstubs rspec-core"
 run "bundle binstubs guard"
 
 # Controllers
-download_file "#{SETUP_TEMPLATE_ROOT}/rails/app/controllers/home_controller.rb", "app/controllers/home_controller.rb"
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/app/controllers/about_controller.rb", "app/controllers/about_controller.rb"
 
 # Routes
