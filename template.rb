@@ -1,30 +1,11 @@
-require "net/http"
-require "net/https"
-require "uri"
-
+# Settings
 SETUP_TEMPLATE_NAME = "Rails Setup Template"
 SETUP_TEMPLATE_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/master"
+SLIM_TEMPLATE = "https://raw.github.com/bkuhlmann/rails_slim_template/master/template.rb"
 JQUERY_COOKIE_ROOT = "https://raw.github.com/carhartl/jquery-cookie/v1.3.1"
 
-# Downloads a file, swiching to a secure connection if the source requires it. Also creates parent directories if they do not exist.
-# ==== Parameters
-# * +source+ - The remote source URL.
-# * +destination+ - The local file destination path.
-def download_file source, destination
-  say_status :download, "#{source} to #{destination}."
-  uri = URI.parse source
-  http = Net::HTTP.new uri.host, uri.port
-  http.use_ssl = uri.scheme == "https"
-  request = Net::HTTP::Get.new uri.request_uri
-  response = http.request request
-  project_file = File.join destination_root, destination
-  project_directory = File.dirname project_file
-  FileUtils.mkdir_p(project_directory) unless File.exist?(project_directory)
-  File.open(project_file, "w") {|file| file.write response.body}
-end
-
-# Ruby Version Management
-download_file "#{SETUP_TEMPLATE_ROOT}/rails/ruby-version.txt", ".ruby-version"
+# Slim Template
+apply SLIM_TEMPLATE
 
 # Configurations
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/config/initializers/active_record.rb", "config/initializers/active_record.rb"
@@ -50,21 +31,15 @@ download_file "#{SETUP_TEMPLATE_ROOT}/rails/config/recipes/templates/postgresql.
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/config/recipes/templates/postgresql.yml.erb", "config/recipes/templates/postgresql.yml.erb"
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/config/recipes/templates/unicorn.rb.erb", "config/recipes/templates/unicorn.rb.erb"
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/config/recipes/templates/unicorn.service.erb", "config/recipes/templates/unicorn.service.erb"
-download_file "#{SETUP_TEMPLATE_ROOT}/rails/config/database.yml", "config/database.yml"
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/config/deploy.rb", "config/deploy.rb"
-download_file "#{SETUP_TEMPLATE_ROOT}/rails/config/secrets.yml", "config/secrets.yml"
-download_file "#{SETUP_TEMPLATE_ROOT}/rails/env.txt", ".env"
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/Capfile", "Capfile"
 
 application_delta = "config/application.delta.rb"
 download_file("#{SETUP_TEMPLATE_ROOT}/rails/config/application.delta.rb", application_delta)
 insert_into_file "config/application.rb", open(application_delta).read, after: "  # config.i18n.default_locale = :de\n"
 remove_file application_delta
-gsub_file "config/application.rb", /# config.time_zone = \'Central Time \(US & Canada\)\'/, "config.time_zone = \"UTC\""
-gsub_file "config/application.rb", /# config.i18n.default_locale = :de/, "config.i18n.default_locale = \"en-US\""
 
 uncomment_lines "config/environments/production.rb", /config.cache_store/
-run "cp config/environments/production.rb config/environments/stage.rb"
 
 development_delta = "config/environments/development.delta.rb"
 download_file("#{SETUP_TEMPLATE_ROOT}/rails/config/environments/development.delta.rb", development_delta)
@@ -81,17 +56,13 @@ run "bundle binstubs rspec-core"
 run "bundle binstubs guard"
 
 # Controllers
-insert_into_file "app/controllers/application_controller.rb", "  helper :all\n", after: "class ApplicationController < ActionController::Base\n"
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/app/controllers/home_controller.rb", "app/controllers/home_controller.rb"
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/app/controllers/about_controller.rb", "app/controllers/about_controller.rb"
 
 # Routes
 route "resource :about, controller: \"about\""
-route "resource :home, controller: \"home\""
-route "root \"home#show\""
 
 # Helpers
-remove_file "app/helpers/application_helper.rb"
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/app/helpers/navigation/menu.rb", "app/helpers/navigation/menu.rb"
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/app/helpers/navigation/item.rb", "app/helpers/navigation/item.rb"
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/app/helpers/date_time_helper.rb", "app/helpers/date_time_helper.rb"
@@ -108,12 +79,8 @@ download_file "#{SETUP_TEMPLATE_ROOT}/rails/app/views/home/show.html.slim", "app
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/app/views/about/show.html.slim", "app/views/about/show.html.slim"
 
 # Images
-remove_file "app/assets/images/rails.png"
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/app/assets/images/icons/feed-comments.png", "app/assets/images/icons/feed-comments.png"
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/app/assets/images/icons/feed.png", "app/assets/images/icons/feed.png"
-download_file "#{SETUP_TEMPLATE_ROOT}/rails/public/apple-touch-icon-114x114.png", "public/apple-touch-icon-114x114.png"
-download_file "#{SETUP_TEMPLATE_ROOT}/rails/public/apple-touch-icon.png", "public/apple-touch-icon.png"
-download_file "#{SETUP_TEMPLATE_ROOT}/rails/public/favicon.ico", "public/favicon.ico"
 
 # Stylesheets
 remove_file "app/assets/stylesheets/application.css"
@@ -125,29 +92,20 @@ download_file "#{SETUP_TEMPLATE_ROOT}/rails/app/assets/javascripts/application.j
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/app/assets/javascripts/shared.js", "app/assets/javascripts/shared.js"
 download_file "#{JQUERY_COOKIE_ROOT}/jquery.cookie.js", "vendor/assets/javascripts/jquery.cookie.js"
 
-# Doc
-download_file "#{SETUP_TEMPLATE_ROOT}/rails/public/humans.txt", "public/humans.txt"
-
 # Gems
 generate "foundation:install --slim --skip"
 generate "cancan:ability"
 generate "resourcer:install"
 generate "simple_form:install"
-generate "rspec:install"
 run "bin/guard init rspec"
 run "bin/guard init livereload"
 
-# Secrets
-run "echo \"SECRET_KEY_BASE=$(bundle exec rake secret)\" >> .env"
-
 # Specs
-download_file "#{SETUP_TEMPLATE_ROOT}/rails/rspec.txt", ".rspec"
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/spec/spec_helper.rb", "spec/spec_helper.rb"
 create_file "spec/factories.rb"
 
 # Git
 git :init
-download_file "#{SETUP_TEMPLATE_ROOT}/rails/gitignore.txt", ".gitignore"
 git add: '.', commit: "-n -a -m \"Added the #{SETUP_TEMPLATE_NAME}.\""
 
 # End

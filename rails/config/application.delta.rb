@@ -16,11 +16,3 @@
 
     # Enable mem cache.
     config.cache_store = :mem_cache_store
-
-    # Override generator defaults
-    config.generators do |generator|
-      generator.assets false
-      generator.helper false
-      generator.view_specs false
-      generator.test_framework :rspec
-    end
