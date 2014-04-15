@@ -58,6 +58,10 @@ gem "breach-mitigation-rails"
 # Metrics
 gem "browser_details"
 
+group :production do
+  gem "rails_12factor"
+end
+
 group :development, :test do
   gem "dotenv-rails"
   gem "pry"
