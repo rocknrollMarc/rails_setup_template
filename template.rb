@@ -73,7 +73,6 @@ download_file "#{SETUP_TEMPLATE_ROOT}/rails/app/helpers/system_helper.rb", "app/
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/app/helpers/visitor_helper.rb", "app/helpers/visitor_helper.rb"
 
 # Views
-remove_file "app/views/layouts/application.html.erb"
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/app/views/layouts/application.html.slim", "app/views/layouts/application.html.slim"
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/app/views/home/show.html.slim", "app/views/home/show.html.slim"
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/app/views/about/show.html.slim", "app/views/about/show.html.slim"
@@ -99,10 +98,6 @@ generate "resourcer:install"
 generate "simple_form:install"
 run "bin/guard init rspec"
 run "bin/guard init livereload"
-
-# Specs
-download_file "#{SETUP_TEMPLATE_ROOT}/rails/spec/spec_helper.rb", "spec/spec_helper.rb"
-create_file "spec/factories.rb"
 
 # Git
 git :init
