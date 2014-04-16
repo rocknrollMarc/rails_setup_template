@@ -1,7 +1,7 @@
 # Settings
 SETUP_TEMPLATE_NAME = "Rails Setup Template"
 SETUP_TEMPLATE_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/master"
-SLIM_TEMPLATE = "https://raw.github.com/bkuhlmann/rails_slim_template/master/template.rb"
+SLIM_TEMPLATE = "https://raw.github.com/bkuhlmann/rails_slim_template/v1.1.0/template.rb"
 JQUERY_COOKIE_ROOT = "https://raw.github.com/carhartl/jquery-cookie/v1.3.1"
 
 # Slim Template

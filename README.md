@@ -120,19 +120,19 @@ Open a terminal window and execute one the following command lines depending on 
 
 Current Version (stable):
 
-    rails new demo -d sqlite3 -J -T -f --skip-bundle -m https://raw.github.com/bkuhlmann/rails_setup_template/v7.0.0/template.rb
+    rails new slim -d sqlite3 -T -f --skip-bundle -m https://raw.github.com/bkuhlmann/rails_setup_template/v7.0.0/template.rb
 
 Master Version (unstable):
 
-    rails new demo -d sqlite3 -J -T -f --skip-bundle -m https://raw.github.com/bkuhlmann/rails_setup_template/master/template.rb
+    rails new slim -d sqlite3 -T -f --skip-bundle -m https://raw.github.com/bkuhlmann/rails_setup_template/master/template.rb
 
 Here is what each option is doing and why:
 
-    -d - Specifies the SQLite3 database for quick and easy setup.
-    -J - Skips adding any JavaScript libraries since jQuery UJS support is provided by the Resourcer gem.
-    -T - Skips setting up Test::Unit files since RSpec is what we want.
-    -f - Forces overwrite of any existing files so the template is not interrupted during setup.
-    --skip-bundle - Skips running "bundle install" since the template does this for you at appropriate time of setup.
+    -d: Specifies the SQLite3 database for quick and easy setup.
+    -T: Skips setting up Test::Unit files since RSpec is what we want.
+    -f: Forces overwrite of any existing files so the template is not interrupted during setup.
+    --skip-bundle: Skips running "bundle install" since the template does this for you at appropriate time of setup.
+    -m: The template file to execute.
 
 *TIP*: You can reduce unnecessary typing with new app generation by adding the new rails options, listed above,
 to your .railsrc file. Any options in the .railsrc file will be applied with each new app generation.
