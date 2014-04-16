@@ -10,8 +10,15 @@ apply SLIM_TEMPLATE
 # Bundler
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/Gemfile", "Gemfile"
 run "bundle install"
+run "spring stop"
+generate "foundation:install --slim --skip"
+generate "cancan:ability"
+generate "resourcer:install"
+run "bundle exec guard init rspec"
+run "bundle exec guard init livereload"
+run "bundle exec spring binstub --all"
 
-# Configurations
+# Configuration - Initializers
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/config/initializers/active_record.rb", "config/initializers/active_record.rb"
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/config/initializers/better_errors.rb", "config/initializers/better_errors.rb"
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/config/initializers/date_time.rb", "config/initializers/date_time.rb"
@@ -21,6 +28,8 @@ download_file "#{SETUP_TEMPLATE_ROOT}/rails/config/initializers/redis.rb", "conf
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/config/initializers/ruby_enhancements.rb", "config/initializers/ruby_enhancements.rb"
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/config/initializers/system.rb", "config/initializers/system.rb"
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/config/initializers/validation.rb", "config/initializers/validation.rb"
+
+# Configuration - Capistrano
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/config/recipes/amazon_s3.rb", "config/recipes/amazon_s3.rb"
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/config/recipes/base.rb", "config/recipes/base.rb"
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/config/recipes/nginx.rb", "config/recipes/nginx.rb"
@@ -38,14 +47,19 @@ download_file "#{SETUP_TEMPLATE_ROOT}/rails/config/recipes/templates/unicorn.ser
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/config/deploy.rb", "config/deploy.rb"
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/Capfile", "Capfile"
 
+# Configuration - Application
 application_delta = "config/application.delta.rb"
 download_file("#{SETUP_TEMPLATE_ROOT}/rails/config/application.delta.rb", application_delta)
 insert_into_file "config/application.rb", open(application_delta).read, after: "    config.i18n.default_locale = \"en-US\"\n"
 remove_file application_delta
 
+# Configuration - Production
 uncomment_lines "config/environments/production.rb", /config.cache_store/
+
+# Configuration - Stage
 run "cp config/environments/production.rb config/environments/stage.rb"
 
+# Configuration - Development
 development_delta = "config/environments/development.delta.rb"
 download_file("#{SETUP_TEMPLATE_ROOT}/rails/config/environments/development.delta.rb", development_delta)
 insert_into_file "config/environments/development.rb", open(development_delta).read, before: "\nend"
@@ -88,14 +102,6 @@ download_file "#{SETUP_TEMPLATE_ROOT}/rails/app/assets/stylesheets/shared.css.sc
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/app/assets/javascripts/application.js", "app/assets/javascripts/application.js"
 download_file "#{SETUP_TEMPLATE_ROOT}/rails/app/assets/javascripts/shared.js", "app/assets/javascripts/shared.js"
 download_file "#{JQUERY_COOKIE_ROOT}/jquery.cookie.js", "vendor/assets/javascripts/jquery.cookie.js"
-
-# Gems
-generate "foundation:install --slim --skip"
-generate "cancan:ability"
-generate "resourcer:install"
-run "bundle exec guard init rspec"
-run "bundle exec guard init livereload"
-run "bundle exec spring binstub --all"
 
 # Git
 git :init
