@@ -1,3 +1,44 @@
+# v8.0.0
+
+* Fixed verb used for initial git commit of template.
+* Fixed spec helper syntax.
+* Fixed bug where Modernizr.js was not added to the assets precompile path.
+* Fixed loading of mini profiler to development environment only.
+* Fixed template errors related to application.rb and stage.rb files.
+* Removed the pry-vterm_aliases gem.
+* Removed jQuery UI support.
+* Removed Bootstrap support from Simple Form setup.
+* Removed the bootstrap-will_paginate gem.
+* Removed the sdoc gem.
+* Removed the squeel gem as it is not supported in Rails 4.x.x.
+* Removed Underscore.js.
+* Removed the Bourbon gem.
+* Removed RSpec files (provided by the Rails Slim Template instead).
+* Removed the home_controller.rb since it is provided by the Rails Slim Template.
+* Removed the Simple Form gem since it no longer supports latests versions of Bootstrap and Foundation.
+* Removed the RedCloth gem.
+* Removed the breach-mitigation-rails gem.
+* Updated to MRI 2.1.1.
+* Updated to Rails 4.1.0.
+* Updated bcrypt-ruby to bcrypt.
+* Updated the Slim gem to [Slim Rails](https://github.com/slim-template/slim-rails).
+* Updated Foundation Rails install to default to Slim templates.
+* Updated RSpec helper to disable GC for all specs in order to improve performance.
+* Updated the Gemfile to list sprockets_better_errors and xray-rails as disabled due to lack of Rails 4.1.x support.
+* Updated .gitignore to exclude secrets.yml.
+* Refactored all views to Foundation styles and Slim templates.
+* Added the [Rails Slim Template](https://github.com/bkuhlmann/rails_slim_template).
+* Added the [jQuery Rails](https://github.com/rails/jquery-rails) gem.
+* Added the [Modernizr](https://github.com/russfrisch/modernizr-rails) gem.
+* Added the [Spring](https://github.com/rails/spring) gem.
+* Added the [Spring Commands RSpec](https://github.com/jonleighton/spring-commands-rspec) gem.
+* Added the [Dotenv Rails](https://github.com/bkeepers/dotenv) gem and removed the Figaro gem.
+* Added the [Foundation Rails](http://foundation.zurb.com) gem and removed the Bootstrap Rails gem.
+* Added the [Bower Rails](https://github.com/42dev/bower-rails) gem.
+* Added the [JBuilder](https://github.com/rails/jbuilder) gem.
+* Added the [Rails 12 Factor](https://github.com/heroku/rails_12factor) gem.
+* Added gem versions to Gemfile.
+
 # v7.0.0
 
 * Fixed Tracer Bullet Gemfile requirement.
