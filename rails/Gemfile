@@ -52,7 +52,6 @@ gem "deep_tree", "~> 0.0"
 gem "bcrypt", "~> 3.1"
 gem "rack-attack", "~> 3.0"
 gem "secure_headers", "~> 1.1"
-gem "breach-mitigation-rails", "~> 0.1"
 
 # Metrics
 gem "browser_details", "~> 0.0"
