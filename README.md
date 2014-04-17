@@ -117,11 +117,11 @@ Open a terminal window and execute one the following command lines depending on 
 
 Current Version (stable):
 
-    rails new slim -d sqlite3 -T -f --skip-bundle -m https://raw.github.com/bkuhlmann/rails_setup_template/v8.0.0/template.rb
+    rails new demo -d sqlite3 -T -f --skip-bundle -m https://raw.github.com/bkuhlmann/rails_setup_template/v8.0.0/template.rb
 
 Master Version (unstable):
 
-    rails new slim -d sqlite3 -T -f --skip-bundle -m https://raw.github.com/bkuhlmann/rails_setup_template/master/template.rb
+    rails new demo -d sqlite3 -T -f --skip-bundle -m https://raw.github.com/bkuhlmann/rails_setup_template/master/template.rb
 
 Here is what each option is doing and why:
 
