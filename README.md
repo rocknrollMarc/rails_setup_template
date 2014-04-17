@@ -10,7 +10,7 @@ The following highlights what is applied with this template:
 * Uses [Ruby 2.1.1](http://www.ruby-lang.org).
 * Uses [Ruby on Rails 4.1.0](http://rubyonrails.org).
 * Installs the [Rails Slim Template](https://github.com/bkuhlmann/rails_slim_template).
-* Installs the [jQuery Cookie 1.3.1](http://plugins.jquery.com/cookie) JavaScript library.
+* Installs the [jQuery Cookie 1.4.0](http://plugins.jquery.com/cookie) JavaScript library.
 * Adds the [SQLite3](https://www.sqlite.org) gem.
 * Adds the [Redis](https://github.com/redis/redis-rb) gem requirement.
 * Adds the [Redis Namespace](https://github.com/resque/redis-namespace) gem requirement.

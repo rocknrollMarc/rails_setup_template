@@ -20,6 +20,7 @@
 * Removed the breach-mitigation-rails gem.
 * Updated to MRI 2.1.1.
 * Updated to Rails 4.1.0.
+* Updated to jQuery Cookie 1.4.0.
 * Updated bcrypt-ruby to bcrypt.
 * Updated the Slim gem to [Slim Rails](https://github.com/slim-template/slim-rails).
 * Updated Foundation Rails install to default to Slim templates.
