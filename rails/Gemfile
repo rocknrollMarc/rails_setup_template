@@ -82,7 +82,7 @@ group :development do
   gem "better_errors", "~> 1.1"
   # gem "sprockets_better_errors" # Disabled due to lack of Rails 4.1.x support.
   gem "web-console", "~> 1.0"
-  # gem "xray-rails" # Disabled due to lack of Rails 4.1.x support.
+  gem "xray-rails", "~> 0.1.14"
   gem "meta_request", "~> 0.2" # Required by the RailsPanel browser extension.
   gem "rb-fsevent", "~> 0.9" # Guard file events for OSX.
   gem "guard-rspec", "~> 4.2"
