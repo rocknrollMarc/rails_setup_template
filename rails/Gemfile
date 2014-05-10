@@ -71,6 +71,7 @@ group :development, :test do
   gem "wirb", "~> 1.0"
   gem "hirb", "~> 0.7"
   gem "awesome_print", "~> 1.2"
+  gem "priscilla", "~> 1.0"
   gem "active_sanity", "~> 0.2"
   gem "quiet_assets", "~> 1.0"
   gem "rails_db_info", "~> 0.1"
