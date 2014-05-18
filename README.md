@@ -7,7 +7,7 @@ Best applied when creating a new Ruby on Rails application.
 
 The following highlights what is applied with this template:
 
-* Uses [Ruby 2.1.1](http://www.ruby-lang.org).
+* Uses [Ruby 2.1.2](http://www.ruby-lang.org).
 * Uses [Ruby on Rails 4.1.0](http://rubyonrails.org).
 * Installs the [Rails Slim Template](https://github.com/bkuhlmann/rails_slim_template).
 * Installs the [jQuery Cookie 1.4.0](http://plugins.jquery.com/cookie) JavaScript library.
@@ -60,6 +60,7 @@ The following highlights what is applied with this template:
 * Adds the [Wirb](https://github.com/janlelis/wirb) gem requirement.
 * Adds the [Hirb](https://github.com/cldwalker/hirb) gem requirement.
 * Adds the [Awesome Print](https://github.com/michaeldv/awesome_print) gem requirement.
+* Adds the [Priscilla](https://github.com/Arkham/priscilla) gem requirement.
 * Adds the [Active Sanity](https://github.com/versapay/active_sanity) gem requirement.
 * Adds the [Quiet Assets](https://github.com/evrone/quiet_assets) gem requirement.
 * Adds the [Rails DB Info](https://github.com/vlado/rails_db_info) gem requirement.
@@ -117,7 +118,7 @@ Open a terminal window and execute one the following command lines depending on 
 
 Current Version (stable):
 
-    rails new demo -d sqlite3 -T -f --skip-bundle -m https://raw.github.com/bkuhlmann/rails_setup_template/v8.0.0/template.rb
+    rails new demo -d sqlite3 -T -f --skip-bundle -m https://raw.github.com/bkuhlmann/rails_setup_template/v8.1.0/template.rb
 
 Master Version (unstable):
 

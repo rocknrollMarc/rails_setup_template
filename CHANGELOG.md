@@ -1,3 +1,10 @@
+# v8.1.0
+
+* Refactored the "download_file" method to use the native Thor "get" method instead.
+* Updated Gemfile to re-enable the xray-rails gem since it works for Rails 4.1.x now.
+* Updated the Gemfile to use typhoeus instead of the webmock gem.
+* Added the [Priscilla](https://github.com/Arkham/priscilla) gem.
+
 # v8.0.0
 
 * Fixed verb used for initial git commit of template.
