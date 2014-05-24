@@ -1,7 +1,7 @@
 # Settings
 SETUP_TEMPLATE_NAME = "Rails Setup Template"
-SETUP_TEMPLATE_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/v8.1.0"
-SLIM_TEMPLATE = "https://raw.github.com/bkuhlmann/rails_slim_template/v1.2.0/template.rb"
+SETUP_TEMPLATE_ROOT = "https://raw.github.com/bkuhlmann/rails_setup_template/master"
+SLIM_TEMPLATE = "https://raw.github.com/bkuhlmann/rails_slim_template/master/template.rb"
 JQUERY_COOKIE_ROOT = "https://raw.github.com/carhartl/jquery-cookie/v1.4.0"
 
 # Slim Template
@@ -65,8 +65,6 @@ get("#{SETUP_TEMPLATE_ROOT}/rails/config/environments/development.delta.rb", dev
 insert_into_file "config/environments/development.rb", open(development_delta).read, before: "\nend"
 remove_file development_delta
 insert_into_file "config/environments/development.rb", "\n  # Enables Guard::LiveReload support without requiring a browser extension.\n  config.middleware.insert_after ActionDispatch::Static, Rack::LiveReload\n", after: "  # Settings specified here will take precedence over those in config/application.rb.\n"
-insert_into_file "config/environments/development.rb", "  config.action_mailer.smtp_settings = { :address => \"localhost\", :port => 1025 }\n", after: "  config.action_mailer.raise_delivery_errors = false\n"
-insert_into_file "config/environments/development.rb", "  config.action_mailer.delivery_method = :smtp\n", after: "  config.action_mailer.raise_delivery_errors = false\n"
 
 # Controllers
 get "#{SETUP_TEMPLATE_ROOT}/rails/app/controllers/about_controller.rb", "app/controllers/about_controller.rb"
