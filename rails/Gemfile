@@ -86,6 +86,7 @@ group :development do
   gem "xray-rails", "~> 0.1.14"
   gem "meta_request", "~> 0.2" # Required by the RailsPanel browser extension.
   gem "rb-fsevent", "~> 0.9" # Guard file events for OSX.
+  gem "guard-bundler"
   gem "guard-rspec", "~> 4.2"
   gem "rack-livereload", "~> 0.3"
   gem "guard-livereload", "~> 2.1"
