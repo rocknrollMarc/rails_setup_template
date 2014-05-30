@@ -65,7 +65,7 @@ development_delta = "config/environments/development.delta.rb"
 get("#{SETUP_TEMPLATE_ROOT}/rails/config/environments/development.delta.rb", development_delta)
 insert_into_file "config/environments/development.rb", open(development_delta).read, before: "\nend"
 remove_file development_delta
-insert_into_file "config/environments/development.rb", "\n  # Enables Guard::LiveReload support without requiring a browser extension.\n  config.middleware.insert_after ActionDispatch::Static, Rack::LiveReload\n", after: "  # Settings specified here will take precedence over those in config/application.rb.\n"
+insert_into_file "config/environments/development.rb", "\n  # Enables Guard::LiveReload support without requiring a browser extension.\n  config.middleware.use Rack::LiveReload\n", after: "  # Settings specified here will take precedence over those in config/application.rb.\n"
 
 # Controllers
 get "#{SETUP_TEMPLATE_ROOT}/rails/app/controllers/about_controller.rb", "app/controllers/about_controller.rb"
