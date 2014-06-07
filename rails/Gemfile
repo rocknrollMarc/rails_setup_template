@@ -1,114 +1,114 @@
 source "https://rubygems.org"
 
 # Databases
-gem "sqlite3", "~> 1.3"
-gem "redis", "~> 3.0"
-gem "redis-namespace", "~> 1.4"
+gem "sqlite3"
+gem "redis"
+gem "redis-namespace"
 
 # Cache
-gem "dalli", "~> 2.7"
+gem "dalli"
 
 # Server
-gem "puma", "~> 2.8"
+gem "puma"
 
 # Application
-gem "rake", "~> 10.2"
+gem "rake"
 gem "rails", "~> 4.1"
-gem "naught", "~> 1.0"
-gem "tokener", "~> 3.3"
-gem "sessioner", "~> 0.11"
-gem "resourcer", "~> 6.3"
-gem "cancan", "~> 1.6"
-gem "ransack", "~> 1.2"
-gem "state_machine", "~> 1.2"
-gem "linguist", "~> 2.3"
-gem "sorter", "~> 0.9"
-gem "lineage", "~> 0.9"
-gem "navigator", "~> 0.6"
-gem "will_paginate", "~> 3.0"
-gem "prawn_plus", "~> 4.1"
-gem "aws-sdk", "~> 1.38"
-gem "paperclip_plus", "~> 0.14"
-gem "number_to_fraction", "~> 4.3"
-gem "gravatarify", "~> 3.1"
+gem "naught"
+gem "tokener"
+gem "sessioner"
+gem "resourcer"
+gem "cancan"
+gem "ransack"
+gem "state_machine"
+gem "linguist"
+gem "sorter"
+gem "lineage"
+gem "navigator"
+gem "will_paginate"
+gem "prawn_plus"
+gem "aws-sdk"
+gem "paperclip_plus"
+gem "number_to_fraction"
+gem "gravatarify"
 
 # Assets
-gem "uglifier", "~> 2.5"
-gem "slim-rails", "~> 2.1"
+gem "uglifier"
+gem "slim-rails"
 gem "sass-rails", "~> 4.0.3"
-gem "bower-rails", "~> 0.7"
-gem "jquery-rails", "~> 3.1"
-gem "modernizr-rails", "~> 2.7"
-gem "foundation-rails", "~> 5.2"
+gem "bower-rails"
+gem "jquery-rails"
+gem "modernizr-rails"
+gem "foundation-rails"
 
 # API
-gem "jbuilder", "~> 2.0"
+gem "jbuilder"
 
 # Performance
-gem "fast_blank", "~> 0.0"
-gem "deep_tree", "~> 0.0"
+gem "fast_blank"
+gem "deep_tree"
 
 # Security
-gem "bcrypt", "~> 3.1"
-gem "rack-attack", "~> 3.0"
-gem "secure_headers", "~> 1.1"
+gem "bcrypt"
+gem "rack-attack"
+gem "secure_headers"
 
 # Metrics
-gem "browser_details", "~> 0.0"
+gem "browser_details"
 
 group :production do
-  gem "rails_12factor", "~> 0.0"
+  gem "rails_12factor"
 end
 
 group :development, :test do
-  gem "dotenv-rails", "~> 0.10"
-  gem "pry", "~> 0.9.12"
-  gem "pry-byebug", "~> 1.3"
-  gem "pry-remote", "~> 0.1"
-  gem "pry-rescue", "~> 1.4"
-  gem "pry-stack_explorer", "~> 0.4.9"
-  gem "bond", "~> 0.5"
-  gem "wirb", "~> 1.0"
-  gem "hirb", "~> 0.7"
-  gem "awesome_print", "~> 1.2"
-  gem "priscilla", "~> 1.0"
-  gem "active_sanity", "~> 0.2"
-  gem "quiet_assets", "~> 1.0"
-  gem "rails_db_info", "~> 0.1"
-  gem "log_plus", "~> 2.3"
+  gem "dotenv-rails"
+  gem "pry"
+  gem "pry-byebug"
+  gem "pry-remote"
+  gem "pry-rescue"
+  gem "pry-stack_explorer"
+  gem "bond"
+  gem "wirb"
+  gem "hirb"
+  gem "awesome_print"
+  gem "priscilla"
+  gem "active_sanity"
+  gem "quiet_assets"
+  gem "rails_db_info"
+  gem "log_plus"
 end
 
 group :development do
-  gem "capistrano", "~> 3.1"
-  gem "better_errors", "~> 1.1"
+  gem "capistrano"
+  gem "better_errors"
   # gem "sprockets_better_errors" # Disabled due to lack of Rails 4.1.x support.
-  gem "web-console", "~> 1.0"
-  gem "xray-rails", "~> 0.1.14"
-  gem "meta_request", "~> 0.2" # Required by the RailsPanel browser extension.
-  gem "rb-fsevent", "~> 0.9" # Guard file events for OSX.
+  gem "web-console"
+  gem "xray-rails"
+  gem "meta_request" # Required by the RailsPanel browser extension.
+  gem "rb-fsevent" # Guard file events for OSX.
   gem "guard-bundler"
-  gem "guard-rspec", "~> 4.2"
-  gem "rack-livereload", "~> 0.3"
-  gem "guard-livereload", "~> 2.1"
-  gem "bullet", "~> 4.8"
-  gem "tracer_bullets", "~> 0.0"
-  gem "rack-mini-profiler", "~> 0.9"
-  gem "rails-footnotes", "~> 4.0"
-  gem "rails-erd", "~> 1.1"
-  gem "railroady", "~> 1.1"
-  gem "spring", "~> 1.1"
-  gem "spring-commands-rspec", "~> 1.0"
+  gem "guard-rspec"
+  gem "rack-livereload"
+  gem "guard-livereload"
+  gem "bullet"
+  gem "tracer_bullets"
+  gem "rack-mini-profiler"
+  gem "rails-footnotes"
+  gem "rails-erd"
+  gem "railroady"
+  gem "spring"
+  gem "spring-commands-rspec"
 end
 
 group :test do
-  gem "database_cleaner", "~> 1.2"
-  gem "factory_girl_rails", "~> 4.4"
-  gem "rspec-rails", "~> 2.14"
-  gem "timecop", "~> 0.7.1"
-  gem "typhoeus", "~> 0.6"
-  gem "vcr", "~> 2.9"
-  gem "launchy", "~> 2.4" # Allows save_and_open_page to work in Capybara.
-  gem "capybara", "~> 2.2"
-  gem "capybara-extensions", "~> 0.4"
-  gem "simplecov", "~> 0.8"
+  gem "database_cleaner"
+  gem "factory_girl_rails"
+  gem "rspec-rails"
+  gem "timecop"
+  gem "typhoeus"
+  gem "vcr"
+  gem "launchy" # Allows save_and_open_page to work in Capybara.
+  gem "capybara"
+  gem "capybara-extensions"
+  gem "simplecov"
 end
