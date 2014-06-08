@@ -1,5 +1,7 @@
 # Overview
 
+[![Gittip](http://img.shields.io/gittip/bkuhlmann.svg)](https://www.gittip.com/bkuhlmann)
+
 Bootstraps a Ruby on Rails project beyond what you get with default project generation (i.e. rails new <project name>).
 Best applied when creating a new Ruby on Rails application.
 
