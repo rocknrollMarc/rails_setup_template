@@ -70,9 +70,14 @@ insert_into_file "config/environments/development.rb", "\n  # Enables Guard::Liv
 
 # Controllers
 get "#{SETUP_TEMPLATE_ROOT}/rails/app/controllers/about_controller.rb", "app/controllers/about_controller.rb"
+get "#{SETUP_TEMPLATE_ROOT}/rails/app/controllers/admin/base_controller.rb", "app/controllers/admin/base_controller.rb"
+get "#{SETUP_TEMPLATE_ROOT}/rails/app/controllers/admin/dashboard_controller.rb", "app/controllers/admin/dashboard_controller.rb"
 
 # Routes
-route "resource :about, controller: \"about\""
+route %(resource :about, controller: "about")
+route %(namespace :admin do)
+route %(  resource "dashboard", controller: "dashboard", only: "show")
+route %(end)
 
 # Helpers
 get "#{SETUP_TEMPLATE_ROOT}/rails/app/helpers/navigation/menu.rb", "app/helpers/navigation/menu.rb"
@@ -86,8 +91,10 @@ get "#{SETUP_TEMPLATE_ROOT}/rails/app/helpers/visitor_helper.rb", "app/helpers/v
 
 # Views
 get "#{SETUP_TEMPLATE_ROOT}/rails/app/views/layouts/application.html.slim", "app/views/layouts/application.html.slim"
+get "#{SETUP_TEMPLATE_ROOT}/rails/app/views/layouts/admin.html.slim", "app/views/layouts/admin.html.slim"
 get "#{SETUP_TEMPLATE_ROOT}/rails/app/views/home/show.html.slim", "app/views/home/show.html.slim"
 get "#{SETUP_TEMPLATE_ROOT}/rails/app/views/about/show.html.slim", "app/views/about/show.html.slim"
+get "#{SETUP_TEMPLATE_ROOT}/rails/app/views/admin/dashboard/show.html.slim", "app/views/admin/dashboard/show.html.slim"
 
 # Images
 get "#{SETUP_TEMPLATE_ROOT}/rails/app/assets/images/icons/feed-comments.png", "app/assets/images/icons/feed-comments.png"
