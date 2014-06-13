@@ -52,6 +52,7 @@ gem "deep_tree"
 gem "bcrypt"
 gem "rack-attack"
 gem "secure_headers"
+gem "auther"
 
 # Metrics
 gem "browser_details"
