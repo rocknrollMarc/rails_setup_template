@@ -74,10 +74,10 @@ get "#{SETUP_TEMPLATE_ROOT}/rails/app/controllers/admin/base_controller.rb", "ap
 get "#{SETUP_TEMPLATE_ROOT}/rails/app/controllers/admin/dashboard_controller.rb", "app/controllers/admin/dashboard_controller.rb"
 
 # Routes
-route %(resource :about, controller: "about")
-route %(namespace :admin do)
-route %(  resource "dashboard", controller: "dashboard", only: "show")
 route %(end)
+route %(  resource "dashboard", controller: "dashboard", only: "show")
+route %(namespace :admin do)
+route %(resource :about, controller: "about")
 
 # Helpers
 get "#{SETUP_TEMPLATE_ROOT}/rails/app/helpers/navigation/menu.rb", "app/helpers/navigation/menu.rb"
