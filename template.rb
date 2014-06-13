@@ -31,6 +31,10 @@ get "#{SETUP_TEMPLATE_ROOT}/rails/config/initializers/ruby_enhancements.rb", "co
 get "#{SETUP_TEMPLATE_ROOT}/rails/config/initializers/system.rb", "config/initializers/system.rb"
 get "#{SETUP_TEMPLATE_ROOT}/rails/config/initializers/validation.rb", "config/initializers/validation.rb"
 
+# Configuration - Auther
+gsub_file "config/initializers/auther.rb", /    paths: \[\"\/admin\"\]/, %(    paths: ["/admin"],)
+insert_into_file "config/initializers/auther.rb", %(    authorized_url: "/admin/dashboard"\n), after: %(    paths: ["/admin"],\n)
+
 # Configuration - Capistrano
 get "#{SETUP_TEMPLATE_ROOT}/rails/config/recipes/amazon_s3.rb", "config/recipes/amazon_s3.rb"
 get "#{SETUP_TEMPLATE_ROOT}/rails/config/recipes/base.rb", "config/recipes/base.rb"
