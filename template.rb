@@ -72,6 +72,9 @@ insert_into_file "config/environments/development.rb", open(development_delta).r
 remove_file development_delta
 insert_into_file "config/environments/development.rb", "\n  # Enables Guard::LiveReload support without requiring a browser extension.\n  config.middleware.use Rack::LiveReload\n", after: "  # Settings specified here will take precedence over those in config/application.rb.\n"
 
+# Configuration -- Secrets
+append_to_file ".env", %(HTTPS_ENABLED=no)
+
 # Controllers
 get "#{SETUP_TEMPLATE_ROOT}/rails/app/controllers/about_controller.rb", "app/controllers/about_controller.rb"
 get "#{SETUP_TEMPLATE_ROOT}/rails/app/controllers/admin/base_controller.rb", "app/controllers/admin/base_controller.rb"
