@@ -9,7 +9,7 @@ gem "redis-namespace"
 gem "dalli"
 
 # Server
-gem "puma"
+gem "unicorn"
 
 # Application
 gem "rake"
