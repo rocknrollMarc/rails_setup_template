@@ -56,7 +56,7 @@ get "#{SETUP_TEMPLATE_ROOT}/rails/Capfile", "Capfile"
 # Configuration - Application
 application_delta = "config/application.delta.rb"
 get("#{SETUP_TEMPLATE_ROOT}/rails/config/application.delta.rb", application_delta)
-insert_into_file "config/application.rb", open(application_delta).read, after: "    config.i18n.default_locale = \"en-US\"\n"
+insert_into_file "config/application.rb", open(application_delta).read, after: %(    config.i18n.default_locale = :en\n)
 remove_file application_delta
 
 # Configuration - Production
