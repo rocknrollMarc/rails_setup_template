@@ -27,6 +27,7 @@ get "#{SETUP_TEMPLATE_ROOT}/rails/config/initializers/footnotes.rb", "config/ini
 get "#{SETUP_TEMPLATE_ROOT}/rails/config/initializers/mini_profiler.rb", "config/initializers/mini_profiler.rb"
 get "#{SETUP_TEMPLATE_ROOT}/rails/config/initializers/redis.rb", "config/initializers/redis.rb"
 get "#{SETUP_TEMPLATE_ROOT}/rails/config/initializers/ruby_enhancements.rb", "config/initializers/ruby_enhancements.rb"
+get "#{SETUP_TEMPLATE_ROOT}/rails/config/initializers/system.rb", "config/initializers/secure_headers.rb"
 get "#{SETUP_TEMPLATE_ROOT}/rails/config/initializers/system.rb", "config/initializers/system.rb"
 get "#{SETUP_TEMPLATE_ROOT}/rails/config/initializers/validation.rb", "config/initializers/validation.rb"
 
@@ -69,6 +70,7 @@ get "#{SETUP_TEMPLATE_ROOT}/rails/Procfile", "Procfile"
 get "#{SETUP_TEMPLATE_ROOT}/rails/app/controllers/about_controller.rb", "app/controllers/about_controller.rb"
 get "#{SETUP_TEMPLATE_ROOT}/rails/app/controllers/admin/base_controller.rb", "app/controllers/admin/base_controller.rb"
 get "#{SETUP_TEMPLATE_ROOT}/rails/app/controllers/admin/dashboard_controller.rb", "app/controllers/admin/dashboard_controller.rb"
+insert_into_file "app/controllers/application_controller.rb", %(  ensure_security_headers\n), after: %(  protect_from_forgery with: :exception\n)
 
 # Routes
 route %(end)
