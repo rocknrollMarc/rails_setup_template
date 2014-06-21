@@ -80,7 +80,6 @@ group :development, :test do
 end
 
 group :development do
-  gem "capistrano"
   gem "better_errors"
   # gem "sprockets_better_errors" # Disabled due to lack of Rails 4.1.x support.
   gem "web-console"

@@ -66,24 +66,6 @@ get "#{SETUP_TEMPLATE_ROOT}/rails/config/unicorn.rb", "config/unicorn.rb"
 # Configuration - Procfile
 get "#{SETUP_TEMPLATE_ROOT}/rails/Procfile", "Procfile"
 
-# Configuration - Capistrano
-get "#{SETUP_TEMPLATE_ROOT}/rails/config/recipes/amazon_s3.rb", "config/recipes/amazon_s3.rb"
-get "#{SETUP_TEMPLATE_ROOT}/rails/config/recipes/base.rb", "config/recipes/base.rb"
-get "#{SETUP_TEMPLATE_ROOT}/rails/config/recipes/nginx.rb", "config/recipes/nginx.rb"
-get "#{SETUP_TEMPLATE_ROOT}/rails/config/recipes/nodejs.rb", "config/recipes/nodejs.rb"
-get "#{SETUP_TEMPLATE_ROOT}/rails/config/recipes/postgresql.rb", "config/recipes/postgresql.rb"
-get "#{SETUP_TEMPLATE_ROOT}/rails/config/recipes/rbenv.rb", "config/recipes/rbenv.rb"
-get "#{SETUP_TEMPLATE_ROOT}/rails/config/recipes/redis.rb", "config/recipes/redis.rb"
-get "#{SETUP_TEMPLATE_ROOT}/rails/config/recipes/unicorn.rb", "config/recipes/unicorn.rb"
-get "#{SETUP_TEMPLATE_ROOT}/rails/config/recipes/templates/amazon_s3.yml.erb", "config/recipes/templates/amazon_s3.yml.erb"
-get "#{SETUP_TEMPLATE_ROOT}/rails/config/recipes/templates/nginx.site.erb", "config/recipes/templates/nginx.site.erb"
-get "#{SETUP_TEMPLATE_ROOT}/rails/config/recipes/templates/postgresql.sh.erb", "config/recipes/templates/postgresql.sh.erb"
-get "#{SETUP_TEMPLATE_ROOT}/rails/config/recipes/templates/postgresql.yml.erb", "config/recipes/templates/postgresql.yml.erb"
-get "#{SETUP_TEMPLATE_ROOT}/rails/config/recipes/templates/unicorn.rb.erb", "config/recipes/templates/unicorn.rb.erb"
-get "#{SETUP_TEMPLATE_ROOT}/rails/config/recipes/templates/unicorn.service.erb", "config/recipes/templates/unicorn.service.erb"
-get "#{SETUP_TEMPLATE_ROOT}/rails/config/deploy.rb", "config/deploy.rb"
-get "#{SETUP_TEMPLATE_ROOT}/rails/Capfile", "Capfile"
-
 # Controllers
 get "#{SETUP_TEMPLATE_ROOT}/rails/app/controllers/about_controller.rb", "app/controllers/about_controller.rb"
 get "#{SETUP_TEMPLATE_ROOT}/rails/app/controllers/admin/base_controller.rb", "app/controllers/admin/base_controller.rb"
