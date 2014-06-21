@@ -51,9 +51,10 @@ remove_file development_delta
 insert_into_file "config/environments/development.rb", "\n  # Enables Guard::LiveReload support without requiring a browser extension.\n  config.middleware.use Rack::LiveReload\n", after: "  # Settings specified here will take precedence over those in config/application.rb.\n"
 
 # Configuration -- Secrets
-append_to_file ".env", %(HTTPS_ENABLED=no)
-append_to_file ".env", %(UNICORN_WORKERS=3)
-append_to_file ".env", %(UNICORN_TIMEOUT=15)
+append_to_file ".env", %(PORT=3000\n)
+append_to_file ".env", %(HTTPS_ENABLED=no\n)
+append_to_file ".env", %(UNICORN_WORKERS=3\n)
+append_to_file ".env", %(UNICORN_TIMEOUT=15\n)
 
 # Configuration - Auther
 gsub_file "config/initializers/auther.rb", /    paths: \[\"\/admin\"\]/, %(    paths: ["/admin"],)
