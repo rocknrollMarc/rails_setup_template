@@ -12,7 +12,7 @@
     config.force_ssl = (ENV["HTTPS_ENABLED"] == "yes")
 
     # Enable concurrent threads.
-    config.allow_concurrency = true
+    config.allow_concurrency = false
 
     # Enable mem cache.
     config.cache_store = :mem_cache_store
