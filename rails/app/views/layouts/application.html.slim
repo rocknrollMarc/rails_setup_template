@@ -35,16 +35,8 @@ html lang="en"
           li
             = link_to render_system_version, '#'
 
-
-        ul class="left"
-          li
-            = link_to "Home", root_path
-          li
-            = link_to "About", about_path
-
-        ul class="right"
-          li
-            = link_to "Login", login_path, class: "button tiny round"
+        = render_visitor_menu_left
+        = render_visitor_menu_right
 
     = yield :breadcrumbs
     = yield
