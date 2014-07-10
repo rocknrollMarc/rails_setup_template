@@ -31,13 +31,13 @@ html lang="en"
           h1
             = link_to SYSTEM_LABEL, root_path
       section class="top-bar-section"
-        ul class="right"
-          li
-            = link_to render_system_version, '#'
-
         ul class="left"
           li
             = link_to "Dashboard", admin_dashboard_path
+
+        ul class="right"
+          li
+            = link_to render_system_version, '#'
 
         ul class="right"
           li

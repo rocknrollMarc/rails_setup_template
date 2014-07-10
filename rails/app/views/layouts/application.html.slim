@@ -25,19 +25,7 @@ html lang="en"
     = javascript_include_tag :modernizr
 
   body
-    nav class="top-bar" data-topbar=''
-      ul class="title-area"
-        li class="name"
-          h1
-            = link_to SYSTEM_LABEL, root_path
-      section class="top-bar-section"
-        ul class="right"
-          li
-            = link_to render_system_version, '#'
-
-        = render_visitor_menu_left
-        = render_visitor_menu_right
-
+    = render_visitor_menu
     = yield :breadcrumbs
     = yield
 
